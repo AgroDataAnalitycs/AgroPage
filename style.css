@@ -79,6 +79,45 @@
 .prev { left: 20px; }
 .next { right: 20px; }
 
+    .card {
+      background: #D1DED1;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 15px 40px #fcfcfc;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 30px #15695C;
+      transform: translateY(-10px);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #1b5834 0%, #ffffff 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .card h3 {
+      color: #22422f;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #22422f;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+
+
 /* ======= MAPA ======= */
 .mapa {
   padding: 3em 5%;
@@ -172,4 +211,5 @@ footer {
     font-size: 1.5em;
   }
 }
+
 
