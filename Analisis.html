@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroDataAnalytics-analisis</title>
+  <link rel="stylesheet" href="Analisis.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+        <a href="index.html">
+          <h1>AgroDataAnalytics</h1>
+        </a>
+      </div>
+      
+      <nav class="nav-header">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <ul class="submenu">
+              <li><a href="index.html#carrusel">Carrusel</a></li>
+              <li><a href="index.html#mapa">Mapa</a></li>
+              <li><a href="index.html#referencias">Referencias</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="AgroNoticias.html">AgroNoticias</a>
+            <ul class="submenu">
+              <li><a href="">Destacadas</a></li>
+              <li><a href="">Nacional</a></li>
+              <li><a href="">Atlantico</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Analisis.html" class="active">Análisis</a>
+            <ul class="submenu">
+              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
+              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Agrotips.html">Agrotips</a>
+            <ul class="submenu">
+              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
+              <li><a href="Agrotips.html#videos">videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+            <ul class="submenu">
+              <li><a href="nosotros.html#quienes-somos">quienes somos</a></li>
+              <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+              <li><a href="nosotros.html#valores">valores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </div>
+  </header>
+
+
+<!-- Sección 1: Análisis a Nivel Nacional -->
+<section id="nacional">
+    <h2> Análisis a Nivel Nacional</h2>
+    <p>El análisis del sector agrícola colombiano revela un panorama dinámico caracterizado por la diversidad de cultivos y regiones productivas. Colombia se posiciona como uno de los principales productores agrícolas de América Latina.</p>
+
+    <h3>Principales Cultivos</h3>
+    <div class="content-grid">
+        <div class="stat-box">
+            <h3>35%</h3>
+            <p>Café y productos asociados</p>
+        </div>
+        <div class="stat-box">
+            <h3>28%</h3>
+            <p>Frutas y hortalizas</p>
+        </div>
+        <div class="stat-box">
+            <h3>22%</h3>
+            <p>Cereales y tubérculos</p>
+        </div>
+    </div>
+
+
+    <!-- 📍 Imagen de gráficos de rendimiento o superficie cultivada -->
+
+
+    <div class="highlight">
+        <h3>Factores Clave del Análisis</h3>
+        <ul>
+            <li>Variabilidad climática y su impacto en los ciclos de cultivo</li>
+            <li>Implementación de tecnologías de agricultura de precisión</li>
+            <li>Acceso a mercados nacionales e internacionales</li>
+            <li>Políticas gubernamentales de apoyo al sector agrícola</li>
+            <li>Capacitación y asistencia técnica a agricultores</li>
+        </ul>
+
+        <!-- 📍 Imagen decorativa o gráfica relacionada con factores -->
+        <img src="imagenes/grf.webp" alt="Factores clave del análisis"
+             style="display:block; margin:20px auto; width:500px;">
+    </div>
+</section>
+
+
+<!-- Sección 2: Análisis en el Departamento del Atlántico -->
+<section id="atlantico">
+    <h2>🌾 Análisis en el Departamento del Atlántico</h2>
+    <p>El Atlántico se caracteriza por su clima tropical y suelos fértiles que favorecen diversos tipos de cultivo.</p>
+
+    <h3>Características Regionales</h3>
+    <div class="content-grid">
+        <div class="card">
+            <h4>Clima y Suelo</h4>
+            <p>Temperatura promedio de 28°C con suelos franco-arcillosos, ideales para cultivos diversos.</p>
+        </div>
+        <div class="card">
+            <h4>Cultivos Predominantes</h4>
+            <p>Yuca, maíz, plátano, ñame y frutales como mango y guayaba.</p>
+        </div>
+        <div class="card">
+            <h4>Infraestructura</h4>
+            <p>Acceso a sistemas de riego y vías para exportación agrícola.</p>
+        </div>
+    </div>
+
+    <!-- 📍 Imagen: Mapa o gráfico del Atlántico -->
+    <img src="imagenes/grf.webp" alt="Mapa agrícola del Atlántico"
+         style="display:block; margin:20px auto; width:650px;">
+
+    <h3>Desafíos y Oportunidades</h3>
+    <div class="highlight">
+        <h4>Desafíos Principales:</h4>
+        <ul>
+            <li>Sequías prolongadas</li>
+            <li>Sistemas de riego limitados</li>
+            <li>Acceso a crédito reducido</li>
+        </ul>
+        <h4>Oportunidades de Desarrollo:</h4>
+        <ul>
+            <li>Ubicación estratégica</li>
+            <li>Potencial para agroindustria</li>
+            <li>Programas de apoyo</li>
+        </ul>
+    </div>
+
+    <!-- 📍 Imagen comparativa de desafíos -->
+    <img src="imagenes/grf.webp" alt="Desafíos y oportunidades"
+         style="display:block; margin:25px auto; width:700px;">
+
+    <div class="content-grid">
+        <div class="stat-box">
+            <h3>45,000</h3>
+            <p>Hectáreas cultivadas</p>
+        </div>
+        <div class="stat-box">
+            <h3>12,000</h3>
+            <p>Productores agrícolas</p>
+        </div>
+    </div>
+
+    <!-- 📍 Imagen para estadísticas del Atlántico -->
+    <img src="imagenes/grf.webp" alt="Productores y áreas de cultivo"
+         style="display:block; margin:20px auto; width:600px;">
+</section>
+
+
+<!-- Sección 3: Análisis del Agua a Nivel Nacional -->
+<section id="agua">
+    <h2>💧 Análisis del Agua a Nivel Nacional</h2>
+    <p>Los recursos hídricos son fundamentales para la agricultura colombiana.</p>
+
+    <h3>Disponibilidad y Distribución</h3>
+    <div class="content-grid">
+        <div class="card">
+            <h4>Cuencas Hidrográficas</h4>
+            <p>Colombia cuenta con cinco vertientes principales: Caribe, Pacífico, Orinoco, Amazonas y Catatumbo.</p>
+        </div>
+        <div class="card">
+            <h4>Uso Agrícola del Agua</h4>
+            <p>El sector agrícola usa el 54% del agua disponible.</p>
+        </div>
+        <div class="card">
+            <h4>Calidad del Agua</h4>
+            <p>Monitoreo de parámetros fisicoquímicos y biológicos.</p>
+        </div>
+    </div>
+
+    <!-- 📍 Imagen de mapa hídrico o distribución de agua -->
+    <img src="imagenes/grf.webp" alt="Distribución del agua en Colombia"
+         style="display:block; margin:20px auto; width:650px;">
+
+    <h3>Sistemas de Riego</h3>
+    <div class="highlight">
+        <ul>
+            <li>Riego por gravedad (60%)</li>
+            <li>Aspersión</li>
+            <li>Goteo</li>
+            <li>Sistemas mixtos</li>
+        </ul>
+        <!-- 📍 Imagen de tipos de riego -->
+        <img src="imagenes/grf.webp" alt="Tipos de riego"
+             style="display:block; margin:15px auto; width:550px;">
+    </div>
+     <div>
+        <h2>Material descargable</h2>
+        <a href="/imagenes/Resultados_de_Análisis_de_Laboratorio_Suelos_en_Colombia_20251110(Estandarizada).xlsx" download="NombrePersonalizadoDelArchivo" class="boton-descarga">
+            <i class="fa fa-download"></i> Descargar Archivo
+        </a>
+      </div>
+</section>
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+
+       <footer>
+    <div class="redes">
+      <h4>encuentranos en:</h4>
+      <a href="https://www.facebook.com/?locale=es_LA">
+        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://co.linkedin.com/">
+        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
+      </a>
+      <a href="https://github.com/">
+        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+      </a>
+    </div>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+  </footer>   
+
+</body>
+</html>

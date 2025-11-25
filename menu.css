@@ -1,0 +1,242 @@
+/* ======= GENERAL ======= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      padding-top: 80px; /* ajusta según la altura de tu header */
+}
+
+    
+
+    /* ======= HEADER ======= */
+    header.main-header {
+      background-color: #264e36;
+      color: white;
+      padding: 1em 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      justify-content: space-between;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+}
+
+
+    .header-inner {
+      width: 100%;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 15px;
+    }
+
+    .logo-area img {
+      width: 60px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .logo-area a {
+      text-decoration: none;
+    }
+
+    .logo-area h1 {
+      font-size: 2.2em;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 1px;
+      color: white;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-area h1:hover {
+      transform: scale(1.05);
+    }
+
+    /* ======= NAVEGACIÓN ======= */
+    nav.nav-header {
+      border-radius: 8px;
+      padding: 0;
+      margin-left: 10%
+    }
+
+    nav.nav-header > ul.menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Items principales del menú */
+    nav.nav-header > ul.menu > li {
+      position: relative;
+    }
+
+    nav.nav-header > ul.menu > li > a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 1rem 1.5rem;
+      font-size: 1.05em;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+      border-radius: 8px ;
+    }
+
+    nav.nav-header > ul.menu > li > a:hover,
+    nav.nav-header > ul.menu > li > a.active {
+      background: rgba(255, 255, 255, 0.1);
+      border-bottom-color: #fff;
+    }
+
+    /* ======= SUBMENÚ ======= */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #88a593;
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+      min-width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-radius: 0 0 8px 8px;
+      z-index: 9999;
+    }
+
+    /* Mostrar submenú al hover */
+    nav.nav-header > ul.menu > li:hover > .submenu {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Enlaces del submenú */
+    .submenu li {
+      list-style: none;
+    }
+
+    .submenu a {
+      display: block;
+      color: #1f3f2d;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+    }
+
+    .submenu li:hover {
+      background: #60dd67;
+    }
+
+    .submenu a:hover {
+      color: white;
+      padding-left: 2rem;
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 768px) {
+      .logo-area h1 {
+        font-size: 1.5em;
+      }
+
+      .logo-area img {
+        width: 80px;
+      }
+
+      nav.nav-header > ul.menu {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      nav.nav-header > ul.menu > li > a {
+        padding: 0.8rem 1rem;
+        text-align: center;
+      }
+
+      .submenu {
+        position: static;
+        display: none;
+        background: #6d8a7a;
+      }
+
+      nav.nav-header > ul.menu > li:hover > .submenu {
+        display: block;
+      }
+
+      .submenu a {
+        padding-left: 2rem;
+      }
+    }
+
+    #sena {
+      width: 60px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin-left: auto;
+    }
+
+  
+
+    footer {
+        background-color: #1f3f2d;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .redes{
+      margin-bottom: 1%;
+    }
+
+    .redes a{
+      text-decoration: none;
+    }
+    
+    #facebook, #instagram, #linkedin, #GitHub {
+        width: 70px;
+        height: auto;
+        filter: invert(1);
+        margin: 5px;
+    }

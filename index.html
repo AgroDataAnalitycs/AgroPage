@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroDataAnalytics</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+        <a href="index.html">
+          <h1>AgroDataAnalytics</h1>
+        </a>
+      </div>
+      
+      <nav class="nav-header">
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="active">Inicio</a>
+            <ul class="submenu">
+              <li><a href="index.html#carrusel">Carrusel</a></li>
+              <li><a href="index.html#mapa">Mapa</a></li>
+              <li><a href="index.html#referencias">Referencias</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="AgroNoticias.html">AgroNoticias</a>
+            <ul class="submenu">
+              <li><a href="">Destacadas</a></li>
+              <li><a href="">Nacional</a></li>
+              <li><a href="">Atlantico</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Analisis.html">Análisis</a>
+            <ul class="submenu">
+              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
+              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Agrotips.html">Agrotips</a>
+            <ul class="submenu">
+              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
+              <li><a href="Agrotips.html#videos">videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+            <ul class="submenu">
+              <li><a href="nosotros.html#quienes-somos">quienes somos</a></li>
+              <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+              <li><a href="nosotros.html#valores">valores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </div>
+  </header>
+
+  <!-- ======= CARRUSEL ======= -->
+  <section class="carousel" id="carrusel">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('imagenes/campo5.jpg');">
+        <div class="overlay">
+          <h2>Mapeo de Tierras Aptas para Cultivos en el Atlántico</h2>
+          <p>Visualiza mediante mapas interactivos la aptitud del suelo para distintos cultivos.</p>
+          <a href="#mapa" class="btn">Ver Mapa</a>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('imagenes/campo3.jpg');">
+        <div class="overlay">
+          <h2>Datos oficiales del IDEAM y UPRA</h2>
+          <p>Información validada de fuentes abiertas y estudios agroclimáticos.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('imagenes/campo4.jpg');">
+        <div class="overlay">
+          <h2>Analiza, compara y planifica con precisión</h2>
+          <p>Herramientas de análisis de suelo, clima y cultivo en la región Caribe.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+    <!-- ======= INFORMACIÓN ADICIONAL ======= -->
+    <section class="info-extra">
+      <h2>Sobre AgroDataAnalytics</h2>
+      <p>
+        <strong>AgroDataAnalytics</strong> es un proyecto enfocado en el análisis de las condiciones del suelo,
+        la productividad y la aptitud agrícola del departamento del Atlántico.
+      </p>
+      <p>
+        Nuestro objetivo es contribuir al desarrollo sostenible del sector agropecuario mediante
+        el uso de herramientas de análisis de datos, sistemas de información geográfica (SIG)
+        y fuentes oficiales actualizadas.
+      </p>
+      <p>
+        Trabajamos para generar conocimiento útil que apoye la toma de decisiones estratégicas en la gestión
+        territorial y la planificación agropecuaria de la región.
+      </p>
+    </section>
+
+  <!-- ======= MAPA ======= -->
+  <section class="mapa" id="mapa">
+    <h2>Mapa Interactivo de Aptitud de Suelos</h2>
+    <div id="map"></div>
+  </section>
+
+
+
+  <!-- ======= REFERENCIAS ======= -->
+  <section class="referencias" id="referencias">
+    <h2>Fuentes de Datos y Referencias</h2>
+    <ul>
+      <li>IDEAM – Datos climáticos y de precipitación.</li>
+      <li>UPRA – Zonas de aptitud agrícola.</li>
+      <li>Gobernación del Atlántico – Límites y cartografía regional.</li>
+      <li>Datos Abiertos Colombia – Capas geográficas públicas.</li>
+      <li>FAO / WorldClim – Modelos de temperatura y humedad global.</li>
+    </ul>
+  </section>
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+
+  <footer>
+    <div class="redes">
+      <h4>encuentranos en:</h4>
+      <a href="https://www.facebook.com/?locale=es_LA">
+        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://co.linkedin.com/">
+        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
+      </a>
+      <a href="https://github.com/">
+        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+      </a>
+    </div>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+  </footer> 
+   
+  <!-- ======= SCRIPT ======= -->
+  <script>
+    // ======= MAPA LEAFLET =======
+    const map = L.map('map').setView([10.96, -74.8], 8);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // ======= CARRUSEL =======
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[i].classList.add('active');
+    }
+
+    document.querySelector('.next').addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 5000);
+  </script>
+</body>
+</html>
+

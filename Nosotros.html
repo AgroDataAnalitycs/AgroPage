@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroDataAnalytics - Referencias</title>
+  <link rel="stylesheet" href="Nosotros.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+        <a href="index.html">
+          <h1>AgroDataAnalytics</h1>
+        </a>
+      </div>
+      
+      <nav class="nav-header">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <ul class="submenu">
+              <li><a href="index.html#carrusel">Carrusel</a></li>
+              <li><a href="index.html#mapa">Mapa</a></li>
+              <li><a href="index.html#referencias">Referencias</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="AgroNoticias.html">AgroNoticias</a>
+            <ul class="submenu">
+              <li><a href="">Destacadas</a></li>
+              <li><a href="">Nacional</a></li>
+              <li><a href="">Atlantico</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Analisis.html">Análisis</a>
+            <ul class="submenu">
+              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
+              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Agrotips.html">Agrotips</a>
+            <ul class="submenu">
+              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
+              <li><a href="Agrotips.html#videos">videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="nosotros.html" class="active">Nosotros</a>
+            <ul class="submenu">
+              <li><a href="nosotros.html#quienes-somos">quienes somos</a></li>
+              <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+              <li><a href="nosotros.html#valores">valores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </div>
+  </header>
+
+
+  <!-- ======= CONTENIDO PRINCIPAL ======= -->
+   <main class="about-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h2 id="quienes-somos">Quiénes Somos</h2>
+      <p>Transformando datos agrícolas en decisiones inteligentes para un futuro sostenible</p>
+    </section>
+
+    <!-- Mission, Vision, Objectives Cards -->
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Misión</h3>
+        <p>Proporcionar herramientas analíticas avanzadas que permitan a los profesionales del sector agrícola tomar decisiones informadas basadas en datos, optimizando la producción y promoviendo prácticas sostenibles.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔭</div>
+        <h3>Visión</h3>
+        <p>Ser la plataforma líder en análisis de datos agrícolas en América Latina, impulsando la innovación y la transformación digital del sector para garantizar la seguridad alimentaria y el desarrollo sostenible.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Objetivos</h3>
+        <p>Democratizar el acceso a análisis de datos agrícolas de calidad, facilitar la comprensión de tendencias del sector, y contribuir a la toma de decisiones estratégicas que beneficien a productores y consumidores.</p>
+      </div>
+    </div>
+
+    <!-- Equipos de Trabajo -->
+    <div class="team-section" id="nuestro-equipo">
+        <h2 style="color: #2d5016; margin-bottom: 2rem;">Nuestro Equipo</h2>
+
+        <!-- Líder de Proyecto -->
+        <div class="team-category" style="justify-content: center;">
+            <h3>Liderazgo del Proyecto</h3>
+            <div class="team-grid">
+                <div class="team-member" onclick="openModal('Miguel Olivares', 'Líder de Proyecto', 'MO')">
+                    <div class="member-avatar">MO</div>
+                    <div class="member-name">Miguel Olivares</div>
+                    <div class="member-role">Líder de Proyecto</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipo Backend -->
+        <div class="team-category">
+            <h3>Equipo Backend (12 miembros)</h3>
+            <div class="team-grid">
+                <!-- Líderes Backend -->
+                <div class="team-member" onclick="openModal('Juan De La Cruz', 'Líder Backend', 'JC')">
+                    <div class="member-avatar">JC</div>
+                    <div class="member-name">Juan De La Cruz</div>
+                    <div class="member-role">Líder Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('John Sandoval', 'Líder Backend', 'JS')">
+                    <div class="member-avatar">JS</div>
+                    <div class="member-name">John Sandoval</div>
+                    <div class="member-role">Líder Backend</div>
+                </div>
+                
+                <!-- Equipo Backend -->
+                <div class="team-member" onclick="openModal('Jean Arévalo', 'Desarrollador Backend', 'JA')">
+                    <div class="member-avatar">JA</div>
+                    <div class="member-name">Jean Arévalo</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Daniel Reyes', 'Desarrollador Backend', 'DR')">
+                    <div class="member-avatar">DR</div>
+                    <div class="member-name">Daniel Reyes</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Luis Herrera', 'Desarrollador Backend', 'LH')">
+                    <div class="member-avatar">LH</div>
+                    <div class="member-name">Luis Herrera</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Jesús De La Hoz', 'Desarrollador Backend', 'JH')">
+                    <div class="member-avatar">JH</div>
+                    <div class="member-name">Jesús De La Hoz</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Julián Laverde', 'Desarrollador Backend', 'JL')">
+                    <div class="member-avatar">JL</div>
+                    <div class="member-name">Julián Laverde</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Jean Pier Pulido', 'Desarrollador Backend', 'JP')">
+                    <div class="member-avatar">JP</div>
+                    <div class="member-name">Jean Pier Pulido</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Camilo Visbal', 'Desarrollador Backend', 'CV')">
+                    <div class="member-avatar">CV</div>
+                    <div class="member-name">Camilo Visbal</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Ihan Donado', 'Desarrollador Backend', 'ID')">
+                    <div class="member-avatar">ID</div>
+                    <div class="member-name">Ihan Donado</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Brayan Torres', 'Desarrollador Backend', 'BT')">
+                    <div class="member-avatar">BT</div>
+                    <div class="member-name">Brayan Torres</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Santiago Alameida', 'Desarrollador Backend', 'SA')">
+                    <div class="member-avatar">SA</div>
+                    <div class="member-name">Santiago Alameida</div>
+                    <div class="member-role">Desarrollador Backend</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipo Frontend -->
+        <div class="team-category">
+            <h3>Equipo Frontend (6 miembros)</h3>
+            <div class="team-grid">
+                <!-- Líderes Frontend -->
+                <div class="team-member" onclick="openModal('Jose Suares', 'Líder Frontend', 'JS')">
+                    <div class="member-avatar">JS</div>
+                    <div class="member-name">Jose Suares</div>
+                    <div class="member-role">Líder Frontend</div>
+                </div>
+                <div class="team-member" onclick="openModal('David Rivero', 'Líder Frontend', 'DR')">
+                    <div class="member-avatar">DR</div>
+                    <div class="member-name">David Rivero</div>
+                    <div class="member-role">Líder Frontend</div>
+                </div>
+                
+                <!-- Equipo Frontend -->
+                <div class="team-member" onclick="openModal('Josh Carroll', 'Desarrollador Frontend', 'JC')">
+                    <div class="member-avatar">JC</div>
+                    <div class="member-name">Josh Carroll</div>
+                    <div class="member-role">Desarrollador Frontend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Wuil De La Cruz', 'Desarrollador Frontend', 'WC')">
+                    <div class="member-avatar">WC</div>
+                    <div class="member-name">Wuil De La Cruz</div>
+                    <div class="member-role">Desarrollador Frontend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Robinson Maza', 'Desarrollador Frontend', 'RM')">
+                    <div class="member-avatar">RM</div>
+                    <div class="member-name">Robinson Maza</div>
+                    <div class="member-role">Desarrollador Frontend</div>
+                </div>
+                <div class="team-member" onclick="openModal('Luis Chinchilla', 'Desarrollador Frontend', 'LC')">
+                    <div class="member-avatar">LC</div>
+                    <div class="member-name">Luis Chinchilla</div>
+                    <div class="member-role">Desarrollador Frontend</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Valores -->
+    <div class="about-section" id="valores">
+        <h2 style="color: #2d5016; margin-bottom: 2rem;">Nuestros Valores</h2>
+        <div class="values-section">
+            <div class="value-card">
+                <div class="value-icon">🌱</div>
+                <div class="value-title">Sostenibilidad</div>
+                <div class="value-description">Promovemos prácticas agrícolas que respeten el medio ambiente y aseguren recursos para futuras generaciones.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <div class="value-title">Colaboración</div>
+                <div class="value-description">Creemos en el trabajo en equipo y la construcción de una comunidad agrícola unida y solidaria.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💡</div>
+                <div class="value-title">Innovación</div>
+                <div class="value-description">Buscamos constantemente nuevas tecnologías y métodos para mejorar la productividad agrícola.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">📚</div>
+                <div class="value-title">Conocimiento</div>
+                <div class="value-description">Valoramos el aprendizaje continuo y la difusión de información de calidad para todos.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">⚖️</div>
+                <div class="value-title">Integridad</div>
+                <div class="value-description">Actuamos con transparencia, honestidad y responsabilidad en todas nuestras acciones.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🎯</div>
+                <div class="value-title">Excelencia</div>
+                <div class="value-description">Nos comprometemos a ofrecer servicios y contenidos de la más alta calidad.</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- MODAL POPUP -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-avatar" id="modalAvatar"></div>
+            <div class="modal-info">
+                <h3 id="modalName"></h3>
+                <p style="text-align: center; color: #4a7c2c; font-weight: 600; margin-bottom: 1.5rem;" id="modalRole"></p>
+                <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+                <p><strong>Especialización:</strong> <span id="modalSpec"></span></p>
+                <p><strong>Años de experiencia:</strong> <span id="modalExp"></span></p>
+                <p><strong>Proyectos completados:</strong> <span id="modalProjects"></span></p>
+                <p style="margin-top: 1rem;"><strong>Biografía:</strong><br><span id="modalBio"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // MODAL
+        function openModal(name, role, initials) {
+            const modal = document.getElementById('modal');
+            document.getElementById('modalAvatar').textContent = initials;
+            document.getElementById('modalName').textContent = name;
+            document.getElementById('modalRole').textContent = role;
+            document.getElementById('modalEmail').textContent = name.toLowerCase().replace(/\s/g, '.') + '@agrodataanalytics.com';
+            document.getElementById('modalPhone').textContent = '+57 ' + Math.floor(Math.random() * 9000000000 + 1000000000);
+            document.getElementById('modalSpec').textContent = role;
+            document.getElementById('modalExp').textContent = Math.floor(Math.random() * 10 + 1) + ' años';
+            document.getElementById('modalProjects').textContent = Math.floor(Math.random() * 50 + 5);
+            document.getElementById('modalBio').textContent = 'Profesional altamente capacitado con amplia experiencia en ' + role.toLowerCase() + '. Apasionado por la tecnología aplicada al sector agrícola y comprometido con la innovación y el desarrollo sostenible.';
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        // Cerrar modal al hacer clic fuera
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
+        });
+    </script>
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="redes">
+      <h4>encuentranos en:</h4>
+      <a href="https://www.facebook.com/?locale=es_LA">
+        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://co.linkedin.com/">
+        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
+      </a>
+      <a href="https://github.com/">
+        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+      </a>
+    </div>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+  </footer>   
+</body>
+</html>

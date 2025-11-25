@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroDataAnalytics-Quiénes somos</title>
+  <link rel="stylesheet" href="AgroNoticias.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+        <a href="index.html">
+          <h1>AgroDataAnalytics</h1>
+        </a>
+      </div>
+      
+      <nav class="nav-header">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <ul class="submenu">
+              <li><a href="index.html#carrusel">Carrusel</a></li>
+              <li><a href="index.html#mapa">Mapa</a></li>
+              <li><a href="index.html#referencias">Referencias</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="AgroNoticias.html" class="active">AgroNoticias</a>
+            <ul class="submenu">
+              <li><a href="">Destacadas</a></li>
+              <li><a href="">Nacional</a></li>
+              <li><a href="">Atlantico</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Analisis.html">Análisis</a>
+            <ul class="submenu">
+              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
+              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Agrotips.html">Agrotips</a>
+            <ul class="submenu">
+              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
+              <li><a href="Agrotips.html#videos">videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+            <ul class="submenu">
+              <li><a href="nosotros.html#quienes-somos">quienes somos</a></li>
+              <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+              <li><a href="nosotros.html#valores">valores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </div>
+  </header>
+
+
+ <div class="container">
+        <!-- Noticia Destacada -->
+        <div class="featured-news">
+            <span class="news-category" style="background: white; color: #1f3f2d;">⭐ DESTACADO</span>
+            <h2>390 Familias Beneficiadas con Producción de Yuca Industrial</h2>
+            <p>La Gobernación del Atlántico, junto con el Ministerio de Agricultura e Industrias del Maíz, invirtieron cerca de $650 millones en un proyecto para fortalecer la producción y comercialización de yuca industrial en el oriente del departamento. Este proyecto permite comercializar 2,000 toneladas del tubérculo con rendimientos entre 18 a 20 toneladas por hectárea, superando el promedio nacional de 12 toneladas.</p>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">45,000</div>
+                <div class="stat-label">Hectáreas cultivadas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18-20</div>
+                <div class="stat-label">Ton/ha rendimiento yuca</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12,000</div>
+                <div class="stat-label">Productores agrícolas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">600+</div>
+                <div class="stat-label">Ha palma y limón</div>
+            </div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filter-section">
+            <h3 style="text-align: center; margin-bottom: 1rem; color: #1f3f2d;">Filtrar por categoría</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterNews('all')">Todas</button>
+                <button class="filter-btn" onclick="filterNews('yuca')">Yuca</button>
+                <button class="filter-btn" onclick="filterNews('maiz')">Maíz</button>
+                <button class="filter-btn" onclick="filterNews('tecnologia')">Tecnología</button>
+                <button class="filter-btn" onclick="filterNews('mercado')">Mercado</button>
+                <button class="filter-btn" onclick="filterNews('sostenibilidad')">Sostenibilidad</button>
+            </div>
+        </div>
+
+        <!-- Grid de Noticias -->
+        <div class="news-grid" id="newsGrid">
+            <!-- Noticia 1 -->
+            <div class="news-card" data-category="yuca mercado">
+                <div class="news-image">🌾</div>
+                <div class="news-content">
+                    <span class="news-category">PRODUCCIÓN</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Cultivos de Yuca Industrial Lideran el Oriente del Atlántico</h3>
+                    <p class="news-description">34 pequeños agricultores forman alianza productiva logrando rendimientos de 18-20 toneladas por hectárea. Cada hectárea genera 3.5 empleos directos en la región.</p>
+                    <div class="news-tags">
+                        <span class="tag">Yuca</span>
+                        <span class="tag">Empleo</span>
+                        <span class="tag">Oriente</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="news-card" data-category="yuca maiz">
+                <div class="news-image">📊</div>
+                <div class="news-content">
+                    <span class="news-category">ESTADÍSTICAS</span>
+                    <div class="news-date">2020-2024</div>
+                    <h3 class="news-title">Principales Cultivos por Área Sembrada</h3>
+                    <p class="news-description">La yuca, maíz tradicional, mango y maíz tecnificado dominan las áreas sembradas. Repelón, Ponedera y Luruaco son los municipios líderes en producción.</p>
+                    <div class="news-tags">
+                        <span class="tag">Análisis</span>
+                        <span class="tag">Producción</span>
+                        <span class="tag">Municipios</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="news-card" data-category="mercado tecnologia">
+                <div class="news-image">🏭</div>
+                <div class="news-content">
+                    <span class="news-category">INDUSTRIA</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Industrias del Maíz Busca Incrementar Producción Local</h3>
+                    <p class="news-description">La planta en Malambo tiene capacidad para procesar 42,000 toneladas pero solo recibe 2,000. Buscan reducir costos de transporte comprando producción local del Atlántico.</p>
+                    <div class="news-tags">
+                        <span class="tag">Agroindustria</span>
+                        <span class="tag">Malambo</span>
+                        <span class="tag">Procesamiento</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 4 -->
+            <div class="news-card" data-category="tecnologia sostenibilidad">
+                <div class="news-image">🌱</div>
+                <div class="news-content">
+                    <span class="news-category">DIVERSIFICACIÓN</span>
+                    <div class="news-date">2024-2025</div>
+                    <h3 class="news-title">Expansión de Cultivos de Palma, Limón Tahití y Cacao</h3>
+                    <p class="news-description">La Gobernación impulsa la siembra de nuevos cultivos con más de 600 hectáreas establecidas. Meta: alcanzar 4,000 hectáreas para fortalecer la economía agrícola.</p>
+                    <div class="news-tags">
+                        <span class="tag">Diversificación</span>
+                        <span class="tag">Palma</span>
+                        <span class="tag">Cacao</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 5 -->
+            <div class="news-card" data-category="maiz">
+                <div class="news-image">🌽</div>
+                <div class="news-content">
+                    <span class="news-category">CULTIVOS TRADICIONALES</span>
+                    <div class="news-date">2018-2024</div>
+                    <h3 class="news-title">Maíz: Tercer Cultivo Más Tradicional del Atlántico</h3>
+                    <p class="news-description">Ponedera, Repelón y Manatí lideran la producción con cultivos que alcanzaron 2,650, 1,793 y 1,030 hectáreas respectivamente. El maíz tecnificado gana terreno.</p>
+                    <div class="news-tags">
+                        <span class="tag">Maíz</span>
+                        <span class="tag">Tradicional</span>
+                        <span class="tag">Ponedera</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 6 -->
+            <div class="news-card" data-category="mercado">
+                <div class="news-image">🍇</div>
+                <div class="news-content">
+                    <span class="news-category">FRUTICULTURA</span>
+                    <div class="news-date">2023-2024</div>
+                    <h3 class="news-title">Mango, Guayaba y Limón: Alto Rendimiento Frutal</h3>
+                    <p class="news-description">Aunque no ocupan grandes áreas, los frutales generan los mayores rendimientos. Malambo, Manatí y Santo Tomás lideran la producción de mango en el departamento.</p>
+                    <div class="news-tags">
+                        <span class="tag">Frutales</span>
+                        <span class="tag">Mango</span>
+                        <span class="tag">Exportación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 7 -->
+            <div class="news-card" data-category="sostenibilidad">
+                <div class="news-image">💧</div>
+                <div class="news-content">
+                    <span class="news-category">RECURSOS HÍDRICOS</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Proyectos de Agua para el Sur del Atlántico</h3>
+                    <p class="news-description">Se desarrollan proyectos para abastecer de agua potable a zonas rurales y tierras fértiles del sur. Sin agua no hay agricultura productiva, destaca la administración.</p>
+                    <div class="news-tags">
+                        <span class="tag">Agua</span>
+                        <span class="tag">Riego</span>
+                        <span class="tag">Infraestructura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 8 -->
+            <div class="news-card" data-category="tecnologia">
+                <div class="news-image">🔬</div>
+                <div class="news-content">
+                    <span class="news-category">INVESTIGACIÓN</span>
+                    <div class="news-date">2024-2025</div>
+                    <h3 class="news-title">Universidades Investigan Mejoramiento de Rendimientos</h3>
+                    <p class="news-description">Industrias del Maíz desarrollará proyectos de investigación con universidades y entidades de ciencia para mejorar los rendimientos de cultivos y hacer exitoso el modelo de negocio.</p>
+                    <div class="news-tags">
+                        <span class="tag">Investigación</span>
+                        <span class="tag">Universidad</span>
+                        <span class="tag">Innovación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 9 -->
+            <div class="news-card" data-category="mercado">
+                <div class="news-image">📈</div>
+                <div class="news-content">
+                    <span class="news-category">ECONOMÍA</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Atlántico Entre los 10 Mejores Suelos Agrícolas de Colombia</h3>
+                    <p class="news-description">Según el IGAC, el departamento tiene suelos de alta calidad productiva, pero necesita mayor inversión y tecnificación para aprovechar todo su potencial agrícola.</p>
+                    <div class="news-tags">
+                        <span class="tag">Potencial</span>
+                        <span class="tag">IGAC</span>
+                        <span class="tag">Suelos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 10 -->
+            <div class="news-card" data-category="sostenibilidad">
+                <div class="news-image">👨‍🌾</div>
+                <div class="news-content">
+                    <span class="news-category">CAPACITACIÓN</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Familias Campesinas Reciben Formación Empresarial</h3>
+                    <p class="news-description">Agricultores reciben capacitación en administración de empresas agrícolas, prácticas de comercialización, cuidado ambiental y ahorro a través del proyecto de yuca industrial.</p>
+                    <div class="news-tags">
+                        <span class="tag">Capacitación</span>
+                        <span class="tag">Campesinos</span>
+                        <span class="tag">Empresarismo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 11 -->
+            <div class="news-card" data-category="yuca">
+                <div class="news-image">🌾</div>
+                <div class="news-content">
+                    <span class="news-category">HISTORIA</span>
+                    <div class="news-date">Contexto Histórico</div>
+                    <h3 class="news-title">La Yuca: Cultivo Ancestral en Malambo</h3>
+                    <p class="news-description">Desde 1120 a.C., en el sitio de Malambo cerca de Barranquilla, existió una población que basó su subsistencia en el cultivo de yuca, evidenciado por cerámicas y budares encontrados.</p>
+                    <div class="news-tags">
+                        <span class="tag">Historia</span>
+                        <span class="tag">Ancestral</span>
+                        <span class="tag">Malambo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 12 -->
+            <div class="news-card" data-category="sostenibilidad">
+                <div class="news-image">🌍</div>
+                <div class="news-content">
+                    <span class="news-category">DESAFÍOS</span>
+                    <div class="news-date">2024</div>
+                    <h3 class="news-title">Repelón Busca Recuperar su Posición como Despensa Agrícola</h3>
+                    <p class="news-description">El municipio que hace seis décadas proveía tomate, sorgo, yuca y maíz a la región, busca revitalizar su agricultura a través de diversificación y mejora en distritos de riego.</p>
+                    <div class="news-tags">
+                        <span class="tag">Repelón</span>
+                        <span class="tag">Historia</span>
+                        <span class="tag">Reactivación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+
+  <footer>
+    <div class="redes">
+      <h4>encuentranos en:</h4>
+      <a href="https://www.facebook.com/?locale=es_LA">
+        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://co.linkedin.com/">
+        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
+      </a>
+      <a href="https://github.com/">
+        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+      </a>
+    </div>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+  </footer>   
+
+
+    <script>
+        function filterNews(category) {
+            const cards = document.querySelectorAll('.news-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    const categories = card.getAttribute('data-category');
+                    if (categories.includes(category)) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                }
+            });
+        }
+
+        // Add transition styles
+        document.querySelectorAll('.news-card').forEach(card => {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        });
+    </script>
+</body>
+</html>

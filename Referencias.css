@@ -1,0 +1,96 @@
+/* ======= CONTENIDO ======= */
+main {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+h2 {
+  color: #264e36;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.intro p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  font-size: 1.05em;
+}
+
+/* ======= FUENTES ======= */
+.fuentes {
+  margin-top: 2em;
+}
+
+.fuente {
+  margin-bottom: 2em;
+  border-left: 4px solid #264e36;
+  padding-left: 1em;
+}
+
+.fuente h3 {
+  color: #264e36;
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.fuente a {
+  color: #1e5035;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fuente a:hover {
+  text-decoration: underline;
+}
+
+/* ======= LOGOS ======= */
+.logos {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.logos-container img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.logos-container img:hover {
+  transform: scale(1.1);
+}
+
+/* ======= INFO EXTRA ======= */
+.info-extra {
+  margin-top: 4em;
+  background-color: #f9f9e6;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.info-extra p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.05em;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  text-align: center;
+  padding: 1.2em;
+  background-color: #264e36;
+  color: white;
+  margin-top: 3em;
+}
+
+

@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroDataAnalytics</title>
+  <link rel="stylesheet" href="Agrotips.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+ <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+        <a href="index.html">
+          <h1>AgroDataAnalytics</h1>
+        </a>
+      </div>
+      
+      <nav class="nav-header">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <ul class="submenu">
+              <li><a href="index.html#carrusel">Carrusel</a></li>
+              <li><a href="index.html#mapa">Mapa</a></li>
+              <li><a href="index.html#referencias">Referencias</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="AgroNoticias.html">AgroNoticias</a>
+            <ul class="submenu">
+              <li><a href="">Destacadas</a></li>
+              <li><a href="">Nacional</a></li>
+              <li><a href="">Atlantico</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Analisis.html">Análisis</a>
+            <ul class="submenu">
+              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
+              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Agrotips.html" class="active">Agrotips</a>
+            <ul class="submenu">
+              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
+              <li><a href="Agrotips.html#videos">videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+            <ul class="submenu">
+              <li><a href="nosotros.html#quienes-somos">quienes somos</a></li>
+              <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+              <li><a href="nosotros.html#valores">valores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </div>
+  </header>
+
+
+  <main class="agrotips-main">
+    <section class="agrotips-hero">
+      <div class="agrotips-hero-text">
+        <h2 id="cultivos">Agrotips</h2>
+        <p>
+          Recomendaciones prácticas basadas en datos para mejorar el manejo de los cultivos
+          y aprovechar mejor las condiciones del departamento del Atlántico.
+        </p>
+      </div>
+      <div class="agrotips-hero-filters">
+        <div class="field-group">
+          <label for="search-tip">Buscar tip</label>
+          <input type="text" id="search-tip" placeholder="Buscar por palabra clave (ej. riego, maíz, pH)..." />
+        </div>
+        <div class="field-group">
+          <label for="category-filter">Filtrar por categoría</label>
+          <select id="category-filter">
+            <option value="all">Todas las categorías</option>
+            <option value="suelo">Suelo</option>
+            <option value="riego">Riego</option>
+            <option value="clima">Clima</option>
+            <option value="gestion">Gestión del cultivo</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="agrotips-filters-buttons">
+      <button class="filter-btn active" data-category="all">Todas</button>
+      <button class="filter-btn" data-category="suelo">Suelo</button>
+      <button class="filter-btn" data-category="riego">Riego</button>
+      <button class="filter-btn" data-category="clima">Clima</button>
+      <button class="filter-btn" data-category="gestion">Gestión</button>
+    </section>
+
+    <!-- ======================= -->
+    <!-- GRID DE TIPS -->
+    <!-- ======================= -->
+    <section class="agrotips-grid" id="agrotips-grid">
+
+      <!-- ===== 8 TIPS: SUELO ===== -->
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Análisis básico de suelo">
+        </div>
+        <h3>Haz un análisis básico de suelo antes de sembrar</h3>
+        <p>
+          Conocer pH, textura y nutrientes evita aplicar fertilizantes a ciegas y mejora el rendimiento del cultivo.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Tomar muestras compuestas en zigzag en todo el lote.</li>
+          <li><strong>Uso:</strong> Repetir el análisis cada 2–3 años o tras cambios fuertes en el manejo.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Ajuste de pH del suelo">
+        </div>
+        <h3>Ajusta el pH hacia valores cercanos a neutro</h3>
+        <p>
+          Muchos cultivos responden mejor cuando el pH está entre 5.8 y 7.0, aumentando la disponibilidad de nutrientes.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Aplicar cal agrícola en suelos ácidos según dosis del laboratorio.</li>
+          <li><strong>Uso:</strong> Hacer la enmienda meses antes de la siembra principal.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Materia orgánica en el suelo">
+        </div>
+        <h3>Aumenta la materia orgánica del lote</h3>
+        <p>
+          La materia orgánica mejora la estructura, aireación y retención de agua, clave en climas cálidos.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Incorporar abonos orgánicos, compost o estiércol bien descompuesto.</li>
+          <li><strong>Uso:</strong> Evitar quemas de rastrojos para no perder carbono del suelo.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Drenaje del suelo">
+        </div>
+        <h3>Mejora el drenaje en zonas encharcables</h3>
+        <p>
+          El exceso de agua reduce oxígeno en las raíces y favorece enfermedades en cultivos sensibles.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Hacer canales de desagüe y camas elevadas donde sea posible.</li>
+          <li><strong>Uso:</strong> Revisar drenajes antes de la temporada de lluvias fuertes.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo5.jpg" alt="Compactación del suelo">
+        </div>
+        <h3>Evita la compactación por maquinaria</h3>
+        <p>
+          Un suelo compactado limita el desarrollo radicular y reduce la infiltración de agua.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Restringir el paso de maquinaria cuando el suelo esté muy húmedo.</li>
+          <li><strong>Uso:</strong> Mantener calles permanentes para tránsito de equipos.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Curvas de nivel">
+        </div>
+        <h3>Usa curvas de nivel en lotes con pendiente</h3>
+        <p>
+          Las terrazas y barreras vivas reducen la erosión y ayudan a conservar la capa fértil.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Trazar siembras siguiendo las curvas de nivel.</li>
+          <li><strong>Uso:</strong> Combinar con barreras de pastos o cultivos forrajeros.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Cobertura del suelo">
+        </div>
+        <h3>Mantén el suelo cubierto la mayor parte del año</h3>
+        <p>
+          Las coberturas vivas o mulch disminuyen la evaporación y protegen contra el impacto de la lluvia.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Usar residuos de cosecha o cultivos de cobertura entre hileras.</li>
+          <li><strong>Uso:</strong> Evitar dejar el suelo desnudo tras la cosecha.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="suelo">
+        <span class="tip-tag suelo">Suelo</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Salinidad del suelo">
+        </div>
+        <h3>Vigila la salinidad en zonas con riego intensivo</h3>
+        <p>
+          El uso prolongado de aguas con sales puede afectar cultivos sensibles como fríjol y algunas hortalizas.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Solicitar en el laboratorio la conductividad eléctrica del suelo.</li>
+          <li><strong>Uso:</strong> Programar riegos de lavado en suelos con tendencia a salinizarse.</li>
+        </ul>
+      </article>
+
+      <!-- ===== 8 TIPS: RIEGO ===== -->
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Horario de riego">
+        </div>
+        <h3>Riega en las horas más frescas del día</h3>
+        <p>
+          Aplicar el agua temprano en la mañana o al final de la tarde reduce la evaporación y mejora el aprovechamiento.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Evitar riegos a pleno mediodía en días muy calurosos.</li>
+          <li><strong>Uso:</strong> Ajustar turnos de riego según la temperatura ambiente.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo5.jpg" alt="Riego por goteo">
+        </div>
+        <h3>Prioriza sistemas de riego localizado cuando sea posible</h3>
+        <p>
+          El riego por goteo reduce pérdidas por evaporación y dirige el agua directamente a la raíz del cultivo.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Usar cintas de goteo en hortalizas y frutales.</li>
+          <li><strong>Uso:</strong> Revisar periódicamente taponamientos en goteros.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Calibración de aspersores">
+        </div>
+        <h3>Calibra tus aspersores para lograr uniformidad</h3>
+        <p>
+          Una mala distribución genera zonas encharcadas y otras secas dentro del mismo lote.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Medir el volumen aplicado en varios recipientes.</li>
+          <li><strong>Uso:</strong> Ajustar boquillas y presión según el patrón de riego.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Mulch para reducir evaporación">
+        </div>
+        <h3>Usa cobertura vegetal para reducir la evaporación</h3>
+        <p>
+          El mulch ayuda a mantener la humedad del suelo y permite espaciar los riegos en cultivos de ciclo corto.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Aplicar mulch orgánico alrededor de las plantas.</li>
+          <li><strong>Uso:</strong> Ideal en hortalizas como tomate, pimentón o ají.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Etapas críticas de riego">
+        </div>
+        <h3>Refuerza el riego en etapas críticas del cultivo</h3>
+        <p>
+          Floración y llenado de grano suelen ser fases muy sensibles al estrés hídrico.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Identificar las fases claves de cada cultivo.</li>
+          <li><strong>Uso:</strong> Asegurar buena humedad en maíz, fríjol y hortalizas durante floración.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Fuentes de agua">
+        </div>
+        <h3>Protege y monitorea la fuente de agua</h3>
+        <p>
+          La calidad del agua de riego influye en la salud del suelo y de los cultivos.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Evitar descargas de residuos o agroquímicos en canales y jagüeyes.</li>
+          <li><strong>Uso:</strong> Analizar periódicamente la calidad del agua utilizada.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo5.jpg" alt="Riego de emergencia">
+        </div>
+        <h3>Planifica riegos de emergencia para sequías cortas</h3>
+        <p>
+          Un riego oportuno en una ola de calor puede evitar pérdidas importantes de producción.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Tener identificado el orden de priorización de lotes.</li>
+          <li><strong>Uso:</strong> Priorizar cultivos de mayor valor o más sensibles al estrés.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="riego">
+        <span class="tip-tag riego">Riego</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Monitoreo de humedad del suelo">
+        </div>
+        <h3>Monitorea la humedad del suelo con herramientas simples</h3>
+        <p>
+          Desde el método del puño hasta sensores, medir la humedad evita tanto el exceso como el déficit de riego.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Revisar humedad al menos una vez por semana.</li>
+          <li><strong>Uso:</strong> Ajustar inmediatamente la frecuencia de riego según el resultado.</li>
+        </ul>
+      </article>
+
+      <!-- ===== 8 TIPS: CLIMA ===== -->
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Ventanas de siembra">
+        </div>
+        <h3>Elige ventanas de siembra según el clima local</h3>
+        <p>
+          Sembrar en fechas tradicionales no siempre coincide con las mejores condiciones actuales de lluvia y temperatura.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Revisar históricos de lluvia de los últimos años.</li>
+          <li><strong>Uso:</strong> Ajustar unas semanas la fecha de siembra si las lluvias se han desplazado.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Aprovechar temporadas de lluvia">
+        </div>
+        <h3>Aprovecha la temporada de lluvias para cultivos de alta demanda hídrica</h3>
+        <p>
+          Maíz y plátano responden bien cuando el periodo de establecimiento coincide con buena humedad.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Planear la siembra justo antes del inicio de las lluvias regulares.</li>
+          <li><strong>Uso:</strong> Reducir la necesidad de riego suplementario en los primeros estados.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Protección contra vientos">
+        </div>
+        <h3>Protege los cultivos de los vientos fuertes</h3>
+        <p>
+          Rompevientos vivos disminuyen daños en plátano, maíz alto y frutales.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Sembrar barreras de árboles o arbustos en el borde del lote.</li>
+          <li><strong>Uso:</strong> Evitar hileras de cultivos muy altos en la dirección predominante del viento.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Estaciones meteorológicas">
+        </div>
+        <h3>Utiliza datos de estaciones meteorológicas cercanas</h3>
+        <p>
+          Temperatura, humedad y lluvia diaria ayudan a decidir riegos, fertilización y aplicación de productos.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Consultar plataformas oficiales o estaciones locales.</li>
+          <li><strong>Uso:</strong> Registrar los datos más relevantes en un cuaderno o aplicación.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo5.jpg" alt="Olas de calor">
+        </div>
+        <h3>Anticípate a las olas de calor</h3>
+        <p>
+          Temperaturas muy altas pueden afectar floración y llenado de grano en varios cultivos.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Revisar alertas de altas temperaturas.</li>
+          <li><strong>Uso:</strong> Aumentar ligeramente la frecuencia de riego en los días más críticos.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Eventos extremos de lluvia">
+        </div>
+        <h3>Diseña rutas de evacuación de agua para lluvias extremas</h3>
+        <p>
+          Canales de alivio reducen el riesgo de inundación en cultivos como yuca y hortalizas.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Identificar los puntos más bajos del lote.</li>
+          <li><strong>Uso:</strong> Mantener limpios los canales antes de temporadas de lluvia intensa.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Información climática local">
+        </div>
+        <h3>Combina información climática regional con tu experiencia local</h3>
+        <p>
+          Los modelos climáticos son generales; la experiencia del productor ajusta mejor la realidad del lote.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Anotar fechas de primeros aguaceros y sequías cada año.</li>
+          <li><strong>Uso:</strong> Ajustar las decisiones del calendario agrícola con esos registros.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="clima">
+        <span class="tip-tag clima">Clima</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Selección de variedades">
+        </div>
+        <h3>Escoge variedades adaptadas al calor del Atlántico</h3>
+        <p>
+          Materiales tolerantes a altas temperaturas y periodos secos cortos son más estables en rendimiento.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Consultar qué variedades recomiendan entidades técnicas.</li>
+          <li><strong>Uso:</strong> Probar nuevas variedades en pequeñas áreas antes de ampliar la siembra.</li>
+        </ul>
+      </article>
+
+      <!-- ===== 8 TIPS: GESTIÓN ===== -->
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Registro de labores">
+        </div>
+        <h3>Lleva un registro simple de labores e insumos</h3>
+        <p>
+          Anotar qué se hizo, cuándo y con qué producto ayuda a analizar el resultado de cada campaña.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Registrar fecha, cultivo, dosis y responsable.</li>
+          <li><strong>Uso:</strong> Comparar rendimientos año a año y ajustar prácticas.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Rotación de cultivos">
+        </div>
+        <h3>Diseña rotaciones de cultivos que mejoren el suelo</h3>
+        <p>
+          Alternar gramíneas, leguminosas y hortalizas reduce plagas y mejora la fertilidad.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Incluir fríjol u otras leguminosas como parte de la rotación.</li>
+          <li><strong>Uso:</strong> Evitar repetir el mismo cultivo en el mismo lote varios ciclos seguidos.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Asociación de cultivos">
+        </div>
+        <h3>Aprovecha asociaciones de cultivos compatibles</h3>
+        <p>
+          Algunas combinaciones como maíz–fríjol o yuca–maíz mejoran el uso del espacio y los nutrientes.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Escoger especies que no compitan excesivamente por luz y agua.</li>
+          <li><strong>Uso:</strong> Calcular bien la distancia entre hileras para cada especie.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo5.jpg" alt="Mano de obra">
+        </div>
+        <h3>Planifica la mano de obra para las labores pico</h3>
+        <p>
+          Siembra, deshierbe y cosecha requieren más personal en periodos cortos de tiempo.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Tener un calendario de labores por semana.</li>
+          <li><strong>Uso:</strong> Coordinar con anticipación el apoyo de familiares o jornaleros.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo1.jpg" alt="Compra de insumos">
+        </div>
+        <h3>Compra insumos con tiempo y compara proveedores</h3>
+        <p>
+          La planificación permite conseguir mejores precios y evitar quedarse sin producto en momentos clave.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Solicitar al menos dos cotizaciones.</li>
+          <li><strong>Uso:</strong> Revisar fechas de vencimiento de fertilizantes y plaguicidas.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo2.jpg" alt="Comercialización de la cosecha">
+        </div>
+        <h3>Analiza opciones de comercialización antes de la cosecha</h3>
+        <p>
+          Vender de forma anticipada o en asociaciones puede mejorar el precio recibido por el productor.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Identificar compradores potenciales y sus requisitos de calidad.</li>
+          <li><strong>Uso:</strong> Evaluar la posibilidad de ventas directas a mercados locales.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo3.jpg" alt="Gestión de riesgos">
+        </div>
+        <h3>Evalúa los riesgos climáticos y económicos del cultivo</h3>
+        <p>
+          Conocer los principales riesgos ayuda a decidir el nivel de inversión y las medidas de protección.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Hacer una lista de riesgos probables y su impacto.</li>
+          <li><strong>Uso:</strong> Definir acciones preventivas para los riesgos más críticos.</li>
+        </ul>
+      </article>
+
+      <article class="agrotip-card" data-category="gestion">
+        <span class="tip-tag gestion">Gestión</span>
+        <div class="agrotip-media">
+          <img src="imagenes/campo4.jpg" alt="Seguros agrícolas">
+        </div>
+        <h3>Evalúa opciones de seguros agrícolas</h3>
+        <p>
+          Los seguros pueden ayudar a reducir el riesgo económico frente a eventos climáticos extremos.
+        </p>
+        <ul>
+          <li><strong>Recomendación:</strong> Revisar condiciones y coberturas disponibles en la región.</li>
+          <li><strong>Uso:</strong> Priorizar cultivos de mayor inversión.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <div class="agrotips-more">
+      <button id="toggle-more-tips" type="button">Mostrar más tips</button>
+    </div>
+
+    <p class="no-results" id="no-results" hidden>
+      No se encontraron tips con esos filtros. Intenta cambiar la categoría o la búsqueda.
+    </p>
+  
+    <!-- ======================= -->
+    <!-- Asistente interactivo de cultivos -->
+    <!-- ======================= -->
+    <section class="agrotips-tool">
+      <header class="tool-header">
+        <h2>Explora un cultivo sugerido</h2>
+        <p>
+          Selecciona unas condiciones básicas del lote y obtén una sugerencia rápida de cultivo
+          a partir de la lista anterior.
+        </p>
+      </header>
+      <div class="tool-grid">
+        <div class="tool-form">
+          <div class="field-group">
+            <label for="tool-soil">Tipo de suelo principal</label>
+            <select id="tool-soil">
+              <option value="ligero">Ligero / arenoso</option>
+              <option value="medio" selected>Intermedio</option>
+              <option value="pesado">Pesado / arcilloso</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="tool-water">Disponibilidad de agua</label>
+            <select id="tool-water">
+              <option value="baja">Baja</option>
+              <option value="media" selected>Media</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="tool-goal">Objetivo principal</label>
+            <select id="tool-goal">
+              <option value="rendimiento" selected>Maximizar rendimiento</option>
+              <option value="suelo">Mejorar la salud del suelo</option>
+              <option value="resiliencia">Tener mayor resistencia a sequía</option>
+            </select>
+          </div>
+
+          <button id="tool-run" type="button" class="tool-button">Ver recomendación</button>
+        </div>
+
+        <!-- RESULTADO DEL MINIJUEGO CON IMAGEN + TEXTO -->
+<div class="tool-result" id="tool-result">
+  <div class="tool-result-media">
+    <!-- Imagen inicial de consulta -->
+    <img id="tool-result-img"
+         src="imagenes/tool_placeholder.png"
+         alt="Explora un cultivo sugerido">
+  </div>
+  <div class="tool-result-text" id="tool-result-text">
+    <p>Elige tus condiciones y te mostraremos un cultivo recomendado junto con un par de razones.</p>
+  </div>
+</div>
+
+    </section>
+
+    <!-- ======================= -->
+   <section class="agrotips-crops">
+  <header class="crops-header">
+    <h2 id="recomendaciones">Cultivos recomendados</h2>
+    <p>
+      De acuerdo con las condiciones de suelo y clima del Atlántico, estos cultivos suelen presentar buena
+      adaptación. Esta lista es orientativa y se puede ajustar según el análisis específico del lote.
+    </p>
+  </header>
+
+  <div class="crops-grid">
+
+    <!-- Maíz -->
+    <article class="crop-card crop-maiz">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_maiz.png" alt="Icono maíz">
+        </div>
+        <div class="crop-text">
+          <h3>Maíz</h3>
+          <p class="crop-tagline">Alto potencial de rendimiento con buen manejo del suelo y del agua.</p>
+          <ul>
+            <li>Buena respuesta en suelos bien drenados con pH cercano a neutro.</li>
+            <li>Requiere un manejo cuidadoso de fertilización nitrogenada.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Yuca -->
+    <article class="crop-card crop-yuca">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_yuca.png" alt="Icono yuca">
+        </div>
+        <div class="crop-text">
+          <h3>Yuca</h3>
+          <p class="crop-tagline">Buena opción en zonas con periodos de sequía moderada.</p>
+          <ul>
+            <li>Tolerante a periodos cortos de sequía una vez establecida.</li>
+            <li>Se adapta a diferentes texturas de suelo si hay buen drenaje.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fríjol -->
+    <article class="crop-card crop-frijol">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_frijol.png" alt="Icono fríjol">
+        </div>
+        <div class="crop-text">
+          <h3>Fríjol</h3>
+          <p class="crop-tagline">Ayuda a mejorar la fertilidad del suelo.</p>
+          <ul>
+            <li>Aporta nitrógeno al sistema mediante fijación biológica.</li>
+            <li>Ideal en rotaciones que buscan mejorar la fertilidad del suelo.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Plátano -->
+    <article class="crop-card crop-platano">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_platano.png" alt="Icono plátano">
+        </div>
+        <div class="crop-text">
+          <h3>Plátano</h3>
+          <p class="crop-tagline">Requiere suelos profundos y buen aporte de materia orgánica.</p>
+          <ul>
+            <li>Funciona bien con riego disponible y buen drenaje.</li>
+            <li>Sensible a encharcamientos prolongados y vientos fuertes.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Hortalizas de ciclo corto -->
+    <article class="crop-card crop-hortalizas">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_hortalizas.png" alt="Icono hortalizas de ciclo corto">
+        </div>
+        <div class="crop-text">
+          <h3>Hortalizas de ciclo corto</h3>
+          <p class="crop-tagline">Permiten aprovechar ventanas climáticas favorables.</p>
+          <ul>
+            <li>Permiten aprovechar ventanas climáticas favorables.</li>
+            <li>Necesitan manejo cuidadoso de riego y protección fitosanitaria.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Melón -->
+    <article class="crop-card crop-melon">
+      <div class="crop-main">
+        <div class="crop-icon">
+          <img src="imagenes/icon_melon.png" alt="Icono melón">
+        </div>
+        <div class="crop-text">
+          <h3>Melón</h3>
+          <p class="crop-tagline">Buen desempeño en climas cálidos con riego bien manejado.</p>
+          <ul>
+            <li>Prefiere suelos ligeros o medianos, bien drenados y con buena materia orgánica.</li>
+            <li>Requiere riegos frecuentes pero sin encharcamientos para evitar pudriciones.</li>
+            <li>Responde muy bien a buena radiación solar y ventilación del cultivo.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- ======================= -->
+    <!-- Sección de videos recomendados (AL FINAL DEL MAIN) -->
+    <!-- ======================= -->
+    <section class="agrotips-videos">
+      <div class="agrotips-videos-header">
+        <h2 id="videos">Videos recomendados</h2>
+        <p>
+          Contenido en video para profundizar en prácticas sostenibles, interpretación de mapas y manejo de cultivos
+          en el departamento del Atlántico.
+        </p>
+      </div>
+
+      <div class="agrotips-videos-grid">
+        <!-- Video 1 -->
+        <article class="video-card">
+          <a class="video-thumb"
+             href="https://youtu.be/Rhtw5LW2gfQ"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img
+              class="video-thumb-img"
+              src="https://img.youtube.com/vi/Rhtw5LW2gfQ/hqdefault.jpg"
+              alt="Manejo del suelo y fertilización básica">
+            <span class="play-icon">▶</span>
+          </a>
+          <div class="video-content">
+            <h3>Manejo del suelo y fertilización básica</h3>
+            <p>
+              Introducción a la lectura de análisis de suelo y recomendaciones generales
+              para ajustar la fertilización.
+            </p>
+            <a href="https://youtu.be/Rhtw5LW2gfQ"
+               target="_blank"
+               rel="noopener noreferrer">Ver en YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="video-card">
+          <a class="video-thumb"
+             href="https://youtu.be/OD0GdvbMPAo"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img
+              class="video-thumb-img"
+              src="https://img.youtube.com/vi/OD0GdvbMPAo/hqdefault.jpg"
+              alt="Riego eficiente en climas cálidos">
+            <span class="play-icon">▶</span>
+          </a>
+          <div class="video-content">
+            <h3>Riego eficiente en climas cálidos</h3>
+            <p>
+              Principios básicos de riego localizado, programación según clima y reducción de pérdidas de agua.
+            </p>
+            <a href="https://youtu.be/OD0GdvbMPAo"
+               target="_blank"
+               rel="noopener noreferrer">Ver en YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 3 -->
+        <article class="video-card">
+          <a class="video-thumb"
+             href="https://youtu.be/HoX5JqtTc10"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img
+              class="video-thumb-img"
+              src="https://img.youtube.com/vi/HoX5JqtTc10/hqdefault.jpg"
+              alt="Uso de mapas para planear cultivos">
+            <span class="play-icon">▶</span>
+          </a>
+          <div class="video-content">
+            <h3>Uso de mapas para planear cultivos</h3>
+            <p>
+              Cómo interpretar mapas de aptitud de suelos y clima para seleccionar los cultivos más adecuados.
+            </p>
+            <a href="https://youtu.be/HoX5JqtTc10"
+               target="_blank"
+               rel="noopener noreferrer">Ver en YouTube</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <script>
+    (function() {
+      let cards = Array.from(document.querySelectorAll('.agrotip-card'));
+      const searchInput = document.getElementById('search-tip');
+      const categorySelect = document.getElementById('category-filter');
+      const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+      const noResults = document.getElementById('no-results');
+      const toggleMoreBtn = document.getElementById('toggle-more-tips');
+
+      let currentCategory = 'all';
+      let showingMore = false; // false = 4 tarjetas, true = todas
+
+      function ensureEightPerCategory() {
+        const categories = ["suelo", "riego", "clima", "gestion"];
+        const grid = document.getElementById('agrotips-grid');
+
+        categories.forEach(cat => {
+          const catCards = cards.filter(c => c.dataset.category === cat);
+          if (catCards.length === 0) return;
+
+          if (catCards.length < 8) {
+            const needed = 8 - catCards.length;
+
+            for (let i = 0; i < needed; i++) {
+              const original = catCards[i % catCards.length];
+              const clone = original.cloneNode(true);
+              clone.classList.add('duplicado');
+              clone.dataset.duplicate = "1";
+              grid.appendChild(clone);
+              cards.push(clone);
+            }
+          }
+        });
+      }
+
+      ensureEightPerCategory();
+
+      function cardMatchesFilters(card, searchTerm) {
+        const cardCategory = card.dataset.category;
+        const matchesCategory = currentCategory === 'all' || cardCategory === currentCategory;
+        const text = card.textContent.toLowerCase();
+        const matchesSearch = !searchTerm || text.includes(searchTerm);
+        return matchesCategory && matchesSearch;
+      }
+
+      function applyFilters() {
+        const searchTerm = (searchInput ? searchInput.value : '').toLowerCase().trim();
+        const matched = [];
+
+        cards.forEach(card => {
+          if (cardMatchesFilters(card, searchTerm)) {
+            matched.push(card);
+          }
+        });
+
+        // ocultar todas
+        cards.forEach(card => {
+          card.style.display = 'none';
+        });
+
+        // límite: 4 por defecto, todas si showingMore = true
+        const limit = showingMore ? matched.length : Math.min(4, matched.length);
+
+        for (let i = 0; i < limit; i++) {
+          matched[i].style.display = '';
+        }
+
+        if (noResults) {
+          noResults.hidden = matched.length !== 0;
+        }
+
+        // botón Mostrar más / menos visible si hay más de 4
+        if (toggleMoreBtn) {
+          toggleMoreBtn.style.display = matched.length > 4 ? 'inline-block' : 'none';
+          toggleMoreBtn.textContent = showingMore ? 'Mostrar menos tips' : 'Mostrar más tips';
+        }
+      }
+
+      if (toggleMoreBtn) {
+        toggleMoreBtn.addEventListener('click', function() {
+          showingMore = !showingMore;
+          applyFilters();
+        });
+      }
+
+      filterButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterButtons.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentCategory = btn.dataset.category || 'all';
+          showingMore = false; // al cambiar filtro, volvemos a 4
+          if (categorySelect) {
+            categorySelect.value = currentCategory;
+          }
+          applyFilters();
+        });
+      });
+
+      if (categorySelect) {
+        categorySelect.addEventListener('change', function() {
+          currentCategory = categorySelect.value || 'all';
+          showingMore = false;
+          filterButtons.forEach(function(b) {
+            b.classList.toggle('active', b.dataset.category === currentCategory);
+            if (currentCategory === 'all' && b.dataset.category === 'all') {
+              b.classList.add('active');
+            }
+          });
+          applyFilters();
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          showingMore = false; // al cambiar búsqueda, volvemos a 4
+          applyFilters();
+        });
+      }
+
+      // Asistente interactivo de cultivos (minijuego) con imagen
+      const soilSelect = document.getElementById('tool-soil');
+      const waterSelect = document.getElementById('tool-water');
+      const goalSelect = document.getElementById('tool-goal');
+      const runBtn = document.getElementById('tool-run');
+      const resultBox = document.getElementById('tool-result-text');
+      const resultImg = document.getElementById('tool-result-img');
+
+      function suggestCrop() {
+        if (!soilSelect || !waterSelect || !goalSelect || !resultBox || !resultImg) return;
+
+        const soil = soilSelect.value;
+        const water = waterSelect.value;
+        const goal = goalSelect.value;
+
+        var suggestion = {
+          name: 'Maíz',
+          text: 'Buen potencial de rendimiento en suelos bien drenados con disponibilidad de agua media a alta.',
+          detail: 'Requiere buena fertilización y manejo cuidadoso del riego.',
+          img: 'imagenes/campo3.jpg'
+        };
+
+        if (water === 'baja' || goal === 'resiliencia') {
+          suggestion = {
+            name: 'Yuca',
+            text: 'Tolera mejor periodos de baja disponibilidad de agua una vez establecida.',
+            detail: 'Adecuada para suelos con drenaje aceptable y manejo moderado de insumos.',
+            img: 'imagenes/campo4.jpg'
+          };
+        }
+
+        if (goal === 'suelo') {
+          suggestion = {
+            name: 'Fríjol',
+            text: 'Contribuye a la fijación biológica de nitrógeno y mejora la fertilidad del suelo.',
+            detail: 'Puede integrarse en rotaciones para recuperar lotes con agotamiento de nutrientes.',
+            img: 'imagenes/campo3.jpg'
+          };
+        }
+
+        if (soil === 'pesado' && water === 'alta') {
+          suggestion = {
+            name: 'Plátano',
+            text: 'Prefiere suelos profundos con buen contenido de materia orgánica y riego disponible.',
+            detail: 'Requiere evitar encharcamientos prolongados y protegerse del viento.',
+            img: 'imagenes/campo5.jpg'
+          };
+        }
+
+        var html = '<h3>' + suggestion.name + '</h3>' +
+                  '<p>' + suggestion.text + '</p>' +
+                  '<ul><li>' + suggestion.detail + '</li></ul>';
+
+        resultBox.innerHTML = html;
+        resultImg.src = suggestion.img;
+        resultImg.alt = 'Cultivo recomendado: ' + suggestion.name;
+      }
+
+      if (runBtn) {
+        runBtn.addEventListener('click', suggestCrop);
+      }
+
+      // Primera aplicación de filtros
+      applyFilters();
+    })();
+  </script>
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+
+       <footer>
+    <div class="redes">
+      <h4>encuentranos en:</h4>
+      <a href="https://www.facebook.com/?locale=es_LA">
+        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://co.linkedin.com/">
+        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
+      </a>
+      <a href="https://github.com/">
+        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+      </a>
+    </div>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+  </footer>   
+</body>
+</html> 
