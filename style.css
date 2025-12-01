@@ -27,6 +27,8 @@
   opacity: 1;
 }
 
+/* ======= OVERLAY ======= */
+/* CORREGIDO: ya no bloquea clics */
 .overlay {
   background-color: rgba(0, 0, 0, 0.45);
   color: white;
@@ -36,24 +38,56 @@
   padding: 2em;
   border-radius: 10px;
   max-width: 500px;
+  pointer-events: none;
+  text-align: left; /* AGREGADO: alinea todo a la izquierda */
 }
 
 .overlay h2 {
   font-size: 2em;
   margin: 0 0 0.5em;
+  text-align: left; /* AGREGADO: asegura que el título esté a la izquierda */
 }
 
-.btn {
-  background-color: #b8860b; /* ocre */
+.overlay p {
+  text-align: left;
+  width: auto; /* CAMBIADO: de 150px a auto para que use todo el ancho disponible */
+  height: auto;
+  margin-bottom: 1em; /* AGREGADO: espacio entre el texto y el botón */
+}
+
+/* ======= BOTÓN DEL CARRUSEL ======= */
+/* Actualizado con la paleta verde del sitio */
+.overlay a {
+  display: inline-block; /* AGREGADO: para que el enlace se comporte correctamente */
+  text-align: flex-end; /* AGREGADO: alinea el enlace a la izquierda */
+}
+
+.overlay a button{
+  background-color: #1f3f2d; /* verde principal */
   color: white;
+  margin-right: 0;
   padding: 0.8em 1.2em;
   text-decoration: none;
   border-radius: 5px;
   transition: 0.3s;
+  font-weight: 600;
+  pointer-events: auto; /* <-- permite clics */
+  z-index: 50;
+  border: none; /* AGREGADO: elimina borde por defecto del botón */
+  cursor: pointer; /* AGREGADO: cambia el cursor al pasar sobre el botón */
+  display: block; /* AGREGADO: hace que el botón esté alineado a la izquierda */
+}
+
+.info-extra p{
+  text-align: center;
 }
 
 .btn:hover {
-  background-color: #806517;
+  background-color: #2d5a3d;
+}
+
+.overlay a button:hover { /* AGREGADO: hover específico para el botón del overlay */
+  background-color: #2d5a3d;
 }
 
 /* ======= BOTONES DEL CARRUSEL ======= */
@@ -79,49 +113,10 @@
 .prev { left: 20px; }
 .next { right: 20px; }
 
-    .card {
-      background: #D1DED1;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 15px 40px #fcfcfc;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      box-shadow: 0 10px 30px #15695C;
-      transform: translateY(-10px);
-    }
-
-    .card-icon {
-      width: 60px;
-      height: 60px;
-      background: linear-gradient(135deg, #1b5834 0%, #ffffff 100%);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-    }
-
-    .card h3 {
-      color: #22422f;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .card p {
-      color: #22422f;
-      line-height: 1.6;
-      font-size: 1.05rem;
-    }
-
-
-
 /* ======= MAPA ======= */
 .mapa {
   padding: 3em 5%;
-  background-color: #f7fff7;
+  background-color: white; /* unificado con paleta verde */
   text-align: center;
 }
 
@@ -136,7 +131,7 @@
 .referencias {
   width: 90%;
   margin: auto;
-  background-color: #e9f7ec;
+  background-color: #e8f5e8;
   padding: 2em 5%;
 }
 
@@ -148,17 +143,17 @@
 .referencias li {
   margin: 0.5em 0;
   font-size: 1.1em;
+  color: #1f3f2d;
 }
 
 /* ======= INFO EXTRA ======= */
 .info-extra {
   width: 90%;
-  background-color: #f9f9e6;
+  background-color: #e8f5e8;
   padding: 2em;
   border-radius: 10px;
   margin: auto;
   margin-top: 4em;
-
 }
 
 .info-extra p {
@@ -167,11 +162,14 @@
   font-size: 1.05em;
 }
 
-h2{text-align: center;}
+h2 {
+  text-align: center;
+  color: white; /* coherente con otras secciones */
+}
 
 /* ======= FOOTER ======= */
 footer {
-  background-color: #264e36;
+  background-color: #1f3f2d;
   color: white;
   text-align: center;
   padding: 1em 0;
@@ -210,6 +208,23 @@ footer {
   .carousel button {
     font-size: 1.5em;
   }
+
+  .overlay {
+    bottom: 10%;
+    left: 5%;
+    max-width: 90%;
+  }
 }
 
+h3{
+  color: #1f3f2d;
+  text-align: center;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
+.info-extra h3{
+  margin: 25px;
+}
