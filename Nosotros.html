@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroDataAnalytics</title>
+  <title>AgroDataAnalytics - Referencias</title>
   <link rel="stylesheet" href="Nosotros.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -56,17 +56,17 @@
             <a href="Agrotips.html">Agrotips</a>
             <ul class="submenu">
               <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
-              <li><a href="Agrotips.html#videos">videos</a></li>
-              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
+              <li><a href="Agrotips.html#videos">Videos</a></li>
+              <li><a href="Agrotips.html#recomendaciones">Recomendaciones</a></li>
             </ul>
           </li>
           
           <li>
             <a href="Nosotros.html" class="active">Nosotros</a>
             <ul class="submenu">
-              <li><a href="Nosotros.html#quienes-somos">quienes somos</a></li>
-              <li><a href="Nosotros.html#nuestro-equipo">nuestro equipo</a></li>
-              <li><a href="Nosotros.html#valores">valores</a></li>
+              <li><a href="Nosotros.html#quienes-somos">Quienes somos</a></li>
+              <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
+              <li><a href="Nosotros.html#valores">Valores</a></li>
             </ul>
           </li>
         </ul>
@@ -95,7 +95,7 @@
       <div class="card">
         <div class="card-icon">🔭</div>
         <h3>Visión</h3>
-        <p>Ser la plataforma líder en análisis de datos agrícolas en el Atlántico, impulsando la innovación y la transformación digital de la región para garantizar el desarrollo sostenible del sector agrícola.</p>
+        <p>Ser la plataforma líder en análisis de datos agrícolas en América Latina, impulsando la innovación y la transformación digital del sector para garantizar la seguridad alimentaria y el desarrollo sostenible.</p>
       </div>
 
       <div class="card">
@@ -111,7 +111,7 @@
 
         <!-- Líder de Proyecto -->
         <div class="team-category" style="justify-content: center;">
-            <h3>Lider del Proyecto</h3>
+            <h3>Liderazgo del Proyecto</h3>
             <div class="team-grid">
                 <div class="team-member" onclick="openModal('Miguel Olivares', 'Líder de Proyecto', 'MO')">
                     <div class="member-avatar">MO</div>
@@ -131,9 +131,9 @@
                     <div class="member-name">Juan De La Cruz</div>
                     <div class="member-role">Líder Backend</div>
                 </div>
-                <div class="team-member" onclick="openModal('John Sandoval', 'Líder Backend', 'JS')">
+                <div class="team-member" onclick="openModal('Jons Sandoval', 'Líder Backend', 'JS')">
                     <div class="member-avatar">JS</div>
-                    <div class="member-name">John Sandoval</div>
+                    <div class="member-name">Jons Sandoval</div>
                     <div class="member-role">Líder Backend</div>
                 </div>
                 
@@ -193,7 +193,7 @@
 
         <!-- Equipo Frontend -->
         <div class="team-category">
-            <h3>Equipo Frontend</h3>
+            <h3>Equipo Frontend </h3>
             <div class="team-grid">
                 <!-- Líderes Frontend -->
                 <div class="team-member" onclick="openModal('Jose Suares', 'Líder Frontend', 'JS')">
@@ -274,33 +274,157 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
-            <div class="modal-avatar" id="modalAvatar"></div>
+            <div class="modal-avatar" id="modalAvatar">
+                <img id="modalPhoto" src="" alt="Foto" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                <span id="modalInitials" style="font-size: 3rem; font-weight: bold;"></span>
+            </div>
             <div class="modal-info">
                 <h3 id="modalName"></h3>
                 <p style="text-align: center; color: #4a7c2c; font-weight: 600; margin-bottom: 1.5rem;" id="modalRole"></p>
-                <p><strong>Email:</strong> <span id="modalEmail"></span></p>
-                <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
-                <p><strong>Especialización:</strong> <span id="modalSpec"></span></p>
-                <p><strong>Años de experiencia:</strong> <span id="modalExp"></span></p>
-                <p><strong>Proyectos completados:</strong> <span id="modalProjects"></span></p>
-                <p style="margin-top: 1rem;"><strong>Biografía:</strong><br><span id="modalBio"></span></p>
+                <p><strong>📧 Email:</strong> <span id="modalEmail"></span></p>
+                <p><strong>📱 Teléfono:</strong> <span id="modalPhone"></span></p>
             </div>
         </div>
     </div>
 
     <script>
+        // Base de datos de fotos del equipo
+        const teamPhotos = {
+            'Miguel Olivares': 'imagenes/team/miguel_olivares.jpg',
+            'Juan De La Cruz': 'imagenes/team/juan_delacruz.jpg',
+            'John Sandoval': 'imagenes/team/jons_sandoval.jpg',
+            'Jean Arévalo': 'imagenes/team/jean_arevalo.jpg',
+            'Daniel Reyes': 'imagenes/team/daniel_reyes.jpg',
+            'Luis Herrera': 'imagenes/team/luis_herrera.jpg',
+            'Jesús De La Hoz': 'imagenes/team/jesus_delahoz.jpg',
+            'Julián Laverde': 'imagenes/team/julian_laverde.jpg',
+            'Jean Pier Pulido': 'imagenes/team/jeanpier_pulido.jpg',
+            'Camilo Visbal': 'imagenes/team/camilo_visbal.jpg',
+            'Ihan Donado': 'imagenes/team/ihan_donado.jpg',
+            'Brayan Torres': 'imagenes/team/brayan_torres.jpg',
+            'Santiago Alameida': 'imagenes/team/santiago_almeida.jpg',
+            'Jose Suares': 'imagenes/team/jose_suarez.jpg',
+            'David Rivero': 'imagenes/team/david_rivero.jpg',
+            'Josh Carroll': 'imagenes/team/josh_carroll.jpg',
+            'Wuil De La Cruz': 'imagenes/team/wuil_delacruz.jpg',
+            'Robinson Maza': 'imagenes/team/robinson_maza.jpg',
+            'Luis Chinchilla': 'imagenes/team/luis_chinchilla.jpg'
+        };
+ // Base de datos de contacto del equipo
+        const teamContacts = {
+            'Miguel Olivares': {
+                email: 'miguelolivaresmisena.edu.co@gmail.com',
+                phone: '+57 300 123 4567'
+            },
+            'Juan De La Cruz': {
+                email: 'juan.delacruz@agrodataanalytics.com',
+                phone: '+57 301 234 5678'
+            },
+            'Jons Sandoval': {
+                email: 'jonsmichael0523@gmail.com',
+                phone: '+57 302 345 6789'
+            },
+            'Jean Arévalo': {
+                email: 'arevalo_9702@outlook.es',
+                phone: '+57 303 456 7890'
+            },
+            'Daniel Reyes': {
+                email: 'daniel.reyes@agrodataanalytics.com',
+                phone: '+57 304 567 8901'
+            },
+            'Luis Herrera': {
+                email: 'luisherreraruizjunior@gmail.com',
+                phone: '+57 305 678 9012'
+            },
+            'Jesús De La Hoz': {
+                email: 'jesus.delahoz@agrodataanalytics.com',
+                phone: '+57 306 789 0123'
+            },
+            'Julián Laverde': {
+                email: 'julian.laverde@agrodataanalytics.com',
+                phone: '+57 307 890 1234'
+            },
+            'Jean Pier Pulido': {
+                email: 'jeanpier.pulido@agrodataanalytics.com',
+                phone: '+57 308 901 2345'
+            },
+            'Camilo Visbal': {
+                email: 'camilovisbal08@gmail.com',
+                phone: '+57 309 012 3456'
+            },
+            'Ihan Donado': {
+                email: 'ihan.donado@agrodataanalytics.com',
+                phone: '+57 310 123 4567'
+            },
+            'Brayan Torres': {
+                email: 'brayan.torres@agrodataanalytics.com',
+                phone: '+57 311 234 5678'
+            },
+            'Santiago Alameida': {
+                email: 'santialmeida307@gmail.com',
+                phone: '+57 312 345 6789'
+            },
+            'Jose Suares': {
+                email: 'suarez78789@gmail.com',
+                phone: '+57 313 456 7890'
+            },
+            'David Rivero': {
+                email: 'david.rivero0614@gmail.com',
+                phone: '+57 314 567 8901'
+            },
+            'Josh Carroll': {
+                email: 'joshcarroll800@gmail.com',
+                phone: '+57 315 678 9012'
+            },
+            'Wuil De La Cruz': {
+                email: 'delacruzwuil@gmail.com',
+                phone: '+57 316 789 0123'
+            },
+            'Robinson Maza': {
+                email: 'robinsonmazav@gmail.com',
+                phone: '+57 317 890 1234'
+            },
+            'Luis Chinchilla': {
+                email: 'angjobs672005@gmail.com',
+                phone: '+57 318 901 2345'
+            }
+        };
+
         // MODAL
         function openModal(name, role, initials) {
             const modal = document.getElementById('modal');
-            document.getElementById('modalAvatar').textContent = initials;
+            const photoImg = document.getElementById('modalPhoto');
+            const initialsSpan = document.getElementById('modalInitials');
+            
+            // Verificar si existe foto para esta persona
+            if (teamPhotos[name]) {
+                photoImg.src = teamPhotos[name];
+                photoImg.style.display = 'block';
+                initialsSpan.style.display = 'none';
+                
+                // Si la imagen falla al cargar, mostrar iniciales
+                photoImg.onerror = function() {
+                    photoImg.style.display = 'none';
+                    initialsSpan.textContent = initials;
+                    initialsSpan.style.display = 'block';
+                };
+            } else {
+                // Si no hay foto, mostrar iniciales
+                photoImg.style.display = 'none';
+                initialsSpan.textContent = initials;
+                initialsSpan.style.display = 'block';
+            }
+            
+            // Obtener información de contacto
+            const contact = teamContacts[name] || {
+                email: name.toLowerCase().replace(/\s/g, '.') + '@agrodataanalytics.com',
+                phone: '+57 300 000 0000'
+            };
+            
             document.getElementById('modalName').textContent = name;
             document.getElementById('modalRole').textContent = role;
-            document.getElementById('modalEmail').textContent = name.toLowerCase().replace(/\s/g, '.') + '@agrodataanalytics.com';
-            document.getElementById('modalPhone').textContent = '+57 ' + Math.floor(Math.random() * 9000000000 + 1000000000);
-            document.getElementById('modalSpec').textContent = role;
-            document.getElementById('modalExp').textContent = Math.floor(Math.random() * 10 + 1) + ' años';
-            document.getElementById('modalProjects').textContent = Math.floor(Math.random() * 50 + 5);
-            document.getElementById('modalBio').textContent = 'Profesional altamente capacitado con amplia experiencia en ' + role.toLowerCase() + '. Apasionado por la tecnología aplicada al sector agrícola y comprometido con la innovación y el desarrollo sostenible.';
+            document.getElementById('modalEmail').textContent = contact.email;
+            document.getElementById('modalPhone').textContent = contact.phone;
             
             modal.classList.add('active');
         }
@@ -341,9 +465,7 @@
     <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
   </footer>   
 </body>
-
 </html>
-
 
 
 
