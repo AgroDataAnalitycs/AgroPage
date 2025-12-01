@@ -12,7 +12,7 @@
 /* ---------- HERO / CABECERA ---------- */
 /* ======= AGROTIPS PAGE ======= */
 .agrotips-main {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 2em auto 3em;
   padding: 0 1.5em 2.5em;
@@ -46,6 +46,7 @@
   margin: 0;              /* manejamos el espacio con el ::after */
   font-size: 2.2em;
   color: #264e36;
+  text-align: left;
 }
 
 /* Línea verde larga debajo del título, como en Análisis */
@@ -110,26 +111,29 @@
 }
 
 /* ---------- BOTONES DE FILTRO ---------- */
-.agrotips-filters-buttons {
+.filter-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6em;
-  margin: 0.8em 0 1em;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .filter-btn {
-  border: 1px solid #264e36;
-  background-color: #ffffff;
+  border: 2px solid #264e36;
+  background-color: #e8f5e8;
   color: #264e36;
-  padding: 0.4em 0.9em;
-  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
   font-size: 0.85em;
   cursor: pointer;
-  transition: 0.2s;
+  font-weight: 600;
+  transition:  all 0.3s ease;
 }
 
 .filter-btn:hover {
-  background-color: #e0f0e8;
+  background: #264e36;
+  color: #e0f0e8;
+  transform: translateY(-2px);
 }
 
 .filter-btn.active {
@@ -582,4 +586,3 @@
     padding: 0 0.8em;
   }
 }
-
