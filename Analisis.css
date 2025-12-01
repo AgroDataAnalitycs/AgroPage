@@ -1,5 +1,4 @@
-
-        .container {
+.container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
@@ -32,6 +31,11 @@
             font-size: 1.4rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
+        }
+
+
+        section #power-bi{
+            align-items: center;
         }
 
         .content-grid {
@@ -146,4 +150,6 @@
 /* Estilo para el ícono de Font Awesome si se usa */
 .fa-download {
     margin-right: 8px;
+    margin-right: 8px;
+
 }
