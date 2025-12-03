@@ -1,0 +1,7478 @@
+[
+    {
+        "Municipio": "EL ENCANTO",
+        "Departamento": "AMAZONAS",
+        "pH": 5.41,
+        "lat": -1.74806,
+        "lng": -73.207114
+    },
+    {
+        "Municipio": "LETICIA",
+        "Departamento": "AMAZONAS",
+        "pH": 4.54,
+        "lat": -4.19895,
+        "lng": -69.941721
+    },
+    {
+        "Municipio": "MIRITÍ - PARANÁ",
+        "Departamento": "AMAZONAS",
+        "pH": 4.62,
+        "lat": -0.888833,
+        "lng": -70.98893
+    },
+    {
+        "Municipio": "PUERTO NARIÑO",
+        "Departamento": "AMAZONAS",
+        "pH": 4.52,
+        "lat": -3.779934,
+        "lng": -70.364937
+    },
+    {
+        "Municipio": "CALDAS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.54,
+        "lat": 6.091077,
+        "lng": -75.633673
+    },
+    {
+        "Municipio": "NARIÑO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.78,
+        "lat": 5.610777,
+        "lng": -75.176262
+    },
+    {
+        "Municipio": "ABEJORRAL",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.4,
+        "lat": 5.789315,
+        "lng": -75.428739
+    },
+    {
+        "Municipio": "ABRIAQUÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.25,
+        "lat": 6.632282,
+        "lng": -76.064304
+    },
+    {
+        "Municipio": "ALEJANDRÍA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.82,
+        "lat": 6.376061,
+        "lng": -75.141346
+    },
+    {
+        "Municipio": "AMAGÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.08,
+        "lat": 6.038708,
+        "lng": -75.702188
+    },
+    {
+        "Municipio": "AMALFI",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.04,
+        "lat": 6.909655,
+        "lng": -75.077501
+    },
+    {
+        "Municipio": "ANDES",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.02,
+        "lat": 5.657194,
+        "lng": -75.878828
+    },
+    {
+        "Municipio": "ANGELÓPOLIS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.11,
+        "lat": 6.109719,
+        "lng": -75.711389
+    },
+    {
+        "Municipio": "ANGOSTURA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.79,
+        "lat": 6.885175,
+        "lng": -75.335116
+    },
+    {
+        "Municipio": "ANORÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.16,
+        "lat": 7.074703,
+        "lng": -75.148355
+    },
+    {
+        "Municipio": "ANZÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.86,
+        "lat": 6.302641,
+        "lng": -75.854442
+    },
+    {
+        "Municipio": "APARTADÓ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.19,
+        "lat": 7.882968,
+        "lng": -76.625279
+    },
+    {
+        "Municipio": "ARBOLETES",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.74,
+        "lat": 8.849317,
+        "lng": -76.426708
+    },
+    {
+        "Municipio": "ARMENIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.89,
+        "lat": 6.155667,
+        "lng": -75.786647
+    },
+    {
+        "Municipio": "BARBOSA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.59,
+        "lat": 6.439195,
+        "lng": -75.331627
+    },
+    {
+        "Municipio": "BELLO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.1,
+        "lat": 6.333587,
+        "lng": -75.555245
+    },
+    {
+        "Municipio": "BELMIRA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.92,
+        "lat": 6.606319,
+        "lng": -75.667779
+    },
+    {
+        "Municipio": "BETANIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.8,
+        "lat": 5.74615,
+        "lng": -75.97679
+    },
+    {
+        "Municipio": "BETULIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.7,
+        "lat": 6.115208,
+        "lng": -75.984452
+    },
+    {
+        "Municipio": "BRICEÑO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.27,
+        "lat": 7.112803,
+        "lng": -75.55036
+    },
+    {
+        "Municipio": "BURITICÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.78,
+        "lat": 6.720759,
+        "lng": -75.907
+    },
+    {
+        "Municipio": "CÁCERES",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.02,
+        "lat": 7.578366,
+        "lng": -75.35205
+    },
+    {
+        "Municipio": "CAICEDO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.79,
+        "lat": 6.405607,
+        "lng": -75.98293
+    },
+    {
+        "Municipio": "CAMPAMENTO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.28,
+        "lat": 6.979771,
+        "lng": -75.298091
+    },
+    {
+        "Municipio": "CAÑASGORDAS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.51,
+        "lat": 6.753859,
+        "lng": -76.028228
+    },
+    {
+        "Municipio": "CARACOLÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.83,
+        "lat": 6.409829,
+        "lng": -74.757421
+    },
+    {
+        "Municipio": "CAREPA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.08,
+        "lat": 7.755148,
+        "lng": -76.652652
+    },
+    {
+        "Municipio": "CAROLINA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.13,
+        "lat": 6.725995,
+        "lng": -75.283192
+    },
+    {
+        "Municipio": "CAUCASIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.58,
+        "lat": 7.977278,
+        "lng": -75.197996
+    },
+    {
+        "Municipio": "CHIGORODÓ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.81,
+        "lat": 7.666147,
+        "lng": -76.681531
+    },
+    {
+        "Municipio": "CIUDAD BOLÍVAR",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.06,
+        "lat": 5.850273,
+        "lng": -76.021509
+    },
+    {
+        "Municipio": "COCORNÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.07,
+        "lat": 6.058295,
+        "lng": -75.185483
+    },
+    {
+        "Municipio": "CONCEPCIÓN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.28,
+        "lat": 6.394348,
+        "lng": -75.257587
+    },
+    {
+        "Municipio": "CONCORDIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.12,
+        "lat": 6.045738,
+        "lng": -75.908448
+    },
+    {
+        "Municipio": "COPACABANA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.26,
+        "lat": 6.348557,
+        "lng": -75.509384
+    },
+    {
+        "Municipio": "DABEIBA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.84,
+        "lat": 6.998112,
+        "lng": -76.261614
+    },
+    {
+        "Municipio": "DONMATÍAS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.23,
+        "lat": 6.485603,
+        "lng": -75.39263
+    },
+    {
+        "Municipio": "EBÉJICO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.38,
+        "lat": 6.325615,
+        "lng": -75.766413
+    },
+    {
+        "Municipio": "EL BAGRE",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.85,
+        "lat": 7.5975,
+        "lng": -74.799097
+    },
+    {
+        "Municipio": "EL CARMEN DE VIBORAL",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.63,
+        "lat": 6.082885,
+        "lng": -75.333901
+    },
+    {
+        "Municipio": "EL SANTUARIO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.9,
+        "lat": 6.136871,
+        "lng": -75.265465
+    },
+    {
+        "Municipio": "ENTRERRÍOS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.05,
+        "lat": 6.566273,
+        "lng": -75.517685
+    },
+    {
+        "Municipio": "ENVIGADO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.42,
+        "lat": 6.166695,
+        "lng": -75.582192
+    },
+    {
+        "Municipio": "FREDONIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.2,
+        "lat": 5.928039,
+        "lng": -75.675072
+    },
+    {
+        "Municipio": "FRONTINO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.17,
+        "lat": 6.776066,
+        "lng": -76.130765
+    },
+    {
+        "Municipio": "GIRALDO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.18,
+        "lat": 6.680808,
+        "lng": -75.952158
+    },
+    {
+        "Municipio": "GIRARDOTA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.34,
+        "lat": 6.379472,
+        "lng": -75.444238
+    },
+    {
+        "Municipio": "GÓMEZ PLATA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.09,
+        "lat": 6.683269,
+        "lng": -75.220018
+    },
+    {
+        "Municipio": "GRANADA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.19,
+        "lat": 6.142892,
+        "lng": -75.184446
+    },
+    {
+        "Municipio": "GUADALUPE",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.65,
+        "lat": 6.815069,
+        "lng": -75.239862
+    },
+    {
+        "Municipio": "GUARNE",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.73,
+        "lat": 6.27787,
+        "lng": -75.441612
+    },
+    {
+        "Municipio": "HELICONIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.92,
+        "lat": 6.206757,
+        "lng": -75.734322
+    },
+    {
+        "Municipio": "HISPANIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.5,
+        "lat": 5.799461,
+        "lng": -75.906587
+    },
+    {
+        "Municipio": "ITAGÜÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.55,
+        "lat": 6.175079,
+        "lng": -75.612056
+    },
+    {
+        "Municipio": "ITUANGO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.57,
+        "lat": 7.171629,
+        "lng": -75.764673
+    },
+    {
+        "Municipio": "JARDÍN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.84,
+        "lat": 5.597542,
+        "lng": -75.818982
+    },
+    {
+        "Municipio": "JERICÓ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.18,
+        "lat": 5.789748,
+        "lng": -75.785499
+    },
+    {
+        "Municipio": "LA CEJA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.58,
+        "lat": 6.028062,
+        "lng": -75.429433
+    },
+    {
+        "Municipio": "LA ESTRELLA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 7.3,
+        "lat": 6.145238,
+        "lng": -75.637708
+    },
+    {
+        "Municipio": "LA PINTADA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.21,
+        "lat": 5.743808,
+        "lng": -75.60781
+    },
+    {
+        "Municipio": "LA UNIÓN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.47,
+        "lat": 5.973845,
+        "lng": -75.360874
+    },
+    {
+        "Municipio": "LIBORINA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.59,
+        "lat": 6.677316,
+        "lng": -75.812838
+    },
+    {
+        "Municipio": "MACEO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.87,
+        "lat": 6.552116,
+        "lng": -74.78716
+    },
+    {
+        "Municipio": "MARINILLA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.82,
+        "lat": 6.173995,
+        "lng": -75.339345
+    },
+    {
+        "Municipio": "MEDELLÍN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.83,
+        "lat": 6.246631,
+        "lng": -75.581775
+    },
+    {
+        "Municipio": "MONTEBELLO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.35,
+        "lat": 5.946313,
+        "lng": -75.523455
+    },
+    {
+        "Municipio": "MUTATÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.23,
+        "lat": 7.242875,
+        "lng": -76.435875
+    },
+    {
+        "Municipio": "NECHÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.65,
+        "lat": 8.094129,
+        "lng": -74.77647
+    },
+    {
+        "Municipio": "NECOCLÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.37,
+        "lat": 8.434526,
+        "lng": -76.787271
+    },
+    {
+        "Municipio": "OLAYA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.27,
+        "lat": 6.626492,
+        "lng": -75.811773
+    },
+    {
+        "Municipio": "PEÑOL",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.25,
+        "lat": 6.219349,
+        "lng": -75.242693
+    },
+    {
+        "Municipio": "PUEBLORRICO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.09,
+        "lat": 5.79158,
+        "lng": -75.839903
+    },
+    {
+        "Municipio": "PUERTO BERRÍO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.14,
+        "lat": 6.487028,
+        "lng": -74.410016
+    },
+    {
+        "Municipio": "PUERTO NARE",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.52,
+        "lat": 6.186025,
+        "lng": -74.583012
+    },
+    {
+        "Municipio": "PUERTO TRIUNFO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.77,
+        "lat": 5.871318,
+        "lng": -74.64119
+    },
+    {
+        "Municipio": "REMEDIOS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.03,
+        "lat": 7.029424,
+        "lng": -74.698135
+    },
+    {
+        "Municipio": "RETIRO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.28,
+        "lat": 6.062454,
+        "lng": -75.501301
+    },
+    {
+        "Municipio": "RIONEGRO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.34,
+        "lat": 6.147148,
+        "lng": -75.377316
+    },
+    {
+        "Municipio": "SALGAR",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.49,
+        "lat": 5.964198,
+        "lng": -75.976807
+    },
+    {
+        "Municipio": "SAN ANDRÉS DE CUERQUÍA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.95,
+        "lat": 6.916676,
+        "lng": -75.674564
+    },
+    {
+        "Municipio": "SAN CARLOS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.1,
+        "lat": 6.187746,
+        "lng": -74.988097
+    },
+    {
+        "Municipio": "SAN FRANCISCO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.11,
+        "lat": 5.963476,
+        "lng": -75.101562
+    },
+    {
+        "Municipio": "SAN JERÓNIMO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.21,
+        "lat": 6.44809,
+        "lng": -75.726975
+    },
+    {
+        "Municipio": "SAN JOSÉ DE LA MONTAÑA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.6,
+        "lat": 6.85009,
+        "lng": -75.683352
+    },
+    {
+        "Municipio": "SAN JUAN DE URABÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.38,
+        "lat": 8.758964,
+        "lng": -76.52857
+    },
+    {
+        "Municipio": "SAN LUIS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.14,
+        "lat": 6.043017,
+        "lng": -74.993619
+    },
+    {
+        "Municipio": "SAN PEDRO DE LOS MILAGROS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.37,
+        "lat": 6.46012,
+        "lng": -75.556743
+    },
+    {
+        "Municipio": "SAN PEDRO DE URABÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.66,
+        "lat": 8.276884,
+        "lng": -76.380567
+    },
+    {
+        "Municipio": "SAN RAFAEL",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.88,
+        "lat": 6.293759,
+        "lng": -75.02849
+    },
+    {
+        "Municipio": "SAN ROQUE",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.07,
+        "lat": 6.485939,
+        "lng": -75.019109
+    },
+    {
+        "Municipio": "SAN VICENTE FERRER",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.64,
+        "lat": 6.282164,
+        "lng": -75.332616
+    },
+    {
+        "Municipio": "SANTA BÁRBARA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.29,
+        "lat": 5.875527,
+        "lng": -75.567351
+    },
+    {
+        "Municipio": "SANTA FÉ DE ANTIOQUIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.51,
+        "lat": 6.556484,
+        "lng": -75.826648
+    },
+    {
+        "Municipio": "SANTA ROSA DE OSOS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.01,
+        "lat": 6.643366,
+        "lng": -75.460723
+    },
+    {
+        "Municipio": "SANTO DOMINGO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.11,
+        "lat": 6.473032,
+        "lng": -75.164903
+    },
+    {
+        "Municipio": "SEGOVIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.75,
+        "lat": 7.079648,
+        "lng": -74.701596
+    },
+    {
+        "Municipio": "SONSÓN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.43,
+        "lat": 5.714851,
+        "lng": -75.309596
+    },
+    {
+        "Municipio": "SOPETRÁN",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.97,
+        "lat": 6.500745,
+        "lng": -75.747378
+    },
+    {
+        "Municipio": "TÁMESIS",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.16,
+        "lat": 5.664645,
+        "lng": -75.714429
+    },
+    {
+        "Municipio": "TARAZÁ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.97,
+        "lat": 7.580127,
+        "lng": -75.401407
+    },
+    {
+        "Municipio": "TARSO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.7,
+        "lat": 5.864542,
+        "lng": -75.822956
+    },
+    {
+        "Municipio": "TITIRIBÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.42,
+        "lat": 6.062391,
+        "lng": -75.791887
+    },
+    {
+        "Municipio": "TURBO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 6.28,
+        "lat": 8.089929,
+        "lng": -76.728858
+    },
+    {
+        "Municipio": "URAMITA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.65,
+        "lat": 6.898393,
+        "lng": -76.173284
+    },
+    {
+        "Municipio": "URRAO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.17,
+        "lat": 6.317343,
+        "lng": -76.133951
+    },
+    {
+        "Municipio": "VALDIVIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.11,
+        "lat": 7.1652,
+        "lng": -75.439274
+    },
+    {
+        "Municipio": "VALPARAÍSO",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.34,
+        "lat": 5.614555,
+        "lng": -75.624452
+    },
+    {
+        "Municipio": "VEGACHÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.78,
+        "lat": 6.773525,
+        "lng": -74.798714
+    },
+    {
+        "Municipio": "VENECIA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.53,
+        "lat": 5.964693,
+        "lng": -75.735544
+    },
+    {
+        "Municipio": "YALÍ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.85,
+        "lat": 6.676554,
+        "lng": -74.840059
+    },
+    {
+        "Municipio": "YARUMAL",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.83,
+        "lat": 6.963832,
+        "lng": -75.418828
+    },
+    {
+        "Municipio": "YOLOMBÓ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.77,
+        "lat": 6.594511,
+        "lng": -75.013385
+    },
+    {
+        "Municipio": "YONDÓ",
+        "Departamento": "ANTIOQUIA",
+        "pH": 5.75,
+        "lat": 7.00396,
+        "lng": -73.912445
+    },
+    {
+        "Municipio": "ZARAGOZA",
+        "Departamento": "ANTIOQUIA",
+        "pH": 4.92,
+        "lat": 7.488583,
+        "lng": -74.867075
+    },
+    {
+        "Municipio": "ARAUCA",
+        "Departamento": "ARAUCA",
+        "pH": 5.32,
+        "lat": 7.072726,
+        "lng": -70.747408
+    },
+    {
+        "Municipio": "ARAUQUITA",
+        "Departamento": "ARAUCA",
+        "pH": 5.34,
+        "lat": 7.02702,
+        "lng": -71.426733
+    },
+    {
+        "Municipio": "CRAVO NORTE",
+        "Departamento": "ARAUCA",
+        "pH": 4.92,
+        "lat": 6.303913,
+        "lng": -70.204286
+    },
+    {
+        "Municipio": "FORTUL",
+        "Departamento": "ARAUCA",
+        "pH": 5.62,
+        "lat": 6.796695,
+        "lng": -71.76877
+    },
+    {
+        "Municipio": "PUERTO RONDÓN",
+        "Departamento": "ARAUCA",
+        "pH": 4.76,
+        "lat": 6.281461,
+        "lng": -71.10339
+    },
+    {
+        "Municipio": "SARAVENA",
+        "Departamento": "ARAUCA",
+        "pH": 5.19,
+        "lat": 6.953926,
+        "lng": -71.872812
+    },
+    {
+        "Municipio": "TAME",
+        "Departamento": "ARAUCA",
+        "pH": 5.46,
+        "lat": 6.453324,
+        "lng": -71.754427
+    },
+    {
+        "Municipio": "BARRANQUILLA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.8,
+        "lat": 10.977961,
+        "lng": -74.815546
+    },
+    {
+        "Municipio": "BARANOA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.91,
+        "lat": 10.79445,
+        "lng": -74.916077
+    },
+    {
+        "Municipio": "CANDELARIA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.73,
+        "lat": 10.461903,
+        "lng": -74.879717
+    },
+    {
+        "Municipio": "GALAPA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.41,
+        "lat": 10.919033,
+        "lng": -74.870385
+    },
+    {
+        "Municipio": "JUAN DE ACOSTA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.49,
+        "lat": 10.83254,
+        "lng": -75.041032
+    },
+    {
+        "Municipio": "PALMAR DE VARELA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.38,
+        "lat": 10.738591,
+        "lng": -74.754765
+    },
+    {
+        "Municipio": "PONEDERA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.66,
+        "lat": 10.641779,
+        "lng": -74.753885
+    },
+    {
+        "Municipio": "REPELÓN",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.62,
+        "lat": 10.493357,
+        "lng": -75.125534
+    },
+    {
+        "Municipio": "SANTA LUCÍA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.15,
+        "lat": 10.324303,
+        "lng": -74.959204
+    },
+    {
+        "Municipio": "MALAMBO",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.0,
+        "lat": 10.857086,
+        "lng": -74.776923
+    },
+    {
+        "Municipio": "MANATÍ",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.07,
+        "lat": 10.449089,
+        "lng": -74.956867
+    },
+    {
+        "Municipio": "SABANALARGA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.55,
+        "lat": 10.63,
+        "lng": -74.925
+    },
+    {
+        "Municipio": "SANTO TOMÁS",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.84,
+        "lat": 10.758735,
+        "lng": -74.757859
+    },
+    {
+        "Municipio": "TUBARÁ",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.61,
+        "lat": 10.873586,
+        "lng": -74.978704
+    },
+    {
+        "Municipio": "CAMPO DE LA CRUZ",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.68,
+        "lat": 10.378291,
+        "lng": -74.880847
+    },
+    {
+        "Municipio": "LURUACO",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.8,
+        "lat": 10.610491,
+        "lng": -75.14199
+    },
+    {
+        "Municipio": "PIOJÓ",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.93,
+        "lat": 10.749216,
+        "lng": -75.107592
+    },
+    {
+        "Municipio": "POLONUEVO",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.49,
+        "lat": 10.777363,
+        "lng": -74.852981
+    },
+    {
+        "Municipio": "PUERTO COLOMBIA",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.33,
+        "lat":  10.9977,
+        "lng":  -74.95
+    },
+    {
+        "Municipio": "SABANAGRANDE",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.2,
+        "lat": 10.792453,
+        "lng": -74.759496
+    },
+    {
+        "Municipio": "SOLEDAD",
+        "Departamento": "ATLÁNTICO",
+        "pH": 6.32,
+        "lat": 10.909921,
+        "lng": -74.786054
+    },
+    {
+        "Municipio": "SUAN",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.13,
+        "lat": 10.335432,
+        "lng": -74.881687
+    },
+    {
+        "Municipio": "USIACURÍ",
+        "Departamento": "ATLÁNTICO",
+        "pH": 7.73,
+        "lat": 10.74298,
+        "lng": -74.976985
+    },
+    {
+        "Municipio": "CÓRDOBA",
+        "Departamento": "BOLÍVAR",
+        "pH": 7.65,
+        "lat": 9.586942,
+        "lng": -74.827399
+    },
+    {
+        "Municipio": "ACHÍ",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.9,
+        "lat": 8.570107,
+        "lng": -74.557676
+    },
+    {
+        "Municipio": "ALTOS DEL ROSARIO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.78,
+        "lat": 8.791865,
+        "lng": -74.164905
+    },
+    {
+        "Municipio": "ARENAL",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.1,
+        "lat": 8.458865,
+        "lng": -73.941099
+    },
+    {
+        "Municipio": "ARJONA",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.99,
+        "lat": 10.25666,
+        "lng": -75.344332
+    },
+    {
+        "Municipio": "ARROYOHONDO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.6,
+        "lat": 10.250075,
+        "lng": -75.019215
+    },
+    {
+        "Municipio": "BARRANCO DE LOBA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.58,
+        "lat": 8.947787,
+        "lng": -74.104391
+    },
+    {
+        "Municipio": "CALAMAR",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.4,
+        "lat": 10.250431,
+        "lng": -74.916144
+    },
+    {
+        "Municipio": "CANTAGALLO",
+        "Departamento": "BOLÍVAR",
+        "pH": 4.87,
+        "lat": 7.378678,
+        "lng": -73.914605
+    },
+    {
+        "Municipio": "CARTAGENA DE INDIAS",
+        "Departamento": "BOLÍVAR",
+        "pH": 7.06,
+        "lat": 10.385126,
+        "lng": -75.496269
+    },
+    {
+        "Municipio": "CICUCO",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.56,
+        "lat": 9.274281,
+        "lng": -74.645981
+    },
+    {
+        "Municipio": "CLEMENCIA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.76,
+        "lat": 10.567452,
+        "lng": -75.328469
+    },
+    {
+        "Municipio": "EL CARMEN DE BOLÍVAR",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.54,
+        "lat": 9.718653,
+        "lng": -75.121178
+    },
+    {
+        "Municipio": "EL GUAMO",
+        "Departamento": "BOLÍVAR",
+        "pH": 7.6,
+        "lat": 10.030958,
+        "lng": -74.976084
+    },
+    {
+        "Municipio": "EL PEÑÓN",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.28,
+        "lat": 8.988271,
+        "lng": -73.949274
+    },
+    {
+        "Municipio": "HATILLO DE LOBA",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.73,
+        "lat": 8.956014,
+        "lng": -74.077912
+    },
+    {
+        "Municipio": "MAGANGUÉ",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.95,
+        "lat": 9.263799,
+        "lng": -74.766742
+    },
+    {
+        "Municipio": "MAHATES",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.17,
+        "lat": 10.233285,
+        "lng": -75.191643
+    },
+    {
+        "Municipio": "MARÍA LA BAJA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.38,
+        "lat": 9.982402,
+        "lng": -75.300516
+    },
+    {
+        "Municipio": "MONTECRISTO",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.34,
+        "lat": 8.297234,
+        "lng": -74.471176
+    },
+    {
+        "Municipio": "MORALES",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.09,
+        "lat": 8.276558,
+        "lng": -73.868172
+    },
+    {
+        "Municipio": "NOROSÍ",
+        "Departamento": "BOLÍVAR",
+        "pH": 4.98,
+        "lat": 8.526259,
+        "lng": -74.038003
+    },
+    {
+        "Municipio": "PINILLOS",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.79,
+        "lat": 8.914947,
+        "lng": -74.462279
+    },
+    {
+        "Municipio": "REGIDOR",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.26,
+        "lat": 8.666258,
+        "lng": -73.821638
+    },
+    {
+        "Municipio": "SAN ESTANISLAO",
+        "Departamento": "BOLÍVAR",
+        "pH": 7.01,
+        "lat": 10.398602,
+        "lng": -75.153101
+    },
+    {
+        "Municipio": "SAN FERNANDO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.48,
+        "lat": 9.214183,
+        "lng": -74.323811
+    },
+    {
+        "Municipio": "SAN JACINTO",
+        "Departamento": "BOLÍVAR",
+        "pH": 7.06,
+        "lat": 9.830275,
+        "lng": -75.12105
+    },
+    {
+        "Municipio": "SAN JACINTO DEL CAUCA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.42,
+        "lat": 8.25158,
+        "lng": -74.721156
+    },
+    {
+        "Municipio": "SAN JUAN NEPOMUCENO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.52,
+        "lat": 9.953751,
+        "lng": -75.081761
+    },
+    {
+        "Municipio": "SAN MARTÍN DE LOBA",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.76,
+        "lat": 8.937485,
+        "lng": -74.039134
+    },
+    {
+        "Municipio": "SAN PABLO",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.3,
+        "lat": 7.476747,
+        "lng": -73.924602
+    },
+    {
+        "Municipio": "SANTA CATALINA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.57,
+        "lat": 10.605294,
+        "lng": -75.287855
+    },
+    {
+        "Municipio": "SANTA CRUZ DE MOMPOX",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.75,
+        "lat": 9.244241,
+        "lng": -74.42818
+    },
+    {
+        "Municipio": "SANTA ROSA",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.82,
+        "lat": 10.444396,
+        "lng": -75.369824
+    },
+    {
+        "Municipio": "SANTA ROSA DEL SUR",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.64,
+        "lat": 7.963938,
+        "lng": -74.052243
+    },
+    {
+        "Municipio": "SIMITÍ",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.19,
+        "lat": 7.953916,
+        "lng": -73.947264
+    },
+    {
+        "Municipio": "SOPLAVIENTO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.77,
+        "lat": 10.38839,
+        "lng": -75.136404
+    },
+    {
+        "Municipio": "TALAIGUA NUEVO",
+        "Departamento": "BOLÍVAR",
+        "pH": 5.32,
+        "lat": 9.30403,
+        "lng": -74.567479
+    },
+    {
+        "Municipio": "TURBACO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.84,
+        "lat": 10.348316,
+        "lng": -75.427249
+    },
+    {
+        "Municipio": "TURBANA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.71,
+        "lat": 10.274585,
+        "lng": -75.44265
+    },
+    {
+        "Municipio": "VILLANUEVA",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.61,
+        "lat": 10.444089,
+        "lng": -75.275613
+    },
+    {
+        "Municipio": "ZAMBRANO",
+        "Departamento": "BOLÍVAR",
+        "pH": 6.62,
+        "lat": 9.746306,
+        "lng": -74.817879
+    },
+    {
+        "Municipio": "BOYACÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.61,
+        "lat": 5.454578,
+        "lng": -73.361945
+    },
+    {
+        "Municipio": "CALDAS",
+        "Departamento": "BOYACÁ",
+        "pH": 5.24,
+        "lat": 6.091077,
+        "lng": -75.633673
+    },
+    {
+        "Municipio": "ALMEIDA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.25,
+        "lat": 4.970857,
+        "lng": -73.378933
+    },
+    {
+        "Municipio": "AQUITANIA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.54,
+        "lat": 5.518602,
+        "lng": -72.88399
+    },
+    {
+        "Municipio": "ARCABUCO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.13,
+        "lat": 5.755673,
+        "lng": -73.437503
+    },
+    {
+        "Municipio": "BELÉN",
+        "Departamento": "BOYACÁ",
+        "pH": 5.57,
+        "lat": 5.98923,
+        "lng": -72.911641
+    },
+    {
+        "Municipio": "BERBEO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.34,
+        "lat": 5.227451,
+        "lng": -73.12721
+    },
+    {
+        "Municipio": "BETÉITIVA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.88,
+        "lat": 5.909978,
+        "lng": -72.809014
+    },
+    {
+        "Municipio": "BOAVITA",
+        "Departamento": "BOYACÁ",
+        "pH": 7.05,
+        "lat": 6.330703,
+        "lng": -72.584905
+    },
+    {
+        "Municipio": "BRICEÑO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.08,
+        "lat": 7.112803,
+        "lng": -75.55036
+    },
+    {
+        "Municipio": "BUENAVISTA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.42,
+        "lat": 5.512594,
+        "lng": -73.94217
+    },
+    {
+        "Municipio": "BUSBANZÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 6.82,
+        "lat": 5.831393,
+        "lng": -72.884158
+    },
+    {
+        "Municipio": "CAMPOHERMOSO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.09,
+        "lat": 5.031676,
+        "lng": -73.104173
+    },
+    {
+        "Municipio": "CERINZA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.59,
+        "lat": 5.955939,
+        "lng": -72.947918
+    },
+    {
+        "Municipio": "CHINAVITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.67,
+        "lat": 5.167486,
+        "lng": -73.368476
+    },
+    {
+        "Municipio": "CHIQUINQUIRÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.18,
+        "lat": 5.61379,
+        "lng": -73.818745
+    },
+    {
+        "Municipio": "CHÍQUIZA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.93,
+        "lat": 5.639834,
+        "lng": -73.449463
+    },
+    {
+        "Municipio": "CHISCAS",
+        "Departamento": "BOYACÁ",
+        "pH": 5.43,
+        "lat": 6.553136,
+        "lng": -72.500957
+    },
+    {
+        "Municipio": "CHITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.52,
+        "lat": 6.187083,
+        "lng": -72.471892
+    },
+    {
+        "Municipio": "CHITARAQUE",
+        "Departamento": "BOYACÁ",
+        "pH": 4.98,
+        "lat": 6.027425,
+        "lng": -73.4471
+    },
+    {
+        "Municipio": "CHIVATÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.25,
+        "lat": 5.558949,
+        "lng": -73.282529
+    },
+    {
+        "Municipio": "CHIVOR",
+        "Departamento": "BOYACÁ",
+        "pH": 5.39,
+        "lat": 4.888173,
+        "lng": -73.368398
+    },
+    {
+        "Municipio": "CIÉNEGA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.47,
+        "lat": 5.408694,
+        "lng": -73.296049
+    },
+    {
+        "Municipio": "CÓMBITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.6,
+        "lat": 5.634545,
+        "lng": -73.323957
+    },
+    {
+        "Municipio": "COPER",
+        "Departamento": "BOYACÁ",
+        "pH": 5.02,
+        "lat": 5.475074,
+        "lng": -74.045636
+    },
+    {
+        "Municipio": "CORRALES",
+        "Departamento": "BOYACÁ",
+        "pH": 6.65,
+        "lat": 5.828064,
+        "lng": -72.844795
+    },
+    {
+        "Municipio": "COVARACHÍA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.66,
+        "lat": 6.500177,
+        "lng": -72.738978
+    },
+    {
+        "Municipio": "CUBARÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 4.99,
+        "lat": 6.997275,
+        "lng": -72.107939
+    },
+    {
+        "Municipio": "CUCAITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.99,
+        "lat": 5.544452,
+        "lng": -73.454338
+    },
+    {
+        "Municipio": "CUÍTIVA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.13,
+        "lat": 5.580367,
+        "lng": -72.965923
+    },
+    {
+        "Municipio": "DUITAMA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.09,
+        "lat": 5.822964,
+        "lng": -73.03063
+    },
+    {
+        "Municipio": "EL COCUY",
+        "Departamento": "BOYACÁ",
+        "pH": 5.48,
+        "lat": 6.407738,
+        "lng": -72.444537
+    },
+    {
+        "Municipio": "EL ESPINO",
+        "Departamento": "BOYACÁ",
+        "pH": 4.96,
+        "lat": 6.483027,
+        "lng": -72.497007
+    },
+    {
+        "Municipio": "FIRAVITOBA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.29,
+        "lat": 5.668885,
+        "lng": -72.993392
+    },
+    {
+        "Municipio": "FLORESTA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.79,
+        "lat": 5.859519,
+        "lng": -72.918111
+    },
+    {
+        "Municipio": "GACHANTIVÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.26,
+        "lat": 5.751891,
+        "lng": -73.549092
+    },
+    {
+        "Municipio": "GÁMEZA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.58,
+        "lat": 5.802333,
+        "lng": -72.80553
+    },
+    {
+        "Municipio": "GARAGOA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.6,
+        "lat": 5.083234,
+        "lng": -73.364413
+    },
+    {
+        "Municipio": "GUATEQUE",
+        "Departamento": "BOYACÁ",
+        "pH": 7.22,
+        "lat": 5.007321,
+        "lng": -73.471207
+    },
+    {
+        "Municipio": "GUAYATÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.73,
+        "lat": 4.967122,
+        "lng": -73.489698
+    },
+    {
+        "Municipio": "GÜICÁN DE LA SIERRA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.16,
+        "lat": 6.462864,
+        "lng": -72.411763
+    },
+    {
+        "Municipio": "IZA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.46,
+        "lat": 5.611577,
+        "lng": -72.979559
+    },
+    {
+        "Municipio": "JENESANO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.5,
+        "lat": 5.385813,
+        "lng": -73.363738
+    },
+    {
+        "Municipio": "JERICÓ",
+        "Departamento": "BOYACÁ",
+        "pH": 7.77,
+        "lat": 5.789748,
+        "lng": -75.785499
+    },
+    {
+        "Municipio": "LA CAPILLA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.23,
+        "lat": 5.095687,
+        "lng": -73.444347
+    },
+    {
+        "Municipio": "LA UVITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.44,
+        "lat": 6.31616,
+        "lng": -72.559982
+    },
+    {
+        "Municipio": "LA VICTORIA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.94,
+        "lat": 5.523792,
+        "lng": -74.234393
+    },
+    {
+        "Municipio": "MACANAL",
+        "Departamento": "BOYACÁ",
+        "pH": 5.02,
+        "lat": 4.972464,
+        "lng": -73.319593
+    },
+    {
+        "Municipio": "MARIPÍ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.41,
+        "lat": 5.550091,
+        "lng": -74.00405
+    },
+    {
+        "Municipio": "MIRAFLORES",
+        "Departamento": "BOYACÁ",
+        "pH": 5.26,
+        "lat": 5.196515,
+        "lng": -73.14563
+    },
+    {
+        "Municipio": "MONGUA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.7,
+        "lat": 5.754242,
+        "lng": -72.79809
+    },
+    {
+        "Municipio": "MONGUÍ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.56,
+        "lat": 5.723486,
+        "lng": -72.849292
+    },
+    {
+        "Municipio": "MONIQUIRÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.26,
+        "lat": 5.876331,
+        "lng": -73.573374
+    },
+    {
+        "Municipio": "MOTAVITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.19,
+        "lat": 5.5777,
+        "lng": -73.367841
+    },
+    {
+        "Municipio": "MUZO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.43,
+        "lat": 5.532758,
+        "lng": -74.10269
+    },
+    {
+        "Municipio": "NOBSA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.94,
+        "lat": 5.768046,
+        "lng": -72.937042
+    },
+    {
+        "Municipio": "NUEVO COLÓN",
+        "Departamento": "BOYACÁ",
+        "pH": 5.47,
+        "lat": 5.355317,
+        "lng": -73.456759
+    },
+    {
+        "Municipio": "OICATÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.46,
+        "lat": 5.595235,
+        "lng": -73.308399
+    },
+    {
+        "Municipio": "OTANCHE",
+        "Departamento": "BOYACÁ",
+        "pH": 4.64,
+        "lat": 5.657536,
+        "lng": -74.180965
+    },
+    {
+        "Municipio": "PACHAVITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.45,
+        "lat": 5.140065,
+        "lng": -73.396953
+    },
+    {
+        "Municipio": "PÁEZ",
+        "Departamento": "BOYACÁ",
+        "pH": 4.86,
+        "lat": 5.097319,
+        "lng": -73.052737
+    },
+    {
+        "Municipio": "PAIPA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.21,
+        "lat": 5.779894,
+        "lng": -73.11782
+    },
+    {
+        "Municipio": "PAJARITO",
+        "Departamento": "BOYACÁ",
+        "pH": 4.65,
+        "lat": 5.293783,
+        "lng": -72.703231
+    },
+    {
+        "Municipio": "PAUNA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.32,
+        "lat": 5.656323,
+        "lng": -73.978449
+    },
+    {
+        "Municipio": "PAYA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.97,
+        "lat": 5.625699,
+        "lng": -72.423775
+    },
+    {
+        "Municipio": "PAZ DE RÍO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.65,
+        "lat": 5.987645,
+        "lng": -72.749137
+    },
+    {
+        "Municipio": "PESCA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.19,
+        "lat": 5.558808,
+        "lng": -73.050872
+    },
+    {
+        "Municipio": "PISBA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.65,
+        "lat": 5.72141,
+        "lng": -72.486023
+    },
+    {
+        "Municipio": "PUERTO BOYACÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.73,
+        "lat": 5.976646,
+        "lng": -74.587782
+    },
+    {
+        "Municipio": "QUÍPAMA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.99,
+        "lat": 5.52055,
+        "lng": -74.180033
+    },
+    {
+        "Municipio": "RAMIRIQUÍ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.24,
+        "lat": 5.400303,
+        "lng": -73.334839
+    },
+    {
+        "Municipio": "RÁQUIRA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.81,
+        "lat": 5.539136,
+        "lng": -73.632543
+    },
+    {
+        "Municipio": "RONDÓN",
+        "Departamento": "BOYACÁ",
+        "pH": 4.86,
+        "lat": 5.357378,
+        "lng": -73.208474
+    },
+    {
+        "Municipio": "SABOYÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.13,
+        "lat": 5.697756,
+        "lng": -73.764456
+    },
+    {
+        "Municipio": "SÁCHICA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.39,
+        "lat": 5.584305,
+        "lng": -73.542539
+    },
+    {
+        "Municipio": "SAMACÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.15,
+        "lat": 5.492161,
+        "lng": -73.485589
+    },
+    {
+        "Municipio": "SAN EDUARDO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.08,
+        "lat": 5.22401,
+        "lng": -73.077747
+    },
+    {
+        "Municipio": "SAN JOSÉ DE PARE",
+        "Departamento": "BOYACÁ",
+        "pH": 5.1,
+        "lat": 6.018924,
+        "lng": -73.545397
+    },
+    {
+        "Municipio": "SAN LUIS DE GACENO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.71,
+        "lat": 4.81976,
+        "lng": -73.168076
+    },
+    {
+        "Municipio": "SAN MATEO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.96,
+        "lat": 6.401683,
+        "lng": -72.555264
+    },
+    {
+        "Municipio": "SAN MIGUEL",
+        "Departamento": "BOYACÁ",
+        "pH": 4.75,
+        "lat": 6.575315,
+        "lng": -72.644123
+    },
+    {
+        "Municipio": "SAN MIGUEL DE SEMA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.88,
+        "lat": 5.518083,
+        "lng": -73.722009
+    },
+    {
+        "Municipio": "SAN PABLO DE BORBUR",
+        "Departamento": "BOYACÁ",
+        "pH": 5.6,
+        "lat": 5.650743,
+        "lng": -74.069963
+    },
+    {
+        "Municipio": "SANTA MARÍA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.86,
+        "lat": 4.857193,
+        "lng": -73.263518
+    },
+    {
+        "Municipio": "SANTA ROSA DE VITERBO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.62,
+        "lat": 5.874547,
+        "lng": -72.982461
+    },
+    {
+        "Municipio": "SANTA SOFÍA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.01,
+        "lat": 5.713269,
+        "lng": -73.602707
+    },
+    {
+        "Municipio": "SANTANA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.17,
+        "lat": 6.056866,
+        "lng": -73.481639
+    },
+    {
+        "Municipio": "SATIVANORTE",
+        "Departamento": "BOYACÁ",
+        "pH": 5.94,
+        "lat": 6.131132,
+        "lng": -72.708458
+    },
+    {
+        "Municipio": "SIACHOQUE",
+        "Departamento": "BOYACÁ",
+        "pH": 5.4,
+        "lat": 5.511811,
+        "lng": -73.24466
+    },
+    {
+        "Municipio": "SOATÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 7.63,
+        "lat": 6.331945,
+        "lng": -72.684051
+    },
+    {
+        "Municipio": "SOCHA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.77,
+        "lat": 5.996717,
+        "lng": -72.691963
+    },
+    {
+        "Municipio": "SOCOTÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.2,
+        "lat": 6.041162,
+        "lng": -72.636653
+    },
+    {
+        "Municipio": "SOGAMOSO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.75,
+        "lat": 5.723976,
+        "lng": -72.924355
+    },
+    {
+        "Municipio": "SOMONDOCO",
+        "Departamento": "BOYACÁ",
+        "pH": 6.12,
+        "lat": 4.985726,
+        "lng": -73.433393
+    },
+    {
+        "Municipio": "SORA",
+        "Departamento": "BOYACÁ",
+        "pH": 4.79,
+        "lat": 5.56684,
+        "lng": -73.450153
+    },
+    {
+        "Municipio": "SORACÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.07,
+        "lat": 5.500898,
+        "lng": -73.332804
+    },
+    {
+        "Municipio": "SOTAQUIRÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.44,
+        "lat": 5.764986,
+        "lng": -73.246585
+    },
+    {
+        "Municipio": "SUSACÓN",
+        "Departamento": "BOYACÁ",
+        "pH": 5.89,
+        "lat": 6.230332,
+        "lng": -72.690289
+    },
+    {
+        "Municipio": "SUTAMARCHÁN",
+        "Departamento": "BOYACÁ",
+        "pH": 5.43,
+        "lat": 5.619781,
+        "lng": -73.620536
+    },
+    {
+        "Municipio": "SUTATENZA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.82,
+        "lat": 5.022989,
+        "lng": -73.452317
+    },
+    {
+        "Municipio": "TASCO",
+        "Departamento": "BOYACÁ",
+        "pH": 5.03,
+        "lat": 5.909821,
+        "lng": -72.781011
+    },
+    {
+        "Municipio": "TENZA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.68,
+        "lat": 5.076781,
+        "lng": -73.421176
+    },
+    {
+        "Municipio": "TIBANÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.61,
+        "lat": 5.317251,
+        "lng": -73.396457
+    },
+    {
+        "Municipio": "TIBASOSA",
+        "Departamento": "BOYACÁ",
+        "pH": 6.1,
+        "lat": 5.74723,
+        "lng": -72.999449
+    },
+    {
+        "Municipio": "TINJACÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.2,
+        "lat": 5.579713,
+        "lng": -73.646847
+    },
+    {
+        "Municipio": "TIPACOQUE",
+        "Departamento": "BOYACÁ",
+        "pH": 6.74,
+        "lat": 6.419203,
+        "lng": -72.691729
+    },
+    {
+        "Municipio": "TOCA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.51,
+        "lat": 5.566464,
+        "lng": -73.184794
+    },
+    {
+        "Municipio": "TOGÜÍ",
+        "Departamento": "BOYACÁ",
+        "pH": 4.98,
+        "lat": 5.937438,
+        "lng": -73.513655
+    },
+    {
+        "Municipio": "TÓPAGA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.9,
+        "lat": 5.768201,
+        "lng": -72.832245
+    },
+    {
+        "Municipio": "TOTA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.26,
+        "lat": 5.560497,
+        "lng": -72.985898
+    },
+    {
+        "Municipio": "TUNJA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.19,
+        "lat": 5.53988,
+        "lng": -73.355539
+    },
+    {
+        "Municipio": "TUNUNGUÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 4.96,
+        "lat": 5.730582,
+        "lng": -73.933155
+    },
+    {
+        "Municipio": "TURMEQUÉ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.24,
+        "lat": 5.323261,
+        "lng": -73.491825
+    },
+    {
+        "Municipio": "TUTA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.3,
+        "lat": 5.689082,
+        "lng": -73.230285
+    },
+    {
+        "Municipio": "TUTAZÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.35,
+        "lat": 6.032608,
+        "lng": -72.856035
+    },
+    {
+        "Municipio": "ÚMBITA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.12,
+        "lat": 5.221176,
+        "lng": -73.456917
+    },
+    {
+        "Municipio": "VENTAQUEMADA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.24,
+        "lat": 5.368739,
+        "lng": -73.522368
+    },
+    {
+        "Municipio": "VILLA DE LEYVA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.76,
+        "lat": 5.632455,
+        "lng": -73.524948
+    },
+    {
+        "Municipio": "VIRACACHÁ",
+        "Departamento": "BOYACÁ",
+        "pH": 5.36,
+        "lat": 5.436833,
+        "lng": -73.296894
+    },
+    {
+        "Municipio": "ZETAQUIRA",
+        "Departamento": "BOYACÁ",
+        "pH": 5.25,
+        "lat": 5.283443,
+        "lng": -73.17098
+    },
+    {
+        "Municipio": "RISARALDA",
+        "Departamento": "CALDAS",
+        "pH": 5.52,
+        "lat": 5.164509,
+        "lng": -75.76722
+    },
+    {
+        "Municipio": "AGUADAS",
+        "Departamento": "CALDAS",
+        "pH": 5.47,
+        "lat": 5.610244,
+        "lng": -75.45487
+    },
+    {
+        "Municipio": "ARANZAZU",
+        "Departamento": "CALDAS",
+        "pH": 5.62,
+        "lat": 5.271195,
+        "lng": -75.49129
+    },
+    {
+        "Municipio": "BELALCÁZAR",
+        "Departamento": "CALDAS",
+        "pH": 5.39,
+        "lat": 4.993785,
+        "lng": -75.811918
+    },
+    {
+        "Municipio": "CHINCHINÁ",
+        "Departamento": "CALDAS",
+        "pH": 5.79,
+        "lat": 4.985227,
+        "lng": -75.607529
+    },
+    {
+        "Municipio": "FILADELFIA",
+        "Departamento": "CALDAS",
+        "pH": 5.64,
+        "lat": 5.297091,
+        "lng": -75.562474
+    },
+    {
+        "Municipio": "LA DORADA",
+        "Departamento": "CALDAS",
+        "pH": 6.44,
+        "lat": 5.460834,
+        "lng": -74.668819
+    },
+    {
+        "Municipio": "LA MERCED",
+        "Departamento": "CALDAS",
+        "pH": 5.74,
+        "lat": 5.39647,
+        "lng": -75.546486
+    },
+    {
+        "Municipio": "MANIZALES",
+        "Departamento": "CALDAS",
+        "pH": 5.99,
+        "lat": 5.057657,
+        "lng": -75.491025
+    },
+    {
+        "Municipio": "MANZANARES",
+        "Departamento": "CALDAS",
+        "pH": 5.53,
+        "lat": 5.255699,
+        "lng": -75.152829
+    },
+    {
+        "Municipio": "MARQUETALIA",
+        "Departamento": "CALDAS",
+        "pH": 5.35,
+        "lat": 5.297525,
+        "lng": -75.053097
+    },
+    {
+        "Municipio": "MARULANDA",
+        "Departamento": "CALDAS",
+        "pH": 5.8,
+        "lat": 5.284304,
+        "lng": -75.259721
+    },
+    {
+        "Municipio": "NEIRA",
+        "Departamento": "CALDAS",
+        "pH": 6.42,
+        "lat": 5.166895,
+        "lng": -75.520006
+    },
+    {
+        "Municipio": "NORCASIA",
+        "Departamento": "CALDAS",
+        "pH": 5.23,
+        "lat": 5.574796,
+        "lng": -74.889543
+    },
+    {
+        "Municipio": "PÁCORA",
+        "Departamento": "CALDAS",
+        "pH": 5.28,
+        "lat": 5.527172,
+        "lng": -75.459621
+    },
+    {
+        "Municipio": "PALESTINA",
+        "Departamento": "CALDAS",
+        "pH": 5.64,
+        "lat": 5.017879,
+        "lng": -75.624577
+    },
+    {
+        "Municipio": "PENSILVANIA",
+        "Departamento": "CALDAS",
+        "pH": 5.2,
+        "lat": 5.383281,
+        "lng": -75.160299
+    },
+    {
+        "Municipio": "RIOSUCIO",
+        "Departamento": "CALDAS",
+        "pH": 5.53,
+        "lat": 5.423673,
+        "lng": -75.702104
+    },
+    {
+        "Municipio": "SALAMINA",
+        "Departamento": "CALDAS",
+        "pH": 5.47,
+        "lat": 5.403025,
+        "lng": -75.487223
+    },
+    {
+        "Municipio": "SAMANÁ",
+        "Departamento": "CALDAS",
+        "pH": 5.22,
+        "lat": 5.41308,
+        "lng": -74.992263
+    },
+    {
+        "Municipio": "SAN JOSÉ",
+        "Departamento": "CALDAS",
+        "pH": 5.47,
+        "lat": 5.08231,
+        "lng": -75.792063
+    },
+    {
+        "Municipio": "SUPÍA",
+        "Departamento": "CALDAS",
+        "pH": 5.63,
+        "lat": 5.446843,
+        "lng": -75.64966
+    },
+    {
+        "Municipio": "VICTORIA",
+        "Departamento": "CALDAS",
+        "pH": 5.34,
+        "lat": 5.317437,
+        "lng": -74.911239
+    },
+    {
+        "Municipio": "VILLAMARÍA",
+        "Departamento": "CALDAS",
+        "pH": 5.76,
+        "lat": 5.038925,
+        "lng": -75.502487
+    },
+    {
+        "Municipio": "VITERBO",
+        "Departamento": "CALDAS",
+        "pH": 5.58,
+        "lat": 5.062664,
+        "lng": -75.87061
+    },
+    {
+        "Municipio": "ALBANIA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.86,
+        "lat": 1.328526,
+        "lng": -75.878375
+    },
+    {
+        "Municipio": "BELÉN DE LOS ANDAQUÍES",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.66,
+        "lat": 1.415812,
+        "lng": -75.872405
+    },
+    {
+        "Municipio": "CARTAGENA DEL CHAIRÁ",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.82,
+        "lat": 1.332371,
+        "lng": -74.847867
+    },
+    {
+        "Municipio": "CURILLO",
+        "Departamento": "CAQUETÁ",
+        "pH": 5.03,
+        "lat": 1.033473,
+        "lng": -75.919205
+    },
+    {
+        "Municipio": "EL DONCELLO",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.76,
+        "lat": 1.679951,
+        "lng": -75.283631
+    },
+    {
+        "Municipio": "EL PAUJÍL",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.96,
+        "lat": 1.570226,
+        "lng": -75.326093
+    },
+    {
+        "Municipio": "FLORENCIA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.92,
+        "lat": 1.618196,
+        "lng": -75.609831
+    },
+    {
+        "Municipio": "LA MONTAÑITA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.74,
+        "lat": 1.479173,
+        "lng": -75.436408
+    },
+    {
+        "Municipio": "MILÁN",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.78,
+        "lat": 1.29021,
+        "lng": -75.506926
+    },
+    {
+        "Municipio": "MORELIA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.89,
+        "lat": 1.486611,
+        "lng": -75.724146
+    },
+    {
+        "Municipio": "PUERTO RICO",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.81,
+        "lat": 1.909063,
+        "lng": -75.157604
+    },
+    {
+        "Municipio": "SAN JOSÉ DEL FRAGUA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.75,
+        "lat": 1.330266,
+        "lng": -75.973796
+    },
+    {
+        "Municipio": "SAN VICENTE DEL CAGUÁN",
+        "Departamento": "CAQUETÁ",
+        "pH": 5.12,
+        "lat": 2.119413,
+        "lng": -74.767894
+    },
+    {
+        "Municipio": "SOLANO",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.7,
+        "lat": 0.699077,
+        "lng": -75.253702
+    },
+    {
+        "Municipio": "SOLITA",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.88,
+        "lat": 0.87654,
+        "lng": -75.619902
+    },
+    {
+        "Municipio": "VALPARAÍSO",
+        "Departamento": "CAQUETÁ",
+        "pH": 4.67,
+        "lat": 5.614555,
+        "lng": -75.624452
+    },
+    {
+        "Municipio": "SABANALARGA",
+        "Departamento": "CASANARE",
+        "pH": 4.98,
+        "lat": 6.850028,
+        "lng": -75.816645
+    },
+    {
+        "Municipio": "AGUAZUL",
+        "Departamento": "CASANARE",
+        "pH": 4.97,
+        "lat": 5.172641,
+        "lng": -72.546838
+    },
+    {
+        "Municipio": "CHÁMEZA",
+        "Departamento": "CASANARE",
+        "pH": 4.72,
+        "lat": 5.214527,
+        "lng": -72.87016
+    },
+    {
+        "Municipio": "HATO COROZAL",
+        "Departamento": "CASANARE",
+        "pH": 5.13,
+        "lat": 6.154099,
+        "lng": -71.764213
+    },
+    {
+        "Municipio": "LA SALINA",
+        "Departamento": "CASANARE",
+        "pH": 4.5,
+        "lat": 6.127762,
+        "lng": -72.334978
+    },
+    {
+        "Municipio": "MANÍ",
+        "Departamento": "CASANARE",
+        "pH": 4.98,
+        "lat": 4.81681,
+        "lng": -72.281384
+    },
+    {
+        "Municipio": "MONTERREY",
+        "Departamento": "CASANARE",
+        "pH": 5.12,
+        "lat": 4.877017,
+        "lng": -72.894065
+    },
+    {
+        "Municipio": "NUNCHÍA",
+        "Departamento": "CASANARE",
+        "pH": 5.21,
+        "lat": 5.636474,
+        "lng": -72.195323
+    },
+    {
+        "Municipio": "OROCUÉ",
+        "Departamento": "CASANARE",
+        "pH": 4.89,
+        "lat": 4.790258,
+        "lng": -71.338533
+    },
+    {
+        "Municipio": "PAZ DE ARIPORO",
+        "Departamento": "CASANARE",
+        "pH": 4.93,
+        "lat": 5.879827,
+        "lng": -71.890348
+    },
+    {
+        "Municipio": "PORE",
+        "Departamento": "CASANARE",
+        "pH": 5.5,
+        "lat": 5.72773,
+        "lng": -71.99286
+    },
+    {
+        "Municipio": "RECETOR",
+        "Departamento": "CASANARE",
+        "pH": 4.9,
+        "lat": 5.229181,
+        "lng": -72.760991
+    },
+    {
+        "Municipio": "SAN LUIS",
+        "Departamento": "CASANARE",
+        "pH": 4.81,
+        "lat": 6.043017,
+        "lng": -74.993619
+    },
+    {
+        "Municipio": "SAN LUIS DE PALENQUE",
+        "Departamento": "CASANARE",
+        "pH": 5.07,
+        "lat": 5.422397,
+        "lng": -71.732198
+    },
+    {
+        "Municipio": "TÁMARA",
+        "Departamento": "CASANARE",
+        "pH": 4.77,
+        "lat": 5.829543,
+        "lng": -72.16165
+    },
+    {
+        "Municipio": "TAURAMENA",
+        "Departamento": "CASANARE",
+        "pH": 4.84,
+        "lat": 5.018977,
+        "lng": -72.74662
+    },
+    {
+        "Municipio": "TRINIDAD",
+        "Departamento": "CASANARE",
+        "pH": 4.99,
+        "lat": 5.412178,
+        "lng": -71.662812
+    },
+    {
+        "Municipio": "VILLANUEVA",
+        "Departamento": "CASANARE",
+        "pH": 5.32,
+        "lat": 10.444089,
+        "lng": -75.275613
+    },
+    {
+        "Municipio": "YOPAL",
+        "Departamento": "CASANARE",
+        "pH": 5.3,
+        "lat": 5.327102,
+        "lng": -72.396132
+    },
+    {
+        "Municipio": "BOLÍVAR",
+        "Departamento": "CAUCA",
+        "pH": 5.06,
+        "lat": 1.837538,
+        "lng": -76.966215
+    },
+    {
+        "Municipio": "ALMAGUER",
+        "Departamento": "CAUCA",
+        "pH": 5.32,
+        "lat": 1.913429,
+        "lng": -76.85607
+    },
+    {
+        "Municipio": "ARGELIA",
+        "Departamento": "CAUCA",
+        "pH": 5.45,
+        "lat": 5.731474,
+        "lng": -75.14107
+    },
+    {
+        "Municipio": "BALBOA",
+        "Departamento": "CAUCA",
+        "pH": 5.68,
+        "lat": 2.040998,
+        "lng": -77.215773
+    },
+    {
+        "Municipio": "BUENOS AIRES",
+        "Departamento": "CAUCA",
+        "pH": 4.84,
+        "lat": 3.015382,
+        "lng": -76.642238
+    },
+    {
+        "Municipio": "CAJIBÍO",
+        "Departamento": "CAUCA",
+        "pH": 5.34,
+        "lat": 2.623371,
+        "lng": -76.570682
+    },
+    {
+        "Municipio": "CALDONO",
+        "Departamento": "CAUCA",
+        "pH": 5.3,
+        "lat": 2.798059,
+        "lng": -76.484319
+    },
+    {
+        "Municipio": "CALOTO",
+        "Departamento": "CAUCA",
+        "pH": 5.94,
+        "lat": 3.034531,
+        "lng": -76.408941
+    },
+    {
+        "Municipio": "CORINTO",
+        "Departamento": "CAUCA",
+        "pH": 5.67,
+        "lat": 3.173854,
+        "lng": -76.261866
+    },
+    {
+        "Municipio": "EL ROSARIO",
+        "Departamento": "CAUCA",
+        "pH": 8.01,
+        "lat": 1.745309,
+        "lng": -77.33417
+    },
+    {
+        "Municipio": "EL TAMBO",
+        "Departamento": "CAUCA",
+        "pH": 5.35,
+        "lat": 2.451409,
+        "lng": -76.810911
+    },
+    {
+        "Municipio": "FLORENCIA",
+        "Departamento": "CAUCA",
+        "pH": 5.02,
+        "lat": 1.618196,
+        "lng": -75.609831
+    },
+    {
+        "Municipio": "GUACHENÉ",
+        "Departamento": "CAUCA",
+        "pH": 5.73,
+        "lat": 3.134153,
+        "lng": -76.392189
+    },
+    {
+        "Municipio": "GUAPI",
+        "Departamento": "CAUCA",
+        "pH": 5.04,
+        "lat": 2.571337,
+        "lng": -77.88797
+    },
+    {
+        "Municipio": "GUAPI",
+        "Departamento": "CAUCA",
+        "pH": 5.06,
+        "lat": 2.571337,
+        "lng": -77.88797
+    },
+    {
+        "Municipio": "INZÁ",
+        "Departamento": "CAUCA",
+        "pH": 5.19,
+        "lat": 2.549183,
+        "lng": -76.063503
+    },
+    {
+        "Municipio": "JAMBALÓ",
+        "Departamento": "CAUCA",
+        "pH": 5.5,
+        "lat": 2.777834,
+        "lng": -76.323877
+    },
+    {
+        "Municipio": "LA SIERRA",
+        "Departamento": "CAUCA",
+        "pH": 5.45,
+        "lat": 2.179383,
+        "lng": -76.763278
+    },
+    {
+        "Municipio": "LA VEGA",
+        "Departamento": "CAUCA",
+        "pH": 5.3,
+        "lat": 2.001803,
+        "lng": -76.778771
+    },
+    {
+        "Municipio": "LÓPEZ DE MICAY",
+        "Departamento": "CAUCA",
+        "pH": 5.27,
+        "lat": 2.846788,
+        "lng": -77.247803
+    },
+    {
+        "Municipio": "MERCADERES",
+        "Departamento": "CAUCA",
+        "pH": 6.99,
+        "lat": 1.789193,
+        "lng": -77.164319
+    },
+    {
+        "Municipio": "MIRANDA",
+        "Departamento": "CAUCA",
+        "pH": 6.07,
+        "lat": 3.254651,
+        "lng": -76.228722
+    },
+    {
+        "Municipio": "MORALES",
+        "Departamento": "CAUCA",
+        "pH": 5.25,
+        "lat": 8.276558,
+        "lng": -73.868172
+    },
+    {
+        "Municipio": "PADILLA",
+        "Departamento": "CAUCA",
+        "pH": 6.22,
+        "lat": 3.220984,
+        "lng": -76.313265
+    },
+    {
+        "Municipio": "PÁEZ",
+        "Departamento": "CAUCA",
+        "pH": 5.51,
+        "lat": 5.097319,
+        "lng": -73.052737
+    },
+    {
+        "Municipio": "PATÍA",
+        "Departamento": "CAUCA",
+        "pH": 5.84,
+        "lat": 2.115875,
+        "lng": -76.981075
+    },
+    {
+        "Municipio": "PIAMONTE",
+        "Departamento": "CAUCA",
+        "pH": 4.67,
+        "lat": 1.11754,
+        "lng": -76.327588
+    },
+    {
+        "Municipio": "PIENDAMÓ",
+        "Departamento": "CAUCA",
+        "pH": 5.29,
+        "lat": 2.64228,
+        "lng": -76.528615
+    },
+    {
+        "Municipio": "POPAYÁN",
+        "Departamento": "CAUCA",
+        "pH": 5.53,
+        "lat": 2.459641,
+        "lng": -76.599377
+    },
+    {
+        "Municipio": "PUERTO TEJADA",
+        "Departamento": "CAUCA",
+        "pH": 6.0,
+        "lat": 3.233254,
+        "lng": -76.417673
+    },
+    {
+        "Municipio": "PURACÉ",
+        "Departamento": "CAUCA",
+        "pH": 5.42,
+        "lat": 2.341507,
+        "lng": -76.496698
+    },
+    {
+        "Municipio": "ROSAS",
+        "Departamento": "CAUCA",
+        "pH": 5.36,
+        "lat": 2.260941,
+        "lng": -76.740336
+    },
+    {
+        "Municipio": "SAN SEBASTIÁN",
+        "Departamento": "CAUCA",
+        "pH": 5.56,
+        "lat": 1.838451,
+        "lng": -76.769467
+    },
+    {
+        "Municipio": "SANTANDER DE QUILICHAO",
+        "Departamento": "CAUCA",
+        "pH": 5.27,
+        "lat": 3.015008,
+        "lng": -76.485141
+    },
+    {
+        "Municipio": "SILVIA",
+        "Departamento": "CAUCA",
+        "pH": 5.41,
+        "lat": 2.611927,
+        "lng": -76.379753
+    },
+    {
+        "Municipio": "SOTARÁ",
+        "Departamento": "CAUCA",
+        "pH": 5.5,
+        "lat": 2.253156,
+        "lng": -76.613365
+    },
+    {
+        "Municipio": "SUÁREZ",
+        "Departamento": "CAUCA",
+        "pH": 5.17,
+        "lat": 2.959785,
+        "lng": -76.69357
+    },
+    {
+        "Municipio": "SUCRE",
+        "Departamento": "CAUCA",
+        "pH": 5.23,
+        "lat": 2.038237,
+        "lng": -76.926279
+    },
+    {
+        "Municipio": "TIMBÍO",
+        "Departamento": "CAUCA",
+        "pH": 5.51,
+        "lat": 2.349686,
+        "lng": -76.684476
+    },
+    {
+        "Municipio": "TIMBIQUÍ",
+        "Departamento": "CAUCA",
+        "pH": 4.98,
+        "lat": 2.777312,
+        "lng": -77.667541
+    },
+    {
+        "Municipio": "TORIBÍO",
+        "Departamento": "CAUCA",
+        "pH": 5.68,
+        "lat": 2.953017,
+        "lng": -76.270284
+    },
+    {
+        "Municipio": "TOTORÓ",
+        "Departamento": "CAUCA",
+        "pH": 5.52,
+        "lat": 2.510252,
+        "lng": -76.403628
+    },
+    {
+        "Municipio": "VILLA RICA",
+        "Departamento": "CAUCA",
+        "pH": 5.99,
+        "lat": 3.17762,
+        "lng": -76.458025
+    },
+    {
+        "Municipio": "AGUACHICA",
+        "Departamento": "CESAR",
+        "pH": 6.36,
+        "lat": 8.306811,
+        "lng": -73.614027
+    },
+    {
+        "Municipio": "AGUSTÍN CODAZZI",
+        "Departamento": "CESAR",
+        "pH": 6.33,
+        "lat": 10.040454,
+        "lng": -73.238389
+    },
+    {
+        "Municipio": "ASTREA",
+        "Departamento": "CESAR",
+        "pH": 5.85,
+        "lat": 9.498062,
+        "lng": -73.975842
+    },
+    {
+        "Municipio": "BECERRIL",
+        "Departamento": "CESAR",
+        "pH": 6.34,
+        "lat": 9.704404,
+        "lng": -73.278707
+    },
+    {
+        "Municipio": "BOSCONIA",
+        "Departamento": "CESAR",
+        "pH": 7.03,
+        "lat": 9.975098,
+        "lng": -73.888761
+    },
+    {
+        "Municipio": "CHIMICHAGUA",
+        "Departamento": "CESAR",
+        "pH": 5.37,
+        "lat": 9.25875,
+        "lng": -73.813278
+    },
+    {
+        "Municipio": "CHIRIGUANÁ",
+        "Departamento": "CESAR",
+        "pH": 5.93,
+        "lat": 9.361058,
+        "lng": -73.599913
+    },
+    {
+        "Municipio": "CURUMANÍ",
+        "Departamento": "CESAR",
+        "pH": 5.73,
+        "lat": 9.201716,
+        "lng": -73.540843
+    },
+    {
+        "Municipio": "EL COPEY",
+        "Departamento": "CESAR",
+        "pH": 6.72,
+        "lat": 10.149883,
+        "lng": -73.962703
+    },
+    {
+        "Municipio": "EL PASO",
+        "Departamento": "CESAR",
+        "pH": 6.33,
+        "lat": 9.668461,
+        "lng": -73.742012
+    },
+    {
+        "Municipio": "GAMARRA",
+        "Departamento": "CESAR",
+        "pH": 6.61,
+        "lat": 8.324793,
+        "lng": -73.737558
+    },
+    {
+        "Municipio": "GONZÁLEZ",
+        "Departamento": "CESAR",
+        "pH": 5.69,
+        "lat": 8.389604,
+        "lng": -73.38004
+    },
+    {
+        "Municipio": "LA GLORIA",
+        "Departamento": "CESAR",
+        "pH": 6.24,
+        "lat": 8.619298,
+        "lng": -73.80321
+    },
+    {
+        "Municipio": "LA JAGUA DE IBIRICO",
+        "Departamento": "CESAR",
+        "pH": 5.51,
+        "lat": 9.563752,
+        "lng": -73.334143
+    },
+    {
+        "Municipio": "LA PAZ",
+        "Departamento": "CESAR",
+        "pH": 7.11,
+        "lat": 10.387552,
+        "lng": -73.171365
+    },
+    {
+        "Municipio": "MANAURE",
+        "Departamento": "CESAR",
+        "pH": 6.49,
+        "lat": 11.773767,
+        "lng": -72.438739
+    },
+    {
+        "Municipio": "MANAURE BALCÓN DEL CESAR",
+        "Departamento": "CESAR",
+        "pH": 6.23,
+        "lat": 10.390776,
+        "lng": -73.029472
+    },
+    {
+        "Municipio": "PAILITAS",
+        "Departamento": "CESAR",
+        "pH": 5.6,
+        "lat": 8.959399,
+        "lng": -73.625825
+    },
+    {
+        "Municipio": "PELAYA",
+        "Departamento": "CESAR",
+        "pH": 5.89,
+        "lat": 8.689451,
+        "lng": -73.666735
+    },
+    {
+        "Municipio": "PUEBLO BELLO",
+        "Departamento": "CESAR",
+        "pH": 5.76,
+        "lat": 10.417321,
+        "lng": -73.586211
+    },
+    {
+        "Municipio": "RÍO DE ORO",
+        "Departamento": "CESAR",
+        "pH": 6.4,
+        "lat": 8.292292,
+        "lng": -73.386393
+    },
+    {
+        "Municipio": "SAN ALBERTO",
+        "Departamento": "CESAR",
+        "pH": 5.61,
+        "lat": 7.76111,
+        "lng": -73.393889
+    },
+    {
+        "Municipio": "SAN DIEGO",
+        "Departamento": "CESAR",
+        "pH": 7.41,
+        "lat": 10.333039,
+        "lng": -73.181208
+    },
+    {
+        "Municipio": "SAN MARTÍN",
+        "Departamento": "CESAR",
+        "pH": 6.15,
+        "lat": 7.999855,
+        "lng": -73.510914
+    },
+    {
+        "Municipio": "TAMALAMEQUE",
+        "Departamento": "CESAR",
+        "pH": 5.3,
+        "lat": 8.861725,
+        "lng": -73.812172
+    },
+    {
+        "Municipio": "VALLEDUPAR",
+        "Departamento": "CESAR",
+        "pH": 6.66,
+        "lat": 10.460472,
+        "lng": -73.259398
+    },
+    {
+        "Municipio": "ACANDÍ",
+        "Departamento": "CHOCÓ",
+        "pH": 5.96,
+        "lat": 8.512178,
+        "lng": -77.279951
+    },
+    {
+        "Municipio": "BAGADÓ",
+        "Departamento": "CHOCÓ",
+        "pH": 5.31,
+        "lat": 5.409681,
+        "lng": -76.416063
+    },
+    {
+        "Municipio": "BAHÍA SOLANO",
+        "Departamento": "CHOCÓ",
+        "pH": 5.13,
+        "lat": 6.222807,
+        "lng": -77.401359
+    },
+    {
+        "Municipio": "BAJO BAUDÓ",
+        "Departamento": "CHOCÓ",
+        "pH": 4.89,
+        "lat": 4.954576,
+        "lng": -77.365717
+    },
+    {
+        "Municipio": "BELÉN DE BAJIRÁ",
+        "Departamento": "CHOCÓ",
+        "pH": 6.16,
+        "lat": 7.3719,
+        "lng": -76.71727
+    },
+    {
+        "Municipio": "CARMEN DEL DARIÉN",
+        "Departamento": "CHOCÓ",
+        "pH": 6.04,
+        "lat": 7.158294,
+        "lng": -76.970798
+    },
+    {
+        "Municipio": "CÉRTEGUI",
+        "Departamento": "CHOCÓ",
+        "pH": 4.63,
+        "lat": 5.371373,
+        "lng": -76.607619
+    },
+    {
+        "Municipio": "CONDOTO",
+        "Departamento": "CHOCÓ",
+        "pH": 4.96,
+        "lat": 5.091003,
+        "lng": -76.650683
+    },
+    {
+        "Municipio": "EL CARMEN DE ATRATO",
+        "Departamento": "CHOCÓ",
+        "pH": 5.37,
+        "lat": 5.899789,
+        "lng": -76.142112
+    },
+    {
+        "Municipio": "EL LITORAL DEL SAN JUAN",
+        "Departamento": "CHOCÓ",
+        "pH": 4.98,
+        "lat": 4.259564,
+        "lng": -77.363702
+    },
+    {
+        "Municipio": "ISTMINA",
+        "Departamento": "CHOCÓ",
+        "pH": 5.08,
+        "lat": 5.153946,
+        "lng": -76.68518
+    },
+    {
+        "Municipio": "MEDIO SAN JUAN",
+        "Departamento": "CHOCÓ",
+        "pH": 5.02,
+        "lat": 5.098291,
+        "lng": -76.694409
+    },
+    {
+        "Municipio": "RIOSUCIO",
+        "Departamento": "CHOCÓ",
+        "pH": 6.13,
+        "lat": 5.423673,
+        "lng": -75.702104
+    },
+    {
+        "Municipio": "UNGUÍA",
+        "Departamento": "CHOCÓ",
+        "pH": 5.86,
+        "lat": 8.04406,
+        "lng": -77.092538
+    },
+    {
+        "Municipio": "AYAPEL",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.18,
+        "lat": 8.313838,
+        "lng": -75.146048
+    },
+    {
+        "Municipio": "BUENAVISTA",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.45,
+        "lat": 5.512594,
+        "lng": -73.94217
+    },
+    {
+        "Municipio": "CANALETE",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.61,
+        "lat": 8.786939,
+        "lng": -76.241476
+    },
+    {
+        "Municipio": "CERETÉ",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.51,
+        "lat": 8.888532,
+        "lng": -75.796093
+    },
+    {
+        "Municipio": "CHIMÁ",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.2,
+        "lat": 9.149698,
+        "lng": -75.626886
+    },
+    {
+        "Municipio": "CHINÚ",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.17,
+        "lat": 9.105473,
+        "lng": -75.399633
+    },
+    {
+        "Municipio": "CIÉNAGA DE ORO",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.92,
+        "lat": 8.875794,
+        "lng": -75.620807
+    },
+    {
+        "Municipio": "COTORRA",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.36,
+        "lat": 9.037163,
+        "lng": -75.799216
+    },
+    {
+        "Municipio": "LA APARTADA",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.55,
+        "lat": 8.050125,
+        "lng": -75.336031
+    },
+    {
+        "Municipio": "LORICA",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.0,
+        "lat": 9.240789,
+        "lng": -75.816084
+    },
+    {
+        "Municipio": "LOS CÓRDOBAS",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.74,
+        "lat": 8.892098,
+        "lng": -76.35518
+    },
+    {
+        "Municipio": "MOMIL",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.13,
+        "lat": 9.240707,
+        "lng": -75.67796
+    },
+    {
+        "Municipio": "MONTELÍBANO",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.44,
+        "lat": 7.973777,
+        "lng": -75.416818
+    },
+    {
+        "Municipio": "MONTERÍA",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.26,
+        "lat": 8.759789,
+        "lng": -75.873096
+    },
+    {
+        "Municipio": "MOÑITOS",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.78,
+        "lat": 9.245223,
+        "lng": -76.1291
+    },
+    {
+        "Municipio": "PLANETA RICA",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.32,
+        "lat": 8.4082,
+        "lng": -75.583241
+    },
+    {
+        "Municipio": "PUEBLO NUEVO",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.63,
+        "lat": 8.504099,
+        "lng": -75.508035
+    },
+    {
+        "Municipio": "PUERTO ESCONDIDO",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.76,
+        "lat": 9.005372,
+        "lng": -76.260411
+    },
+    {
+        "Municipio": "PUERTO LIBERTADOR",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.38,
+        "lat": 7.888859,
+        "lng": -75.671761
+    },
+    {
+        "Municipio": "PUERTO RICO",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.25,
+        "lat": 1.909063,
+        "lng": -75.157604
+    },
+    {
+        "Municipio": "PURÍSIMA DE LA CONCEPCIÓN",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.97,
+        "lat": 9.239295,
+        "lng": -75.724987
+    },
+    {
+        "Municipio": "SAHAGÚN",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.97,
+        "lat": 8.943048,
+        "lng": -75.445834
+    },
+    {
+        "Municipio": "SAN ANDRÉS DE SOTAVENTO",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.76,
+        "lat": 9.145448,
+        "lng": -75.50879
+    },
+    {
+        "Municipio": "SAN BERNARDO DEL VIENTO",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.74,
+        "lat": 9.35247,
+        "lng": -75.955107
+    },
+    {
+        "Municipio": "SAN CARLOS",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.46,
+        "lat": 6.187746,
+        "lng": -74.988097
+    },
+    {
+        "Municipio": "SAN JOSÉ DE URÉ",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.11,
+        "lat": 7.787303,
+        "lng": -75.533476
+    },
+    {
+        "Municipio": "SAN PELAYO",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.57,
+        "lat": 8.958436,
+        "lng": -75.835615
+    },
+    {
+        "Municipio": "TIERRALTA",
+        "Departamento": "CÓRDOBA",
+        "pH": 5.84,
+        "lat": 8.170612,
+        "lng": -76.059797
+    },
+    {
+        "Municipio": "TUCHÍN",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.04,
+        "lat": 9.186625,
+        "lng": -75.553962
+    },
+    {
+        "Municipio": "VALENCIA",
+        "Departamento": "CÓRDOBA",
+        "pH": 6.01,
+        "lat": 8.255016,
+        "lng": -76.150756
+    },
+    {
+        "Municipio": "NARIÑO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.89,
+        "lat": 5.610777,
+        "lng": -75.176262
+    },
+    {
+        "Municipio": "AGUA DE DIOS",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.29,
+        "lat": 4.375309,
+        "lng": -74.669221
+    },
+    {
+        "Municipio": "ALBÁN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.28,
+        "lat": 4.878022,
+        "lng": -74.438261
+    },
+    {
+        "Municipio": "ANAPOIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.93,
+        "lat": 4.562737,
+        "lng": -74.528676
+    },
+    {
+        "Municipio": "ANOLAIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.75,
+        "lat": 4.7617,
+        "lng": -74.46384
+    },
+    {
+        "Municipio": "APULO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.71,
+        "lat": 4.520304,
+        "lng": -74.593926
+    },
+    {
+        "Municipio": "ARBELÁEZ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.58,
+        "lat": 4.272534,
+        "lng": -74.414901
+    },
+    {
+        "Municipio": "BELTRÁN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.77,
+        "lat": 4.802832,
+        "lng": -74.741666
+    },
+    {
+        "Municipio": "BITUIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.88,
+        "lat": 4.872171,
+        "lng": -74.539609
+    },
+    {
+        "Municipio": "BOJACÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.72,
+        "lat": 4.737205,
+        "lng": -74.344594
+    },
+    {
+        "Municipio": "CABRERA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.34,
+        "lat": 3.985164,
+        "lng": -74.484549
+    },
+    {
+        "Municipio": "CACHIPAY",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.68,
+        "lat": 4.730957,
+        "lng": -74.435711
+    },
+    {
+        "Municipio": "CAJICÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.36,
+        "lat": 4.920009,
+        "lng": -74.02298
+    },
+    {
+        "Municipio": "CAPARRAPÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.35,
+        "lat": 5.34758,
+        "lng": -74.491045
+    },
+    {
+        "Municipio": "CÁQUEZA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.87,
+        "lat": 4.404112,
+        "lng": -73.946473
+    },
+    {
+        "Municipio": "CARMEN DE CARUPA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.07,
+        "lat": 5.349119,
+        "lng": -73.901357
+    },
+    {
+        "Municipio": "CHAGUANÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.44,
+        "lat": 4.948916,
+        "lng": -74.593455
+    },
+    {
+        "Municipio": "CHÍA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.14,
+        "lat": 4.866508,
+        "lng": -74.05
+    },
+    {
+        "Municipio": "CHIPAQUE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.55,
+        "lat": 4.442671,
+        "lng": -74.044876
+    },
+    {
+        "Municipio": "CHOACHÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.54,
+        "lat": 4.527048,
+        "lng": -73.922894
+    },
+    {
+        "Municipio": "CHOCONTÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.26,
+        "lat": 5.145224,
+        "lng": -73.683533
+    },
+    {
+        "Municipio": "COGUA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.5,
+        "lat": 5.061842,
+        "lng": -73.978497
+    },
+    {
+        "Municipio": "COTA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.5,
+        "lat": 4.812564,
+        "lng": -74.102569
+    },
+    {
+        "Municipio": "CUCUNUBÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.58,
+        "lat": 5.249795,
+        "lng": -73.766113
+    },
+    {
+        "Municipio": "EL COLEGIO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.3,
+        "lat": 4.577951,
+        "lng": -74.442261
+    },
+    {
+        "Municipio": "EL PEÑÓN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.96,
+        "lat": 8.988271,
+        "lng": -73.949274
+    },
+    {
+        "Municipio": "EL ROSAL",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.69,
+        "lat": 4.850589,
+        "lng": -74.263103
+    },
+    {
+        "Municipio": "FACATATIVÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.85,
+        "lat": 4.813353,
+        "lng": -74.350085
+    },
+    {
+        "Municipio": "FÓMEQUE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.3,
+        "lat": 4.485474,
+        "lng": -73.892523
+    },
+    {
+        "Municipio": "FOSCA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.4,
+        "lat": 4.339093,
+        "lng": -73.93902
+    },
+    {
+        "Municipio": "FUNZA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.7,
+        "lat": 4.710412,
+        "lng": -74.201528
+    },
+    {
+        "Municipio": "FÚQUENE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.92,
+        "lat": 5.403997,
+        "lng": -73.795855
+    },
+    {
+        "Municipio": "FUSAGASUGÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.55,
+        "lat": 4.336723,
+        "lng": -74.37543
+    },
+    {
+        "Municipio": "GACHALÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.97,
+        "lat": 4.693579,
+        "lng": -73.520161
+    },
+    {
+        "Municipio": "GACHANCIPÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.41,
+        "lat": 4.990947,
+        "lng": -73.873464
+    },
+    {
+        "Municipio": "GACHETÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.08,
+        "lat": 4.816411,
+        "lng": -73.636377
+    },
+    {
+        "Municipio": "GAMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.26,
+        "lat": 4.763325,
+        "lng": -73.611037
+    },
+    {
+        "Municipio": "GIRARDOT",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.9,
+        "lat": 4.313069,
+        "lng": -74.798201
+    },
+    {
+        "Municipio": "GRANADA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.3,
+        "lat": 6.142892,
+        "lng": -75.184446
+    },
+    {
+        "Municipio": "GUACHETÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.21,
+        "lat": 5.383378,
+        "lng": -73.686972
+    },
+    {
+        "Municipio": "GUADUAS",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.58,
+        "lat": 5.072076,
+        "lng": -74.603402
+    },
+    {
+        "Municipio": "GUASCA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.47,
+        "lat": 4.866719,
+        "lng": -73.877143
+    },
+    {
+        "Municipio": "GUATAQUÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.87,
+        "lat": 4.517517,
+        "lng": -74.790058
+    },
+    {
+        "Municipio": "GUATAVITA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.02,
+        "lat": 4.935211,
+        "lng": -73.83293
+    },
+    {
+        "Municipio": "GUAYABAL DE SÍQUIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.7,
+        "lat": 4.877968,
+        "lng": -74.467437
+    },
+    {
+        "Municipio": "GUAYABETAL",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.2,
+        "lat": 4.215306,
+        "lng": -73.815107
+    },
+    {
+        "Municipio": "GUTIÉRREZ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.3,
+        "lat": 4.254679,
+        "lng": -74.003042
+    },
+    {
+        "Municipio": "JERUSALÉN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.35,
+        "lat": 4.562273,
+        "lng": -74.695474
+    },
+    {
+        "Municipio": "JUNÍN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.36,
+        "lat": 4.79057,
+        "lng": -73.662961
+    },
+    {
+        "Municipio": "LA CALERA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.41,
+        "lat": 4.721104,
+        "lng": -73.968161
+    },
+    {
+        "Municipio": "LA MESA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.56,
+        "lat": 4.631028,
+        "lng": -74.461588
+    },
+    {
+        "Municipio": "LA PALMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.14,
+        "lat": 5.358816,
+        "lng": -74.391022
+    },
+    {
+        "Municipio": "LA PEÑA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.32,
+        "lat": 5.198945,
+        "lng": -74.394105
+    },
+    {
+        "Municipio": "LA SIERRA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.73,
+        "lat": 2.179383,
+        "lng": -76.763278
+    },
+    {
+        "Municipio": "LA VEGA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.19,
+        "lat": 2.001803,
+        "lng": -76.778771
+    },
+    {
+        "Municipio": "LENGUAZAQUE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.08,
+        "lat": 5.306131,
+        "lng": -73.711512
+    },
+    {
+        "Municipio": "MACHETÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.12,
+        "lat": 5.08007,
+        "lng": -73.608226
+    },
+    {
+        "Municipio": "MADRID",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.95,
+        "lat": 4.732791,
+        "lng": -74.265854
+    },
+    {
+        "Municipio": "MANTA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.72,
+        "lat": 5.009008,
+        "lng": -73.540444
+    },
+    {
+        "Municipio": "MEDINA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.91,
+        "lat": 4.506298,
+        "lng": -73.348449
+    },
+    {
+        "Municipio": "MOSQUERA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.69,
+        "lat": 4.70653,
+        "lng": -74.221154
+    },
+    {
+        "Municipio": "NEMOCÓN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.26,
+        "lat": 5.068705,
+        "lng": -73.877888
+    },
+    {
+        "Municipio": "NILO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.59,
+        "lat": 4.305838,
+        "lng": -74.620009
+    },
+    {
+        "Municipio": "NIMAIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.08,
+        "lat": 5.125992,
+        "lng": -74.38604
+    },
+    {
+        "Municipio": "NOCAIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.85,
+        "lat": 5.069466,
+        "lng": -74.379093
+    },
+    {
+        "Municipio": "PACHO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.19,
+        "lat": 5.136907,
+        "lng": -74.156132
+    },
+    {
+        "Municipio": "PAIME",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.86,
+        "lat": 5.370487,
+        "lng": -74.152213
+    },
+    {
+        "Municipio": "Pandi",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.43,
+        "lat": 4.190393,
+        "lng": -74.486641
+    },
+    {
+        "Municipio": "PARATEBUENO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.05,
+        "lat": 4.374832,
+        "lng": -73.212825
+    },
+    {
+        "Municipio": "PASCA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.56,
+        "lat": 4.308979,
+        "lng": -74.302276
+    },
+    {
+        "Municipio": "PUERTO SALGAR",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.08,
+        "lat": 5.465413,
+        "lng": -74.653695
+    },
+    {
+        "Municipio": "PULÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.75,
+        "lat": 4.682022,
+        "lng": -74.71438
+    },
+    {
+        "Municipio": "QUEBRADANEGRA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.66,
+        "lat": 5.118076,
+        "lng": -74.48014
+    },
+    {
+        "Municipio": "QUETAME",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.54,
+        "lat": 4.329884,
+        "lng": -73.863214
+    },
+    {
+        "Municipio": "QUIPILE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.71,
+        "lat": 4.74481,
+        "lng": -74.533705
+    },
+    {
+        "Municipio": "RICAURTE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.62,
+        "lat": 4.282113,
+        "lng": -74.772861
+    },
+    {
+        "Municipio": "SAN ANTONIO DEL TEQUENDAMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.91,
+        "lat": 4.616138,
+        "lng": -74.351443
+    },
+    {
+        "Municipio": "SAN BERNARDO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.34,
+        "lat": 4.179433,
+        "lng": -74.42296
+    },
+    {
+        "Municipio": "SAN CAYETANO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.99,
+        "lat": 5.332938,
+        "lng": -74.024754
+    },
+    {
+        "Municipio": "SAN FRANCISCO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.23,
+        "lat": 5.963476,
+        "lng": -75.101562
+    },
+    {
+        "Municipio": "SAN JUAN DE RIOSECO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.79,
+        "lat": 4.847575,
+        "lng": -74.621919
+    },
+    {
+        "Municipio": "SASAIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.42,
+        "lat": 4.962167,
+        "lng": -74.432628
+    },
+    {
+        "Municipio": "SESQUILÉ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.18,
+        "lat": 5.04476,
+        "lng": -73.796099
+    },
+    {
+        "Municipio": "SIBATÉ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.28,
+        "lat": 4.492625,
+        "lng": -74.257874
+    },
+    {
+        "Municipio": "SILVANIA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.41,
+        "lat": 4.381981,
+        "lng": -74.405534
+    },
+    {
+        "Municipio": "SIMIJACA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.08,
+        "lat": 5.505231,
+        "lng": -73.850703
+    },
+    {
+        "Municipio": "SOACHA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.57,
+        "lat": 4.579268,
+        "lng": -74.215463
+    },
+    {
+        "Municipio": "SOPÓ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.83,
+        "lat": 4.915395,
+        "lng": -73.943328
+    },
+    {
+        "Municipio": "SUBACHOQUE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.39,
+        "lat": 4.929118,
+        "lng": -74.172773
+    },
+    {
+        "Municipio": "SUESCA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.39,
+        "lat": 5.103495,
+        "lng": -73.798227
+    },
+    {
+        "Municipio": "SUPATÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.14,
+        "lat": 5.06162,
+        "lng": -74.235403
+    },
+    {
+        "Municipio": "SUSA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.1,
+        "lat": 5.455291,
+        "lng": -73.813938
+    },
+    {
+        "Municipio": "SUTATAUSA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.52,
+        "lat": 5.247482,
+        "lng": -73.853159
+    },
+    {
+        "Municipio": "TABIO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.57,
+        "lat": 4.916832,
+        "lng": -74.096461
+    },
+    {
+        "Municipio": "TAUSA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.05,
+        "lat": 5.196333,
+        "lng": -73.887813
+    },
+    {
+        "Municipio": "TENA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.15,
+        "lat": 4.655286,
+        "lng": -74.389193
+    },
+    {
+        "Municipio": "TENJO",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.62,
+        "lat": 4.872014,
+        "lng": -74.143724
+    },
+    {
+        "Municipio": "TIBACUY",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.47,
+        "lat": 4.348605,
+        "lng": -74.452662
+    },
+    {
+        "Municipio": "TIBIRITA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.73,
+        "lat": 5.052278,
+        "lng": -73.504514
+    },
+    {
+        "Municipio": "TOCA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.36,
+        "lat": 5.566464,
+        "lng": -73.184794
+    },
+    {
+        "Municipio": "TOCAIMA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.73,
+        "lat": 4.459279,
+        "lng": -74.636296
+    },
+    {
+        "Municipio": "TOCANCIPÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.8,
+        "lat": 4.964641,
+        "lng": -73.91207
+    },
+    {
+        "Municipio": "TOPAIPÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.63,
+        "lat": 5.336224,
+        "lng": -74.300626
+    },
+    {
+        "Municipio": "UBALÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.94,
+        "lat": 4.74762,
+        "lng": -73.531489
+    },
+    {
+        "Municipio": "UBAQUE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.46,
+        "lat": 4.483788,
+        "lng": -73.933477
+    },
+    {
+        "Municipio": "UNE",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.01,
+        "lat": 4.40245,
+        "lng": -74.025183
+    },
+    {
+        "Municipio": "ÚTICA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 7.98,
+        "lat": 5.19055,
+        "lng": -74.483154
+    },
+    {
+        "Municipio": "VENECIA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.34,
+        "lat": 5.964693,
+        "lng": -75.735544
+    },
+    {
+        "Municipio": "VERGARA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.07,
+        "lat": 5.117258,
+        "lng": -74.346163
+    },
+    {
+        "Municipio": "VIANÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.73,
+        "lat": 4.875208,
+        "lng": -74.56132
+    },
+    {
+        "Municipio": "VILLA DE SAN DIEGO DE UBATÉ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.21,
+        "lat": 5.307463,
+        "lng": -73.814367
+    },
+    {
+        "Municipio": "VILLAGÓMEZ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.8,
+        "lat": 5.273024,
+        "lng": -74.195145
+    },
+    {
+        "Municipio": "VILLAPINZÓN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.13,
+        "lat": 5.216393,
+        "lng": -73.595704
+    },
+    {
+        "Municipio": "VILLETA",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 6.74,
+        "lat": 5.012754,
+        "lng": -74.469686
+    },
+    {
+        "Municipio": "VIOTÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.2,
+        "lat": 4.43935,
+        "lng": -74.523131
+    },
+    {
+        "Municipio": "YACOPÍ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 4.88,
+        "lat": 5.459272,
+        "lng": -74.33806
+    },
+    {
+        "Municipio": "ZIPACÓN",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.73,
+        "lat": 4.759932,
+        "lng": -74.379566
+    },
+    {
+        "Municipio": "ZIPAQUIRÁ",
+        "Departamento": "CUNDINAMARCA",
+        "pH": 5.46,
+        "lat": 5.025477,
+        "lng": -73.994444
+    },
+    {
+        "Municipio": "BARRANCOMINAS",
+        "Departamento": "GUAINÍA",
+        "pH": 4.95,
+        "lat": 3.494178,
+        "lng": -69.814066
+    },
+    {
+        "Municipio": "INÍRIDA",
+        "Departamento": "GUAINÍA",
+        "pH": 5.19,
+        "lat": 3.866764,
+        "lng": -67.918613
+    },
+    {
+        "Municipio": "SAN FELIPE",
+        "Departamento": "GUAINÍA",
+        "pH": 4.96,
+        "lat": 1.912495,
+        "lng": -67.067848
+    },
+    {
+        "Municipio": "CALAMAR",
+        "Departamento": "GUAVIARE",
+        "pH": 4.6,
+        "lat": 10.250431,
+        "lng": -74.916144
+    },
+    {
+        "Municipio": "EL RETORNO",
+        "Departamento": "GUAVIARE",
+        "pH": 4.7,
+        "lat": 2.330164,
+        "lng": -72.627304
+    },
+    {
+        "Municipio": "MIRAFLORES",
+        "Departamento": "GUAVIARE",
+        "pH": 4.4,
+        "lat": 5.196515,
+        "lng": -73.14563
+    },
+    {
+        "Municipio": "SAN JOSÉ DEL GUAVIARE",
+        "Departamento": "GUAVIARE",
+        "pH": 4.77,
+        "lat": 2.565932,
+        "lng": -72.639254
+    },
+    {
+        "Municipio": "COLOMBIA",
+        "Departamento": "HUILA",
+        "pH": 5.51,
+        "lat": 3.376745,
+        "lng": -74.802815
+    },
+    {
+        "Municipio": "ACEVEDO",
+        "Departamento": "HUILA",
+        "pH": 4.85,
+        "lat": 1.805173,
+        "lng": -75.888706
+    },
+    {
+        "Municipio": "AGRADO",
+        "Departamento": "HUILA",
+        "pH": 6.7,
+        "lat": 2.25987,
+        "lng": -75.772022
+    },
+    {
+        "Municipio": "AIPE",
+        "Departamento": "HUILA",
+        "pH": 6.65,
+        "lat": 3.223996,
+        "lng": -75.239017
+    },
+    {
+        "Municipio": "ALGECIRAS",
+        "Departamento": "HUILA",
+        "pH": 5.64,
+        "lat": 2.521674,
+        "lng": -75.315389
+    },
+    {
+        "Municipio": "ALTAMIRA",
+        "Departamento": "HUILA",
+        "pH": 6.26,
+        "lat": 2.063841,
+        "lng": -75.788471
+    },
+    {
+        "Municipio": "BARAYA",
+        "Departamento": "HUILA",
+        "pH": 6.41,
+        "lat": 3.152204,
+        "lng": -75.054843
+    },
+    {
+        "Municipio": "CAMPOALEGRE",
+        "Departamento": "HUILA",
+        "pH": 6.33,
+        "lat": 2.686767,
+        "lng": -75.325748
+    },
+    {
+        "Municipio": "ELÍAS",
+        "Departamento": "HUILA",
+        "pH": 5.25,
+        "lat": 2.012854,
+        "lng": -75.938301
+    },
+    {
+        "Municipio": "GARZÓN",
+        "Departamento": "HUILA",
+        "pH": 6.27,
+        "lat": 2.196493,
+        "lng": -75.627057
+    },
+    {
+        "Municipio": "GIGANTE",
+        "Departamento": "HUILA",
+        "pH": 5.93,
+        "lat": 2.384031,
+        "lng": -75.547681
+    },
+    {
+        "Municipio": "GUADALUPE",
+        "Departamento": "HUILA",
+        "pH": 4.61,
+        "lat": 6.815069,
+        "lng": -75.239862
+    },
+    {
+        "Municipio": "HOBO",
+        "Departamento": "HUILA",
+        "pH": 6.1,
+        "lat": 2.580812,
+        "lng": -75.447697
+    },
+    {
+        "Municipio": "ÍQUIRA",
+        "Departamento": "HUILA",
+        "pH": 5.34,
+        "lat": 2.649359,
+        "lng": -75.634497
+    },
+    {
+        "Municipio": "ISNOS",
+        "Departamento": "HUILA",
+        "pH": 5.23,
+        "lat": 1.929467,
+        "lng": -76.217637
+    },
+    {
+        "Municipio": "LA ARGENTINA",
+        "Departamento": "HUILA",
+        "pH": 5.71,
+        "lat": 2.198496,
+        "lng": -75.979763
+    },
+    {
+        "Municipio": "LA PLATA",
+        "Departamento": "HUILA",
+        "pH": 5.21,
+        "lat": 2.389263,
+        "lng": -75.891254
+    },
+    {
+        "Municipio": "NÁTAGA",
+        "Departamento": "HUILA",
+        "pH": 4.84,
+        "lat": 2.5451,
+        "lng": -75.808756
+    },
+    {
+        "Municipio": "NEIVA",
+        "Departamento": "HUILA",
+        "pH": 5.74,
+        "lat": 2.935432,
+        "lng": -75.277327
+    },
+    {
+        "Municipio": "OPORAPA",
+        "Departamento": "HUILA",
+        "pH": 4.56,
+        "lat": 2.025088,
+        "lng": -75.995165
+    },
+    {
+        "Municipio": "PAICOL",
+        "Departamento": "HUILA",
+        "pH": 5.46,
+        "lat": 2.449651,
+        "lng": -75.773158
+    },
+    {
+        "Municipio": "PALERMO",
+        "Departamento": "HUILA",
+        "pH": 5.68,
+        "lat": 2.889649,
+        "lng": -75.435296
+    },
+    {
+        "Municipio": "PALESTINA",
+        "Departamento": "HUILA",
+        "pH": 5.1,
+        "lat": 5.017879,
+        "lng": -75.624577
+    },
+    {
+        "Municipio": "PALESTINA",
+        "Departamento": "HUILA",
+        "pH": 5.48,
+        "lat": 5.017879,
+        "lng": -75.624577
+    },
+    {
+        "Municipio": "PITAL",
+        "Departamento": "HUILA",
+        "pH": 5.73,
+        "lat": 2.266618,
+        "lng": -75.804544
+    },
+    {
+        "Municipio": "PITALITO",
+        "Departamento": "HUILA",
+        "pH": 5.15,
+        "lat": 1.852631,
+        "lng": -76.049441
+    },
+    {
+        "Municipio": "RIVERA",
+        "Departamento": "HUILA",
+        "pH": 5.99,
+        "lat": 2.777586,
+        "lng": -75.258753
+    },
+    {
+        "Municipio": "SALADOBLANCO",
+        "Departamento": "HUILA",
+        "pH": 5.37,
+        "lat": 1.9934,
+        "lng": -76.044747
+    },
+    {
+        "Municipio": "SAN AGUSTÍN",
+        "Departamento": "HUILA",
+        "pH": 5.45,
+        "lat": 1.881081,
+        "lng": -76.27036
+    },
+    {
+        "Municipio": "SANTA MARÍA",
+        "Departamento": "HUILA",
+        "pH": 4.39,
+        "lat": 4.857193,
+        "lng": -73.263518
+    },
+    {
+        "Municipio": "SUAZA",
+        "Departamento": "HUILA",
+        "pH": 5.05,
+        "lat": 1.976051,
+        "lng": -75.79525
+    },
+    {
+        "Municipio": "TARQUI",
+        "Departamento": "HUILA",
+        "pH": 5.64,
+        "lat": 2.111325,
+        "lng": -75.823976
+    },
+    {
+        "Municipio": "TELLO",
+        "Departamento": "HUILA",
+        "pH": 5.87,
+        "lat": 3.067538,
+        "lng": -75.138773
+    },
+    {
+        "Municipio": "TERUEL",
+        "Departamento": "HUILA",
+        "pH": 5.06,
+        "lat": 2.740968,
+        "lng": -75.567034
+    },
+    {
+        "Municipio": "TESALIA",
+        "Departamento": "HUILA",
+        "pH": 5.43,
+        "lat": 2.486364,
+        "lng": -75.730271
+    },
+    {
+        "Municipio": "TIMANÁ",
+        "Departamento": "HUILA",
+        "pH": 6.1,
+        "lat": 1.974539,
+        "lng": -75.932167
+    },
+    {
+        "Municipio": "VILLAVIEJA",
+        "Departamento": "HUILA",
+        "pH": 6.74,
+        "lat": 3.218822,
+        "lng": -75.217174
+    },
+    {
+        "Municipio": "YAGUARÁ",
+        "Departamento": "HUILA",
+        "pH": 6.05,
+        "lat": 2.664694,
+        "lng": -75.518023
+    },
+    {
+        "Municipio": "ALGARROBO",
+        "Departamento": "MAGDALENA",
+        "pH": 7.03,
+        "lat": 10.188059,
+        "lng": -74.061132
+    },
+    {
+        "Municipio": "ARACATACA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.19,
+        "lat": 10.589791,
+        "lng": -74.186702
+    },
+    {
+        "Municipio": "ARIGUANÍ",
+        "Departamento": "MAGDALENA",
+        "pH": 6.39,
+        "lat": 9.847047,
+        "lng": -74.236515
+    },
+    {
+        "Municipio": "CERRO DE SAN ANTONIO",
+        "Departamento": "MAGDALENA",
+        "pH": 5.65,
+        "lat": 10.325531,
+        "lng": -74.868474
+    },
+    {
+        "Municipio": "CHIVOLO",
+        "Departamento": "MAGDALENA",
+        "pH": 6.45,
+        "lat": 10.026631,
+        "lng": -74.622242
+    },
+    {
+        "Municipio": "CIÉNAGA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.22,
+        "lat": 11.006654,
+        "lng": -74.241286
+    },
+    {
+        "Municipio": "CONCORDIA",
+        "Departamento": "MAGDALENA",
+        "pH": 7.06,
+        "lat": 6.045738,
+        "lng": -75.908448
+    },
+    {
+        "Municipio": "EL BANCO",
+        "Departamento": "MAGDALENA",
+        "pH": 5.14,
+        "lat": 9.008503,
+        "lng": -73.97437
+    },
+    {
+        "Municipio": "EL PIÑÓN",
+        "Departamento": "MAGDALENA",
+        "pH": 6.45,
+        "lat": 10.402781,
+        "lng": -74.823094
+    },
+    {
+        "Municipio": "EL RETÉN",
+        "Departamento": "MAGDALENA",
+        "pH": 7.03,
+        "lat": 10.610488,
+        "lng": -74.268444
+    },
+    {
+        "Municipio": "FUNDACIÓN",
+        "Departamento": "MAGDALENA",
+        "pH": 5.87,
+        "lat": 10.514146,
+        "lng": -74.191453
+    },
+    {
+        "Municipio": "GUAMAL",
+        "Departamento": "MAGDALENA",
+        "pH": 5.77,
+        "lat": 9.144354,
+        "lng": -74.223689
+    },
+    {
+        "Municipio": "NUEVA GRANADA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.29,
+        "lat": 9.80186,
+        "lng": -74.391841
+    },
+    {
+        "Municipio": "PEDRAZA",
+        "Departamento": "MAGDALENA",
+        "pH": 7.56,
+        "lat": 10.18825,
+        "lng": -74.9154
+    },
+    {
+        "Municipio": "PIVIJAY",
+        "Departamento": "MAGDALENA",
+        "pH": 5.96,
+        "lat": 10.460707,
+        "lng": -74.613312
+    },
+    {
+        "Municipio": "PLATO",
+        "Departamento": "MAGDALENA",
+        "pH": 7.03,
+        "lat": 9.796713,
+        "lng": -74.784549
+    },
+    {
+        "Municipio": "PUEBLOVIEJO",
+        "Departamento": "MAGDALENA",
+        "pH": 6.34,
+        "lat": 10.994766,
+        "lng": -74.28253
+    },
+    {
+        "Municipio": "REMOLINO",
+        "Departamento": "MAGDALENA",
+        "pH": 6.06,
+        "lat": 10.701952,
+        "lng": -74.716172
+    },
+    {
+        "Municipio": "SABANAS DE SAN ÁNGEL",
+        "Departamento": "MAGDALENA",
+        "pH": 6.56,
+        "lat": 10.032536,
+        "lng": -74.213946
+    },
+    {
+        "Municipio": "SALAMINA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.31,
+        "lat": 5.403025,
+        "lng": -75.487223
+    },
+    {
+        "Municipio": "SAN SEBASTIÁN DE BUENAVISTA",
+        "Departamento": "MAGDALENA",
+        "pH": 5.85,
+        "lat": 9.241656,
+        "lng": -74.351498
+    },
+    {
+        "Municipio": "SAN ZENÓN",
+        "Departamento": "MAGDALENA",
+        "pH": 5.5,
+        "lat": 9.245061,
+        "lng": -74.498992
+    },
+    {
+        "Municipio": "SANTA ANA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.28,
+        "lat": 9.324294,
+        "lng": -74.566845
+    },
+    {
+        "Municipio": "SANTA BÁRBARA DE PINTO",
+        "Departamento": "MAGDALENA",
+        "pH": 5.78,
+        "lat": 9.432263,
+        "lng": -74.704667
+    },
+    {
+        "Municipio": "SANTA MARTA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.6,
+        "lat": 11.204679,
+        "lng": -74.199829
+    },
+    {
+        "Municipio": "SITIONUEVO",
+        "Departamento": "MAGDALENA",
+        "pH": 6.87,
+        "lat": 10.775285,
+        "lng": -74.720021
+    },
+    {
+        "Municipio": "TENERIFE",
+        "Departamento": "MAGDALENA",
+        "pH": 6.87,
+        "lat": 9.898273,
+        "lng": -74.859783
+    },
+    {
+        "Municipio": "ZONA BANANERA",
+        "Departamento": "MAGDALENA",
+        "pH": 6.88,
+        "lat": 10.763024,
+        "lng": -74.140091
+    },
+    {
+        "Municipio": "ACACÍAS",
+        "Departamento": "META",
+        "pH": 4.88,
+        "lat": 3.990413,
+        "lng": -73.766034
+    },
+    {
+        "Municipio": "BARRANCA DE UPÍA",
+        "Departamento": "META",
+        "pH": 4.98,
+        "lat": 4.566225,
+        "lng": -72.961083
+    },
+    {
+        "Municipio": "CABUYARO",
+        "Departamento": "META",
+        "pH": 4.87,
+        "lat": 4.286705,
+        "lng": -72.791768
+    },
+    {
+        "Municipio": "CASTILLA LA NUEVA",
+        "Departamento": "META",
+        "pH": 4.83,
+        "lat": 3.830005,
+        "lng": -73.687302
+    },
+    {
+        "Municipio": "CUBARRAL",
+        "Departamento": "META",
+        "pH": 5.01,
+        "lat": 3.793653,
+        "lng": -73.837999
+    },
+    {
+        "Municipio": "CUMARAL",
+        "Departamento": "META",
+        "pH": 4.92,
+        "lat": 4.270042,
+        "lng": -73.487052
+    },
+    {
+        "Municipio": "EL CALVARIO",
+        "Departamento": "META",
+        "pH": 5.02,
+        "lat": 4.352665,
+        "lng": -73.713325
+    },
+    {
+        "Municipio": "EL CASTILLO",
+        "Departamento": "META",
+        "pH": 5.13,
+        "lat": 3.563907,
+        "lng": -73.794225
+    },
+    {
+        "Municipio": "EL DORADO",
+        "Departamento": "META",
+        "pH": 5.19,
+        "lat": 3.739984,
+        "lng": -73.835264
+    },
+    {
+        "Municipio": "FUENTE DE ORO",
+        "Departamento": "META",
+        "pH": 5.42,
+        "lat": 3.462875,
+        "lng": -73.618121
+    },
+    {
+        "Municipio": "FUENTE DE ORO",
+        "Departamento": "META",
+        "pH": 5.26,
+        "lat": 3.462875,
+        "lng": -73.618121
+    },
+    {
+        "Municipio": "GRANADA",
+        "Departamento": "META",
+        "pH": 5.41,
+        "lat": 6.142892,
+        "lng": -75.184446
+    },
+    {
+        "Municipio": "GUAMAL",
+        "Departamento": "META",
+        "pH": 4.87,
+        "lat": 9.144354,
+        "lng": -74.223689
+    },
+    {
+        "Municipio": "LA MACARENA",
+        "Departamento": "META",
+        "pH": 5.1,
+        "lat": 2.177143,
+        "lng": -73.78661
+    },
+    {
+        "Municipio": "LEJANÍAS",
+        "Departamento": "META",
+        "pH": 5.41,
+        "lat": 3.525115,
+        "lng": -74.023514
+    },
+    {
+        "Municipio": "MAPIRIPÁN",
+        "Departamento": "META",
+        "pH": 4.92,
+        "lat": 2.896617,
+        "lng": -72.135509
+    },
+    {
+        "Municipio": "MESETAS",
+        "Departamento": "META",
+        "pH": 4.96,
+        "lat": 3.382732,
+        "lng": -74.044328
+    },
+    {
+        "Municipio": "PARATEBUENO",
+        "Departamento": "META",
+        "pH": 5.21,
+        "lat": 4.374832,
+        "lng": -73.212825
+    },
+    {
+        "Municipio": "PUERTO CONCORDIA",
+        "Departamento": "META",
+        "pH": 5.21,
+        "lat": 2.624006,
+        "lng": -72.760209
+    },
+    {
+        "Municipio": "PUERTO GAITÁN",
+        "Departamento": "META",
+        "pH": 5.08,
+        "lat": 4.314905,
+        "lng": -72.087649
+    },
+    {
+        "Municipio": "PUERTO LLERAS",
+        "Departamento": "META",
+        "pH": 5.0,
+        "lat": 3.272117,
+        "lng": -73.37385
+    },
+    {
+        "Municipio": "PUERTO LÓPEZ",
+        "Departamento": "META",
+        "pH": 5.09,
+        "lat": 4.09349,
+        "lng": -72.957324
+    },
+    {
+        "Municipio": "PUERTO RICO",
+        "Departamento": "META",
+        "pH": 5.11,
+        "lat": 1.909063,
+        "lng": -75.157604
+    },
+    {
+        "Municipio": "RESTREPO",
+        "Departamento": "META",
+        "pH": 4.78,
+        "lat": 4.259556,
+        "lng": -73.565408
+    },
+    {
+        "Municipio": "SAN CARLOS DE GUAROA",
+        "Departamento": "META",
+        "pH": 4.97,
+        "lat": 3.71065,
+        "lng": -73.242253
+    },
+    {
+        "Municipio": "SAN JUAN DE ARAMA",
+        "Departamento": "META",
+        "pH": 4.93,
+        "lat": 3.373728,
+        "lng": -73.875832
+    },
+    {
+        "Municipio": "SAN JUANITO",
+        "Departamento": "META",
+        "pH": 5.36,
+        "lat": 4.458181,
+        "lng": -73.676699
+    },
+    {
+        "Municipio": "CUBARRAL",
+        "Departamento": "META",
+        "pH": 4.71,
+        "lat": 3.793653,
+        "lng": -73.837999
+    },
+    {
+        "Municipio": "SAN MARTÍN",
+        "Departamento": "META",
+        "pH": 4.76,
+        "lat": 7.999855,
+        "lng": -73.510914
+    },
+    {
+        "Municipio": "URIBE",
+        "Departamento": "META",
+        "pH": 4.75,
+        "lat": 3.239634,
+        "lng": -74.351508
+    },
+    {
+        "Municipio": "VILLAVICENCIO",
+        "Departamento": "META",
+        "pH": 5.09,
+        "lat": 4.126369,
+        "lng": -73.622601
+    },
+    {
+        "Municipio": "VISTAHERMOSA",
+        "Departamento": "META",
+        "pH": 4.94,
+        "lat": 3.125579,
+        "lng": -73.750966
+    },
+    {
+        "Municipio": "CÓRDOBA",
+        "Departamento": "NARIÑO",
+        "pH": 5.64,
+        "lat": 9.586942,
+        "lng": -74.827399
+    },
+    {
+        "Municipio": "NARIÑO",
+        "Departamento": "NARIÑO",
+        "pH": 5.85,
+        "lat": 5.610777,
+        "lng": -75.176262
+    },
+    {
+        "Municipio": "ALBÁN",
+        "Departamento": "NARIÑO",
+        "pH": 5.6,
+        "lat": 4.878022,
+        "lng": -74.438261
+    },
+    {
+        "Municipio": "ALDANA",
+        "Departamento": "NARIÑO",
+        "pH": 5.5,
+        "lat": 0.882381,
+        "lng": -77.700564
+    },
+    {
+        "Municipio": "ANCUYA",
+        "Departamento": "NARIÑO",
+        "pH": 6.39,
+        "lat": 1.263276,
+        "lng": -77.514512
+    },
+    {
+        "Municipio": "ANCUYA",
+        "Departamento": "NARIÑO",
+        "pH": 5.86,
+        "lat": 1.263276,
+        "lng": -77.514512
+    },
+    {
+        "Municipio": "ARBOLEDA",
+        "Departamento": "NARIÑO",
+        "pH": 5.72,
+        "lat": 1.503418,
+        "lng": -77.135467
+    },
+    {
+        "Municipio": "BARBACOAS",
+        "Departamento": "NARIÑO",
+        "pH": 5.18,
+        "lat": 1.671733,
+        "lng": -78.13765
+    },
+    {
+        "Municipio": "BELÉN",
+        "Departamento": "NARIÑO",
+        "pH": 5.39,
+        "lat": 5.98923,
+        "lng": -72.911641
+    },
+    {
+        "Municipio": "BUESACO",
+        "Departamento": "NARIÑO",
+        "pH": 5.78,
+        "lat": 1.381453,
+        "lng": -77.156463
+    },
+    {
+        "Municipio": "CHACHAGÜÍ",
+        "Departamento": "NARIÑO",
+        "pH": 5.69,
+        "lat": 1.360545,
+        "lng": -77.281869
+    },
+    {
+        "Municipio": "COLÓN",
+        "Departamento": "NARIÑO",
+        "pH": 5.76,
+        "lat": 1.643878,
+        "lng": -77.019777
+    },
+    {
+        "Municipio": "CONSACÁ",
+        "Departamento": "NARIÑO",
+        "pH": 6.13,
+        "lat": 1.207854,
+        "lng": -77.466136
+    },
+    {
+        "Municipio": "CONTADERO",
+        "Departamento": "NARIÑO",
+        "pH": 5.79,
+        "lat": 0.910458,
+        "lng": -77.549409
+    },
+    {
+        "Municipio": "CUASPUD",
+        "Departamento": "NARIÑO",
+        "pH": 5.5,
+        "lat": 0.862978,
+        "lng": -77.728947
+    },
+    {
+        "Municipio": "CUMBAL",
+        "Departamento": "NARIÑO",
+        "pH": 5.46,
+        "lat": 0.906367,
+        "lng": -77.792505
+    },
+    {
+        "Municipio": "CUMBITARA",
+        "Departamento": "NARIÑO",
+        "pH": 5.98,
+        "lat": 1.647163,
+        "lng": -77.578616
+    },
+    {
+        "Municipio": "EL CHARCO",
+        "Departamento": "NARIÑO",
+        "pH": 4.73,
+        "lat": 2.479688,
+        "lng": -78.110217
+    },
+    {
+        "Municipio": "EL PEÑOL",
+        "Departamento": "NARIÑO",
+        "pH": 6.59,
+        "lat": 1.453567,
+        "lng": -77.438522
+    },
+    {
+        "Municipio": "EL ROSARIO",
+        "Departamento": "NARIÑO",
+        "pH": 6.99,
+        "lat": 1.745309,
+        "lng": -77.33417
+    },
+    {
+        "Municipio": "EL TABLÓN DE GÓMEZ",
+        "Departamento": "NARIÑO",
+        "pH": 5.78,
+        "lat": 1.427277,
+        "lng": -77.097101
+    },
+    {
+        "Municipio": "EL TAMBO",
+        "Departamento": "NARIÑO",
+        "pH": 5.9,
+        "lat": 2.451409,
+        "lng": -76.810911
+    },
+    {
+        "Municipio": "FRANCISCO PIZARRO",
+        "Departamento": "NARIÑO",
+        "pH": 5.52,
+        "lat": 2.040629,
+        "lng": -78.658361
+    },
+    {
+        "Municipio": "FUNES",
+        "Departamento": "NARIÑO",
+        "pH": 6.46,
+        "lat": 1.001159,
+        "lng": -77.448913
+    },
+    {
+        "Municipio": "GUACHUCAL",
+        "Departamento": "NARIÑO",
+        "pH": 5.58,
+        "lat": 0.959744,
+        "lng": -77.731589
+    },
+    {
+        "Municipio": "GUAITARILLA",
+        "Departamento": "NARIÑO",
+        "pH": 5.43,
+        "lat": 1.129574,
+        "lng": -77.549824
+    },
+    {
+        "Municipio": "GUALMATÁN",
+        "Departamento": "NARIÑO",
+        "pH": 5.52,
+        "lat": 0.919652,
+        "lng": -77.568701
+    },
+    {
+        "Municipio": "ILES",
+        "Departamento": "NARIÑO",
+        "pH": 5.7,
+        "lat": 0.96952,
+        "lng": -77.521227
+    },
+    {
+        "Municipio": "IMUÉS",
+        "Departamento": "NARIÑO",
+        "pH": 6.42,
+        "lat": 1.05506,
+        "lng": -77.496339
+    },
+    {
+        "Municipio": "IPIALES",
+        "Departamento": "NARIÑO",
+        "pH": 5.26,
+        "lat": 0.827732,
+        "lng": -77.646367
+    },
+    {
+        "Municipio": "LA CRUZ",
+        "Departamento": "NARIÑO",
+        "pH": 5.62,
+        "lat": 1.601318,
+        "lng": -76.970504
+    },
+    {
+        "Municipio": "LA FLORIDA",
+        "Departamento": "NARIÑO",
+        "pH": 5.62,
+        "lat": 1.29753,
+        "lng": -77.402882
+    },
+    {
+        "Municipio": "LA LLANADA",
+        "Departamento": "NARIÑO",
+        "pH": 5.69,
+        "lat": 1.472892,
+        "lng": -77.58091
+    },
+    {
+        "Municipio": "LA UNIÓN",
+        "Departamento": "NARIÑO",
+        "pH": 6.47,
+        "lat": 5.973845,
+        "lng": -75.360874
+    },
+    {
+        "Municipio": "LEIVA",
+        "Departamento": "NARIÑO",
+        "pH": 6.4,
+        "lat": 1.934453,
+        "lng": -77.306135
+    },
+    {
+        "Municipio": "LINARES",
+        "Departamento": "NARIÑO",
+        "pH": 5.92,
+        "lat": 1.350814,
+        "lng": -77.523953
+    },
+    {
+        "Municipio": "LOS ANDES",
+        "Departamento": "NARIÑO",
+        "pH": 6.14,
+        "lat": 1.494587,
+        "lng": -77.521303
+    },
+    {
+        "Municipio": "MALLAMA",
+        "Departamento": "NARIÑO",
+        "pH": 5.79,
+        "lat": 1.141037,
+        "lng": -77.864549
+    },
+    {
+        "Municipio": "MOSQUERA",
+        "Departamento": "NARIÑO",
+        "pH": 6.22,
+        "lat": 4.70653,
+        "lng": -74.221154
+    },
+    {
+        "Municipio": "OLAYA HERRERA",
+        "Departamento": "NARIÑO",
+        "pH": 5.87,
+        "lat": 2.347457,
+        "lng": -78.325814
+    },
+    {
+        "Municipio": "OSPINA",
+        "Departamento": "NARIÑO",
+        "pH": 5.52,
+        "lat": 1.058433,
+        "lng": -77.566082
+    },
+    {
+        "Municipio": "PASTO",
+        "Departamento": "NARIÑO",
+        "pH": 5.6,
+        "lat": 1.212352,
+        "lng": -77.278795
+    },
+    {
+        "Municipio": "PEÑOL",
+        "Departamento": "NARIÑO",
+        "pH": 7.02,
+        "lat": 6.219349,
+        "lng": -75.242693
+    },
+    {
+        "Municipio": "POLICARPA",
+        "Departamento": "NARIÑO",
+        "pH": 6.6,
+        "lat": 1.627196,
+        "lng": -77.458686
+    },
+    {
+        "Municipio": "POTOSÍ",
+        "Departamento": "NARIÑO",
+        "pH": 5.39,
+        "lat": 0.806639,
+        "lng": -77.573003
+    },
+    {
+        "Municipio": "PROVIDENCIA",
+        "Departamento": "NARIÑO",
+        "pH": 5.45,
+        "lat": 1.237814,
+        "lng": -77.596794
+    },
+    {
+        "Municipio": "PUERRES",
+        "Departamento": "NARIÑO",
+        "pH": 5.43,
+        "lat": 0.885125,
+        "lng": -77.504211
+    },
+    {
+        "Municipio": "PUPIALES",
+        "Departamento": "NARIÑO",
+        "pH": 5.58,
+        "lat": 0.870442,
+        "lng": -77.636042
+    },
+    {
+        "Municipio": "RICAURTE",
+        "Departamento": "NARIÑO",
+        "pH": 5.27,
+        "lat": 4.282113,
+        "lng": -74.772861
+    },
+    {
+        "Municipio": "SAMANIEGO",
+        "Departamento": "NARIÑO",
+        "pH": 5.7,
+        "lat": 1.335438,
+        "lng": -77.594341
+    },
+    {
+        "Municipio": "SAN ANDRÉS DE TUMACO",
+        "Departamento": "NARIÑO",
+        "pH": 5.47,
+        "lat": 1.807399,
+        "lng": -78.764073
+    },
+    {
+        "Municipio": "SAN BERNARDO",
+        "Departamento": "NARIÑO",
+        "pH": 5.49,
+        "lat": 4.179433,
+        "lng": -74.42296
+    },
+    {
+        "Municipio": "SAN LORENZO",
+        "Departamento": "NARIÑO",
+        "pH": 6.82,
+        "lat": 1.503362,
+        "lng": -77.21542
+    },
+    {
+        "Municipio": "SAN PABLO",
+        "Departamento": "NARIÑO",
+        "pH": 4.94,
+        "lat": 7.476747,
+        "lng": -73.924602
+    },
+    {
+        "Municipio": "SAN PEDRO DE CARTAGO",
+        "Departamento": "NARIÑO",
+        "pH": 5.51,
+        "lat": 1.551572,
+        "lng": -77.11941
+    },
+    {
+        "Municipio": "SANDONÁ",
+        "Departamento": "NARIÑO",
+        "pH": 6.24,
+        "lat": 1.283438,
+        "lng": -77.47313
+    },
+    {
+        "Municipio": "SANTACRUZ",
+        "Departamento": "NARIÑO",
+        "pH": 5.51,
+        "lat": 1.222589,
+        "lng": -77.677035
+    },
+    {
+        "Municipio": "SAPUYES",
+        "Departamento": "NARIÑO",
+        "pH": 5.42,
+        "lat": 1.037536,
+        "lng": -77.62028
+    },
+    {
+        "Municipio": "TAMINANGO",
+        "Departamento": "NARIÑO",
+        "pH": 7.23,
+        "lat": 1.570358,
+        "lng": -77.2808
+    },
+    {
+        "Municipio": "TANGUA",
+        "Departamento": "NARIÑO",
+        "pH": 5.7,
+        "lat": 1.09482,
+        "lng": -77.393735
+    },
+    {
+        "Municipio": "TÚQUERRES",
+        "Departamento": "NARIÑO",
+        "pH": 5.84,
+        "lat": 1.085044,
+        "lng": -77.61672
+    },
+    {
+        "Municipio": "YACUANQUER",
+        "Departamento": "NARIÑO",
+        "pH": 6.09,
+        "lat": 1.115937,
+        "lng": -77.400169
+    },
+    {
+        "Municipio": "COLÓN",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.45,
+        "lat": 1.643878,
+        "lng": -77.019777
+    },
+    {
+        "Municipio": "MOCOA",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.87,
+        "lat": 1.151172,
+        "lng": -76.654238
+    },
+    {
+        "Municipio": "ORITO",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.73,
+        "lat": 0.663593,
+        "lng": -76.873276
+    },
+    {
+        "Municipio": "PUERTO ASÍS",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.02,
+        "lat": 0.505627,
+        "lng": -76.496887
+    },
+    {
+        "Municipio": "PUERTO CAICEDO",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.66,
+        "lat": 0.687784,
+        "lng": -76.606118
+    },
+    {
+        "Municipio": "PUERTO GAITÁN",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.55,
+        "lat": 4.314905,
+        "lng": -72.087649
+    },
+    {
+        "Municipio": "PUERTO GUZMÁN",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.36,
+        "lat": 0.962854,
+        "lng": -76.407663
+    },
+    {
+        "Municipio": "PUERTO LEGUÍZAMO",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.93,
+        "lat": -0.192318,
+        "lng": -74.781842
+    },
+    {
+        "Municipio": "SAN FRANCISCO",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.23,
+        "lat": 5.963476,
+        "lng": -75.101562
+    },
+    {
+        "Municipio": "SAN MIGUEL",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.87,
+        "lat": 6.575315,
+        "lng": -72.644123
+    },
+    {
+        "Municipio": "SANTIAGO",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.28,
+        "lat": 7.865856,
+        "lng": -72.716203
+    },
+    {
+        "Municipio": "SIBUNDOY",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.48,
+        "lat": 1.20026,
+        "lng": -76.917814
+    },
+    {
+        "Municipio": "VALLE DEL GUAMUEZ",
+        "Departamento": "PUTUMAYO",
+        "pH": 5.02,
+        "lat": 0.423506,
+        "lng": -76.906751
+    },
+    {
+        "Municipio": "VILLAGARZÓN",
+        "Departamento": "PUTUMAYO",
+        "pH": 4.8,
+        "lat": 1.028821,
+        "lng": -76.61721
+    },
+    {
+        "Municipio": "ARMENIA",
+        "Departamento": "QUINDÍO",
+        "pH": 6.41,
+        "lat": 6.155667,
+        "lng": -75.786647
+    },
+    {
+        "Municipio": "BUENAVISTA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.85,
+        "lat": 5.512594,
+        "lng": -73.94217
+    },
+    {
+        "Municipio": "CALARCÁ",
+        "Departamento": "QUINDÍO",
+        "pH": 5.76,
+        "lat": 4.520982,
+        "lng": -75.646085
+    },
+    {
+        "Municipio": "CIRCASIA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.39,
+        "lat": 4.617759,
+        "lng": -75.636533
+    },
+    {
+        "Municipio": "FILANDIA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.53,
+        "lat": 4.674338,
+        "lng": -75.658387
+    },
+    {
+        "Municipio": "GÉNOVA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.73,
+        "lat": 4.206641,
+        "lng": -75.790402
+    },
+    {
+        "Municipio": "LA TEBAIDA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.16,
+        "lat": 4.453755,
+        "lng": -75.786887
+    },
+    {
+        "Municipio": "MONTENEGRO",
+        "Departamento": "QUINDÍO",
+        "pH": 5.92,
+        "lat": 4.565057,
+        "lng": -75.749827
+    },
+    {
+        "Municipio": "PIJAO",
+        "Departamento": "QUINDÍO",
+        "pH": 5.19,
+        "lat": 4.335036,
+        "lng": -75.703329
+    },
+    {
+        "Municipio": "QUIMBAYA",
+        "Departamento": "QUINDÍO",
+        "pH": 5.66,
+        "lat": 4.624387,
+        "lng": -75.765074
+    },
+    {
+        "Municipio": "SALENTO",
+        "Departamento": "QUINDÍO",
+        "pH": 5.61,
+        "lat": 4.637157,
+        "lng": -75.570844
+    },
+    {
+        "Municipio": "BALBOA",
+        "Departamento": "RISARALDA",
+        "pH": 6.47,
+        "lat": 2.040998,
+        "lng": -77.215773
+    },
+    {
+        "Municipio": "BELÉN DE UMBRÍA",
+        "Departamento": "RISARALDA",
+        "pH": 5.43,
+        "lat": 5.200793,
+        "lng": -75.868334
+    },
+    {
+        "Municipio": "GUÁTICA",
+        "Departamento": "RISARALDA",
+        "pH": 6.18,
+        "lat": 5.315367,
+        "lng": -75.799005
+    },
+    {
+        "Municipio": "LA CELIA",
+        "Departamento": "RISARALDA",
+        "pH": 5.66,
+        "lat": 5.002787,
+        "lng": -76.0032
+    },
+    {
+        "Municipio": "LA VIRGINIA",
+        "Departamento": "RISARALDA",
+        "pH": 5.75,
+        "lat": 4.896624,
+        "lng": -75.880394
+    },
+    {
+        "Municipio": "MARSELLA",
+        "Departamento": "RISARALDA",
+        "pH": 5.57,
+        "lat": 4.935771,
+        "lng": -75.73879
+    },
+    {
+        "Municipio": "MISTRATÓ",
+        "Departamento": "RISARALDA",
+        "pH": 5.91,
+        "lat": 5.297039,
+        "lng": -75.882886
+    },
+    {
+        "Municipio": "PEREIRA",
+        "Departamento": "RISARALDA",
+        "pH": 5.47,
+        "lat": 4.804985,
+        "lng": -75.719711
+    },
+    {
+        "Municipio": "PUEBLO RICO",
+        "Departamento": "RISARALDA",
+        "pH": 5.68,
+        "lat": 5.222043,
+        "lng": -76.030801
+    },
+    {
+        "Municipio": "QUINCHÍA",
+        "Departamento": "RISARALDA",
+        "pH": 5.78,
+        "lat": 5.340456,
+        "lng": -75.730431
+    },
+    {
+        "Municipio": "SANTA ROSA DE CABAL",
+        "Departamento": "RISARALDA",
+        "pH": 5.55,
+        "lat": 4.876271,
+        "lng": -75.623268
+    },
+    {
+        "Municipio": "SANTUARIO",
+        "Departamento": "RISARALDA",
+        "pH": 5.58,
+        "lat": 5.074911,
+        "lng": -75.964628
+    },
+    {
+        "Municipio": "BOLÍVAR",
+        "Departamento": "SANTANDER",
+        "pH": 5.41,
+        "lat": 1.837538,
+        "lng": -76.966215
+    },
+    {
+        "Municipio": "SAN ANDRÉS",
+        "Departamento": "SANTANDER",
+        "pH": 5.68,
+        "lat": 6.811511,
+        "lng": -72.848864
+    },
+    {
+        "Municipio": "AGUADA",
+        "Departamento": "SANTANDER",
+        "pH": 6.35,
+        "lat": 6.162355,
+        "lng": -73.523132
+    },
+    {
+        "Municipio": "ALBANIA",
+        "Departamento": "SANTANDER",
+        "pH": 4.93,
+        "lat": 1.328526,
+        "lng": -75.878375
+    },
+    {
+        "Municipio": "ARATOCA",
+        "Departamento": "SANTANDER",
+        "pH": 4.98,
+        "lat": 6.694418,
+        "lng": -73.01786
+    },
+    {
+        "Municipio": "BARBOSA",
+        "Departamento": "SANTANDER",
+        "pH": 5.31,
+        "lat": 6.439195,
+        "lng": -75.331627
+    },
+    {
+        "Municipio": "BARICHARA",
+        "Departamento": "SANTANDER",
+        "pH": 4.7,
+        "lat": 6.634111,
+        "lng": -73.223047
+    },
+    {
+        "Municipio": "BARRANCABERMEJA",
+        "Departamento": "SANTANDER",
+        "pH": 4.65,
+        "lat": 7.064857,
+        "lng": -73.849243
+    },
+    {
+        "Municipio": "BETULIA",
+        "Departamento": "SANTANDER",
+        "pH": 5.99,
+        "lat": 6.115208,
+        "lng": -75.984452
+    },
+    {
+        "Municipio": "BUCARAMANGA",
+        "Departamento": "SANTANDER",
+        "pH": 6.11,
+        "lat": 7.11647,
+        "lng": -73.132562
+    },
+    {
+        "Municipio": "CABRERA",
+        "Departamento": "SANTANDER",
+        "pH": 5.51,
+        "lat": 3.985164,
+        "lng": -74.484549
+    },
+    {
+        "Municipio": "CAPITANEJO",
+        "Departamento": "SANTANDER",
+        "pH": 7.12,
+        "lat": 6.527394,
+        "lng": -72.695427
+    },
+    {
+        "Municipio": "CARCASÍ",
+        "Departamento": "SANTANDER",
+        "pH": 5.98,
+        "lat": 6.629016,
+        "lng": -72.627099
+    },
+    {
+        "Municipio": "CEPITÁ",
+        "Departamento": "SANTANDER",
+        "pH": 6.9,
+        "lat": 6.753518,
+        "lng": -72.973536
+    },
+    {
+        "Municipio": "CERRITO",
+        "Departamento": "SANTANDER",
+        "pH": 5.78,
+        "lat": 6.840405,
+        "lng": -72.694851
+    },
+    {
+        "Municipio": "CHARALÁ",
+        "Departamento": "SANTANDER",
+        "pH": 5.33,
+        "lat": 6.284339,
+        "lng": -73.146873
+    },
+    {
+        "Municipio": "CHARTA",
+        "Departamento": "SANTANDER",
+        "pH": 5.84,
+        "lat": 7.28082,
+        "lng": -72.968798
+    },
+    {
+        "Municipio": "CHIMA",
+        "Departamento": "SANTANDER",
+        "pH": 4.9,
+        "lat": 6.344348,
+        "lng": -73.373656
+    },
+    {
+        "Municipio": "CHIPATÁ",
+        "Departamento": "SANTANDER",
+        "pH": 6.96,
+        "lat": 6.062521,
+        "lng": -73.637111
+    },
+    {
+        "Municipio": "CIMITARRA",
+        "Departamento": "SANTANDER",
+        "pH": 5.48,
+        "lat": 6.320886,
+        "lng": -73.953011
+    },
+    {
+        "Municipio": "CONCEPCIÓN",
+        "Departamento": "SANTANDER",
+        "pH": 6.01,
+        "lat": 6.394348,
+        "lng": -75.257587
+    },
+    {
+        "Municipio": "CONFINES",
+        "Departamento": "SANTANDER",
+        "pH": 4.87,
+        "lat": 6.357327,
+        "lng": -73.240554
+    },
+    {
+        "Municipio": "CONTRATACIÓN",
+        "Departamento": "SANTANDER",
+        "pH": 7.64,
+        "lat": 6.290561,
+        "lng": -73.474426
+    },
+    {
+        "Municipio": "COROMORO",
+        "Departamento": "SANTANDER",
+        "pH": 4.79,
+        "lat": 6.294999,
+        "lng": -73.040816
+    },
+    {
+        "Municipio": "CURITÍ",
+        "Departamento": "SANTANDER",
+        "pH": 7.46,
+        "lat": 6.605099,
+        "lng": -73.069383
+    },
+    {
+        "Municipio": "EL CARMEN",
+        "Departamento": "SANTANDER",
+        "pH": 5.09,
+        "lat": 8.510579,
+        "lng": -73.446687
+    },
+    {
+        "Municipio": "EL CARMEN DE CHUCURÍ",
+        "Departamento": "SANTANDER",
+        "pH": 5.21,
+        "lat": 6.700038,
+        "lng": -73.51066
+    },
+    {
+        "Municipio": "EL GUACAMAYO",
+        "Departamento": "SANTANDER",
+        "pH": 4.96,
+        "lat": 6.245111,
+        "lng": -73.496908
+    },
+    {
+        "Municipio": "EL PEÑÓN",
+        "Departamento": "SANTANDER",
+        "pH": 5.59,
+        "lat": 8.988271,
+        "lng": -73.949274
+    },
+    {
+        "Municipio": "EL PLAYÓN",
+        "Departamento": "SANTANDER",
+        "pH": 5.3,
+        "lat": 7.470715,
+        "lng": -73.20287
+    },
+    {
+        "Municipio": "ENCINO",
+        "Departamento": "SANTANDER",
+        "pH": 4.27,
+        "lat": 6.137429,
+        "lng": -73.098749
+    },
+    {
+        "Municipio": "ENCISO",
+        "Departamento": "SANTANDER",
+        "pH": 6.22,
+        "lat": 6.668034,
+        "lng": -72.699647
+    },
+    {
+        "Municipio": "FLORIÁN",
+        "Departamento": "SANTANDER",
+        "pH": 5.39,
+        "lat": 5.804659,
+        "lng": -73.97143
+    },
+    {
+        "Municipio": "FLORIDABLANCA",
+        "Departamento": "SANTANDER",
+        "pH": 5.84,
+        "lat": 7.072329,
+        "lng": -73.099104
+    },
+    {
+        "Municipio": "GALÁN",
+        "Departamento": "SANTANDER",
+        "pH": 7.25,
+        "lat": 6.638423,
+        "lng": -73.287769
+    },
+    {
+        "Municipio": "GÁMBITA",
+        "Departamento": "SANTANDER",
+        "pH": 4.94,
+        "lat": 5.945998,
+        "lng": -73.344185
+    },
+    {
+        "Municipio": "GIRÓN",
+        "Departamento": "SANTANDER",
+        "pH": 6.34,
+        "lat": 7.070432,
+        "lng": -73.166832
+    },
+    {
+        "Municipio": "GUACA",
+        "Departamento": "SANTANDER",
+        "pH": 5.45,
+        "lat": 6.876563,
+        "lng": -72.856322
+    },
+    {
+        "Municipio": "GUADALUPE",
+        "Departamento": "SANTANDER",
+        "pH": 5.29,
+        "lat": 6.815069,
+        "lng": -75.239862
+    },
+    {
+        "Municipio": "GUAPOTÁ",
+        "Departamento": "SANTANDER",
+        "pH": 5.19,
+        "lat": 6.308635,
+        "lng": -73.320732
+    },
+    {
+        "Municipio": "GUAVATÁ",
+        "Departamento": "SANTANDER",
+        "pH": 5.5,
+        "lat": 5.954348,
+        "lng": -73.700906
+    },
+    {
+        "Municipio": "GÜEPSA",
+        "Departamento": "SANTANDER",
+        "pH": 6.58,
+        "lat": 6.025013,
+        "lng": -73.575146
+    },
+    {
+        "Municipio": "HATO",
+        "Departamento": "SANTANDER",
+        "pH": 4.84,
+        "lat": 6.543957,
+        "lng": -73.308399
+    },
+    {
+        "Municipio": "JESÚS MARÍA",
+        "Departamento": "SANTANDER",
+        "pH": 4.9,
+        "lat": 5.876497,
+        "lng": -73.783396
+    },
+    {
+        "Municipio": "LA BELLEZA",
+        "Departamento": "SANTANDER",
+        "pH": 5.31,
+        "lat": 5.85925,
+        "lng": -73.965494
+    },
+    {
+        "Municipio": "LA PAZ",
+        "Departamento": "SANTANDER",
+        "pH": 5.26,
+        "lat": 10.387552,
+        "lng": -73.171365
+    },
+    {
+        "Municipio": "LANDÁZURI",
+        "Departamento": "SANTANDER",
+        "pH": 5.49,
+        "lat": 6.218812,
+        "lng": -73.811359
+    },
+    {
+        "Municipio": "LEBRIJA",
+        "Departamento": "SANTANDER",
+        "pH": 4.96,
+        "lat": 7.113351,
+        "lng": -73.219524
+    },
+    {
+        "Municipio": "LOS SANTOS",
+        "Departamento": "SANTANDER",
+        "pH": 5.72,
+        "lat": 6.755203,
+        "lng": -73.102739
+    },
+    {
+        "Municipio": "MACARAVITA",
+        "Departamento": "SANTANDER",
+        "pH": 6.22,
+        "lat": 6.50658,
+        "lng": -72.593105
+    },
+    {
+        "Municipio": "MÁLAGA",
+        "Departamento": "SANTANDER",
+        "pH": 6.08,
+        "lat": 6.703081,
+        "lng": -72.732089
+    },
+    {
+        "Municipio": "MATANZA",
+        "Departamento": "SANTANDER",
+        "pH": 4.77,
+        "lat": 7.323175,
+        "lng": -73.015566
+    },
+    {
+        "Municipio": "MOGOTES",
+        "Departamento": "SANTANDER",
+        "pH": 5.42,
+        "lat": 6.475246,
+        "lng": -72.969807
+    },
+    {
+        "Municipio": "MOLAGAVITA",
+        "Departamento": "SANTANDER",
+        "pH": 5.5,
+        "lat": 6.67432,
+        "lng": -72.809175
+    },
+    {
+        "Municipio": "OCAMONTE",
+        "Departamento": "SANTANDER",
+        "pH": 5.21,
+        "lat": 6.339988,
+        "lng": -73.122563
+    },
+    {
+        "Municipio": "OIBA",
+        "Departamento": "SANTANDER",
+        "pH": 5.12,
+        "lat": 6.26521,
+        "lng": -73.299791
+    },
+    {
+        "Municipio": "ONZAGA",
+        "Departamento": "SANTANDER",
+        "pH": 5.91,
+        "lat": 6.344104,
+        "lng": -72.816766
+    },
+    {
+        "Municipio": "PALMAS DEL SOCORRO",
+        "Departamento": "SANTANDER",
+        "pH": 5.01,
+        "lat": 6.406139,
+        "lng": -73.287764
+    },
+    {
+        "Municipio": "PÁRAMO",
+        "Departamento": "SANTANDER",
+        "pH": 5.41,
+        "lat": 6.416811,
+        "lng": -73.17022
+    },
+    {
+        "Municipio": "PIEDECUESTA",
+        "Departamento": "SANTANDER",
+        "pH": 5.77,
+        "lat": 6.997245,
+        "lng": -73.054795
+    },
+    {
+        "Municipio": "PINCHOTE",
+        "Departamento": "SANTANDER",
+        "pH": 5.74,
+        "lat": 6.531552,
+        "lng": -73.174209
+    },
+    {
+        "Municipio": "PUENTE NACIONAL",
+        "Departamento": "SANTANDER",
+        "pH": 4.94,
+        "lat": 5.878381,
+        "lng": -73.677567
+    },
+    {
+        "Municipio": "PUERTO PARRA",
+        "Departamento": "SANTANDER",
+        "pH": 4.86,
+        "lat": 6.650785,
+        "lng": -74.056129
+    },
+    {
+        "Municipio": "PUERTO WILCHES",
+        "Departamento": "SANTANDER",
+        "pH": 5.79,
+        "lat": 7.344057,
+        "lng": -73.899909
+    },
+    {
+        "Municipio": "RIONEGRO",
+        "Departamento": "SANTANDER",
+        "pH": 5.12,
+        "lat": 6.147148,
+        "lng": -75.377316
+    },
+    {
+        "Municipio": "SABANA DE TORRES",
+        "Departamento": "SANTANDER",
+        "pH": 5.29,
+        "lat": 7.391919,
+        "lng": -73.49906
+    },
+    {
+        "Municipio": "SAN BENITO",
+        "Departamento": "SANTANDER",
+        "pH": 6.62,
+        "lat": 6.126656,
+        "lng": -73.50907
+    },
+    {
+        "Municipio": "SAN GIL",
+        "Departamento": "SANTANDER",
+        "pH": 5.53,
+        "lat": 6.551952,
+        "lng": -73.134776
+    },
+    {
+        "Municipio": "SAN JOSÉ DE MIRANDA",
+        "Departamento": "SANTANDER",
+        "pH": 5.74,
+        "lat": 6.658995,
+        "lng": -72.733616
+    },
+    {
+        "Municipio": "SAN MIGUEL",
+        "Departamento": "SANTANDER",
+        "pH": 5.82,
+        "lat": 6.575315,
+        "lng": -72.644123
+    },
+    {
+        "Municipio": "SAN VICENTE DE CHUCURÍ",
+        "Departamento": "SANTANDER",
+        "pH": 5.06,
+        "lat": 6.880383,
+        "lng": -73.411024
+    },
+    {
+        "Municipio": "SANTA BÁRBARA",
+        "Departamento": "SANTANDER",
+        "pH": 5.26,
+        "lat": 5.875527,
+        "lng": -75.567351
+    },
+    {
+        "Municipio": "SANTA HELENA DEL OPÓN",
+        "Departamento": "SANTANDER",
+        "pH": 5.56,
+        "lat": 6.339565,
+        "lng": -73.616716
+    },
+    {
+        "Municipio": "SIMACOTA",
+        "Departamento": "SANTANDER",
+        "pH": 5.43,
+        "lat": 6.443469,
+        "lng": -73.337368
+    },
+    {
+        "Municipio": "SOCORRO",
+        "Departamento": "SANTANDER",
+        "pH": 5.34,
+        "lat": 6.46387,
+        "lng": -73.261198
+    },
+    {
+        "Municipio": "SUAITA",
+        "Departamento": "SANTANDER",
+        "pH": 4.96,
+        "lat": 6.101329,
+        "lng": -73.44165
+    },
+    {
+        "Municipio": "SUCRE",
+        "Departamento": "SANTANDER",
+        "pH": 4.91,
+        "lat": 2.038237,
+        "lng": -76.926279
+    },
+    {
+        "Municipio": "SURATÁ",
+        "Departamento": "SANTANDER",
+        "pH": 5.32,
+        "lat": 7.36658,
+        "lng": -72.984232
+    },
+    {
+        "Municipio": "TONA",
+        "Departamento": "SANTANDER",
+        "pH": 4.85,
+        "lat": 7.201417,
+        "lng": -72.967023
+    },
+    {
+        "Municipio": "VALLE DE SAN JOSÉ",
+        "Departamento": "SANTANDER",
+        "pH": 5.37,
+        "lat": 6.448028,
+        "lng": -73.143507
+    },
+    {
+        "Municipio": "VÉLEZ",
+        "Departamento": "SANTANDER",
+        "pH": 5.55,
+        "lat": 6.009275,
+        "lng": -73.672447
+    },
+    {
+        "Municipio": "VILLANUEVA",
+        "Departamento": "SANTANDER",
+        "pH": 6.3,
+        "lat": 10.444089,
+        "lng": -75.275613
+    },
+    {
+        "Municipio": "ZAPATOCA",
+        "Departamento": "SANTANDER",
+        "pH": 5.52,
+        "lat": 6.814387,
+        "lng": -73.268034
+    },
+    {
+        "Municipio": "SAN ANDRÉS",
+        "Departamento": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
+        "pH": 8.14,
+        "lat": 6.811511,
+        "lng": -72.848864
+    },
+    {
+        "Municipio": "BOGOTÁ, D.C.",
+        "Departamento": "BOGOTÁ, D.C.",
+        "pH": 5.43,
+        "lat": 4.649251,
+        "lng": -74.106992
+    },
+    {
+        "Municipio": "ALBANIA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.99,
+        "lat": 1.328526,
+        "lng": -75.878375
+    },
+    {
+        "Municipio": "BARRANCAS",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.83,
+        "lat": 10.958669,
+        "lng": -72.793639
+    },
+    {
+        "Municipio": "DIBULLA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.7,
+        "lat": 11.27155,
+        "lng": -73.307598
+    },
+    {
+        "Municipio": "DISTRACCIÓN",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.63,
+        "lat": 10.898414,
+        "lng": -72.887405
+    },
+    {
+        "Municipio": "EL MOLINO",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.9,
+        "lat": 10.653505,
+        "lng": -72.92673
+    },
+    {
+        "Municipio": "FONSECA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.46,
+        "lat": 10.886734,
+        "lng": -72.846319
+    },
+    {
+        "Municipio": "HATONUEVO",
+        "Departamento": "LA GUAJIRA",
+        "pH": 8.25,
+        "lat": 11.068864,
+        "lng": -72.75904
+    },
+    {
+        "Municipio": "LA JAGUA DEL PILAR",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.16,
+        "lat": 10.511862,
+        "lng": -73.072638
+    },
+    {
+        "Municipio": "MAICAO",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.6,
+        "lat": 11.378535,
+        "lng": -72.242738
+    },
+    {
+        "Municipio": "MANAURE",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.05,
+        "lat": 11.773767,
+        "lng": -72.438739
+    },
+    {
+        "Municipio": "RIOHACHA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.64,
+        "lat": 11.528588,
+        "lng": -72.911795
+    },
+    {
+        "Municipio": "SAN JUAN DEL CESAR",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.57,
+        "lat": 10.769546,
+        "lng": -73.000629
+    },
+    {
+        "Municipio": "URIBIA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.96,
+        "lat": 11.711904,
+        "lng": -72.265906
+    },
+    {
+        "Municipio": "URUMITA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 6.92,
+        "lat": 10.560169,
+        "lng": -73.012507
+    },
+    {
+        "Municipio": "VILLANUEVA",
+        "Departamento": "LA GUAJIRA",
+        "pH": 7.58,
+        "lat": 10.444089,
+        "lng": -75.275613
+    },
+    {
+        "Municipio": "ÁBREGO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.94,
+        "lat": 8.081616,
+        "lng": -73.221722
+    },
+    {
+        "Municipio": "ARBOLEDAS",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.35,
+        "lat": 7.642985,
+        "lng": -72.798952
+    },
+    {
+        "Municipio": "BOCHALEMA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.5,
+        "lat": 7.612192,
+        "lng": -72.64701
+    },
+    {
+        "Municipio": "BUCARASICA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.76,
+        "lat": 8.041299,
+        "lng": -72.868231
+    },
+    {
+        "Municipio": "CÁCHIRA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.01,
+        "lat": 7.741248,
+        "lng": -73.048983
+    },
+    {
+        "Municipio": "CÁCOTA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.17,
+        "lat": 7.268705,
+        "lng": -72.642059
+    },
+    {
+        "Municipio": "CHINÁCOTA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.35,
+        "lat": 7.603112,
+        "lng": -72.601162
+    },
+    {
+        "Municipio": "CHITAGÁ",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.51,
+        "lat": 7.138187,
+        "lng": -72.665468
+    },
+    {
+        "Municipio": "CONVENCIÓN",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.38,
+        "lat": 8.470374,
+        "lng": -73.3372
+    },
+    {
+        "Municipio": "CÚCUTA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.65,
+        "lat": 7.905725,
+        "lng": -72.508178
+    },
+    {
+        "Municipio": "CUCUTILLA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.16,
+        "lat": 7.539633,
+        "lng": -72.772816
+    },
+    {
+        "Municipio": "DURANIA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.27,
+        "lat": 7.714804,
+        "lng": -72.658491
+    },
+    {
+        "Municipio": "EL CARMEN",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.21,
+        "lat": 8.510579,
+        "lng": -73.446687
+    },
+    {
+        "Municipio": "EL TARRA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 4.79,
+        "lat": 8.574281,
+        "lng": -73.09614
+    },
+    {
+        "Municipio": "EL ZULIA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.13,
+        "lat": 7.938572,
+        "lng": -72.604717
+    },
+    {
+        "Municipio": "GRAMALOTE",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.63,
+        "lat": 7.916946,
+        "lng": -72.787233
+    },
+    {
+        "Municipio": "HACARÍ",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.49,
+        "lat": 8.321506,
+        "lng": -73.145997
+    },
+    {
+        "Municipio": "HERRÁN",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.32,
+        "lat": 7.506541,
+        "lng": -72.483519
+    },
+    {
+        "Municipio": "LA ESPERANZA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.79,
+        "lat": 7.639839,
+        "lng": -73.328126
+    },
+    {
+        "Municipio": "LA PLAYA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.2,
+        "lat": 8.21124,
+        "lng": -73.239986
+    },
+    {
+        "Municipio": "LABATECA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.23,
+        "lat": 7.298414,
+        "lng": -72.495983
+    },
+    {
+        "Municipio": "LOS PATIOS",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.11,
+        "lat": 7.833186,
+        "lng": -72.505612
+    },
+    {
+        "Municipio": "LOURDES",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.57,
+        "lat": 7.945631,
+        "lng": -72.832376
+    },
+    {
+        "Municipio": "MUTISCUA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.31,
+        "lat": 7.300469,
+        "lng": -72.747169
+    },
+    {
+        "Municipio": "OCAÑA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.73,
+        "lat": 8.248574,
+        "lng": -73.35607
+    },
+    {
+        "Municipio": "PAMPLONA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.54,
+        "lat": 7.372802,
+        "lng": -72.647714
+    },
+    {
+        "Municipio": "PAMPLONITA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.46,
+        "lat": 7.436745,
+        "lng": -72.639111
+    },
+    {
+        "Municipio": "PUERTO SANTANDER",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.36,
+        "lat": 8.359993,
+        "lng": -72.411363
+    },
+    {
+        "Municipio": "RAGONVALIA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.2,
+        "lat": 7.577861,
+        "lng": -72.476708
+    },
+    {
+        "Municipio": "SALAZAR",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.27,
+        "lat": 7.773683,
+        "lng": -72.813064
+    },
+    {
+        "Municipio": "SAN CALIXTO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.89,
+        "lat": 8.40214,
+        "lng": -73.208622
+    },
+    {
+        "Municipio": "SAN CAYETANO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.08,
+        "lat": 5.332938,
+        "lng": -74.024754
+    },
+    {
+        "Municipio": "SANTIAGO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 4.93,
+        "lat": 7.865856,
+        "lng": -72.716203
+    },
+    {
+        "Municipio": "SARDINATA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.14,
+        "lat": 8.082105,
+        "lng": -72.800577
+    },
+    {
+        "Municipio": "SILOS",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.29,
+        "lat": 7.204736,
+        "lng": -72.757128
+    },
+    {
+        "Municipio": "TEORAMA",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.38,
+        "lat": 8.438134,
+        "lng": -73.28707
+    },
+    {
+        "Municipio": "TIBÚ",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 4.92,
+        "lat": 8.639891,
+        "lng": -72.734496
+    },
+    {
+        "Municipio": "TOLEDO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.06,
+        "lat": 7.010328,
+        "lng": -75.692281
+    },
+    {
+        "Municipio": "VILLA CARO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 5.55,
+        "lat": 7.914244,
+        "lng": -72.973601
+    },
+    {
+        "Municipio": "VILLA DEL ROSARIO",
+        "Departamento": "NORTE DE SANTANDER",
+        "pH": 6.52,
+        "lat": 7.847672,
+        "lng": -72.469758
+    },
+    {
+        "Municipio": "BETULIA",
+        "Departamento": "SUCRE",
+        "pH": 6.38,
+        "lat": 6.115208,
+        "lng": -75.984452
+    },
+    {
+        "Municipio": "CAIMITO",
+        "Departamento": "SUCRE",
+        "pH": 5.53,
+        "lat": 8.789324,
+        "lng": -75.117141
+    },
+    {
+        "Municipio": "CHALÁN",
+        "Departamento": "SUCRE",
+        "pH": 7.63,
+        "lat": 9.545352,
+        "lng": -75.312697
+    },
+    {
+        "Municipio": "COLOSÓ",
+        "Departamento": "SUCRE",
+        "pH": 7.97,
+        "lat": 9.494192,
+        "lng": -75.353256
+    },
+    {
+        "Municipio": "COLOSÓ",
+        "Departamento": "SUCRE",
+        "pH": 6.29,
+        "lat": 9.494192,
+        "lng": -75.353256
+    },
+    {
+        "Municipio": "COROZAL",
+        "Departamento": "SUCRE",
+        "pH": 6.33,
+        "lat": 9.318749,
+        "lng": -75.293048
+    },
+    {
+        "Municipio": "EL ROBLE",
+        "Departamento": "SUCRE",
+        "pH": 6.12,
+        "lat": 9.100647,
+        "lng": -75.198378
+    },
+    {
+        "Municipio": "GALERAS",
+        "Departamento": "SUCRE",
+        "pH": 5.69,
+        "lat": 9.160379,
+        "lng": -75.04959
+    },
+    {
+        "Municipio": "LA UNIÓN",
+        "Departamento": "SUCRE",
+        "pH": 5.96,
+        "lat": 5.973845,
+        "lng": -75.360874
+    },
+    {
+        "Municipio": "LOS PALMITOS",
+        "Departamento": "SUCRE",
+        "pH": 5.56,
+        "lat": 9.380269,
+        "lng": -75.268716
+    },
+    {
+        "Municipio": "MAJAGUAL",
+        "Departamento": "SUCRE",
+        "pH": 6.27,
+        "lat": 8.541163,
+        "lng": -74.628077
+    },
+    {
+        "Municipio": "MORROA",
+        "Departamento": "SUCRE",
+        "pH": 7.0,
+        "lat": 9.331395,
+        "lng": -75.305949
+    },
+    {
+        "Municipio": "OVEJAS",
+        "Departamento": "SUCRE",
+        "pH": 7.56,
+        "lat": 9.527176,
+        "lng": -75.229037
+    },
+    {
+        "Municipio": "PALMITO",
+        "Departamento": "SUCRE",
+        "pH": 6.47,
+        "lat": 9.333157,
+        "lng": -75.541264
+    },
+    {
+        "Municipio": "SAMPUÉS",
+        "Departamento": "SUCRE",
+        "pH": 6.77,
+        "lat": 9.183193,
+        "lng": -75.380222
+    },
+    {
+        "Municipio": "SAN BENITO",
+        "Departamento": "SUCRE",
+        "pH": 5.05,
+        "lat": 6.126656,
+        "lng": -73.50907
+    },
+    {
+        "Municipio": "SAN BENITO ABAD",
+        "Departamento": "SUCRE",
+        "pH": 5.47,
+        "lat": 8.930108,
+        "lng": -75.031089
+    },
+    {
+        "Municipio": "SAN JUAN DE BETULIA",
+        "Departamento": "SUCRE",
+        "pH": 6.73,
+        "lat": 9.273066,
+        "lng": -75.243565
+    },
+    {
+        "Municipio": "SAN LUIS DE SINCÉ",
+        "Departamento": "SUCRE",
+        "pH": 6.17,
+        "lat": 9.244308,
+        "lng": -75.145999
+    },
+    {
+        "Municipio": "SAN MARCOS",
+        "Departamento": "SUCRE",
+        "pH": 5.61,
+        "lat": 8.661774,
+        "lng": -75.133831
+    },
+    {
+        "Municipio": "SAN ONOFRE",
+        "Departamento": "SUCRE",
+        "pH": 6.01,
+        "lat": 9.736955,
+        "lng": -75.522398
+    },
+    {
+        "Municipio": "SAN PEDRO",
+        "Departamento": "SUCRE",
+        "pH": 6.62,
+        "lat": 9.39625,
+        "lng": -75.063647
+    },
+    {
+        "Municipio": "SANTIAGO DE TOLÚ",
+        "Departamento": "SUCRE",
+        "pH": 6.66,
+        "lat": 9.525387,
+        "lng": -75.581112
+    },
+    {
+        "Municipio": "SINCELEJO",
+        "Departamento": "SUCRE",
+        "pH": 6.47,
+        "lat": 9.302322,
+        "lng": -75.395445
+    },
+    {
+        "Municipio": "SANTIAGO DE TOLÚ",
+        "Departamento": "SUCRE",
+        "pH": 6.49,
+        "lat": 9.525387,
+        "lng": -75.581112
+    },
+    {
+        "Municipio": "CANDELARIA",
+        "Departamento": "TOLIMA",
+        "pH": 5.69,
+        "lat": 10.461903,
+        "lng": -74.879717
+    },
+    {
+        "Municipio": "ALPUJARRA",
+        "Departamento": "TOLIMA",
+        "pH": 4.93,
+        "lat": 3.391548,
+        "lng": -74.9329
+    },
+    {
+        "Municipio": "ALVARADO",
+        "Departamento": "TOLIMA",
+        "pH": 6.48,
+        "lat": 4.567356,
+        "lng": -74.953418
+    },
+    {
+        "Municipio": "AMBALEMA",
+        "Departamento": "TOLIMA",
+        "pH": 6.88,
+        "lat": 4.782682,
+        "lng": -74.764429
+    },
+    {
+        "Municipio": "ANZOÁTEGUI",
+        "Departamento": "TOLIMA",
+        "pH": 5.88,
+        "lat": 4.631756,
+        "lng": -75.093772
+    },
+    {
+        "Municipio": "ARMERO",
+        "Departamento": "TOLIMA",
+        "pH": 6.2,
+        "lat": 5.030744,
+        "lng": -74.884438
+    },
+    {
+        "Municipio": "ARMERO",
+        "Departamento": "TOLIMA",
+        "pH": 6.33,
+        "lat": 5.030744,
+        "lng": -74.884438
+    },
+    {
+        "Municipio": "ATACO",
+        "Departamento": "TOLIMA",
+        "pH": 5.26,
+        "lat": 3.590591,
+        "lng": -75.382545
+    },
+    {
+        "Municipio": "CAJAMARCA",
+        "Departamento": "TOLIMA",
+        "pH": 6.23,
+        "lat": 4.438812,
+        "lng": -75.431971
+    },
+    {
+        "Municipio": "CARMEN DE APICALÁ",
+        "Departamento": "TOLIMA",
+        "pH": 6.44,
+        "lat": 4.152334,
+        "lng": -74.717633
+    },
+    {
+        "Municipio": "CASABIANCA",
+        "Departamento": "TOLIMA",
+        "pH": 5.53,
+        "lat": 5.078465,
+        "lng": -75.120966
+    },
+    {
+        "Municipio": "CHAPARRAL",
+        "Departamento": "TOLIMA",
+        "pH": 5.85,
+        "lat": 3.722918,
+        "lng": -75.480765
+    },
+    {
+        "Municipio": "COELLO",
+        "Departamento": "TOLIMA",
+        "pH": 7.21,
+        "lat": 4.287276,
+        "lng": -74.898464
+    },
+    {
+        "Municipio": "COYAIMA",
+        "Departamento": "TOLIMA",
+        "pH": 6.47,
+        "lat": 3.798036,
+        "lng": -75.193862
+    },
+    {
+        "Municipio": "CUNDAY",
+        "Departamento": "TOLIMA",
+        "pH": 5.07,
+        "lat": 4.059259,
+        "lng": -74.692227
+    },
+    {
+        "Municipio": "DOLORES",
+        "Departamento": "TOLIMA",
+        "pH": 4.74,
+        "lat": 3.539072,
+        "lng": -74.896761
+    },
+    {
+        "Municipio": "ESPINAL",
+        "Departamento": "TOLIMA",
+        "pH": 6.71,
+        "lat": 4.151314,
+        "lng": -74.885446
+    },
+    {
+        "Municipio": "FALAN",
+        "Departamento": "TOLIMA",
+        "pH": 5.52,
+        "lat": 5.123104,
+        "lng": -74.953007
+    },
+    {
+        "Municipio": "FLANDES",
+        "Departamento": "TOLIMA",
+        "pH": 6.61,
+        "lat": 4.276373,
+        "lng": -74.818763
+    },
+    {
+        "Municipio": "FRESNO",
+        "Departamento": "TOLIMA",
+        "pH": 5.5,
+        "lat": 5.153576,
+        "lng": -75.035722
+    },
+    {
+        "Municipio": "GUAMO",
+        "Departamento": "TOLIMA",
+        "pH": 6.69,
+        "lat": 4.030992,
+        "lng": -74.968135
+    },
+    {
+        "Municipio": "HERVEO",
+        "Departamento": "TOLIMA",
+        "pH": 5.66,
+        "lat": 5.080228,
+        "lng": -75.177151
+    },
+    {
+        "Municipio": "HONDA",
+        "Departamento": "TOLIMA",
+        "pH": 6.14,
+        "lat": 5.211816,
+        "lng": -74.75699
+    },
+    {
+        "Municipio": "IBAGUÉ",
+        "Departamento": "TOLIMA",
+        "pH": 6.33,
+        "lat": 4.432248,
+        "lng": -75.19425
+    },
+    {
+        "Municipio": "ICONONZO",
+        "Departamento": "TOLIMA",
+        "pH": 5.32,
+        "lat": 4.176487,
+        "lng": -74.531969
+    },
+    {
+        "Municipio": "LÉRIDA",
+        "Departamento": "TOLIMA",
+        "pH": 6.13,
+        "lat": 4.862046,
+        "lng": -74.910716
+    },
+    {
+        "Municipio": "LÍBANO",
+        "Departamento": "TOLIMA",
+        "pH": 5.57,
+        "lat": 4.92042,
+        "lng": -75.061959
+    },
+    {
+        "Municipio": "MELGAR",
+        "Departamento": "TOLIMA",
+        "pH": 5.32,
+        "lat": 4.203655,
+        "lng": -74.641317
+    },
+    {
+        "Municipio": "MURILLO",
+        "Departamento": "TOLIMA",
+        "pH": 5.68,
+        "lat": 4.874341,
+        "lng": -75.171022
+    },
+    {
+        "Municipio": "NATAGAIMA",
+        "Departamento": "TOLIMA",
+        "pH": 6.58,
+        "lat": 3.624324,
+        "lng": -75.093182
+    },
+    {
+        "Municipio": "ORTEGA",
+        "Departamento": "TOLIMA",
+        "pH": 6.28,
+        "lat": 3.934916,
+        "lng": -75.222601
+    },
+    {
+        "Municipio": "PALOCABILDO",
+        "Departamento": "TOLIMA",
+        "pH": 5.55,
+        "lat": 5.120918,
+        "lng": -75.022167
+    },
+    {
+        "Municipio": "PIEDRAS",
+        "Departamento": "TOLIMA",
+        "pH": 6.99,
+        "lat": 4.543951,
+        "lng": -74.878106
+    },
+    {
+        "Municipio": "PLANADAS",
+        "Departamento": "TOLIMA",
+        "pH": 5.79,
+        "lat": 3.197911,
+        "lng": -75.644163
+    },
+    {
+        "Municipio": "PRADO",
+        "Departamento": "TOLIMA",
+        "pH": 5.94,
+        "lat": 3.750939,
+        "lng": -74.927447
+    },
+    {
+        "Municipio": "PURIFICACIÓN",
+        "Departamento": "TOLIMA",
+        "pH": 6.26,
+        "lat": 3.857246,
+        "lng": -74.935555
+    },
+    {
+        "Municipio": "RIOBLANCO",
+        "Departamento": "TOLIMA",
+        "pH": 5.99,
+        "lat": 3.529932,
+        "lng": -75.644069
+    },
+    {
+        "Municipio": "RONCESVALLES",
+        "Departamento": "TOLIMA",
+        "pH": 5.67,
+        "lat": 4.011567,
+        "lng": -75.605959
+    },
+    {
+        "Municipio": "ROVIRA",
+        "Departamento": "TOLIMA",
+        "pH": 5.97,
+        "lat": 4.239019,
+        "lng": -75.240648
+    },
+    {
+        "Municipio": "SALDAÑA",
+        "Departamento": "TOLIMA",
+        "pH": 6.31,
+        "lat": 3.929815,
+        "lng": -75.016852
+    },
+    {
+        "Municipio": "SAN ANTONIO",
+        "Departamento": "TOLIMA",
+        "pH": 6.0,
+        "lat": 3.914146,
+        "lng": -75.480074
+    },
+    {
+        "Municipio": "SAN LUIS",
+        "Departamento": "TOLIMA",
+        "pH": 6.58,
+        "lat": 6.043017,
+        "lng": -74.993619
+    },
+    {
+        "Municipio": "SAN SEBASTIÁN DE MARIQUITA",
+        "Departamento": "TOLIMA",
+        "pH": 5.67,
+        "lat": 5.199708,
+        "lng": -74.889276
+    },
+    {
+        "Municipio": "SANTA ISABEL",
+        "Departamento": "TOLIMA",
+        "pH": 5.79,
+        "lat": 4.713606,
+        "lng": -75.097934
+    },
+    {
+        "Municipio": "SUÁREZ",
+        "Departamento": "TOLIMA",
+        "pH": 6.74,
+        "lat": 2.959785,
+        "lng": -76.69357
+    },
+    {
+        "Municipio": "VALLE DE SAN JUAN",
+        "Departamento": "TOLIMA",
+        "pH": 6.04,
+        "lat": 4.197494,
+        "lng": -75.115669
+    },
+    {
+        "Municipio": "VENADILLO",
+        "Departamento": "TOLIMA",
+        "pH": 6.47,
+        "lat": 4.717878,
+        "lng": -74.929333
+    },
+    {
+        "Municipio": "VILLAHERMOSA",
+        "Departamento": "TOLIMA",
+        "pH": 5.51,
+        "lat": 5.030452,
+        "lng": -75.117729
+    },
+    {
+        "Municipio": "VILLARRICA",
+        "Departamento": "TOLIMA",
+        "pH": 4.83,
+        "lat": 3.936902,
+        "lng": -74.600285
+    },
+    {
+        "Municipio": "BOLÍVAR",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.01,
+        "lat": 1.837538,
+        "lng": -76.966215
+    },
+    {
+        "Municipio": "CANDELARIA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.15,
+        "lat": 10.461903,
+        "lng": -74.879717
+    },
+    {
+        "Municipio": "ALCALÁ",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.5,
+        "lat": 4.674994,
+        "lng": -75.779792
+    },
+    {
+        "Municipio": "ANDALUCÍA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.06,
+        "lat": 4.171713,
+        "lng": -76.167925
+    },
+    {
+        "Municipio": "ANSERMANUEVO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.76,
+        "lat": 4.794984,
+        "lng": -75.992003
+    },
+    {
+        "Municipio": "ARGELIA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.91,
+        "lat": 5.731474,
+        "lng": -75.14107
+    },
+    {
+        "Municipio": "BUENAVENTURA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.24,
+        "lat": 3.875708,
+        "lng": -77.01074
+    },
+    {
+        "Municipio": "BUGALAGRANDE",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.48,
+        "lat": 4.208358,
+        "lng": -76.15682
+    },
+    {
+        "Municipio": "CAICEDONIA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.67,
+        "lat": 4.334808,
+        "lng": -75.830594
+    },
+    {
+        "Municipio": "CALI",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.6,
+        "lat": 3.413686,
+        "lng": -76.52133
+    },
+    {
+        "Municipio": "CALIMA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.56,
+        "lat": 3.933664,
+        "lng": -76.484132
+    },
+    {
+        "Municipio": "CARTAGO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.84,
+        "lat": 4.742192,
+        "lng": -75.924374
+    },
+    {
+        "Municipio": "CERRITO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.31,
+        "lat": 6.840405,
+        "lng": -72.694851
+    },
+    {
+        "Municipio": "DAGUA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.96,
+        "lat": 3.657318,
+        "lng": -76.68886
+    },
+    {
+        "Municipio": "EL ÁGUILA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.57,
+        "lat": 4.906062,
+        "lng": -76.042779
+    },
+    {
+        "Municipio": "EL CAIRO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.84,
+        "lat": 4.760874,
+        "lng": -76.221611
+    },
+    {
+        "Municipio": "EL CERRITO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.6,
+        "lat": 3.684229,
+        "lng": -76.311972
+    },
+    {
+        "Municipio": "EL DOVIO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.01,
+        "lat": 4.510452,
+        "lng": -76.237084
+    },
+    {
+        "Municipio": "FLORIDA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.89,
+        "lat": 3.324118,
+        "lng": -76.234199
+    },
+    {
+        "Municipio": "GINEBRA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.0,
+        "lat": 3.724181,
+        "lng": -76.268068
+    },
+    {
+        "Municipio": "GUACARÍ",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.28,
+        "lat": 3.761815,
+        "lng": -76.330911
+    },
+    {
+        "Municipio": "GUADALAJARA DE BUGA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.59,
+        "lat": 3.900736,
+        "lng": -76.298979
+    },
+    {
+        "Municipio": "JAMUNDÍ",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.73,
+        "lat": 3.258751,
+        "lng": -76.538472
+    },
+    {
+        "Municipio": "LA CUMBRE",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.73,
+        "lat": 3.649268,
+        "lng": -76.56805
+    },
+    {
+        "Municipio": "LA UNIÓN",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.15,
+        "lat": 5.973845,
+        "lng": -75.360874
+    },
+    {
+        "Municipio": "LA VICTORIA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.42,
+        "lat": 5.523792,
+        "lng": -74.234393
+    },
+    {
+        "Municipio": "OBANDO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.31,
+        "lat": 4.575712,
+        "lng": -75.974709
+    },
+    {
+        "Municipio": "PALMIRA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.05,
+        "lat": 3.531544,
+        "lng": -76.298846
+    },
+    {
+        "Municipio": "PRADERA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.12,
+        "lat": 3.419793,
+        "lng": -76.241799
+    },
+    {
+        "Municipio": "RESTREPO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.64,
+        "lat": 4.259556,
+        "lng": -73.565408
+    },
+    {
+        "Municipio": "RIOFRÍO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.24,
+        "lat": 4.156908,
+        "lng": -76.288313
+    },
+    {
+        "Municipio": "ROLDANILLO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 7.13,
+        "lat": 4.413601,
+        "lng": -76.152277
+    },
+    {
+        "Municipio": "SAN PEDRO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.66,
+        "lat": 9.39625,
+        "lng": -75.063647
+    },
+    {
+        "Municipio": "SEVILLA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.74,
+        "lat": 4.270714,
+        "lng": -75.931629
+    },
+    {
+        "Municipio": "TORO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.74,
+        "lat": 4.608085,
+        "lng": -76.076859
+    },
+    {
+        "Municipio": "TRUJILLO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.62,
+        "lat": 4.212037,
+        "lng": -76.318818
+    },
+    {
+        "Municipio": "TULUÁ",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.16,
+        "lat": 4.085399,
+        "lng": -76.197731
+    },
+    {
+        "Municipio": "ULLOA",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.34,
+        "lat": 4.703623,
+        "lng": -75.737808
+    },
+    {
+        "Municipio": "VERSALLES",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.2,
+        "lat": 4.575019,
+        "lng": -76.199203
+    },
+    {
+        "Municipio": "VIJES",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.75,
+        "lat": 3.698686,
+        "lng": -76.441804
+    },
+    {
+        "Municipio": "YOTOCO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 5.55,
+        "lat": 3.861241,
+        "lng": -76.382698
+    },
+    {
+        "Municipio": "YUMBO",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.67,
+        "lat": 3.540097,
+        "lng": -76.499893
+    },
+    {
+        "Municipio": "ZARZAL",
+        "Departamento": "VALLE DEL CAUCA",
+        "pH": 6.76,
+        "lat": 4.392658,
+        "lng": -76.070795
+    },
+    {
+        "Municipio": "MITÚ",
+        "Departamento": "VAUPÉS",
+        "pH": 4.97,
+        "lat": 1.253151,
+        "lng": -70.232641
+    },
+    {
+        "Municipio": "CUMARIBO",
+        "Departamento": "VICHADA",
+        "pH": 5.22,
+        "lat": 4.446352,
+        "lng": -69.795533
+    },
+    {
+        "Municipio": "LA PRIMAVERA",
+        "Departamento": "VICHADA",
+        "pH": 5.01,
+        "lat": 5.486309,
+        "lng": -70.410515
+    },
+    {
+        "Municipio": "PUERTO CARREÑO",
+        "Departamento": "VICHADA",
+        "pH": 5.21,
+        "lat": 6.186636,
+        "lng": -67.487095
+    },
+    {
+        "Municipio": "SANTA ROSALÍA",
+        "Departamento": "VICHADA",
+        "pH": 5.02,
+        "lat": 5.136393,
+        "lng": -70.859499
+    }
+]

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Aptitud de Suelos (UPRA/SIPRA) - Colombia</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        
+        /* Estilos para la leyenda */
+        .legend {
+            background: white;
+            padding: 10px;
+            line-height: 18px;
+            color: #555;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // 1. Inicializar el mapa centrado en Colombia
+        const map = L.map('map').setView([4.5709, -74.2973], 6);
+
+        // 2. Agregar capa base
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // 3. Función de clasificación (Lógica UPRA / SIPRA)
+        // A1 (Óptimo), A2 (Moderado), A3 (Baja), N (No Apta)
+        function getPhProperties(phVal) {
+            const val = parseFloat(phVal);
+            
+            // N: No Apta / Exclusión (< 4.5 o > 8.0)
+            if (val < 4.5 || val > 8.0) { 
+                return { 
+                    color: '#8B0000', // Rojo Oscuro
+                    label: 'N: No Apta', 
+                    aptitud: 'Severas Limitaciones (Toxicidad/Salinidad)' 
+                };
+            }
+            
+            // A3: Aptitud Baja (4.5-5.0 o 7.5-8.0)
+            if ((val >= 4.5 && val < 5.0) || (val > 7.5 && val <= 8.0)) { 
+                return { 
+                    color: '#FF8C00', // Naranja Oscuro
+                    label: 'A3: Aptitud Baja', 
+                    aptitud: 'Restricciones Fuertes (Requiere Enmiendas)' 
+                };
+            }
+            
+            // A2: Aptitud Media (5.0-5.5 o 7.0-7.5)
+            if ((val >= 5.0 && val < 5.5) || (val > 7.0 && val <= 7.5)) { 
+                return { 
+                    color: '#FFD700', // Amarillo Oro
+                    label: 'A2: Aptitud Media', 
+                    aptitud: 'Moderada (Manejo Básico)' 
+                };
+            }
+            
+            // A1: Aptitud Alta (5.5 - 7.0)
+            if (val >= 5.5 && val <= 7.0) { 
+                return { 
+                    color: '#006400', // Verde Oscuro
+                    label: 'A1: Aptitud Alta', 
+                    aptitud: 'ÓPTIMA (Sin limitaciones)' 
+                };
+            }
+
+            return { color: '#808080', label: 'Sin Datos', aptitud: 'Desconocida' };
+        }
+
+        // 4. Cargar datos
+        fetch('datos_mapa.json')
+            .then(response => response.json()) // Corregido: .json() no lleva argumentos
+            .then(data => {
+                data.forEach(punto => {
+                    // Validar latitud, longitud y pH
+                    // NOTA: Corregí punto.ng a punto.lng para que funcione
+                    if(punto.lat && punto.lng && punto.pH) {
+                        
+                        const props = getPhProperties(punto.pH);
+
+                        const circle = L.circleMarker([punto.lat, punto.lng], {
+                            color: props.color,
+                            fillColor: props.color,
+                            fillOpacity: 0.7,
+                            radius: 8
+                        }).addTo(map);
+
+                        const popupContent = `
+                            <strong>Departamento:</strong> ${punto.Departamento}<br>
+                            <strong>Municipio:</strong> ${punto.Municipio}<br>
+                            <hr>
+                            <strong>pH:</strong> ${punto.pH}<br>
+                            <strong>Clasificación:</strong> ${props.label}<br>
+                            <strong>Aptitud:</strong> ${props.aptitud}
+                        `;
+
+                        circle.bindPopup(popupContent);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error cargando el JSON:', error);
+                alert('No se pudo cargar el archivo JSON. Asegúrate de ejecutarlo desde un servidor local.');
+            });
+
+        // 5. Leyenda (Actualizada a escala UPRA)
+        const legend = L.control({position: 'bottomright'});
+        legend.onAdd = function (map) {
+            const div = L.DomUtil.create('div', 'legend');
+            
+            // Valores representativos para generar los colores en el bucle
+            const ranges = [6.0, 5.2, 4.8, 4.0]; 
+            const labels = [
+                "A1: Alta (5.5 - 7.0)", 
+                "A2: Media (5.0-5.5 / 7.0-7.5)", 
+                "A3: Baja (4.5-5.0 / 7.5-8.0)", 
+                "N: No Apta (<4.5 o >8.0)"
+            ];
+            
+            div.innerHTML += '<h4>Aptitud (UPRA/SIPRA)</h4>';
+            
+            for (let i = 0; i < ranges.length; i++) {
+                const props = getPhProperties(ranges[i]);
+                div.innerHTML +=
+                    '<i style="background:' + props.color + '"></i> ' +
+                    labels[i] + '<br>';
+            }
+            return div;
+        };
+        legend.addTo(map);
+
+    </script>
+</body>
+</html>

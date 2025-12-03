@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Mapa de Aptitud por Municipios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  body { margin:0; padding:0; }
+  #map { height:100vh; width:100%; }
+  .legend {
+    background:white;
+    padding:10px;
+    line-height:18px;
+    border-radius:5px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+  }
+  .legend i {
+    width:18px; height:18px; float:left; margin-right:8px; opacity:0.8;
+  }
+</style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+
+// -----------------------------
+// CONFIGURACIÓN DE COLORES
+// -----------------------------
+function getColor(clase) {
+  return {
+    "A1": "#2ECC71",   // Verde suave
+    "A2": "#F1C40F",   // Amarillo
+    "A3": "#E67E22",   // Naranja
+    "N": "#E74C3C",    // Rojo
+    "ND": "#95A5A6"    // Gris
+  }[clase] || "#333";
+}
+
+// -----------------------------
+// ESTILOS BASE
+// -----------------------------
+function styleBase(feature) {
+  return {
+    color: "#444",
+    weight: 1,
+    opacity: 0.9,
+    fillOpacity: 0.7,
+    fillColor: getColor(feature.properties.Clase)
+  };
+}
+
+// -----------------------------
+// ESTILO HOVER
+// -----------------------------
+function highlightFeature(e) {
+  var layer = e.target;
+  layer.setStyle({
+    weight: 3,
+    color: "#000",
+    fillOpacity: 0.9
+  });
+
+  layer.bringToFront();
+}
+
+function resetHighlight(e) {
+  capaMunicipios.resetStyle(e.target);
+}
+
+// -----------------------------
+// POPUP ROBUSTO
+// -----------------------------
+function onEachFeature(feature, layer) {
+  const p = feature.properties;
+
+  // Nombre del municipio
+  const nombre =
+    p.mpio_cnmbr ||
+    p.MPIO_CNMBR ||
+    p.NOMBRE_ENT ||
+    "Sin nombre";
+
+  // Departamento
+  const dpto =
+    p.dpto_cnmbr ||
+    p.departamento ||
+    p.Departamento ||
+    "Sin dato";
+
+  // pH
+  const ph = (p.pH != null) ? Number(p.pH).toFixed(2) : "Sin dato";
+
+  // Clase
+  const clase = p.Clase || "ND";
+
+  // Muestras
+  const muestras = p.muestras || 0;
+
+  // Rango ideal por clase
+  const rangos = {
+    "A1": "5.5 – 7.0",
+    "A2": "5.0 – 5.5 / 7.0 – 7.5",
+    "A3": "4.5 – 5.0 / 7.5 – 8.0",
+    "N": "< 4.5 o > 8.0",
+    "ND": "No disponible"
+  };
+
+  const rangoIdeal = rangos[clase] || "No disponible";
+
+  // Construir popup
+  layer.bindPopup(`
+    <div style="font-size:14px;">
+      <strong>Municipio:</strong> ${nombre}<br>
+      <strong>Departamento:</strong> ${dpto}<br>
+      <strong>pH promedio:</strong> ${ph}<br>
+      <strong>Clase:</strong> ${clase}<br>
+      <strong>Rango ideal:</strong> ${rangoIdeal}<br>
+      <strong>Muestras analizadas:</strong> ${muestras}
+    </div>
+  `);
+
+  // Hover
+  layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight
+  });
+}
+
+
+// -----------------------------
+// MAPA BASE
+// -----------------------------
+var map = L.map('map').setView([4.5, -74.1], 6);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+}).addTo(map);
+
+// -----------------------------
+// CAPAS POR CLASE (para filtrar)
+// -----------------------------
+let capas = {
+  "A1": L.geoJSON(null, { style: styleBase, onEachFeature }),
+  "A2": L.geoJSON(null, { style: styleBase, onEachFeature }),
+  "A3": L.geoJSON(null, { style: styleBase, onEachFeature }),
+  "N":  L.geoJSON(null, { style: styleBase, onEachFeature }),
+};
+
+let capaMunicipios = L.geoJSON(null, { style: styleBase, onEachFeature });
+
+// -----------------------------
+// CARGAR GEOJSON
+// -----------------------------
+fetch("municipios_filtrados.geojson")
+  .then(res => res.json())
+  .then(data => {
+    capaMunicipios.addData(data).addTo(map);
+
+    // Añadir a las capas por clase
+    data.features.forEach(f => {
+      let c = f.properties.Clase;
+      if (capas[c]) capas[c].addData(f);
+    });
+  });
+
+// -----------------------------
+// CONTROL DE CAPAS (filtros)
+// -----------------------------
+var overlayMaps = {
+  "<span style='color:#2ECC71;'>A1</span>": capas["A1"],
+  "<span style='color:#F1C40F;'>A2</span>": capas["A2"],
+  "<span style='color:#E67E22;'>A3</span>": capas["A3"],
+  "<span style='color:#E74C3C;'>N</span>": capas["N"],
+};
+
+L.control.layers(null, overlayMaps, { collapsed: false }).addTo(map);
+
+// -----------------------------
+// LEYENDA MODERNA
+// -----------------------------
+var legend = L.control({ position: 'bottomright' });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'info legend');
+  div.innerHTML += "<h4>Clase pH</h4>";
+
+  const clases = ["A1", "A2", "A3", "N"];
+  clases.forEach(c => {
+    div.innerHTML +=
+      `<div style="display:flex;align-items:center;margin-bottom:4px;">
+        <span style="
+          background:${getColor(c)};
+          width:18px;
+          height:18px;
+          margin-right:6px;
+          border-radius:3px;
+        "></span>
+        ${c}
+      </div>`;
+  });
+
+  return div;
+};
+
+legend.addTo(map);
+
+</script>
+
+  <script>
+    const map = L.map('map').setView([4.6, -74.1], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    function getColor(cl){
+      return cl === "A1" ? "#006400" :
+             cl === "A2" ? "#FFD700" :
+             cl === "A3" ? "#FF8C00" :
+             cl === "N"  ? "#8B0000" : "#CCC";
+    }
+
+    fetch("municipios_filtrados.geojson")
+      .then(r => r.json())
+      .then(gj => {
+        L.geoJSON(gj, {
+          style: f => ({
+            color: "#000",
+            weight: 1,
+            fillColor: getColor(f.properties.Clase),
+            fillOpacity: 0.6
+          }),
+          onEachFeature: (f, layer) => {
+  // Buscar la mejor propiedad para el nombre del municipio
+  const props = f.properties || {};
+  const nombre =
+    props.mpio_cnmbr ||
+    props.MPIO_CNMBR ||
+    props.MPIO_CNMBR ||
+    props.NOMBRE_ENT ||
+    props.Nombre ||
+    props.name ||
+    "Nombre no disponible";
+
+  // pH (si existe)
+  const ph = (props.pH !== undefined && props.pH !== null) ? Number(props.pH).toFixed(2) : "Sin dato";
+
+  layer.bindPopup(
+    `<strong>Municipio:</strong> ${nombre}<br>
+     <strong>pH:</strong> ${ph}<br>
+     <strong>Clase:</strong> ${props.Clase || props.clase || "ND"}`
+  );
+}
+
+        }).addTo(map);
+      });
+
+    const legend = L.control({position:"bottomright"});
+    legend.onAdd = () => {
+      const div = L.DomUtil.create('div','legend');
+      const clases = ["A1","A2","A3","N"]; 
+      div.innerHTML += '<b>Aptitud pH</b><br>';
+      clases.forEach(c => {
+        div.innerHTML += `<i style="background:${getColor(c)}"></i> ${c}<br>`;
+      });
+      return div;
+    };
+    legend.addTo(map);
+  </script>
+  
+</body>
+</html>
