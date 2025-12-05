@@ -85,14 +85,7 @@
             opacity: 0.9;
         }
 
-        ul {
-            margin-left: 2rem;
-            margin-top: 1rem;
-        }
 
-        li {
-            margin-bottom: 0.5rem;
-        }
 
         .highlight {
             margin: auto;
@@ -121,10 +114,6 @@
                 padding: 2rem;
             }
 
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
         }
 
         .boton-descarga {
