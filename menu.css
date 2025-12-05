@@ -14,202 +14,269 @@
 
     
 
-    /* ======= HEADER ======= */
-    header.main-header {
-      background-color: #264e36;
-      color: white;
-      padding: 1em 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      justify-content: space-between;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
+ /* =========================================
+   1. ESTILOS GENERALES (ESCRITORIO)
+   ========================================= */
+header.main-header {
+    background-color: #264e36;
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header-inner {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Área */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-area h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-area a { text-decoration: none; }
+
+/* Navegación Desktop */
+nav.nav-header ul.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav.nav-header ul.menu > li {
+    position: relative;
+}
+
+nav.nav-header ul.menu > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 
-    .header-inner {
-      width: 100%;
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
 
+nav.nav-header ul.menu > li > a:hover,
+nav.nav-header > ul.menu > li > a.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/* Submenús Desktop */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #88a593;
+    min-width: 200px;
+    padding: 0;
+    list-style: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 15px;
+    color: #264e36;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background: #264e36;
+    color: white;
+}
+
+/* Hover para mostrar submenú en escritorio */
+nav.nav-header ul.menu > li:hover > .submenu {
+    display: block;
+}
+
+/* Elementos ocultos en escritorio */
+.menu-toggle { display: none; }
+.sena-mobile-container { display: none; }
+#sena-desktop { width: 60px; display: block; }
+
+
+/* =========================================
+   2. ESTILOS MÓVIL (PANTALLAS < 900px)
+   ========================================= */
+@media screen and (max-width: 900px) {
+    
+    /* Ocultar elementos de escritorio */
+    #sena-desktop { display: none; }
+    
+    /* Ajustes Header */
+    .header-inner { padding: 0 1rem; }
+    .logo-area h1 { font-size: 1.4rem; }
+    .logo-area img { width: 40px; }
+
+    /* BOTÓN HAMBURGUESA */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 10001; /* Encima del menú */
+        padding: 5px;
+        border: 2px solid transparent; 
+        position: fixed; /* Fijo para que no se mueva */
+        right: 20px;
+        top: 25px; /* Ajustar según altura del header */
     }
 
-    .logo-area {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      gap: 15px;
+    /* Estilo de las barras */
+    .menu-toggle span {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
     }
 
-    .logo-area img {
-      width: 60px;
-      height: auto;
-      object-fit: contain;
-      display: block;
+    /* Animación a 'X' cuando está activo */
+    .menu-toggle.is-active {
+        border-color: white; /* Cuadro blanco al abrir */
+        border-radius: 4px;
+        background: rgba(0,0,0,0.1);
+        padding: 8px;
+        top: 15px; /* Reajuste posición si necesario */
     }
+    
+    .menu-toggle.is-active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    .menu-toggle.is-active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
-    .logo-area a {
-      text-decoration: none;
-    }
 
-    .logo-area h1 {
-      font-size: 2.2em;
-      font-weight: 700;
-      margin: 0;
-      letter-spacing: 1px;
-      color: white;
-      transition: transform 0.3s ease;
-    }
-
-    .logo-area h1:hover {
-      transform: scale(1.05);
-    }
-
-    /* ======= NAVEGACIÓN ======= */
+    /* MENÚ LATERAL (70% ANCHO) */
     nav.nav-header {
-      border-radius: 8px;
-      padding: 0;
-      margin-left: 10%
+        position: fixed;
+        top: 0;
+        right: 0; /* Sale de la derecha */
+        width: 70%; /* OCUPA EL 70% */
+        height: 100vh;
+        background-color: #264e36; /* Verde Intenso */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espacio entre menú y logo sena */
+        
+        transform: translateX(100%); /* Oculto a la derecha */
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 10000;
+        padding-top: 80px; /* Espacio superior para no tapar botón */
+        overflow-y: auto; /* Scroll si el menú es muy alto */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
     }
 
-    nav.nav-header > ul.menu {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      margin: 0;
-      padding: 0;
+    /* ESTADO ACTIVO (ABIERTO) */
+    nav.nav-header.active {
+        transform: translateX(0);
+        /* Sombra gigante para oscurecer el resto de la página */
+        box-shadow: 0 0 0 1000px rgba(0,0,0,0.6);
     }
 
-    /* Items principales del menú */
-    nav.nav-header > ul.menu > li {
-      position: relative;
+    /* Lista Menú Móvil */
+    nav.nav-header ul.menu {
+        flex-direction: column;
+        width: 100%;
     }
 
-    nav.nav-header > ul.menu > li > a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 1rem 1.5rem;
-      font-size: 1.05em;
-      transition: all 0.3s ease;
-      border-bottom: 3px solid transparent;
-      border-radius: 8px ;
+    nav.nav-header ul.menu > li > a {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    nav.nav-header > ul.menu > li > a:hover,
-    nav.nav-header > ul.menu > li > a.active {
-      background: rgba(255, 255, 255, 0.1);
-      border-bottom-color: #fff;
+        nav.nav-header ul.menu > li > a:hover { 
+          border-bottom: none;
+        }
+    /* Flechitas para indicar submenú */
+    nav.nav-header ul.menu > li > a + .submenu {
+        /* Lógica visual */
+    }
+    nav.nav-header ul.menu > li > a:not(:only-child)::after {
+        content: '▼';
+        font-size: 0.7em;
+        opacity: 0.7;
     }
 
-    /* ======= SUBMENÚ ======= */
+    /* Submenús Móvil */
     .submenu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #88a593;
-      list-style: none;
-      padding: 0.5rem 0;
-      margin: 0;
-      min-width: 200px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      border-radius: 0 0 8px 8px;
-      z-index: 9999;
+        position: relative; /* Ya no flota */
+        display: none; /* Oculto hasta clic */
+        background-color: #456b549f; /* Verde más oscuro */
+        box-shadow: none;
+        width: 100%;
+        top: 0;
     }
-
-    /* Mostrar submenú al hover */
-    nav.nav-header > ul.menu > li:hover > .submenu {
-      display: block;
-      animation: fadeIn 0.3s ease;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Enlaces del submenú */
-    .submenu li {
-      list-style: none;
+    
+    /* Mostrar submenú al hacer hover o clic (en móvil el hover funciona al tocar) */
+    nav.nav-header ul.menu > li:hover .submenu {
+        display: block;
     }
 
     .submenu a {
-      display: block;
-      color: #1f3f2d;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      transition: all 0.3s ease;
-      font-size: 0.95em;
+        color: #d1e7dd;
+        padding-left: 30px;
+        font-size: 0.95rem;
     }
 
-    .submenu li:hover {
-      background: #60dd67;
+ /* 6. LOGO SENA MÓVIL (CONTENEDOR) */
+    .sena-mobile-container {
+        /* IMPORTANTE: display flex para que aparezca */
+        display: flex !important; 
+        justify-content: center;
+        align-items: center;
+        
+        background: white;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        
+        /* Evita que el contenedor se aplaste si la pantalla es pequeña */
+        flex-shrink: 0; 
+        min-height: 60px;
     }
-
-    .submenu a:hover {
-      color: white;
-      padding-left: 2rem;
+    
+    .sena-mobile-container img {
+        width: 50px;
+        height: auto;
     }
+}
 
-    /* ======= RESPONSIVE ======= */
-    @media (max-width: 768px) {
-      .logo-area h1 {
-        font-size: 1.5em;
-      }
-
-      .logo-area img {
-        width: 80px;
-      }
-
-      nav.nav-header > ul.menu {
-        flex-direction: column;
-        gap: 0;
-      }
-
-      nav.nav-header > ul.menu > li > a {
-        padding: 0.8rem 1rem;
-        text-align: center;
-      }
-
-      .submenu {
-        position: static;
-        display: none;
-        background: #6d8a7a;
-      }
-
-      nav.nav-header > ul.menu > li:hover > .submenu {
-        display: block;
-      }
-
-      .submenu a {
-        padding-left: 2rem;
-      }
-    }
-
-    #sena {
-      width: 60px;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      margin-left: auto;
-    }
-
-  
-
-    footer {
+footer {
         background-color: #1f3f2d;
         color: white;
         text-align: center;
@@ -237,6 +304,6 @@
     #facebook, #instagram, #linkedin, #GitHub {
         width: 70px;
         height: auto;
-        filter: invert(1);
         margin: 5px;
+
     }
