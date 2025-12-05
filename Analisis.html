@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroDataAnalytics-analisis</title>
+  <title>AgroDataAnalytics-Analisis</title>
   <link rel="stylesheet" href="Analisis.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -14,73 +14,92 @@
 
 <body>
   <!-- ======= HEADER ======= -->
-  <header class="main-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
-        <a href="index.html">
-          <h1>AgroDataAnalytics</h1>
-        </a>
-      </div>
-      
-      <nav class="nav-header">
-        <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-            <ul class="submenu">
-              <li><a href="index.html#carrusel">Carrusel</a></li>
-              <li><a href="index.html#mapa">Mapa</a></li>
-              <li><a href="index.html#referencias">Referencias</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="AgroNoticias.html">AgroNoticias</a>
-            <ul class="submenu">
-              <li><a href="">Destacadas</a></li>
-              <li><a href="">Nacional</a></li>
-              <li><a href="">Atlántico</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Analisis.html" class="active">Análisis</a>
-            <ul class="submenu">
-              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
-              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
-              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Agrotips.html">AgroTips</a>
-            <ul class="submenu">
-              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
-              <li><a href="Agrotips.html#videos">Videos</a></li>
-              <li><a href="Agrotips.html#recomendaciones">Recomendaciones</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Nosotros.html">Nosotros</a>
-            <ul class="submenu">
-              <li><a href="Nosotros.html#quienes-somos">Quiénes somos</a></li>
-              <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
-              <li><a href="Nosotros.html#valores">Valores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+<header class="main-header">
+  <div class="header-inner">
+    <!-- 1. Logo Principal -->
+    <div class="logo-area">
+      <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+      <a href="index.html">
+        <h1>AgroDataAnalytics</h1>
+      </a>
     </div>
-  </header>
+
+    <!-- 2. Botón Hamburguesa (Nuevo) -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 3. Navegación -->
+    <nav class="nav-header">
+      <ul class="menu">
+        <li>
+          <a href="index.html">Inicio</a>
+          <ul class="submenu">
+            <li><a href="index.html#mapa">Mapa</a></li>
+            <li><a href="index.html#referencias">Referencias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="AgroNoticias.html">AgroNoticias</a>
+          <ul class="submenu">
+            <li><a href="AgroNoticias.html#miCarrusel">Destacadas</a></li>
+            <li><a href="AgroNoticias.html#filtros">Categorias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="Analisis.html" class="active">Análisis</a>
+          <ul class="submenu">
+            <li><a href="Analisis.html#power-bi">Dashboard</a></li>
+            <li><a href="Analisis.html#nacional">Reporte general</a></li>
+            <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+            <li><a href="Analisis.html#descargable">contenido descargable</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Agrotips.html">AgroTips</a>
+          <ul class="submenu">
+            <li><a href="Agrotips.html#tips">Tips</a></li>
+            <li><a href="Agrotips.html#cultivos">Cultivos</a></li>
+            <li><a href="Agrotips.html#videos">Videos recomendados</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Nosotros.html">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="Nosotros.html#nosotros">Quienes somos</a></li>
+            <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
+            <li><a href="Nosotros.html#valores">Valores</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <!-- 4. Logo SENA Móvil (Nuevo contenedor para el menú lateral) -->
+      <div class="sena-mobile-container">
+        <img src="imagenes/sena-logo.svg" alt="logo sena">
+      </div>
+    </nav>
+
+    <!-- 5. Logo SENA Escritorio (El original) -->
+    <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena-desktop">
+  </div>
+</header>
 
 
   <section id="power-bi">
-
     <h2>Dashboard interactivo</h2>
-
-    <iframe title="Proyecto Final (sin agua)" width="1140" height="541.25"  style="display: block; margin: 0 auto;" src="https://app.powerbi.com/view?r=eyJrIjoiNDJiZWI4MWMtMjZjNS00ZTlhLTg5YTktZGJlMWUwYmE4ODc3IiwidCI6ImNiZTM5ZThmLTNlODktNDQ4Zi04M2FlLWVlYWI3MWU1ZjNiMSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe title="Proyecto Final (beta)"" width="1140" height="541.25"  style="display: block; margin: 0 auto;" 
+     src="https://app.powerbi.com/view?r=eyJrIjoiNDFkNDVlYWEtZWI2ZC00MGFkLTlkNTUtMmY2NzIwNmM1MTI2IiwidCI6IjZjYTM0YWUxLTQ2NmYtNDRiYy1hN2FhLTBhYzVhNzhjNjFiMSIsImMiOjR9&pageName=5710a62800cc3b478839"
+     frameborder="0" allowFullScreen="true">
+    </iframe> 
   </section>
 
 <!-- Sección 1: Análisis a Nivel Nacional -->
@@ -104,14 +123,10 @@
         </div>
     </div>
 
-  <h2>Mapa de ph Municipios</h2>
-<iframe src="mapa/mapa_municipios.html" style="width:100%; height:400px; border:none;"></iframe>
-
- <h2>Mapa de ph Municipios</h2>
-<iframe src="mapa/Mapa.html" style="width:100%; height:400px; border:none;"></iframe>
-
 
     <!-- 📍 Imagen de gráficos de rendimiento o superficie cultivada -->
+<iframe src="/mapa/mapa_municipios.html" width="400px" height="600px" style="margin-right: 30px;"></iframe>
+<iframe src="/HTML/Mapa.html" width="400px" height="600px"></iframe>
 
 
     <div class="highlight">
@@ -212,9 +227,11 @@
             <li>Sistemas mixtos</li>
         </ul>
     </div>
-     <div>
+</section>
+<section id="descargable">
+    <div>
         <h2>Material descargable</h2>
-        <a href="imagenes/Resultados_de_Analisis_de_Laboratorio_Suelos_en_Colombia_20251110.xlsx" download="bbase analisis de suelos" class="boton-descarga">
+        <a href="/imagenes/Resultados_de_Análisis_de_Laboratorio_Suelos_en_Colombia_20251110(Estandarizada).xlsx" download="base analisis de suelos" class="boton-descarga">
             <i class="fa fa-download"></i> Descargar Archivo
         </a>
       </div>
@@ -224,7 +241,7 @@
   <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
 
-       <footer>
+      <footer>
     <div class="redes">
       <h4>encuentranos en:</h4>
       <a href="https://www.facebook.com/?locale=es_LA">
@@ -240,11 +257,34 @@
         <img src="imagenes/github.png" alt="GitHub" id="GitHub">
       </a>
     </div>
-    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo hecho por TAD-10. Todos los derechos reservados.</p>
   </footer>   
 
+
+  <script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navHeader = document.querySelector('.nav-header');
+
+  menuToggle.addEventListener('click', () => {
+    // Abre/Cierra el menú lateral
+    navHeader.classList.toggle('active');
+    // Anima el botón a una "X"
+    menuToggle.classList.toggle('is-active');
+  });
+
+  // (Opcional) Cerrar menú al tocar fuera (en la parte oscura)
+  document.addEventListener('click', (e) => {
+    if (navHeader.classList.contains('active') && 
+        !navHeader.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        navHeader.classList.remove('active');
+        menuToggle.classList.remove('is-active');
+    }
+  });
+</script>
 </body>
 </html>
+
 
 
 
