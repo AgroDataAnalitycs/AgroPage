@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroDataAnalytics - Referencias</title>
+  <title>AgroDataAnalytics-Nosotros</title>
   <link rel="stylesheet" href="Nosotros.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -14,69 +14,87 @@
 
 <body>
   <!-- ======= HEADER ======= -->
-  <header class="main-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
-        <a href="index.html">
-          <h1>AgroDataAnalytics</h1>
-        </a>
-      </div>
-      
-      <nav class="nav-header">
-        <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-            <ul class="submenu">
-              <li><a href="index.html#carrusel">Carrusel</a></li>
-              <li><a href="index.html#mapa">Mapa</a></li>
-              <li><a href="index.html#referencias">Referencias</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="AgroNoticias.html">AgroNoticias</a>
-            <ul class="submenu">
-              <li><a href="">Destacadas</a></li>
-              <li><a href="">Nacional</a></li>
-              <li><a href="">Atlantico</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Analisis.html">Análisis</a>
-            <ul class="submenu">
-              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
-              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
-              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Agrotips.html">Agrotips</a>
-            <ul class="submenu">
-              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
-              <li><a href="Agrotips.html#videos">Videos</a></li>
-              <li><a href="Agrotips.html#recomendaciones">Recomendaciones</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Nosotros.html" class="active">Nosotros</a>
-            <ul class="submenu">
-              <li><a href="Nosotros.html#quienes-somos">Quienes somos</a></li>
-              <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
-              <li><a href="Nosotros.html#valores">Valores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+<header class="main-header">
+  <div class="header-inner">
+    <!-- 1. Logo Principal -->
+    <div class="logo-area">
+      <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+      <a href="index.html">
+        <h1>AgroDataAnalytics</h1>
+      </a>
     </div>
-  </header>
+
+    <!-- 2. Botón Hamburguesa (Nuevo) -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 3. Navegación -->
+    <nav class="nav-header">
+      <ul class="menu">
+        <li>
+          <a href="index.html">Inicio</a>
+          <ul class="submenu">
+            <li><a href="index.html#mapa">Mapa</a></li>
+            <li><a href="index.html#referencias">Referencias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="AgroNoticias.html">AgroNoticias</a>
+          <ul class="submenu">
+            <li><a href="AgroNoticias.html#miCarrusel">Destacadas</a></li>
+            <li><a href="AgroNoticias.html#filtros">Categorias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="Analisis.html">Análisis</a>
+          <ul class="submenu">
+            <li><a href="Analisis.html#power-bi">Dashboard</a></li>
+            <li><a href="Analisis.html#nacional">Reporte general</a></li>
+            <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+            <li><a href="Analisis.html#descargable">contenido descargable</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Agrotips.html">Agrotips</a>
+          <ul class="submenu">
+            <li><a href="Agrotips.html#tips">Tips</a></li>
+            <li><a href="Agrotips.html#cultivos">Cultivos</a></li>
+            <li><a href="Agrotips.html#videos">Videos recomendados</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Nosotros.html" class="active">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="Nosotros.html#nosotros">Quienes somos</a></li>
+            <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
+            <li><a href="Nosotros.html#valores">Valores</a></li>
+          </ul>
+        </li>
+      </ul>
 
 
-  <!-- ======= CONTENIDO PRINCIPAL ======= -->
+      <!-- 4. Logo SENA Móvil (Nuevo contenedor para el menú lateral) -->
+      <div class="sena-mobile-container">
+        <img src="imagenes/sena-logo.svg" alt="logo sena">
+      </div>
+    </nav>
+
+    <!-- 5. Logo SENA Escritorio (El original) -->
+    <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena-desktop">
+  </div>
+</header>
+
+
+ <!-- ======= CONTENIDO PRINCIPAL ======= -->
    <main class="about-container">
     <!-- Hero Section -->
     <section class="hero-section">
@@ -87,19 +105,25 @@
     <!-- Mission, Vision, Objectives Cards -->
     <div class="cards-grid">
       <div class="card">
-        <div class="card-icon">🎯</div>
+        <div class="card-image">
+          <img src="logos/Mision.png" alt="Misión" onerror="this.src='imagenes/default-mission.jpg';">
+        </div>
         <h3>Misión</h3>
         <p>Proporcionar herramientas analíticas avanzadas que permitan a los profesionales del sector agrícola tomar decisiones informadas basadas en datos, optimizando la producción y promoviendo prácticas sostenibles.</p>
       </div>
 
       <div class="card">
-        <div class="card-icon">🔭</div>
+        <div class="card-image">
+          <img src="logos/Vision_.png" alt="Visión" onerror="this.src='imagenes/default-vision.jpg';">
+        </div>
         <h3>Visión</h3>
         <p>Ser la plataforma líder en análisis de datos agrícolas en América Latina, impulsando la innovación y la transformación digital del sector para garantizar la seguridad alimentaria y el desarrollo sostenible.</p>
       </div>
 
       <div class="card">
-        <div class="card-icon">📊</div>
+        <div class="card-image">
+          <img src="logos/Objetivos_.png" alt="Objetivos" onerror="this.src='imagenes/default-objectives.jpg';">
+        </div>
         <h3>Objetivos</h3>
         <p>Democratizar el acceso a análisis de datos agrícolas de calidad, facilitar la comprensión de tendencias del sector, y contribuir a la toma de decisiones estratégicas que beneficien a productores y consumidores.</p>
       </div>
@@ -114,7 +138,8 @@
             <h3>Liderazgo del Proyecto</h3>
             <div class="team-grid">
                 <div class="team-member" onclick="openModal('Miguel Olivares', 'Líder de Proyecto', 'MO')">
-                    <div class="member-avatar">MO</div>
+                    <img src="imagenes/team/miguel_olivares.jpg" alt="Miguel Olivares" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">MO</div>
                     <div class="member-name">Miguel Olivares</div>
                     <div class="member-role">Líder de Proyecto</div>
                 </div>
@@ -123,68 +148,80 @@
 
         <!-- Equipo Backend -->
         <div class="team-category">
-            <h3>Equipo Backend</h3>
+            <h3>Equipo Backend </h3>
             <div class="team-grid">
                 <!-- Líderes Backend -->
                 <div class="team-member" onclick="openModal('Juan De La Cruz', 'Líder Backend', 'JC')">
-                    <div class="member-avatar">JC</div>
+                    <img src="imagenes/team/juan_delacruz.jpg" alt="Juan De La Cruz" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JC</div>
                     <div class="member-name">Juan De La Cruz</div>
                     <div class="member-role">Líder Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Jons Sandoval', 'Líder Backend', 'JS')">
-                    <div class="member-avatar">JS</div>
-                    <div class="member-name">Jons Sandoval</div>
+                    <img src="imagenes/team/jons_sandoval.jpg" alt="John Sandoval" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JS</div>
+                    <div class="member-name">John Sandoval</div>
                     <div class="member-role">Líder Backend</div>
                 </div>
                 
                 <!-- Equipo Backend -->
                 <div class="team-member" onclick="openModal('Jean Arévalo', 'Desarrollador Backend', 'JA')">
-                    <div class="member-avatar">JA</div>
+                    <img src="imagenes/team/jean_arevalo.jpg" alt="Jean Arévalo" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JA</div>
                     <div class="member-name">Jean Arévalo</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Daniel Reyes', 'Desarrollador Backend', 'DR')">
-                    <div class="member-avatar">DR</div>
+                    <img src="imagenes/team/daniel_reyes.jpg" alt="Daniel Reyes" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">DR</div>
                     <div class="member-name">Daniel Reyes</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Luis Herrera', 'Desarrollador Backend', 'LH')">
-                    <div class="member-avatar">LH</div>
+                    <img src="imagenes/team/luis_herrera.jpg" alt="Luis Herrera" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">LH</div>
                     <div class="member-name">Luis Herrera</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Jesús De La Hoz', 'Desarrollador Backend', 'JH')">
-                    <div class="member-avatar">JH</div>
+                    <img src="imagenes/team/jesus_delahoz.jpg" alt="Jesús De La Hoz" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JH</div>
                     <div class="member-name">Jesús De La Hoz</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Julián Laverde', 'Desarrollador Backend', 'JL')">
-                    <div class="member-avatar">JL</div>
+                    <img src="imagenes/team/julian_laverde.jpg" alt="Julián Laverde" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JL</div>
                     <div class="member-name">Julián Laverde</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Jean Pier Pulido', 'Desarrollador Backend', 'JP')">
-                    <div class="member-avatar">JP</div>
+                    <img src="imagenes/team/jeanpier_pulido.jpg" alt="Jean Pier Pulido" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JP</div>
                     <div class="member-name">Jean Pier Pulido</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Camilo Visbal', 'Desarrollador Backend', 'CV')">
-                    <div class="member-avatar">CV</div>
+                    <img src="imagenes/team/camilo_visbal.jpg" alt="Camilo Visbal" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">CV</div>
                     <div class="member-name">Camilo Visbal</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Ihan Donado', 'Desarrollador Backend', 'ID')">
-                    <div class="member-avatar">ID</div>
+                    <img src="imagenes/team/ihan_donado.jpg" alt="Ihan Donado" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">ID</div>
                     <div class="member-name">Ihan Donado</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Brayan Torres', 'Desarrollador Backend', 'BT')">
-                    <div class="member-avatar">BT</div>
+                    <img src="imagenes/team/brayan_torres.jpg" alt="Brayan Torres" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">BT</div>
                     <div class="member-name">Brayan Torres</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
-                <div class="team-member" onclick="openModal('Santiago Alameida', 'Desarrollador Backend', 'SA')">
-                    <div class="member-avatar">SA</div>
+                <div class="team-member" onclick="openModal('Santiago Almeida', 'Desarrollador Backend', 'SA')">
+                    <img src="imagenes/team/santiago_almeida.jpg" alt="Santiago Almeida" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">SA</div>
                     <div class="member-name">Santiago Alameida</div>
                     <div class="member-role">Desarrollador Backend</div>
                 </div>
@@ -196,77 +233,104 @@
             <h3>Equipo Frontend </h3>
             <div class="team-grid">
                 <!-- Líderes Frontend -->
-                <div class="team-member" onclick="openModal('Jose Suares', 'Líder Frontend', 'JS')">
-                    <div class="member-avatar">JS</div>
-                    <div class="member-name">Jose Suares</div>
+                <div class="team-member" onclick="openModal('Jose Suarez', 'Líder Frontend', 'JS')">
+                    <img src="imagenes/team/jose_suarez.jpg" alt="Jose Suares" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JS</div>
+                    <div class="member-name">Jose Suarez</div>
                     <div class="member-role">Líder Frontend</div>
                 </div>
                 <div class="team-member" onclick="openModal('David Rivero', 'Líder Frontend', 'DR')">
-                    <div class="member-avatar">DR</div>
+                    <img src="imagenes/team/david_rivero.jpg" alt="David Rivero" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">DR</div>
                     <div class="member-name">David Rivero</div>
                     <div class="member-role">Líder Frontend</div>
                 </div>
                 
                 <!-- Equipo Frontend -->
                 <div class="team-member" onclick="openModal('Josh Carroll', 'Desarrollador Frontend', 'JC')">
-                    <div class="member-avatar">JC</div>
+                    <img src="imagenes/team/josh_carroll.jpg" alt="Josh Carroll" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">JC</div>
                     <div class="member-name">Josh Carroll</div>
                     <div class="member-role">Desarrollador Frontend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Wuil De La Cruz', 'Desarrollador Frontend', 'WC')">
-                    <div class="member-avatar">WC</div>
+                    <img src="imagenes/team/wuil_delacruz.jpg" alt="Wuil De La Cruz" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">WC</div>
                     <div class="member-name">Wuil De La Cruz</div>
                     <div class="member-role">Desarrollador Frontend</div>
                 </div>
                 <div class="team-member" onclick="openModal('Robinson Maza', 'Desarrollador Frontend', 'RM')">
-                    <div class="member-avatar">RM</div>
+                    <img src="imagenes/team/robinson_maza.jpg" alt="Robinson Maza" class="member-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="member-avatar" style="display: none;">RM</div>
                     <div class="member-name">Robinson Maza</div>
                     <div class="member-role">Desarrollador Frontend</div>
                 </div>
-                <div class="team-member" onclick="openModal('Luis Chinchilla', 'Desarrollador Frontend', 'LC')">
-                    <div class="member-avatar">LC</div>
-                    <div class="member-name">Luis Chinchilla</div>
-                    <div class="member-role">Desarrollador Frontend</div>
-                </div>
+                
             </div>
         </div>
     </div>
 
     <!-- Valores -->
-    <div class="about-section" id="valores">
+     <div class="about-section" id="valores">
         <h2 style="color: #2d5016; margin-bottom: 2rem;">Nuestros Valores</h2>
         <div class="values-section">
             <div class="value-card">
-                <div class="value-icon">🌱</div>
+                <div class="value-image">
+                    <img src="logos/Sostenibilidad_.png" alt="Sostenibilidad" onerror="this.parentElement.innerHTML='🌱';">
+                </div>
                 <div class="value-title">Sostenibilidad</div>
                 <div class="value-description">Promovemos prácticas agrícolas que respeten el medio ambiente y aseguren recursos para futuras generaciones.</div>
             </div>
             <div class="value-card">
-                <div class="value-icon">🤝</div>
+                <div class="value-image">
+                    <img src="logos/Colaboracion.png" alt="Colaboración" onerror="this.parentElement.innerHTML='🤝';">
+                </div>
                 <div class="value-title">Colaboración</div>
                 <div class="value-description">Creemos en el trabajo en equipo y la construcción de una comunidad agrícola unida y solidaria.</div>
             </div>
             <div class="value-card">
-                <div class="value-icon">💡</div>
+                <div class="value-image">
+                    <img src="logos/Innovacion_.png" alt="Innovación" onerror="this.parentElement.innerHTML='💡';">
+                </div>
                 <div class="value-title">Innovación</div>
                 <div class="value-description">Buscamos constantemente nuevas tecnologías y métodos para mejorar la productividad agrícola.</div>
             </div>
             <div class="value-card">
-                <div class="value-icon">📚</div>
+                <div class="value-image">
+                    <img src="logos/Conocimiento_.png" alt="Conocimiento" onerror="this.parentElement.innerHTML='📚';">
+                </div>
                 <div class="value-title">Conocimiento</div>
                 <div class="value-description">Valoramos el aprendizaje continuo y la difusión de información de calidad para todos.</div>
             </div>
             <div class="value-card">
-                <div class="value-icon">⚖️</div>
+                <div class="value-image">
+                    <img src="logos/Integridad_.png" alt="Integridad" onerror="this.parentElement.innerHTML='⚖️';">
+                </div>
                 <div class="value-title">Integridad</div>
                 <div class="value-description">Actuamos con transparencia, honestidad y responsabilidad en todas nuestras acciones.</div>
             </div>
             <div class="value-card">
-                <div class="value-icon">🎯</div>
+                <div class="value-image">
+                    <img src="logos/Excelencia_.png" alt="Excelencia" onerror="this.parentElement.innerHTML='🎯';">
+                </div>
                 <div class="value-title">Excelencia</div>
                 <div class="value-description">Nos comprometemos a ofrecer servicios y contenidos de la más alta calidad.</div>
             </div>
-        </div>
+            <div class="value-card">
+            <div class="value-image">
+                    <img src="logos/Responsabilidad_.png" alt="Responsabilidad" onerror="this.parentElement.innerHTML='🛡️';">
+                </div>
+            <div class="value-title">Responsabilidad</div>
+            <div class="value-description">Asumimos la responsabilidad de nuestras acciones y sus impactos en la comunidad y el entorno.</div>
+            </div>
+            <div class="value-card">  
+              <div class="value-image">
+                    <img src="logos/elultimoconnombrelargo.png" alt="Compromiso con la comunidad" onerror="this.parentElement.innerHTML='🌍';">
+                </div>
+              <div class="value-title">Compromiso con la Comunidad</div>
+             <div class="value-description">Trabajamos para generar un impacto positivo en la comunidad agrícola y apoyar su desarrollo sostenible.</div>
+            </div>
+         </div>
     </div>
 </main>
 
@@ -274,9 +338,9 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
-            <div class="modal-avatar" id="modalAvatar">
-                <img id="modalPhoto" src="" alt="Foto" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                <span id="modalInitials" style="font-size: 3rem; font-weight: bold;"></span>
+            <div class="modal-photo-container">
+                <img id="modalPhoto" src="" alt="Foto" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                <div id="modalInitials" style="width: 200px; height: 200px; background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%); border-radius: 50%; display: none; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: bold; margin: 0 auto;"></div>
             </div>
             <div class="modal-info">
                 <h3 id="modalName"></h3>
@@ -292,7 +356,7 @@
         const teamPhotos = {
             'Miguel Olivares': 'imagenes/team/miguel_olivares.jpg',
             'Juan De La Cruz': 'imagenes/team/juan_delacruz.jpg',
-            'John Sandoval': 'imagenes/team/jons_sandoval.jpg',
+            'Jons Sandoval': 'imagenes/team/jons_sandoval.jpg',
             'Jean Arévalo': 'imagenes/team/jean_arevalo.jpg',
             'Daniel Reyes': 'imagenes/team/daniel_reyes.jpg',
             'Luis Herrera': 'imagenes/team/luis_herrera.jpg',
@@ -302,117 +366,116 @@
             'Camilo Visbal': 'imagenes/team/camilo_visbal.jpg',
             'Ihan Donado': 'imagenes/team/ihan_donado.jpg',
             'Brayan Torres': 'imagenes/team/brayan_torres.jpg',
-            'Santiago Alameida': 'imagenes/team/santiago_almeida.jpg',
-            'Jose Suares': 'imagenes/team/jose_suarez.jpg',
+            'Santiago Almeida': 'imagenes/team/santiago_almeida.jpg',
+            'Jose Suarez': 'imagenes/team/jose_suarez.jpg',
             'David Rivero': 'imagenes/team/david_rivero.jpg',
             'Josh Carroll': 'imagenes/team/josh_carroll.jpg',
             'Wuil De La Cruz': 'imagenes/team/wuil_delacruz.jpg',
             'Robinson Maza': 'imagenes/team/robinson_maza.jpg',
-            'Luis Chinchilla': 'imagenes/team/luis_chinchilla.jpg'
+    
         };
- // Base de datos de contacto del equipo
+
+        // Base de datos de contacto del equipo
         const teamContacts = {
             'Miguel Olivares': {
                 email: 'miguelolivaresmisena.edu.co@gmail.com',
-                phone: '+57 300 123 4567'
+                phone: '+57 3045263401'
             },
             'Juan De La Cruz': {
-                email: 'juan.delacruz@agrodataanalytics.com',
-                phone: '+57 301 234 5678'
+                email: 'juanka2807@hotmail.com',
+                phone: '+57 3106752682'
             },
             'Jons Sandoval': {
                 email: 'jonsmichael0523@gmail.com',
-                phone: '+57 302 345 6789'
+                phone: '+57 3233846830'
             },
             'Jean Arévalo': {
                 email: 'arevalo_9702@outlook.es',
-                phone: '+57 303 456 7890'
+                phone: '+57 3012202310'
             },
             'Daniel Reyes': {
-                email: 'daniel.reyes@agrodataanalytics.com',
-                phone: '+57 304 567 8901'
+                email: 'danieldosereyesbetancourt@gmail.com',
+                phone: '+57 3188237170'
             },
             'Luis Herrera': {
                 email: 'luisherreraruizjunior@gmail.com',
-                phone: '+57 305 678 9012'
+                phone: '+57 3150506813'
             },
             'Jesús De La Hoz': {
-                email: 'jesus.delahoz@agrodataanalytics.com',
-                phone: '+57 306 789 0123'
+                email: 'carranzajesus243@gmail.com',
+                phone: '+57 3023946106'
             },
             'Julián Laverde': {
-                email: 'julian.laverde@agrodataanalytics.com',
-                phone: '+57 307 890 1234'
+                email: 'julian612meza@gmail.com',
+                phone: '+57 3026994045'
             },
             'Jean Pier Pulido': {
-                email: 'jeanpier.pulido@agrodataanalytics.com',
-                phone: '+57 308 901 2345'
+                email: 'jeanpierdavidpulidocarrasquill@gmail.com',
+                phone: '+57 3005596913'
             },
             'Camilo Visbal': {
                 email: 'camilovisbal08@gmail.com',
-                phone: '+57 309 012 3456'
+                phone: '+57 3244924047'
             },
             'Ihan Donado': {
-                email: 'ihan.donado@agrodataanalytics.com',
-                phone: '+57 310 123 4567'
+                email: 'ihamdonado70@gmail.com',
+                phone: '+57 3160416846'
             },
             'Brayan Torres': {
-                email: 'brayan.torres@agrodataanalytics.com',
-                phone: '+57 311 234 5678'
+                email: 'brayantorres091107@gmail.com',
+                phone: '+57 3002195374'
             },
-            'Santiago Alameida': {
+            'Santiago Almeida': {
                 email: 'santialmeida307@gmail.com',
-                phone: '+57 312 345 6789'
+                phone: '+57 3003026230'
             },
-            'Jose Suares': {
+            'Jose Suarez': {
                 email: 'suarez78789@gmail.com',
-                phone: '+57 313 456 7890'
+                phone: '+57 3012978473'
             },
             'David Rivero': {
                 email: 'david.rivero0614@gmail.com',
-                phone: '+57 314 567 8901'
+                phone: '+57 3104886878'
             },
             'Josh Carroll': {
                 email: 'joshcarroll800@gmail.com',
-                phone: '+57 315 678 9012'
+                phone: '+57 3042009277'
             },
             'Wuil De La Cruz': {
-                email: 'delacruzwuil@gmail.com',
-                phone: '+57 316 789 0123'
+                email: '|delacruzwuil@gmail.com',
+                phone: '+57 3185114796'
             },
             'Robinson Maza': {
                 email: 'robinsonmazav@gmail.com',
-                phone: '+57 317 890 1234'
+                phone: '+57 3044781452'
             },
-            'Luis Chinchilla': {
-                email: 'angjobs672005@gmail.com',
-                phone: '+57 318 901 2345'
-            }
+            
         };
 
-        // MODAL
+        
+       // MODAL
         function openModal(name, role, initials) {
             const modal = document.getElementById('modal');
             const photoImg = document.getElementById('modalPhoto');
-            const initialsSpan = document.getElementById('modalInitials');
+            const initialsDiv = document.getElementById('modalInitials');
             
             // Verificar si existe foto para esta persona
             if (teamPhotos[name]) {
                 photoImg.src = teamPhotos[name];
                 photoImg.style.display = 'block';
-                initialsSpan.style.display = 'none';
+                initialsDiv.style.display = 'none';
                 
                 // Si la imagen falla al cargar, mostrar iniciales
                 photoImg.onerror = function() {
                     photoImg.style.display = 'none';
-                    initialsSpan.textContent = initials;
-                    initialsSpan.style.display = 'block';
+                    initialsDiv.textContent = initials;
+                    initialsDiv.style.display = 'flex';
                 };
             } else {
                 // Si no hay foto, mostrar iniciales
                 photoImg.style.display = 'none';
-                initialsSpan.textContent = initials;
-                initialsSpan.style.display = 'block';
+                initialsDiv.textContent = initials;
+                initialsDiv.style.display = 'flex';
             }
             
             // Obtener información de contacto
@@ -466,6 +529,7 @@
   </footer>   
 </body>
 </html>
+
 
 
 
