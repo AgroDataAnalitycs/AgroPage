@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroDataAnalytics-Quiénes somos</title>
+  <title>AgroDataAnalytics-AgroNoticias</title>
   <link rel="stylesheet" href="AgroNoticias.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -14,308 +15,541 @@
 
 <body>
   <!-- ======= HEADER ======= -->
-  <header class="main-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
-        <a href="index.html">
-          <h1>AgroDataAnalytics</h1>
-        </a>
+ <header class="main-header">
+  <div class="header-inner">
+    <!-- 1. Logo Principal -->
+    <div class="logo-area">
+      <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+      <a href="index.html">
+        <h1>AgroDataAnalytics</h1>
+      </a>
+    </div>
+
+    <!-- 2. Botón Hamburguesa (Nuevo) -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 3. Navegación -->
+    <nav class="nav-header">
+      <ul class="menu">
+        <li>
+          <a href="index.html">Inicio</a>
+          <ul class="submenu">
+            <li><a href="index.html#mapa">Mapa</a></li>
+            <li><a href="index.html#referencias">Referencias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="AgroNoticias.html" class="active">AgroNoticias</a>
+          <ul class="submenu">
+            <li><a href="AgroNoticias.html#miCarrusel">Destacadas</a></li>
+            <li><a href="AgroNoticias.html#filtros">Categorias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="Analisis.html">Análisis</a>
+          <ul class="submenu">
+            <li><a href="Analisis.html#power-bi">Dashboard</a></li>
+            <li><a href="Analisis.html#nacional">Reporte general</a></li>
+            <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+            <li><a href="Analisis.html#descargable">contenido descargable</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Agrotips.html">AgroTips</a>
+          <ul class="submenu">
+            <li><a href="Agrotips.html#tips">Tips</a></li>
+            <li><a href="Agrotips.html#cultivos">Cultivos</a></li>
+            <li><a href="Agrotips.html#videos">Videos recomendados</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Nosotros.html">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="Nosotros.html#nosotros">Quiénes somos</a></li>
+            <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
+            <li><a href="Nosotros.html#valores">Valores</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- 4. Logo SENA Móvil (Nuevo contenedor para el menú lateral) -->
+      <div class="sena-mobile-container">
+        <img src="imagenes/sena-logo.svg" alt="logo sena">
       </div>
-      
-      <nav class="nav-header">
-        <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-            <ul class="submenu">
-              <li><a href="index.html#carrusel">Carrusel</a></li>
-              <li><a href="index.html#mapa">Mapa</a></li>
-              <li><a href="index.html#referencias">Referencias</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="AgroNoticias.html" class="active">AgroNoticias</a>
-            <ul class="submenu">
-              <li><a href="">Destacadas</a></li>
-              <li><a href="">Nacional</a></li>
-              <li><a href="">Atlantico</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Analisis.html">Análisis</a>
-            <ul class="submenu">
-              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
-              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
-              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Agrotips.html">Agrotips</a>
-            <ul class="submenu">
-              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
-              <li><a href="Agrotips.html#videos">videos</a></li>
-              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Nosotros.html">Nosotros</a>
-            <ul class="submenu">
-              <li><a href="Nosotros.html#quienes-somos">quienes somos</a></li>
-              <li><a href="Nosotros.html#nuestro-equipo">nuestro equipo</a></li>
-              <li><a href="Nosotros.html#valores">valores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
+    </nav>
+
+    <!-- 5. Logo SENA Escritorio (El original) -->
+    <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena-desktop">
+  </div>
+</header>
+
+<h3>AgroNoticias</h3>
+
+  <div class="container">
+
+    <!-- =====================
+     CARRUSEL
+===================== -->
+    <div class="carousel" id="miCarrusel">
+      <button type="button" class="carousel-btn left" aria-label="Anterior">&lt;</button>
+
+      <div class="carousel-inner">
+        <!-- Slide 1: tu noticia -->
+        <div class="carousel-slide" data-index="0">
+
+          <span class="news-category">⭐ DESTACADO</span>
+          <h2>¿Por qué el Atlántico solo desarrolla el 3,8 % de todo su potencial agrícola?</h2>
+          <img src="imagenes/heraldo1.jpg" alt="Producción de Yuca" class="news-image">
+          <p>En el departamento del Atlántico, de las 279.180 hectáreas disponibles para la agricultura, solo se están
+            utilizando 10.788 hectáreas, es decir, apenas un 3,8 % de su potencial. A pesar de contar con suelos
+            fértiles, clima y geografía favorables, la mayoría de las tierras aptas permanece sin cultivar,
+            desaprovechando oportunidades para el desarrollo agrícola y económico de la región.</p>
+          <a class="btn-read-more" target="_blank"
+            href="https://www.elheraldo.co/atlantico/2024/03/11/por-que-el-atlantico-solo-desarrolla-el-38-de-todo-su-potencial-agricola/">Leer
+            más</a>
+          <p class="news-source">Fuente: El Heraldo</p>
+
+        </div>
+
+
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide" data-index="1">
+
+          <span class="news-category">⭐ DESTACADO</span>
+          <h2>Impulsan la transformación del campo con tecnología y apoyo productivo</h2>
+          <img src="imagenes/heraldo2.avif" alt="Yuca" class="news-image">
+          <p>La Gobernación del Atlántico presentó nuevas iniciativas para impulsar la transformación del campo,
+            enfocadas en el uso de tecnología y programas de apoyo productivo. La estrategia busca fortalecer a pequeños
+            productores, mejorar los procesos de cultivo y ampliar el acceso a herramientas modernas.
+
+            Con estos proyectos se pretende aumentar la productividad agrícola, generar más oportunidades rurales y
+            consolidar un modelo de desarrollo sostenible que permita a las comunidades del campo competir en mejores
+            condiciones.</p>
+          <a class="btn-read-more"
+            href="https://www.elheraldo.co/atlantico/2025/06/18/impulsan-la-transformacion-del-campo-con-tecnologia-y-apoyo-productivo/#google_vignette"
+            target="_blank">Leer más</a>
+          <p class="news-source">Fuente: El Heraldo</p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide" data-index="3">
+
+          <span class="news-category">⭐ DESTACADO</span>
+          <h2>El ambicioso plan para transformar el agro en el Atlántico: “Es el futuro del departamento”</h2>
+          <img src="imagenes/semana.avif" alt="Maíz" class="news-image">
+          <p>El plan para transformar el agro en Atlántico ya intervino 2.062 hectáreas sembradas de palma, plátano y
+            limón Tahití, beneficiando a 232 agricultores asociados en
+            14 agrupaciones; a su vez, con un ambicioso programa de distritos de adecuación de tierras que contempla
+            5.400 hectáreas de riego y drenaje, el proyecto busca consolidar un
+            modelo de desarrollo rural sostenible y productivo,
+            combinando agroindustria, infraestructura, apoyo técnico y asociatividad para convertir a campesinos en
+            empresarios del campo.</p>
+          <a class="btn-read-more"
+            href="El ambicioso plan para transformar el agro en el Atlántico: “Es el futuro del departamento”">Leer
+            más</a>
+          <p class="news-source">Fuente: La semana</p>
+        </div>
+      </div>
+
+      <button type="button" class="carousel-btn right" aria-label="Siguiente">&gt;</button>
     </div>
-  </header>
+    <!-- FIN CARRUSEL -->
+
+  </div>
 
 
- <div class="container">
-        <!-- Noticia Destacada -->
-        <div class="featured-news">
-            <span class="news-category" style="background: white; color: #1f3f2d;">⭐ DESTACADO</span>
-            <h2>390 Familias Beneficiadas con Producción de Yuca Industrial</h2>
-            <p>La Gobernación del Atlántico, junto con el Ministerio de Agricultura e Industrias del Maíz, invirtieron cerca de $650 millones en un proyecto para fortalecer la producción y comercialización de yuca industrial en el oriente del departamento. Este proyecto permite comercializar 2,000 toneladas del tubérculo con rendimientos entre 18 a 20 toneladas por hectárea, superando el promedio nacional de 12 toneladas.</p>
+
+  </div>
+
+
+
+
+  <!-- Filtros -->
+  <div class="filter-section" id="filtros">
+    <h3>Filtrar por categoría</h3>
+    <div class="filter-buttons">
+      <button class="filter-btn active" onclick="filterNews('all')">Todas</button>
+      <button class="filter-btn" onclick="filterNews('tecnologia')">Tecnología</button>
+      <button class="filter-btn" onclick="filterNews('mercado')">Mercado</button>
+      <button class="filter-btn" onclick="filterNews('sostenibilidad')">Sostenibilidad</button>
+    </div>
+  </div>
+
+  <!-- Grid de Noticias -->
+  <div class="news-grid" id="newsGrid">
+    <!-- Noticia 1 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="https://www.larepublica.co/economia/la-agricultura-es-el-sector-que-continua-sacando-la-cara-por-el-crecimiento-economico-4064957"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/lr2.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESARROLLO</span>
+        <div class="news-date">Febrero 2025 </div>
+        <h3 class="news-title">La agricultura es el sector que continúa sacando la cara por el crecimiento económico
+        </h3>
+        <p class="news-description">El PIB colombiano creció 1.7% en 2024, con la agricultura aportando 0.8 puntos
+          porcentuales, representando prácticamente la mitad del crecimiento económico. El café creció 22.5% y la
+          ganadería 5.6%, consolidando al agro como sector clave.
+        </p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: La República</p>
         </div>
-
-        <!-- Estadísticas -->
-        <div class="stats-section">
-            <div class="stat-card">
-                <div class="stat-number">45,000</div>
-                <div class="stat-label">Hectáreas cultivadas</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">18-20</div>
-                <div class="stat-label">Ton/ha rendimiento yuca</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">12,000</div>
-                <div class="stat-label">Productores agrícolas</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">600+</div>
-                <div class="stat-label">Ha palma y limón</div>
-            </div>
-        </div>
-
-        <!-- Filtros -->
-        <div class="filter-section">
-            <h3 style="text-align: center; margin-bottom: 1rem; color: #1f3f2d;">Filtrar por categoría</h3>
-            <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterNews('all')">Todas</button>
-                <button class="filter-btn" onclick="filterNews('yuca')">Yuca</button>
-                <button class="filter-btn" onclick="filterNews('maiz')">Maíz</button>
-                <button class="filter-btn" onclick="filterNews('tecnologia')">Tecnología</button>
-                <button class="filter-btn" onclick="filterNews('mercado')">Mercado</button>
-                <button class="filter-btn" onclick="filterNews('sostenibilidad')">Sostenibilidad</button>
-            </div>
-        </div>
-
-        <!-- Grid de Noticias -->
-        <div class="news-grid" id="newsGrid">
-            <!-- Noticia 1 -->
-            <div class="news-card" data-category="yuca mercado">
-                <div class="news-image">🌾</div>
-                <div class="news-content">
-                    <span class="news-category">PRODUCCIÓN</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Cultivos de Yuca Industrial Lideran el Oriente del Atlántico</h3>
-                    <p class="news-description">34 pequeños agricultores forman alianza productiva logrando rendimientos de 18-20 toneladas por hectárea. Cada hectárea genera 3.5 empleos directos en la región.</p>
-                    <div class="news-tags">
-                        <span class="tag">Yuca</span>
-                        <span class="tag">Empleo</span>
-                        <span class="tag">Oriente</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 2 -->
-            <div class="news-card" data-category="yuca maiz">
-                <div class="news-image">📊</div>
-                <div class="news-content">
-                    <span class="news-category">ESTADÍSTICAS</span>
-                    <div class="news-date">2020-2024</div>
-                    <h3 class="news-title">Principales Cultivos por Área Sembrada</h3>
-                    <p class="news-description">La yuca, maíz tradicional, mango y maíz tecnificado dominan las áreas sembradas. Repelón, Ponedera y Luruaco son los municipios líderes en producción.</p>
-                    <div class="news-tags">
-                        <span class="tag">Análisis</span>
-                        <span class="tag">Producción</span>
-                        <span class="tag">Municipios</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 3 -->
-            <div class="news-card" data-category="mercado tecnologia">
-                <div class="news-image">🏭</div>
-                <div class="news-content">
-                    <span class="news-category">INDUSTRIA</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Industrias del Maíz Busca Incrementar Producción Local</h3>
-                    <p class="news-description">La planta en Malambo tiene capacidad para procesar 42,000 toneladas pero solo recibe 2,000. Buscan reducir costos de transporte comprando producción local del Atlántico.</p>
-                    <div class="news-tags">
-                        <span class="tag">Agroindustria</span>
-                        <span class="tag">Malambo</span>
-                        <span class="tag">Procesamiento</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 4 -->
-            <div class="news-card" data-category="tecnologia sostenibilidad">
-                <div class="news-image">🌱</div>
-                <div class="news-content">
-                    <span class="news-category">DIVERSIFICACIÓN</span>
-                    <div class="news-date">2024-2025</div>
-                    <h3 class="news-title">Expansión de Cultivos de Palma, Limón Tahití y Cacao</h3>
-                    <p class="news-description">La Gobernación impulsa la siembra de nuevos cultivos con más de 600 hectáreas establecidas. Meta: alcanzar 4,000 hectáreas para fortalecer la economía agrícola.</p>
-                    <div class="news-tags">
-                        <span class="tag">Diversificación</span>
-                        <span class="tag">Palma</span>
-                        <span class="tag">Cacao</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 5 -->
-            <div class="news-card" data-category="maiz">
-                <div class="news-image">🌽</div>
-                <div class="news-content">
-                    <span class="news-category">CULTIVOS TRADICIONALES</span>
-                    <div class="news-date">2018-2024</div>
-                    <h3 class="news-title">Maíz: Tercer Cultivo Más Tradicional del Atlántico</h3>
-                    <p class="news-description">Ponedera, Repelón y Manatí lideran la producción con cultivos que alcanzaron 2,650, 1,793 y 1,030 hectáreas respectivamente. El maíz tecnificado gana terreno.</p>
-                    <div class="news-tags">
-                        <span class="tag">Maíz</span>
-                        <span class="tag">Tradicional</span>
-                        <span class="tag">Ponedera</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 6 -->
-            <div class="news-card" data-category="mercado">
-                <div class="news-image">🍇</div>
-                <div class="news-content">
-                    <span class="news-category">FRUTICULTURA</span>
-                    <div class="news-date">2023-2024</div>
-                    <h3 class="news-title">Mango, Guayaba y Limón: Alto Rendimiento Frutal</h3>
-                    <p class="news-description">Aunque no ocupan grandes áreas, los frutales generan los mayores rendimientos. Malambo, Manatí y Santo Tomás lideran la producción de mango en el departamento.</p>
-                    <div class="news-tags">
-                        <span class="tag">Frutales</span>
-                        <span class="tag">Mango</span>
-                        <span class="tag">Exportación</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 7 -->
-            <div class="news-card" data-category="sostenibilidad">
-                <div class="news-image">💧</div>
-                <div class="news-content">
-                    <span class="news-category">RECURSOS HÍDRICOS</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Proyectos de Agua para el Sur del Atlántico</h3>
-                    <p class="news-description">Se desarrollan proyectos para abastecer de agua potable a zonas rurales y tierras fértiles del sur. Sin agua no hay agricultura productiva, destaca la administración.</p>
-                    <div class="news-tags">
-                        <span class="tag">Agua</span>
-                        <span class="tag">Riego</span>
-                        <span class="tag">Infraestructura</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 8 -->
-            <div class="news-card" data-category="tecnologia">
-                <div class="news-image">🔬</div>
-                <div class="news-content">
-                    <span class="news-category">INVESTIGACIÓN</span>
-                    <div class="news-date">2024-2025</div>
-                    <h3 class="news-title">Universidades Investigan Mejoramiento de Rendimientos</h3>
-                    <p class="news-description">Industrias del Maíz desarrollará proyectos de investigación con universidades y entidades de ciencia para mejorar los rendimientos de cultivos y hacer exitoso el modelo de negocio.</p>
-                    <div class="news-tags">
-                        <span class="tag">Investigación</span>
-                        <span class="tag">Universidad</span>
-                        <span class="tag">Innovación</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 9 -->
-            <div class="news-card" data-category="mercado">
-                <div class="news-image">📈</div>
-                <div class="news-content">
-                    <span class="news-category">ECONOMÍA</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Atlántico Entre los 10 Mejores Suelos Agrícolas de Colombia</h3>
-                    <p class="news-description">Según el IGAC, el departamento tiene suelos de alta calidad productiva, pero necesita mayor inversión y tecnificación para aprovechar todo su potencial agrícola.</p>
-                    <div class="news-tags">
-                        <span class="tag">Potencial</span>
-                        <span class="tag">IGAC</span>
-                        <span class="tag">Suelos</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 10 -->
-            <div class="news-card" data-category="sostenibilidad">
-                <div class="news-image">👨‍🌾</div>
-                <div class="news-content">
-                    <span class="news-category">CAPACITACIÓN</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Familias Campesinas Reciben Formación Empresarial</h3>
-                    <p class="news-description">Agricultores reciben capacitación en administración de empresas agrícolas, prácticas de comercialización, cuidado ambiental y ahorro a través del proyecto de yuca industrial.</p>
-                    <div class="news-tags">
-                        <span class="tag">Capacitación</span>
-                        <span class="tag">Campesinos</span>
-                        <span class="tag">Empresarismo</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 11 -->
-            <div class="news-card" data-category="yuca">
-                <div class="news-image">🌾</div>
-                <div class="news-content">
-                    <span class="news-category">HISTORIA</span>
-                    <div class="news-date">Contexto Histórico</div>
-                    <h3 class="news-title">La Yuca: Cultivo Ancestral en Malambo</h3>
-                    <p class="news-description">Desde 1120 a.C., en el sitio de Malambo cerca de Barranquilla, existió una población que basó su subsistencia en el cultivo de yuca, evidenciado por cerámicas y budares encontrados.</p>
-                    <div class="news-tags">
-                        <span class="tag">Historia</span>
-                        <span class="tag">Ancestral</span>
-                        <span class="tag">Malambo</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noticia 12 -->
-            <div class="news-card" data-category="sostenibilidad">
-                <div class="news-image">🌍</div>
-                <div class="news-content">
-                    <span class="news-category">DESAFÍOS</span>
-                    <div class="news-date">2024</div>
-                    <h3 class="news-title">Repelón Busca Recuperar su Posición como Despensa Agrícola</h3>
-                    <p class="news-description">El municipio que hace seis décadas proveía tomate, sorgo, yuca y maíz a la región, busca revitalizar su agricultura a través de diversificación y mejora en distritos de riego.</p>
-                    <div class="news-tags">
-                        <span class="tag">Repelón</span>
-                        <span class="tag">Historia</span>
-                        <span class="tag">Reactivación</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+    <!-- Noticia 2 -->
+    <div class="news-card" data-category="mercado">
+      <div class="news-image"><a
+          href="https://upra.gov.co/es-co/sala-de-prensa/noticias/el-agro-colombiano-mantiene-su-crecimiento-areas-sembradas-y-produccion-de"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/upranot1.webp" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">ESTADÍSTICAS</span>
+        <div class="news-date">Agosto 2025</div>
+        <h3 class="news-title">El agro colombiano mantiene su crecimiento, áreas sembradas y producción de cultivos
+          transitorios en alza durante el primer semestre de 2025, #ConDignidadCumplimos</h3>
+        <p class="news-description">En el primer semestre de 2025, el área sembrada creció 1.4% y la producción de
+          cultivos transitorios aumentó 6.5%. El arroz y la papa lideran el crecimiento, con rendimientos mejorados
+          gracias a políticas de ordenamiento productivo.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: UPRA (Unidad de Planificación Rural Agropecuaria)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 3 -->
+    <div class="news-card" data-category="mercado ">
+      <div class="news-image"><a
+          href="https://dane70.dane.gov.co/los-hitos/la-economia-del-pais/la-tierra-y-el-uso-que-le-damos-en-colombia"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/dane1.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">TIERRAS</span>
+        <div class="news-date">2014-2020 </div>
+        <h3 class="news-title">La tierra y el uso que le damos en Colombia</h3>
+        <p class="news-description">El uso agrícola del suelo cayó de 18.46% en 1960 a 9.2% en 2014, mientras la
+          ganadería domina con 77.9% del territorio, evidenciando un cambio significativo en el aprovechamiento de la
+          tierra.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: DANE</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 4 -->
+    <div class="news-card" data-category="mercado ">
+      <div class="news-image"><a
+          href="https://www.larepublica.co/economia/el-sector-del-agro-represento-6-7-del-productor-interno-bruto-del-tercer-trimestre-4275796"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/lr1.webp" alt=""></a></div>
+
+      <div class="news-content">
+        <span class="news-category">ECONOMÍA</span>
+        <div class="news-date">Noviembre 2025</div>
+        <h3 class="news-title">El sector del agro representó 9,8% del Producto Interno Bruto del tercer trimestre</h3>
+        <p class="news-description"> El agro aportó $46.8 billones al PIB en el tercer trimestre, representando 9.8% del
+          total. La pesca y acuicultura creció 16.4%, mientras los cultivos de café aumentaron 9.8%, demostrando la
+          vitalidad del sector.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: La República</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 5 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="https://www.elespectador.com/economia/el-agro-fue-protagonista-del-crecimiento-economico-en-2024-que-viene-en-2025-noticias-colombia/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/espectador1.jpg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">CRECIMIENTO</span>
+        <div class="news-date">2 de enero de 2025</div>
+        <h3 class="news-title">El agro fue protagonista del crecimiento económico en 2024, ¿qué viene en 2025?</h3>
+        <p class="news-description"> El sector agrícola registró el segundo mejor crecimiento en el tercer trimestre de
+          2024 y aportó la mitad del crecimiento económico con una contribución de 1.1% del total de 2.1%, destacándose
+          como motor de la reactivación.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: El Espectador</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 6 -->
+    <div class="news-card" data-category="mercado">
+      <div class="news-image"><a
+          href="https://www.elespectador.com/economia/la-pina-colombiana-comenzara-a-exportarse-a-brasil/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/espectador2.jpg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">CULTIVOS</span>
+        <div class="news-date"> 31 de octubre de 2025</div>
+        <h3 class="news-title">La piña colombiana comenzará a exportarse a Brasil</h3>
+        <p class="news-description">Colombia logró la admisibilidad para exportar piña a Brasil tras un proceso técnico
+          que inició en 2018. Cinco empresas nacionales del Valle del Cauca y Urabá ya están autorizadas, marcando un
+          hito para el sector agropecuario.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: El Espectador</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 7 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="https://www.atlantico.gov.co/index.php/noticias/prensa-desarrollo/25991-atlantico-fortalece-su-agenda-agropecuaria-con-la-instalacion-del-consea-2025"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/gobernacion.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">ORGANIZACIÓN</span>
+        <div class="news-date"> 9 de junio de 2025</div>
+        <h3 class="news-title">Atlántico fortalece su agenda agropecuaria con la instalación del Consea 2025</h3>
+        <p class="news-description">Se instaló el Consejo Seccional de Desarrollo Agropecuario con participación de
+          entidades nacionales y asociaciones productivas. El espacio busca potenciar el desarrollo productivo y reducir
+          la inseguridad alimentaria en el departamento.
+        </p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Gobernación del Atlántico</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 8 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="http://ant.gov.co/prensa/noticias/en-atlantico-se-entregaron-mas-de-800-hectareas-a-campesinos-para-que-siembren-los-alimentos-de-la-reforma-agraria"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/agencianacional1.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">ATLÁNTICO</span>
+        <div class="news-date">18 de diciembre de 2024</div>
+        <h3 class="news-title">En Atlántico se entregaron más de 800 hectáreas a
+          campesinos para que siembren los alimentos de la Reforma Agraria</h3>
+        <p class="news-description"> Más de 300 familias campesinas recibieron 800 hectáreas en 2024. Se adjudicaron 23
+          predios baldíos y se entregó un Título Colectivo de 283 hectáreas a 42 familias afrocolombianas, avanzando en
+          la Reforma Agraria del departamento.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Agencia Nacional de Tierras (ANT)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 9 -->
+    <div class="news-card" data-category="mercado">
+      <div class="news-image"><a
+          href="https://www.presidencia.gov.co/prensa/Paginas/Gobierno-del-Cambio-ha-entregado--562-mil-hectareas-a-trabajadores-del-campo-para-la-Reforma-Agraria-250502.aspx"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/presidencia1.jpg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">TRABAJADORES</span>
+        <div class="news-date">2 de mayo de 2025</div>
+        <h3 class="news-title">Gobierno del Cambio ha entregado 562 mil hectáreas a trabajadores del campo para la
+          Reforma Agraria,
+          43,2 veces más que el gobierno anterior</h3>
+        <p class="news-description">El Gobierno del presidente Petro ha entregado 43.2 veces más tierra que la
+          administración anterior, alcanzando 562 mil hectáreas en menos de tres años, multiplicando por cinco lo
+          logrado por gobiernos previos en cuatro años.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Presidencia de la República</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 10 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="https://www.eltiempo.com/colombia/barranquilla/la-produccion-agricola-aumenta-en-el-atlantico-759728"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/tiempo1.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">ECONOMIA</span>
+        <div class="news-date">16 de abril de 2023</div>
+        <h3 class="news-title">Los agricultores del sur del Atlántico aseguran ventas de productos por 20 años</h3>
+        <p class="news-description">La Gobernación reporta aumento en producción de palma de aceite, limón, cacao y
+          plátano. Los productores podrán generar ingresos superiores a $100 millones anuales por ventas durante los
+          próximos 20 años con asistencia técnica permanente.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: El Tiempo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 11 -->
+    <div class="news-card" data-category="mercado">
+      <div class="news-image"><a
+          href="https://www.semana.com/mejor-colombia/articulo/repelon-el-municipio-del-atlantico-que-logro-salir-de-la-pobreza-gracias-a-la-agricultura/202300/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/semana2.avif" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">PROGRESO</span>
+        <div class="news-date">26 de agosto de 2023</div>
+        <h3 class="news-title">Repelón: el municipio del Atlántico que logró salir de la pobreza gracias a la
+          agricultura</h3>
+        <p class="news-description">Con inversiones en riego y capacitaciones, 330 campesinos se convirtieron en
+          agroempresarios. Se implementaron 1,500 hectáreas de palma, 800 de limón tahití y 100 de plátano,
+          revitalizando la economía y generando empleo pleno en el municipio.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: La semana</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 12 -->
+    <div class="news-card" data-category="sostenibilidad">
+      <div class="news-image"><a
+          href="https://www.elheraldo.co/atlantico/2021/06/27/el-agro-fortalece-la-economia-del-atlantico/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/heraldo3.jpg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">27 de junio de 2021</div>
+        <h3 class="news-title">El agro fortalece la economía del Atlántico</h3>
+        <p class="news-description">El Atlántico trabaja en tres ejes: garantizar suministro de agua, asistencia técnica
+          con compra asegurada, y acceso a financiación. Se invirtieron $27 mil millones en recuperar distritos de riego
+          de Repelón, Santa Lucía y Suan para fortalecer el sector.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: El Heraldo</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Noticia 13 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class="news-image"><a
+          href="https://www.atlantico.gov.co/index.php/noticias/gobernadora/24216-verano-apunta-al-desarrollo-agroindustrial-con-transferencia-energetica-nuevas-tecnologias-y-promocion-de-la-asociatividad"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/gobernacion2.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">19 de julio de 2024</div>
+        <h3 class="news-title">Verano apunta al desarrollo agroindustrial con transferencia energética, nuevas
+          tecnologías
+          y promoción de la asociatividad</h3>
+        <p class="news-description">El PIB agropecuario del Atlántico creció 5.5% en el primer trimestre de 2024. La
+          transición energética con parques solares generará 1,200 megavatios, impulsando sistemas de riego eficientes y
+          automatización agrícola con enfoque en sostenibilidad productiva.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Gobernación del Atlántico</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Noticia 14 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class="news-image"><a
+          href="https://caracol.com.co/2025/06/18/gobernacion-del-atlantico-impulsa-el-agro-con-maquinaria-insumos-y-capacitacion/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/caracol1.avif" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">18 de junio de 2025 / Septiembre de 2025</div>
+        <h3 class="news-title">Gobernación del Atlántico impulsa el agro con maquinaria, insumos y capacitación</h3>
+        <p class="news-description"> El ambicioso plan transformador del agro atlanticense incluye 2,062 hectáreas
+          sembradas de palma, plátano y limón, 10,000 productores capacitados, y programas como "Semillas de Vida" que
+          ha beneficiado a más de 7,000 campesinos con insumos y asistencia técnica.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Caracol Radio / Semana</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Noticia 15 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class="news-image"><a
+          href="https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/26609-atlantico-propone-crear-un-consejo-regional-de-ciencia-tecnologia-e-innovacion-del-caribe"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/gobernacion3.jpeg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">Septiembre de 2025</div>
+        <h3 class="news-title">Atlántico propone crear un Consejo Regional de Ciencia, Tecnología e Innovación del
+          Caribe
+        </h3>
+        <p class="news-description">La propuesta busca articular los esfuerzos en ciencia, tecnología e innovación de la
+          región Caribe. Se presentó la plataforma 'Semilla', el primer Observatorio de CTeI del país, con información
+          de proyectos e inversiones desde 2012.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Gobernación del Atlántico</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Noticia 16 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class="news-image"><a
+          href="https://www.atlantico.gov.co/index.php/noticias/prensa-desarrollo/16979-maquinaria-agropecuaria"
+          target="_blank" rel="noopener noreferrer"> <img src="imagenes/gobernacion4.jpg" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">14 de abril de 2023</div>
+        <h3 class="news-title">Campesinos del Atlántico contarán con nuevo Centro de Servicios Tecnológicos y maquinaria
+          agropecuaria</h3>
+        <p class="news-description">Desde 2021, 800 campesinos en 14 municipios reciben servicios de maquinaria agrícola
+          para preparación de tierra, siembra, fumigación y cosecha. El proyecto, cofinanciado con MinAgricultura,
+          reduce costos y aumenta la productividad agrícola.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: Gobernación del Atlántico</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Noticia 17 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class=" news-image"><a
+          href="https://iica.int/es/prensa/noticias/ia-es-una-aliada-clave-para-la-transformacion-digital-del-agro-de-las-americas-por-lo-que-expertos-llaman-a-acelerar-su-adopcion/"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/iica.webp" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">1 de octubre de 2025</div>
+        <h3 class="news-title">IA es una aliada clave para la transformación digital del agro de las Américas, por lo
+          que
+          expertos llaman a acelerar su adopción</h3>
+        <p class="news-description"> La inteligencia artificial transforma la agricultura latinoamericana con
+          aplicaciones en riego inteligente, monitoreo con drones y predicción climática. Expertos enfatizan la
+          necesidad de datos de calidad, conectividad, capacitación y marcos regulatorios claros para su adopción.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: IICA (Instituto Interamericano de Cooperación para la Agricultura)</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Noticia 18 -->
+    <div class="news-card" data-category="tecnologia">
+      <div class="news-image"><a
+          href="https://www.agrosavia.co/noticias/agrosavia-impulsa-la-innovaci%C3%B3n-agr%C3%ADcola-en-el-sur-del-cesar-con-el-plan-caribe-seco-fase-ii"
+          target="_blank" rel="noopener noreferrer"><img src="imagenes/agrosavia1.webp" alt=""></a></div>
+      <div class="news-content">
+        <span class="news-category">DESAFÍOS</span>
+        <div class="news-date">5 de septiembre de 2025</div>
+        <h3 class="news-title">AGROSAVIA impulsa la innovación agrícola en el sur del Cesar con el Plan Caribe Seco Fase
+          II</h3>
+        <p class="news-description">La fase II del plan fortalece capacidades productivas en núcleos de reforma agraria
+          del Cesar. Se establecen parcelas demostrativas con variedades mejoradas de maíz, yuca, ahuyama y pasto,
+          incluyendo capacitación en manejo agronómico y uso de bioinsumos.</p>
+        <div class="news-tags">
+          <p class="news-source">Fuente: AGROSAVIA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- Noticia 13 -->
+
+
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
 
   <footer>
     <div class="redes">
@@ -333,52 +567,117 @@
         <img src="imagenes/github.png" alt="GitHub" id="GitHub">
       </a>
     </div>
-    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
-  </footer>   
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo hecho por TAD-10. Todos los derechos reservados.</p>
+  </footer>
 
 
-    <script>
-        function filterNews(category) {
-            const cards = document.querySelectorAll('.news-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // Update active button
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // Filter cards
-            cards.forEach(card => {
-                if (category === 'all') {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 10);
-                } else {
-                    const categories = card.getAttribute('data-category');
-                    if (categories.includes(category)) {
-                        card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.9)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
-                    }
-                }
-            });
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navHeader = document.querySelector('.nav-header');
+
+  menuToggle.addEventListener('click', () => {
+    // Abre/Cierra el menú lateral
+    navHeader.classList.toggle('active');
+    // Anima el botón a una "X"
+    menuToggle.classList.toggle('is-active');
+  });
+
+  // (Opcional) Cerrar menú al tocar fuera (en la parte oscura)
+  document.addEventListener('click', (e) => {
+    if (navHeader.classList.contains('active') && 
+        !navHeader.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        navHeader.classList.remove('active');
+        menuToggle.classList.remove('is-active');
+    }
+  });
+</script>
+
+  <script>
+    function filterNews(category) {
+      const cards = document.querySelectorAll('.news-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update active button
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+          card.style.display = 'block';
+        } else {
+          const categories = card.getAttribute('data-category');
+          if (categories.includes(category)) {
+            card.classList.remove('hidden');
+            card.style.display = 'block';
+          } else {
+            card.classList.add('hidden');
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
         }
+      });
+    }
+  </script>
 
-        // Add transition styles
-        document.querySelectorAll('.news-card').forEach(card => {
-            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-        });
-    </script>
+
+
+  <!-- =====================
+     SCRIPT CARRUSEL
+====================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const root = document.getElementById('miCarrusel');
+      if (!root) { console.error('No se encontró el contenedor del carrusel (#miCarrusel).'); return; }
+
+      const carouselInner = root.querySelector('.carousel-inner');
+      const slides = Array.from(root.querySelectorAll('.carousel-inner .carousel-slide'));
+      const btnLeft = root.querySelector('.carousel-btn.left');
+      const btnRight = root.querySelector('.carousel-btn.right');
+
+      console.log('Carrusel: slides encontrados =', slides.length);
+      if (!carouselInner || slides.length === 0) {
+        console.error('Elemento .carousel-inner no encontrado o no hay slides.');
+        return;
+      }
+      if (!btnLeft || !btnRight) {
+        console.error('Botones del carrusel no encontrados.');
+        return;
+      }
+
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        if (slides.length === 0) return;
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        // mover usando porcentaje (cada slide 100%)
+        carouselInner.style.transform = 'translateX(-' + (index * 100) + '%)';
+        currentIndex = index;
+        console.log('Mostrando slide', currentIndex);
+      }
+
+      btnLeft.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSlide(currentIndex - 1);
+      });
+
+      btnRight.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSlide(currentIndex + 1);
+      });
+
+      // init
+      showSlide(0);
+    });
+  </script>
+
+
 </body>
+
 </html>
 
 
