@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logoagro.png">
   <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logoagro.png">
@@ -14,201 +15,316 @@
 
 <body>
   <!-- ======= HEADER ======= -->
-  <header class="main-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
-        <a href="index.html">
-          <h1>AgroDataAnalytics</h1>
-        </a>
-      </div>
-      
-      <nav class="nav-header">
-        <ul class="menu">
-          <li>
-            <a href="index.html" class="active">Inicio</a>
-            <ul class="submenu">
-              <li><a href="index.html#carrusel">Carrusel</a></li>
-              <li><a href="index.html#mapa">Mapa</a></li>
-              <li><a href="index.html#referencias">Referencias</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="AgroNoticias.html">AgroNoticias</a>
-            <ul class="submenu">
-              <li><a href="">Destacadas</a></li>
-              <li><a href="">Nacional</a></li>
-              <li><a href="">Atlantico</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Analisis.html">Análisis</a>
-            <ul class="submenu">
-              <li><a href="Analisis.html#nacional">Análisis Nacional</a></li>
-              <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
-              <li><a href="Analisis.html#agua">Recursos Hídricos</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Agrotips.html">Agrotips</a>
-            <ul class="submenu">
-              <li><a href="Agrotips.html#cultivos">Cultivo</a></li>
-              <li><a href="Agrotips.html#videos">videos</a></li>
-              <li><a href="Agrotips.html#recomendaciones">recomendaciones</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="Nosotros.html">Nosotros</a>
-            <ul class="submenu">
-              <li><a href="Nosotros.html#quienes-somos">quienes somos</a></li>
-              <li><a href="Nosotros.html#nuestro-equipo">nuestro equipo</a></li>
-              <li><a href="Nosotros.html#valores">valores</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-        <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena">
-    </div>
-  </header>
-
- <section class="carousel" id="carrusel">
-  <div class="slides">
-      
-    <div class="slide active" style="background-image: url('imagenes/campo5.jpg');">
-      <div class="overlay">
-        <h2>Mapeo de Tierras Aptas para Cultivos en el Atlántico</h2>
-        <p>Visualiza mediante mapas interactivos la aptitud del suelo para distintos cultivos.</p>
-
-        <!-- ✔ FIX: botón funcional y clic habilitado -->
-   
-      </div>
+<header class="main-header">
+  <div class="header-inner">
+    <!-- 1. Logo Principal -->
+    <div class="logo-area">
+      <img src="imagenes/logoagro.png" alt="Logo AgroDataAnalytics">
+      <a href="index.html">
+        <h1>AgroDataAnalytics</h1>
+      </a>
     </div>
 
-    <div class="slide" style="background-image: url('imagenes/campo3.jpg');">
-      <div class="overlay">
-        <h2>Datos oficiales del IDEAM y UPRA</h2>
-        <p>Información validada de fuentes abiertas y estudios agroclimáticos.</p>
-      </div>
+    <!-- 2. Botón Hamburguesa (Nuevo) -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <div class="slide" style="background-image: url('imagenes/campo4.jpg');">
-      <div class="overlay">
-        <h2>Analiza, compara y planifica con precisión</h2>
-        <p>Herramientas de análisis de suelo, clima y cultivo en la región Caribe.</p>
-      </div>
-    </div>
+    <!-- 3. Navegación -->
+    <nav class="nav-header">
+      <ul class="menu">
+        <li>
+          <a href="index.html" class="active">Inicio</a>
+          <ul class="submenu">
+            <li><a href="index.html#mapa">Mapa</a></li>
+            <li><a href="index.html#referencias">Referencias</a></li>
+          </ul>
+        </li>
 
+        <li>
+          <a href="AgroNoticias.html">AgroNoticias</a>
+          <ul class="submenu">
+            <li><a href="AgroNoticias.html#miCarrusel">Destacadas</a></li>
+            <li><a href="AgroNoticias.html#filtros">Categorias</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="Analisis.html">Análisis</a>
+          <ul class="submenu">
+            <li><a href="Analisis.html#power-bi">Dashboard</a></li>
+            <li><a href="Analisis.html#nacional">Reporte general</a></li>
+            <li><a href="Analisis.html#atlantico">Dept. Atlántico</a></li>
+            <li><a href="Analisis.html#descargable">contenido descargable</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Agrotips.html">Agrotips</a>
+          <ul class="submenu">
+            <li><a href="Agrotips.html#tips">Tips</a></li>
+            <li><a href="Agrotips.html#cultivos">Cultivos</a></li>
+            <li><a href="Agrotips.html#videos">videos recomendados</a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="Nosotros.html">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="Nosotros.html#nosotros">Quienes somos</a></li>
+            <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
+            <li><a href="Nosotros.html#valores">Valores</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- 4. Logo SENA Móvil (Nuevo contenedor para el menú lateral) -->
+      <div class="sena-mobile-container">
+        <img src="imagenes/sena-logo.svg" alt="logo sena">
+      </div>
+    </nav>
+
+    <!-- 5. Logo SENA Escritorio (El original) -->
+    <img src="imagenes/sena-logo.svg" alt="logo sena" id="sena-desktop">
   </div>
+</header>
 
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-</section>
+  <section class="carousel" id="carrusel">
+    <div class="slides">
 
-    <!-- ======= INFORMACIÓN ADICIONAL ======= -->
-    <section class="info-extra">
-      <h3>Bienvenido a AgroDataAnalytics</h3>
+      <div class="slide active" style="background-image: url('imagenes/campo 10.jpg');">
+        <div class="overlay">
+          <h2>Mapeo de Tierras Aptas para Cultivos en el Atlántico</h2>
+          <p>Visualiza mediante mapas interactivos la aptitud del suelo para distintos cultivos.</p>
 
+          <!-- ✔ FIX: botón funcional y clic habilitado -->
 
+        </div>
+      </div>
 
+      <div class="slide" style="background-image: url('imagenes/campo 8.jpg');">
+        <div class="overlay">
+          <h2>Datos oficiales del IDEAM</h2>
+          <p>Información validada de fuentes abiertas y estudios agroclimáticos.</p>
+        </div>
+      </div>
 
+      <div class="slide" style="background-image: url('imagenes/campo 12.jpg');">
+        <div class="overlay">
+          <h2>Analiza, compara y planifica con precisión</h2>
+          <p>Herramientas de análisis de suelo, clima y cultivo en la región Caribe.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('imagenes/campo 11.jpg');">
+        <div class="overlay">
+          <h2>AgroDataAnalytics: Análisis Inteligente del Terreno</h2>
+          <p>Un sistema académico diseñado para estudiar la aptitud del suelo usando datos reales del Atlántico.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('imagenes/campo 13.jpg');">
+        <div class="overlay">
+          <h2>Un Proyecto para Impulsar el Desarrollo del Atlántico</h2>
+          <p>AgroDataAnalytics contribuye al crecimiento agrícola mediante análisis precisos del suelo y el clima en la
+            región.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <!-- ======= INFORMACIÓN ADICIONAL ======= -->
+  <section class="info-extra">
+    <h3 class="titulo">Bienvenido a AgroDataAnalytics</h3>
+    <div class="contenido">
       <p>
-        
-         <strong>AgroDataAnalytics</strong> es una plataforma diseñada para analizar, visualizar y comunicar la información agrícola de Colombia 
-        —con especial enfoque en el departamento del Atlántico— utilizando datos abiertos del Gobierno Nacional.
-        Nuestro objetivo es contribuir al desarrollo sostenible del sector agropecuario mediante
-        el uso de herramientas de análisis de datos, sistemas de información geográfica (SIG)
-        y fuentes oficiales actualizadas.
-        Trabajamos para generar conocimiento útil que apoye la toma de decisiones estratégicas en la gestión
-        territorial y la planificación agropecuaria de la región.
-      </p>
-    </section>
 
-        <section class="info-extra">
-      <h3>Qué es AgroDataAnalytics?</h3>
+        <strong>AgroDataAnalytics</strong> es una plataforma desarrollada como parte del proyecto académico
+        <strong>Proyecto para identificar y
+          analizar los cultivos estratégicos en el Atlántico frente al panorama regional, con el fin de reconocer
+          oportunidades de mejora y
+          potenciar el desarrollo del sector en la región Caribe (2015–2025)</strong>, iniciativa del SENA orientada al
+        análisis del sector agrícola
+        desde una perspectiva técnica y basada en datos. Esta plataforma integra información proveniente de sistemas de
+        información geográfica, bases de datos oficiales del Gobierno Nacional y recursos estadísticos que permiten
+        comprender mejor la evolución del sector agropecuario en la región. Su propósito es convertir grandes volúmenes
+        de datos en conocimiento aplicable que
+        facilite la toma de decisiones y contribuya al fortalecimiento del desarrollo rural y productivo en el
+        departamento del Atlántico.
+      </p>
+
+      <img src="imagenes/imagen 41.webp" alt="">
+    </div>
+  </section>
+
+  <section class="info-extra">
+    <h3 class="titulo">Qué es AgroDataAnalytics?</h3>
+    <div class="contenido">
       <p>
-        
-      Es un proyecto desarrollado por aprendices del Técnico en Programación para Análisis de Datos del SENA, 
-      con el objetivo de interpretar la aptitud de las tierras, identificar zonas subutilizadas y 
-      facilitar la toma de decisiones en el sector agropecuario.
 
-Nuestra plataforma reúne información de:
+        AgroDataAnalytics es una herramienta creada dentro del marco del proyecto académico para la identificación y
+        análisis de
+        cultivos estratégicos en el Atlántico, desarrollado por aprendices del Técnico en Programación para Análisis de
+        Datos del SENA.
+        Su función es recopilar, organizar y analizar información agrícola para ofrecer una visión clara sobre el
+        comportamiento del suelo,
+        el clima, los cultivos predominantes y el estado de la frontera agrícola, con el fin de apoyar procesos de
+        planificación y orientar
+        decisiones informadas. A través de esta plataforma se busca complementar los objetivos del proyecto académico,
+        proporcionando un
+        espacio digital donde se pueda visualizar y comprender el panorama agrícola actual y las tendencias del sector
+        en el Caribe colombiano.
 
-suelos,
 
-clima,
-
-cultivos,
-
-fronteras agrícolas,
-
-y datos territoriales disponibles públicamente.
       </p>
-    </section>
 
-            <section class="info-extra">
-      <h3>¿Por qué es importante AgroDataAnalytics?</h3>
+      <img src="imagenes/imagen 18.webp" alt="">
+    </div>
+  </section>
+
+  <section class="info-extra">
+    <h3 class="titulo">¿Por qué es importante AgroDataAnalytics?</h3>
+    <div class="contenido">
       <p>
-        
-La agricultura del Atlántico enfrenta una problemática crítica: aunque el departamento 
-cuenta con una amplia extensión de tierras con aptitud agrícola, solo se aprovecha alrededor del 3.8% de este potencial segun reporta el heraldo.
-Esto significa que miles de hectáreas con capacidad productiva permanecen subutilizadas o sin una orientación clara sobre qué cultivos son 
-adecuados para cada zona.
+
+        El desarrollo de AgroDataAnalytics es importante porque responde a una necesidad real del departamento del
+        Atlántico:
+        la subutilización de su potencial agrícola. Aunque la región cuenta con una amplia extensión de tierras aptas
+        para la producción,
+        estudios recientes indican que solo se aprovecha alrededor del 3.8 % de este potencial. Este escenario refleja
+        una falta de
+        información accesible y confiable que permita identificar oportunidades de mejora, orientar los cultivos más
+        convenientes y
+        fortalecer la competitividad regional. La plataforma contribuye a cerrar esa brecha al ofrecer análisis
+        detallados del territorio,
+        presentar datos históricos y actuales, y facilitar la identificación de cultivos estratégicos entre 2015 y 2025,
+        alineándose con los objetivos del proyecto académico de potenciar el desarrollo agrícola del Caribe colombiano.
       </p>
-    </section>
+      <img src="imagenes/maiz.webp" alt="">
+    </div>
+  </section>
 
-            <section class="info-extra">
-      <h3>MAPA DE CALOR</h3>
 
-    </section>
 
   <!-- ======= MAPA ======= -->
   <section class="mapa" id="mapa">
-    <h2>Mapa Interactivo de Aptitud de Suelos</h2>
-    <div id="map"></div>
+    <div class="mapa-container">
+
+      <h3>MAPA DE CALOR</h3>
+      <hr>
+
+      <!-- Contenedor del mapa -->
+      <iframe src="/mapa_productividad/Mapa_Produccion.html" width="1000px" height="600px"></iframe>
+
+      <!-- DESCRIPCIÓN DEL MAPA -->
+      <div class="descripcion-mapa">
+        <p>
+          <!-- Aquí escribes tu descripción del mapa.  
+             Este bloque ya está preparado para recibir texto. -->
+        </p>
+      </div>
+
+    </div>
   </section>
 
 
 
-  <!-- ======= REFERENCIAS ======= -->
-  <section class="referencias" id="referencias">
-    <h3>Fuentes de Datos y Referencias</h3>
-    <ul>
-      <li>IDEAM – Datos climáticos y de precipitación.</li>
-      <li>UPRA – Zonas de aptitud agrícola.</li>
-      <li>Gobernación del Atlántico – Límites y cartografía regional.</li>
-      <li>Datos Abiertos Colombia – Capas geográficas públicas.</li>
-      <li>FAO / WorldClim – Modelos de temperatura y humedad global.</li>
-    </ul>
-  </section>
 
   <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
   <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
+  <!-- ======= REFERENCIAS ======= -->
+  <section class="referencias" id="referencias">
+    <h3>Fuentes de Datos y Referencias</h3>
+
+    <div class="contenido">
+
+      <!-- Fuente 1 -->
+      <div class="fuente-datos">
+        <p><strong>IDEAM</strong></p>
+        <a href="https://www.ideam.gov.co/" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/ideam.png" alt="Logo IDEAM" class="logo-fuente">
+        </a>
+      </div>
+
+      <!-- Fuente 2 -->
+      <div class="fuente-datos">
+        <p><strong>Gobernación del Atlántico</strong></p>
+        <a href="https://www.atlantico.gov.co/" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/atlantico.png" alt="Logo Atlántico" class="logo-fuente">
+        </a>
+      </div>
+
+      <!-- Fuente 3 -->
+      <div class="fuente-datos">
+        <p><strong>Datos Abiertos Colombia</strong></p>
+        <a href="https://www.datos.gov.co/" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/agov.png" alt="Logo Gobierno Datos Abiertos" class="logo-fuente">
+        </a>
+      </div>
+
+      <div class="fuente-datos">
+        <p><strong>Agrosavia</strong></p>
+        <a href="https://www.agrosavia.co/" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/logo-agrosavia.png" alt="Logo Gobierno Datos Abiertos" class="logo-fuente">
+        </a>
+      </div>
+
+      <div class="fuente-datos">
+        <p><strong>UPRA</strong></p>
+        <a href="https://upra.gov.co/es-co" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/logo-upra1.png" alt="Logo Gobierno Datos Abiertos" class="logo-fuente">
+        </a>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
     <div class="redes">
       <h4>encuentranos en:</h4>
-      <a href="https://www.facebook.com/?locale=es_LA">
-        <img src="imagenes/facebook.png" alt="Facebook" id="facebook">
-      </a>
+
       <a href="https://www.instagram.com/">
         <img src="imagenes/instagram.png" alt="Instagram" id="instagram">
-      </a>
-      <a href="https://co.linkedin.com/">
-        <img src="imagenes/linkedin.png" alt="LinkedIn" id="linkedin">
-      </a>
-      <a href="https://github.com/">
-        <img src="imagenes/github.png" alt="GitHub" id="GitHub">
-      </a>
+
+        <a href="https://github.com/">
+          <img src="imagenes/github.png" alt="GitHub" id="GitHub">
+        </a>
     </div>
-    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo. Todos los derechos reservados.</p>
-  </footer> 
-   
+    <p>© 2025 AgroDataAnalytics | Proyecto académico e investigativo hecho por TAD-10. Todos los derechos reservados.
+    </p>
+  </footer>
+
   <!-- ======= SCRIPT ======= -->
+
+  <script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navHeader = document.querySelector('.nav-header');
+
+  menuToggle.addEventListener('click', () => {
+    // Abre/Cierra el menú lateral
+    navHeader.classList.toggle('active');
+    // Anima el botón a una "X"
+    menuToggle.classList.toggle('is-active');
+  });
+
+  // (Opcional) Cerrar menú al tocar fuera (en la parte oscura)
+  document.addEventListener('click', (e) => {
+    if (navHeader.classList.contains('active') && 
+        !navHeader.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        navHeader.classList.remove('active');
+        menuToggle.classList.remove('is-active');
+    }
+  });
+</script>
   <script>
     // ======= MAPA LEAFLET =======
     const map = L.map('map').setView([10.96, -74.8], 8);
@@ -242,6 +358,7 @@ adecuados para cada zona.
     }, 5000);
   </script>
 </body>
+
 </html>
 
 
