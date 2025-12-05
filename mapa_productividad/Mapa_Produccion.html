@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mapa de Productividad Agrícola</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<style>
+  body { margin:0; display:flex; height:100vh; font-family:Arial; }
+  
+  /* Sidebar */
+  #sidebar {
+    width: 280px;
+    background:#e8f5e9; /* Verde suave */
+    padding:15px;
+    border-right: 2px solid #b6d7a8;
+  }
+
+  #sidebar h3 {
+    margin-top:0;
+    text-align:center;
+    color:#006d2c;
+    font-size:18px;
+    font-weight:bold;
+  }
+
+  #sidebar label {
+    font-size:14px;
+    color:#004d00;
+  }
+
+  #buscador {
+    width:100%;
+    padding:6px;
+    margin-top:10px;
+    border-radius:4px;
+    border:1px solid #999;
+  }
+
+  #btnReset {
+    width:100%;
+    margin-top:10px;
+    padding:8px;
+    background:#0b7d00;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:14px;
+  }
+  #btnReset:hover {
+    background:#095900;
+  }
+
+  /* Mapa */
+  #map {
+    flex:1;
+    height:100%;
+  }
+
+  /* Popup */
+  .popup-title {
+    font-size:16px;
+    font-weight:bold;
+    color:#004d00;
+  }
+  .popup-label {
+    font-weight:bold;
+    color:#333;
+  }
+
+  /* Leyenda */
+  .legend {
+    background:white;
+    line-height:18px;
+    color:#555;
+    padding:10px;
+    border-radius:6px;
+    font-size:12px;
+    border:1px solid #ccc;
+  }
+  .legend i {
+    width:18px;
+    height:18px;
+    float:left;
+    margin-right:8px;
+    opacity:0.9;
+    border:1px solid #999;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar con filtros -->
+<div id="sidebar">
+  <h3>Filtros del Mapa</h3>
+
+  <label>Región:</label>
+  <select id="filtroRegion" style="width:100%; padding:6px;">
+    <option value="TODAS">Todas</option>
+    <option value="CARIBE">Caribe</option>
+    <option value="ANDINA">Andina</option>
+    <option value="PACIFICA">Pacífica</option>
+    <option value="ORINOQUIA">Orinoquía</option>
+    <option value="AMAZONIA">Amazonía</option>
+  </select>
+
+  <input type="text" id="buscador" placeholder="Buscar municipio...">
+
+  <button id="btnReset">Volver a Colombia</button>
+</div>
+
+<!-- Mapa -->
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+// 📌 Límites aproximados de Colombia
+const colombiaBounds = [
+  [12.5, -82.0],
+  [-5.0, -66.0]
+];
+
+const map = L.map("map", {
+  maxBounds: colombiaBounds,
+  maxBoundsViscosity: 1.0,
+  minZoom: 5,
+  maxZoom: 18
+}).setView([4.5, -74.1], 6);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+
+let capa, geojsonData;
+
+// 🎨 Paleta verde agrícola 🌱
+function getColor(a){
+  return a > 60000 ? "#006d2c" :
+         a > 30000 ? "#31a354" :
+         a > 15000 ? "#74c476" :
+         a > 5000  ? "#bae4b3" :
+                     "#edf8e9";
+}
+
+// Carga del GeoJSON
+fetch("productividad_poligonos.geojson")
+  .then(r => r.json())
+  .then(gj => {
+    geojsonData = gj;
+    actualizarMapa();
+  });
+
+function actualizarMapa() {
+  const regionSel = document.getElementById("filtroRegion").value;
+  const busqueda = document.getElementById("buscador").value.toUpperCase();
+
+  if (capa) map.removeLayer(capa);
+
+  capa = L.geoJSON(geojsonData, {
+    filter: f =>
+      (regionSel === "TODAS" || f.properties.Region === regionSel) &&
+      (busqueda === "" || f.properties.mpio_cnmbr.includes(busqueda)),
+
+    style: f => ({
+      color: "#000",
+      weight: 1,
+      fillColor: getColor(f.properties.AreaSembrada),
+      fillOpacity: 0.8
+    }),
+
+    onEachFeature: (f, layer) => {
+      layer.bindPopup(`
+        <div class="popup-title">${f.properties.mpio_cnmbr}</div>
+        <div><span class="popup-label">Departamento:</span> ${f.properties.dpto_cnmbr}</div>
+        <div><span class="popup-label">Región:</span> ${f.properties.Region}</div>
+        <div><span class="popup-label">Área Sembrada:</span> ${f.properties.AreaSembrada.toLocaleString("es-CO")} ha</div>
+      `);
+
+      layer.on("mouseover", () => layer.setStyle({ weight:3 }));
+      layer.on("mouseout", () => layer.setStyle({ weight:1 }));
+      layer.on("click", () => {
+        map.fitBounds(layer.getBounds(), {
+          maxZoom:10,
+          animate:true,
+          duration:0.6
+        });
+      });
+    }
+  }).addTo(map);
+}
+
+document.getElementById("filtroRegion").addEventListener("change", actualizarMapa);
+document.getElementById("buscador").addEventListener("input", actualizarMapa);
+
+// 🗺️ Leyenda de colores
+const legend = L.control({position:"bottomright"});
+legend.onAdd = () => {
+  const div = L.DomUtil.create("div", "legend");
+  const rangos = [0,5000,15000,30000,60000];
+  div.innerHTML = "<b>Área Sembrada (ha)</b><br>";
+  for (let i=0;i<rangos.length;i++){
+    div.innerHTML +=
+      `<i style="background:${getColor(rangos[i]+1)}"></i>`+
+      `${rangos[i].toLocaleString()}${rangos[i+1] ? " – " + rangos[i+1].toLocaleString() : " +"}` +
+      "<br>";
+  }
+  return div;
+};
+legend.addTo(map);
+
+// 🔄 Botón para volver a vista nacional
+document.getElementById("btnReset").addEventListener("click", () => {
+  map.setView([4.5, -74.1], 6, {
+    animate:true,
+    duration:0.6
+  });
+});
+</script>
+
+</body>
+</html>
