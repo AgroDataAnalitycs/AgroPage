@@ -1,4 +1,4 @@
- /* SECCIÓN QUIÉNES SOMOS */
+/* SECCIÓN QUIÉNES SOMOS */
     /* Main Content */
     .about-container {
       max-width: 1200px;
@@ -37,7 +37,7 @@
       background: #D1DED1;
       border-radius: 15px;
       padding: 2rem;
-      box-shadow: 0 10px 30px #15695C;
+      box-shadow: 0 10px 30px #15695ca6;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
@@ -121,7 +121,82 @@
             font-size: 2rem;
             font-weight: bold;
         }
+/* Estilos para las fotos de los miembros del equipo */
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #4a7c2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+/* Contenedor de foto en el modal */
+.modal-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-photo-container img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Asegurar que el modal tenga buen diseño */
+.modal-content {
+    text-align: center;
+}
+
+/* Estilos para las imágenes de Misión, Visión y Objetivos */
+.card-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+/* Ocultar el antiguo card-icon si existe */
+.card-icon {
+    display: none;
+}
+
+/* Estilos para las imágenes de Valores */
+.value-image {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.value-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover .value-image img {
+    transform: scale(1.15);
+}
+
+/* Ocultar el antiguo value-icon si existe */
+.value-icon {
+    display: none;
+}
         .member-name {
             color: #2B5038;
             font-weight: 600;
