@@ -1,83 +1,130 @@
-/* ======= AGROTIPS PAGE ======= */
-.agrotips-main {
-  width: 90%;
-  max-width: 1200px;
-  margin: 2em auto 3em;
-  padding: 0 1.5em 2.5em;
-  background-color: #ffffff;
-  border-radius: 0;
-  text-align: left;
-}
+/* =========================================================
+   AGROTIPS – LAYOUT GENERAL
+   ========================================================= */
 
-/* ---------- HERO / CABECERA ---------- */
-/* ======= AGROTIPS PAGE ======= */
 .agrotips-main {
-  width: 100%;
+  position: relative;
+  width: 95%;
   max-width: 1200px;
-  margin: 2em auto 3em;
-  padding: 0 1.5em 2.5em;
-  background-color: #ffffff;
-  border-radius: 0;
-  text-align: left;
-}
-
-/* ---------- HERO / CABECERA ---------- */
-.agrotips-hero {
-  background: transparent;      /* sin tarjeta */
-  border-radius: 0;
+  margin: 2.5em auto 3em;
+  padding-bottom: 3em;
+  background: transparent;
   box-shadow: none;
   border: none;
-  padding: 1.8em 0 1.4em;
-  display: flex;
-  flex-direction: column;       /* título arriba, filtros abajo */
-  align-items: center;
 }
 
-/* Contenedor título + texto */
+/* Línea decorativa vertical a la izquierda */
+.agrotips-main::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #2d5a3d, #7bbf72);
+  opacity: 0.45;
+}
+
+/* =========================================================
+   HERO AGROTIPS (TEXTO + IMAGEN)
+   ========================================================= */
+
+.agrotips-hero {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.8em 2.2em;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5em;
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              background-color 0.22s ease;
+}
+
+.agrotips-hero:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(7, 107, 46, 0.22);
+}
+
+/* Texto */
 .agrotips-hero-text {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 0;      /* ya no la usamos para la línea */
-  margin-bottom: 1.2em;   /* separa bloque título+línea del buscador */
-  border-bottom: none;    /* quitamos la línea de aquí */
+  flex: 1;
+  max-width: 55ch;
+  text-align: left;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .agrotips-hero-text h2 {
-  margin: 0;              /* manejamos el espacio con el ::after */
+  margin: 0;
   font-size: 2.2em;
-  color: #264e36;
-  text-align: left;
+  color: #2d5a3d;
+  letter-spacing: 0.02em;
+  position: relative;
 }
 
-/* Línea verde larga debajo del título, como en Análisis */
+/* Línea bajo el título */
 .agrotips-hero-text h2::after {
   content: "";
   display: block;
-  width: 100%;
-  height: 4px;
+  width: 160px;
+  height: 3px;
   border-radius: 999px;
-  background-color: #264e36;
-  margin-top: 0.6em;     /* separación título–línea */
-  margin-bottom: 1.2em;  /* separación línea–párrafo */
-}
-
-.agrotips-hero-text h2::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 999px;
-  background-color: #264e36;
-  margin-top: 0.6em;     /* separación título–línea */
-  margin-bottom: 1.2em;  /* separación línea–párrafo */
+  background-color: #2d5a3d;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .agrotips-hero-text p {
   margin: 0;
   font-size: 0.98em;
+  color: #234;
+  max-width: 650px;
 }
 
-/* Caja de buscador centrada justo debajo */
+/* Imagen lateral */
+.agrotips-hero-image {
+  flex: 0 0 380px;
+}
+
+.agrotips-hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Responsive hero */
+@media (max-width: 900px) {
+  .agrotips-hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6em 1.2em;
+  }
+
+  .agrotips-hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .agrotips-hero-image {
+    flex: none;
+    width: 90%;
+    max-width: 420px;
+  }
+}
+
+/* =========================================================
+   BUSCADOR + FILTROS
+   ========================================================= */
+
 .agrotips-hero-filters {
   margin-top: 1.4em;
   width: 100%;
@@ -91,6 +138,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+.agrotips-hero-filters .field-group label {
+  text-align: center;
+}
+
 .field-group {
   display: flex;
   flex-direction: column;
@@ -102,38 +153,42 @@
   font-weight: bold;
 }
 
+/* Inputs/selects con look cuidado */
 .field-group input,
 .field-group select {
   padding: 0.5em 0.6em;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #b7cbbf;
   font-size: 0.9em;
+  background-color: #f9fbf4;
 }
 
-/* ---------- BOTONES DE FILTRO ---------- */
-.filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+.field-group input:focus,
+.field-group select:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #2d5a3d;
+  box-shadow: 0 0 0 2px rgba(45, 90, 61, 0.2);
 }
 
+/* Botones de filtro tipo chip */
 .filter-btn {
-  border: 2px solid #264e36;
+  border-radius: 999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2d5a3d;
   background-color: #e8f5e8;
-  color: #264e36;
-  padding: 0.7rem 1.5rem;
-  border-radius: 25px;
+  color: #1f3f2d;
+  padding: 0.4rem 1.2rem;
   font-size: 0.85em;
   cursor: pointer;
   font-weight: 600;
-  transition:  all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .filter-btn:hover {
-  background: #264e36;
-  color: #e0f0e8;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(7, 107, 46, 0.3);
 }
 
 .filter-btn.active {
@@ -141,8 +196,19 @@
   color: #ffffff;
 }
 
-/* ---------- TARJETAS DE TIPS ---------- */
-/* Grid base (móvil / tablet) */
+/* Contenedor de las chips (si lo usas) */
+.filters-buttons {
+  display: flex;
+  flex-wrap: nowrap;         /* todos en una sola fila */
+  gap: 0.8rem;
+  justify-content: flex-start; /* o center si los quieres centrados */
+  align-items: center;
+}
+
+/* =========================================================
+   GRID DE TIPS
+   ========================================================= */
+
 .agrotips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -158,12 +224,15 @@
   }
 }
 
+/* Tarjeta moderna */
 .agrotip-card {
+  position: relative;
   background: #ffffff;
-  border-radius: 16px;
-  padding: 0.9em 1em 1.1em;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid transparent;
+  border-radius: 18px;
+  padding: 1.4em 1.1em 1.3em;
+  border: none;
+  box-shadow: 0 10px 24px rgba(7, 107, 46, 0.08);
+  overflow: hidden;
   font-size: 0.9em;
   display: flex;
   flex-direction: column;
@@ -171,14 +240,76 @@
   height: 100%;
 }
 
+/* Franja de color superior por categoría */
+.agrotip-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #2d5a3d;
+}
+
+.agrotip-card[data-category="suelo"]::before   { background: #8b5a2b; }
+.agrotip-card[data-category="riego"]::before   { background: #1e90ff; }
+.agrotip-card[data-category="clima"]::before   { background: #ff8c00; }
+.agrotip-card[data-category="gestion"]::before { background: #556b2f; }
+.agrotip-card[data-category="plagas"]::before  { background: #d10404; }
+
+/* Chip de categoría */
+.tip-tag {
+  display: inline-block;
+  margin-bottom: 0.45em;
+  padding: 0.2em 0.9em;
+  font-size: 0.78em;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+/* Colores didácticos por categoría */
+.tip-tag.suelo {
+  background: #f7e4cf;
+  color: #8b5a2b;
+  border-color: #e0c2a0;
+}
+
+.tip-tag.riego {
+  background: #e0f1ff;
+  color: #1e90ff;
+  border-color: #b2d4ff;
+}
+
+.tip-tag.clima {
+  background: #ffe5c4;
+  color: #ff8c00;
+  border-color: #ffbf80;
+}
+
+.tip-tag.gestion {
+  background: #e1f2e1;
+  color: #556b2f;
+  border-color: #b2d4a4;
+}
+
+.tip-tag.plagas {
+  background: #fde0e0;
+  color: #cc0808;
+  border-color: #f4b2b2;
+}
+
+/* Títulos y texto */
 .agrotip-card h3 {
-  margin: 0.2em 0 0.1em;
+  margin: 0.4em 0 0.3em;
   font-size: 1.05em;
   color: #264e36;
 }
 
-.agrotip-card p {
-  margin: 0;
+.agrotip-card p,
+.agrotip-card li {
+  color: #2f3a32;
+  line-height: 1.45;
 }
 
 .agrotip-card ul {
@@ -192,55 +323,19 @@
 
 /* Imagen dentro de la tarjeta */
 .agrotip-media {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  border-radius: 10px;
+  border-radius: 14px;
   overflow: hidden;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
   max-height: 150px;
 }
 
 .agrotip-media img {
+  background: transparent;
   width: 100%;
   height: 150px;
   object-fit: cover;
   display: block;
-}
-
-/* Etiquetas de categoría */
-.tip-tag {
-  display: inline-block;
-  padding: 0.15em 0.6em;
-  border-radius: 999px;
-  font-size: 0.75em;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.tip-tag.suelo { background-color: #8b5a2b; }
-.tip-tag.riego { background-color: #1e90ff; }
-.tip-tag.clima { background-color: #ff8c00; }
-.tip-tag.gestion { background-color: #556b2f; }
-
-/* Bordes por categoría */
-.agrotip-card[data-category="suelo"] {
-  border-top-color: #8b5a2b;
-}
-.agrotip-card[data-category="riego"] {
-  border-top-color: #1e90ff;
-}
-.agrotip-card[data-category="clima"] {
-  border-top-color: #ff8c00;
-}
-.agrotip-card[data-category="gestion"] {
-  border-top-color: #556b2f;
-}
-
-/* Mensaje sin resultados */
-.no-results {
-  margin-top: 1.5em;
-  font-size: 0.9em;
-  text-align: center;
-  color: #555;
 }
 
 /* Hover general para cards */
@@ -253,42 +348,352 @@
 .agrotip-card:hover,
 .video-card:hover,
 .crop-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(7, 107, 46, 0.16);
 }
 
-/* ---------- RESPONSIVE BÁSICO ---------- */
-@media (max-width: 768px) {
-  .agrotips-main {
-    margin-top: 1.5em;
+/* Mensaje sin resultados */
+.no-results {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  text-align: center;
+  color: #555;
+}
+
+/* =========================================================
+   BOTÓN “VER MÁS”
+   ========================================================= */
+
+.agrotips-more {
+  margin: 1.4em 0 0.8em;
+  text-align: center;
+}
+
+.agrotips-more button {
+  border-radius: 999px;
+  padding: 0.6em 1.4em;
+  border: 1px solid #2d5a3d;
+  background: #2d5a3d;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.agrotips-more button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   HERRAMIENTA – EXPLORA UN CULTIVO SUGERIDO
+   ========================================================= */
+/* =========================================================
+   HERRAMIENTA – EXPLORA UN CULTIVO SUGERIDO (NUEVO)
+   ========================================================= */
+
+.agrotips-tool {
+  margin-top: 2.3em;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.7em 1.9em 1.9em;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              background-color 0.22s ease;
+}
+
+.agrotips-tool:hover {
+  transform: translateY(-4px);
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(7, 107, 46, 0.22);
+}
+
+/* Cabecera */
+.tool-header h2 {
+  color: #2d5a3d;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid #2d5a3d;
+}
+
+.tool-header p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+/* Grid formulario + resultado */
+.tool-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1.2fr);
+  gap: 1.6em;
+  margin-top: 1.3em;
+  align-items: flex-start;
+}
+
+/* Tarjeta formulario */
+.tool-form {
+  padding: 1.35em 1.4em;
+  border-radius: 16px;
+  background: #f6faf7;
+  border: 1px solid rgba(45, 90, 61, 0.10);
+  box-shadow: 0 10px 24px rgba(7, 107, 46, 0.08);
+}
+
+.tool-form .field-group select {
+  background-color: #ffffff;
+}
+
+/* Botón del minijuego */
+.tool-button {
+  width: 100%;
+  margin-top: 0.9em;
+  border-radius: 999px;
+  padding: 0.55em 1.5em;
+  border: none;
+  background: linear-gradient(135deg, #2d5a3d, #39a15f);
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(27, 112, 67, 0.32);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.tool-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(27, 112, 67, 0.42);
+  filter: brightness(1.03);
+}
+
+.tool-button:active {
+  transform: scale(0.97) translateY(1px);
+  box-shadow: 0 6px 16px rgba(27, 112, 67, 0.32);
+}
+
+/* Caja resultado – card principal */
+.tool-result {
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 1.5em 1.7em;
+  font-size: 0.9em;
+  display: flex;
+  gap: 1.4em;
+  align-items: flex-start;
+  border: 1px solid rgba(45, 90, 61, 0.10);
+  box-shadow: 0 14px 30px rgba(7, 107, 46, 0.10);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tool-result:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(7, 107, 46, 0.18);
+}
+
+/* Contenedor de la imagen */
+.tool-result-media {
+  flex: 0 0 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen del cultivo – aquí se corrige la deformación */
+.tool-result-media img,
+#tool-result-img {
+  width: 100%;
+  max-width: 210px;
+  height: auto;                 /* IMPORTANTE: nada de height: 100% */
+  aspect-ratio: 3 / 4;          /* vertical tipo afiche de cultivo */
+  object-fit: contain;          /* no recorta, no deforma */
+  border-radius: 16px;
+  padding: 0.5rem;
+  background: radial-gradient(
+    circle at 15% 0%,
+    #e4f4ea 0,
+    #f7fbf8 45%,
+    #ffffff 100%
+  );
+  box-shadow: 0 10px 22px rgba(15, 68, 43, 0.18);
+  display: block;
+}
+
+/* Texto del resultado */
+.tool-result-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  color: #244130;
+}
+
+.tool-result-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  color: #264e36;
+}
+
+.tool-result-text h4 {
+  margin: 0.55rem 0 0.25rem;
+  font-size: 0.96rem;
+  color: #1f5b3a;
+}
+
+.tool-result-text ul {
+  margin: 0.2rem 0 0.45rem 1.1rem;
+  padding: 0;
+}
+
+.tool-result-text li {
+  margin-bottom: 0.18rem;
+}
+
+/* Responsive minijuego */
+@media (max-width: 900px) {
+  .tool-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .agrotips-hero {
-    padding: 1.3em 0 1.1em;
+  .tool-result {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .agrotips-hero-text h2 {
-    font-size: 1.8em;
+  .tool-result-media {
+    flex: none;
+    width: 100%;
+    justify-content: center;
   }
 
-  .agrotips-hero-filters {
-    max-width: 100%;
+  .tool-result-media img,
+  #tool-result-img {
+    max-width: 220px;
   }
 }
 
-/* ======= VIDEOS ======= */
+
+/* =========================================================
+   CULTIVOS RECOMENDADOS
+   ========================================================= */
+
+.agrotips-crops {
+  margin-top: 2.5em;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.6em 1.8em 2em;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              background-color 0.22s ease;
+}
+
+.agrotips-crops:hover {
+  transform: translateY(-6px);
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(7, 107, 46, 0.22);
+}
+
+.crops-header h2 {
+  color: #2d5a3d;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.6em;
+  border-bottom: 3px solid #2d5a3d;
+}
+
+.crops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2em;
+  margin-top: 1.2em;
+}
+
+.crop-card {
+  background: #f9fbf4;
+  border-radius: 14px;
+  padding: 0.9em 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.crop-main {
+  display: flex;
+  gap: 0.7em;
+  flex: 1;
+  z-index: 1;
+}
+
+.crop-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.crop-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+.crop-text h3 {
+  margin: 0 0 0.2em;
+  font-size: 1em;
+  color: #264e36;
+}
+
+.crop-tagline {
+  margin: 0 0 0.3em;
+  font-size: 0.85em;
+  color: #556b2f;
+}
+
+.crop-text ul {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.9em;
+}
+
+.crop-text li {
+  margin-bottom: 0.2em;
+}
+
+/* =========================================================
+   VIDEOS RECOMENDADOS
+   ========================================================= */
+
 .agrotips-videos {
   margin-top: 2.5em;
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: 18px;
   padding: 1.6em 1.8em 1.8em;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              background-color 0.22s ease;
+}
+
+.agrotips-videos:hover {
+  transform: translateY(-6px);
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(7, 107, 46, 0.22);
 }
 
 .agrotips-videos-header h2 {
   margin-top: 0;
-  margin-bottom: 0.4em;
-  color: #264e36;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.6em;
+  color: #2d5a3d;
+  border-bottom: 3px solid #2d5a3d;
 }
 
 .agrotips-videos-header p {
@@ -310,11 +715,12 @@
   align-items: center;
   gap: 0.6em;
   background: #f7faef;
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 0.9em;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-/* Miniatura horizontal */
+/* Miniatura */
 .video-thumb {
   position: relative;
   width: 100%;
@@ -368,201 +774,31 @@
   text-decoration: underline;
 }
 
+/* =========================================================
+   RESPONSIVE GENERAL
+   ========================================================= */
+
 @media (max-width: 768px) {
-  .video-card {
-    align-items: stretch;
+  .agrotips-main {
+    width: 95%;
+    padding: 0 1em 1.8em;
   }
 
-  .video-thumb {
+  .agrotips-hero-filters {
     max-width: 100%;
   }
-}
 
-/* ======= CULTIVOS RECOMENDADOS ======= */
-.agrotips-crops {
-  margin-top: 2.5em;
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 1.6em 1.8em 2em;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
-
-.crops-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2em;
-  margin-top: 1.2em;
-}
-
-.crop-card {
-  background: #f9fbf4;
-  border-radius: 14px;
-  padding: 0.9em 1em;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
-}
-
-.crop-main {
-  display: flex;
-  gap: 0.7em;
-  flex: 1;
-  z-index: 1;
-}
-
-.crop-icon {
-  width: 60px;    /* antes 28 */
-  height: 60px;   /* antes 28 */
-  flex-shrink: 0;
-  margin-top: 2px;   /* puedes poner 0 si lo ves muy abajo */
-}
-
-.crop-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  /* no recorta ni deforma la imagen */
-  border-radius: 50%;   /* opcional: la mantiene redondita */
-  display: block;
-}
-
-
-.crop-text h3 {
-  margin: 0 0 0.2em;
-  font-size: 1em;
-  color: #264e36;
-}
-
-.crop-tagline {
-  margin: 0 0 0.3em;
-  font-size: 0.85em;
-  color: #556b2f;
-}
-
-.crop-text ul {
-  margin: 0;
-  padding-left: 1.1em;
-  font-size: 0.9em;
-}
-
-.crop-text li {
-  margin-bottom: 0.2em;
-}
-
-
-/* ======= BOTÓN VER MÁS Y HERRAMIENTA ======= */
-.agrotips-more {
-  margin: 1.4em 0 0.8em;
-  text-align: center;
-}
-
-.agrotips-more button {
-  border-radius: 999px;
-  padding: 0.6em 1.4em;
-  border: 1px solid #264e36;
-  background: #264e36;
-  color: #ffffff;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.agrotips-more button:hover {
-  filter: brightness(1.05);
-}
-
-.agrotips-tool {
-  margin-top: 2.3em;
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 1.6em 1.8em 1.8em;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
-
-.tool-header h2 {
-  margin-top: 0;
-  margin-bottom: 0.4em;
-  color: #264e36;
-}
-
-.tool-header p {
-  margin: 0;
-  font-size: 0.95em;
-}
-
-.tool-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
-  gap: 1.4em;
-  margin-top: 1.2em;
-}
-
-.tool-form .field-group select {
-  background-color: #ffffff;
-}
-
-.tool-button {
-  margin-top: 0.8em;
-  border-radius: 999px;
-  padding: 0.5em 1.4em;
-  border: none;
-  background: #264e36;
-  color: #ffffff;
-  font-size: 0.9em;
-  cursor: pointer;
-}
-
-.tool-button:hover {
-  filter: brightness(1.05);
-}
-
-.tool-result {
-  border-radius: 10px;
-  background: #f7faef;
-  padding: 1em 1.2em;
-  font-size: 0.9em;
-  display: flex;
-  gap: 0.9em;
-  align-items: stretch;
-}
-
-.tool-result h3 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
-  color: #264e36;
-}
-
-.tool-result-media {
-  width: 140px;
-  min-width: 140px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.tool-result-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.tool-result-text h3 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
-  color: #264e36;
-}
-
-/* Ajustes responsive extra */
-@media (max-width: 768px) {
   .agrotips-videos,
   .agrotips-crops {
     padding: 1.2em 1.1em 1.4em;
   }
 
   .video-card {
-    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .video-thumb {
+    max-width: 100%;
   }
 
   .tool-grid {
@@ -580,9 +816,86 @@
   }
 }
 
-/* Mobile extra pequeño */
 @media (max-width: 480px) {
   .agrotips-main {
     padding: 0 0.8em;
   }
 }
+
+.filters-buttons,
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  flex: 0 0 30px;   /* todos del mismo ancho */
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("imagenes/hoja-pattern.svg");
+  background-size: 280px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.field-group input,
+.field-group select {
+  background-color: #f9fbf4;
+  border-radius: 8px;
+  border-color: #b7cbbf;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #2d5a3d;
+  box-shadow: 0 0 0 2px rgba(45, 90, 61, 0.2);
+}
+
+body {
+  background: linear-gradient(#f4faf4, #eef7ee);
+}
+
+main, .agrotips-main {
+  backdrop-filter: blur(2px);
+}
+
+/* ===== SEPARADOR DECORATIVO HOJAS ===== */
+
+.section-divider {
+  width: 100%;
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.section-divider img,
+.section-divider svg {
+  max-width: 420px;
+  width: 70%;
+  height: auto;
+  opacity: 0.9;
+}
+
+/* Íconos de cultivos con look más pulido */
+.crop-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  padding: 0.35rem;
+  background: radial-gradient(circle at 30% 0%, #e5f6ec 0, #ffffff 60%);
+  box-shadow: 0 4px 10px rgba(17, 80, 49, 0.18);
+  display: block;
+}
+
