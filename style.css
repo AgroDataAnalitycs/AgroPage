@@ -27,6 +27,19 @@
   opacity: 1;
 }
 
+
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(transparent, #e8f5e8);
+  pointer-events: none;
+  z-index: 2;
+}
 /* ======= OVERLAY ======= */
 /* CORREGIDO: ya no bloquea clics */
 .overlay {
@@ -78,9 +91,7 @@
   display: block; /* AGREGADO: hace que el botón esté alineado a la izquierda */
 }
 
-.info-extra p{
-  text-align: center;
-}
+
 
 .btn:hover {
   background-color: #2d5a3d;
@@ -146,85 +157,241 @@
   color: #1f3f2d;
 }
 
-/* ======= INFO EXTRA ======= */
-.info-extra {
-  width: 90%;
-  background-color: #e8f5e8;
-  padding: 2em;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 4em;
+.redes p{
+  text-align: center;
 }
 
-.info-extra p {
-  text-align: center;
-  line-height: 1.7;
-  font-size: 1.05em;
-}
 
 h2 {
   text-align: center;
   color: white; /* coherente con otras secciones */
 }
 
-/* ======= FOOTER ======= */
-footer {
-  background-color: #1f3f2d;
-  color: white;
+
+/* ======= INFO EXTRA ======= */
+.info-extra {
+  width: 70%;
+  background-color: #e8f5e89f;
+  padding: 2em;
+  border-radius: 10px;
+  margin: 4em auto;
+  border: 2px solid #2d5a3d;
+  transition: all 0.3s ease;
+  border: 3px solid transparent; /* invisible por defecto */
+}
+
+.info-extra:hover {
+  transform: translateY(-7px); /* saltito un poquito mayor */
+  box-shadow: 0 15px 35px rgba(7, 107, 46, 0.35); /* sombra más grande y más oscura */
+  border-color: #2d5a3d;
+}
+
+.info-extra:active {
+  border-color: #2d5a3d;
+}
+
+/* Título centrado con línea */
+.info-extra h3 {
   text-align: center;
-  padding: 1em 0;
-  font-size: 0.9em;
+  color: #2d5a3d;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #2d5a3d;
+}
+
+/* Contenedor interno: texto + imagen */
+.info-extra .contenido {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Texto */
+.info-extra .contenido p {
+  flex: 1;
+  text-align: justify;
+  color: #2d5a3d;
+  font-size: 1.1rem;
+}
+
+/* Imagen */
+.info-extra .contenido img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-extra strong {
+  color: #1f3f2d;  /* color que quieras */
 }
 
 /* ======= RESPONSIVO ======= */
 @media (max-width: 768px) {
-  header {
+  .info-extra .contenido {
     flex-direction: column;
     text-align: center;
   }
 
-  .logo-area {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-  .logo-area img {
-    width: 70px;
-  }
-
-  .logo-area h1 {
-    font-size: 1.8em;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  nav a {
-    font-size: 1em;
-  }
-
-  .carousel button {
-    font-size: 1.5em;
-  }
-
-  .overlay {
-    bottom: 10%;
-    left: 5%;
-    max-width: 90%;
+  .info-extra .contenido img {
+    margin-top: 1em;
   }
 }
+/*mapa estilo*/
 
-h3{
-  color: #1f3f2d;
+.mapa-container {
+  width: 85%;
+  margin: 3em auto;
+  background-color: #e8f5e8;
+  padding: 2em;
+  border-radius: 15px;
+
+  /* Borde por defecto invisible */
+  border: 3px solid transparent;
+
+  transition: transform 0.25s ease, box-shadow 0.3s ease, border 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+}
+.mapa-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  border-color: #2d5a3d; /* AHORA SÍ SE VE */
+}
+
+.mapa-container:active {
+  border: 3px solid #2d5a3d; /* AHORA SÍ SE VE */
+}
+
+.mapa-container h3 {
   text-align: center;
-}
-p {
-    text-align: justify;
-    text-justify: inter-word;
+  color: #2d5a3d;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #2d5a3d;
 }
 
-.info-extra h3{
-  margin: 25px;
+#map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.descripcion-mapa {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #234;
+  line-height: 1.6;
+}
+
+
+/* ======= REFERENCIAS ======= */
+.referencias {
+  width: 60%;
+  background-color: #e8f5e89f;
+  padding: 2em;
+  border-radius: 10px;
+  margin: 2em auto;
+
+  /* Borde invisible por defecto */
+  border: 3px solid transparent;
+
+  /* Animaciones */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  /* Sombra inicial suave */
+  box-shadow: 0 5px 15px rgba(7, 107, 46, 0.15);
+}
+
+.referencias:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(7, 107, 46, 0.35);
+  border-color: #2d5a3d;
+}
+
+.referencias:active {
+  border-color: #2d5a3d;
+}
+
+/* Título centrado con línea */
+.referencias h3 {
+  text-align: center;
+  color: #2d5a3d;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #2d5a3d;
+}
+
+/* Contenedor general de todas las fuentes */
+.referencias .contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Contenedor individual de cada fuente */
+.fuente-datos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  /* para que el texto no quede al borde */
+  padding: 0.5em 0;
+}
+
+/* Texto */
+.fuente-datos p {
+  flex: 1;
+  text-align: justify;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #2d5a3d;
+}
+
+/* Imagen (logo) */
+.logo-fuente {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ======= RESPONSIVO ======= */
+@media (max-width: 768px) {
+  .fuente-datos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-fuente {
+    margin-top: 1em;
+  }
+}
+
+/* Estilo base del logo */
+.logo-fuente {
+    max-width: 120px;
+    transition: transform 0.25s ease, 
+                box-shadow 0.25s ease,
+                border 0.25s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse (hover) */
+.logo-fuente:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Efecto al hacer clic */
+.logo-fuente:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
+    border: 2px solid #2d5a3d; /* borde verde cuando se presiona */
 }
