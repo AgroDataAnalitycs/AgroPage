@@ -5,7 +5,8 @@
 
 .agrotips-main {
   position: relative;
-  width: 70%;
+  width: 95%;
+  max-width: 1200px
   margin: 2.5em auto 3em;
   padding-bottom: 3em;
   background: transparent;
@@ -26,7 +27,6 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* IMPORTANTE: Permite que los elementos se acomoden */
   align-items: center;
   justify-content: space-between;
   gap: 2.5em;
@@ -41,9 +41,14 @@
 
 /* Texto */
 .agrotips-hero-text {
-  flex: 1 1 400px; /* Ocupa espacio pero tiene un ancho base */
+  flex: 1 ; /* Ocupa espacio pero tiene un ancho base */
   max-width: 55ch;
   text-align: left;
+  text-align: left;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .agrotips-hero-text h2 {
@@ -58,7 +63,7 @@
 .agrotips-hero-text h2::after {
   content: "";
   display: block;
-  width: 70%;
+  width: 160px;
   height: 3px;
   border-radius: 999px;
   background-color: #2d5a3d;
@@ -70,12 +75,12 @@
   margin: 0;
   font-size: 0.98em;
   color: #234;
-  line-height: 1.6;
+  max-width: 650px;
 }
 
 /* Imagen lateral */
 .agrotips-hero-image {
-  flex: 0 1 380px; /* Flexible pero con base de 380px */
+  flex: 0 0 380px; /* Flexible pero con base de 380px */
 }
 
 .agrotips-hero-image img {
@@ -798,6 +803,7 @@
     list-style-position: inside;
   }
 }
+
 
 
 
