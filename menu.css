@@ -48,7 +48,8 @@ header.main-header {
     width: 100%;
     max-width: 1400px; /* Limite de ancho para pantallas muy grandes */
     margin: 0 auto;
-    padding: 0 2rem;
+    padding-left: 2rem; 
+    padding-right: 3.5rem; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -386,3 +387,4 @@ footer {
         margin: 5px;
 
     }
+
