@@ -28,28 +28,24 @@ body::before {
 }
 
 
-/* =========================================
+ /* =========================================
    1. ESTILOS GENERALES (ESCRITORIO)
    ========================================= */
 header.main-header {
     background-color: #264e36;
     color: white;
-    padding: 0.8em 0; /* Un poco más compacto */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente sugerida */
 }
 
 .header-inner {
     width: 100%;
-    max-width: 1400px; /* Limite de ancho para pantallas muy grandes */
-    margin: 0 auto;
-    padding-left: 2rem; 
-    padding-right: 3.5rem; 
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,26 +55,19 @@ header.main-header {
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 12px;
-    z-index: 10002; /* Para asegurar que el logo sea clicable */
+    gap: 15px;
 }
 
 .logo-area img {
-    width: 55px;
+    width: 60px;
     height: auto;
-    transition: transform 0.3s ease;
-}
-
-.logo-area:hover img {
-    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
 }
 
 .logo-area h1 {
-    font-size: 1.8rem;
+    font-size: 2.2em;
     margin: 0;
     color: white;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    text-decoration: none;
 }
 
 .logo-area a { text-decoration: none; }
@@ -89,7 +78,6 @@ nav.nav-header ul.menu {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 5px; /* Espacio entre botones */
 }
 
 nav.nav-header ul.menu > li {
@@ -98,82 +86,57 @@ nav.nav-header ul.menu > li {
 
 nav.nav-header ul.menu > li > a {
     display: block;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.5rem;
     font-weight: 500;
-    font-size: 1rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
+
+
 
 nav.nav-header ul.menu > li > a:hover,
 nav.nav-header > ul.menu > li > a.active {
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    /* Eliminé el borde inferior grueso para un look más moderno tipo botón */
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 5px solid #fff;
+    border-radius: 10px;
 }
 
-/* Submenús Desktop (MEJORADO) */
+/* Submenús Desktop */
 .submenu {
-    display: block; /* Necesario para la animación, usamos visibility */
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: white; /* Fondo blanco para mejor contraste */
-    min-width: 220px;
-    padding: 10px 0;
+    background: #88a593;
+    min-width: 200px;
+    padding: 0;
     list-style: none;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    transform: translateY(20px); /* Empieza desplazado abajo */
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border-top: 4px solid #88a593; /* Detalle de color */
-}
-
-/* Flechita decorativa del submenú */
-.submenu::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: 20px;
-    width: 0; 
-    height: 0; 
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #88a593;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .submenu a {
     display: block;
-    padding: 10px 20px;
-    color: #333; /* Texto oscuro para leer mejor en fondo blanco */
+    padding: 10px 15px;
+    color: #264e36;
     text-decoration: none;
-    font-size: 0.95rem;
-    border-left: 3px solid transparent;
-    transition: all 0.2s;
 }
 
 .submenu a:hover {
-    background: #f4f4f4;
-    color: #264e36;
-    border-left: 3px solid #264e36; /* Indicador visual al hover */
-    padding-left: 25px; /* Pequeño desplazamiento */
+    background: #264e36;
+    color: white;
 }
 
 /* Hover para mostrar submenú en escritorio */
 nav.nav-header ul.menu > li:hover > .submenu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0); /* Sube a su posición original */
+    display: block;
 }
 
 /* Elementos ocultos en escritorio */
 .menu-toggle { display: none; }
 .sena-mobile-container { display: none; }
-#sena-desktop { width: 55px; display: block; filter: brightness(0) invert(1); /* Vuelve el logo blanco si es SVG negro */ }
+#sena-desktop { width: 60px; display: block; }
 
 
 /* =========================================
@@ -185,177 +148,148 @@ nav.nav-header ul.menu > li:hover > .submenu {
     #sena-desktop { display: none; }
     
     /* Ajustes Header */
-    .header-inner { padding: 0 1.5rem; height: 70px;}
-    .logo-area h1 { font-size: 1.3rem; }
+    .header-inner { padding: 0 1rem; }
+    .logo-area h1 { font-size: 1.4rem; }
     .logo-area img { width: 40px; }
 
     /* BOTÓN HAMBURGUESA */
     .menu-toggle {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 5px;
+        gap: 6px;
         cursor: pointer;
-        z-index: 10001; 
-        width: 40px;
-        height: 40px;
-        align-items: flex-end; /* Alineado a la derecha */
+        z-index: 10001; /* Encima del menú */
+        padding: 5px;
+        border: 2px solid transparent; 
+        position: fixed; /* Fijo para que no se mueva */
+        right: 20px;
+        top: 25px; /* Ajustar según altura del header */
     }
 
+    /* Estilo de las barras */
     .menu-toggle span {
         width: 30px;
         height: 3px;
         background-color: white;
-        border-radius: 3px;
+        border-radius: 2px;
         transition: all 0.3s ease;
     }
+
+    /* Animación a 'X' cuando está activo */
+    .menu-toggle.is-active {
+        border-color: white; /* Cuadro blanco al abrir */
+        border-radius: 4px;
+        background: rgba(0,0,0,0.1);
+        padding: 8px;
+        top: 15px; /* Reajuste posición si necesario */
+    }
     
-    /* Animación hamburguesa */
-    .menu-toggle.is-active span:nth-child(1) { transform: translateY(8px) rotate(45deg); width: 30px; }
-    .menu-toggle.is-active span:nth-child(2) { opacity: 0; transform: translateX(-20px); }
-    .menu-toggle.is-active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); width: 30px; }
+    .menu-toggle.is-active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    .menu-toggle.is-active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
 
-    /* MENÚ LATERAL DESPLEGABLE */
+    /* MENÚ LATERAL (70% ANCHO) */
     nav.nav-header {
         position: fixed;
         top: 0;
-        right: 0;
-        width: 75%; /* Un poco más ancho para mejor lectura */
-        max-width: 300px; /* Que no sea gigante en tablets */
-        height: 100vh; /* Altura completa */
-        background-color: #264e36;
+        right: 0; /* Sale de la derecha */
+        width: 70%; /* OCUPA EL 70% */
+        height: 100vh;
+        background-color: #264e36; /* Verde Intenso */
         
         display: flex;
-        flex-direction: column; /* Columna vertical */
+        flex-direction: column;
+        justify-content: space-between; /* Espacio entre menú y logo sena */
         
-        transform: translateX(100%);
+        transform: translateX(100%); /* Oculto a la derecha */
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 10000;
-        padding-top: 80px; /* Espacio para no tapar el botón cerrar */
-        box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+        padding-top: 80px; /* Espacio superior para no tapar botón */
+        overflow-y: auto; /* Scroll si el menú es muy alto */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
     }
 
-    /* ESTADO ACTIVO */
+    /* ESTADO ACTIVO (ABIERTO) */
     nav.nav-header.active {
         transform: translateX(0);
-    }
-    
-    /* Overlay oscuro cuando el menú abre (Mejorado) */
-    nav.nav-header.active::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: -100vw; /* Cubre el resto de la pantalla a la izquierda */
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.6);
-        backdrop-filter: blur(2px); /* Efecto borroso elegante */
-        z-index: -1;
+        /* Sombra gigante para oscurecer el resto de la página */
+        box-shadow: 0 0 0 1000px rgba(0,0,0,0.6);
     }
 
-    /* LISTA DEL MENÚ (Parte Scrollable) */
+    /* Lista Menú Móvil */
     nav.nav-header ul.menu {
         flex-direction: column;
         width: 100%;
-        /* CLAVE PARA EL LOGO ABAJO: */
-        flex: 1; /* Ocupa todo el espacio disponible sobrante */
-        overflow-y: auto; /* Solo la lista hace scroll si es muy larga */
     }
 
     nav.nav-header ul.menu > li > a {
-        padding: 16px 25px;
+        padding: 15px 20px;
         font-size: 1.1rem;
-        border-bottom: 1px solid rgba(255,255,255,0.05);
-        color: rgba(255,255,255,0.9);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    nav.nav-header ul.menu > li > a:hover { 
-        background-color: rgba(255,255,255,0.1);
-        padding-left: 30px; /* Animación de hover */
+        nav.nav-header ul.menu > li > a:hover { 
+          border-bottom: none;
+        }
+    /* Flechitas para indicar submenú */
+    nav.nav-header ul.menu > li > a + .submenu {
+        /* Lógica visual */
     }
-
-    /* Indicador de submenú */
     nav.nav-header ul.menu > li > a:not(:only-child)::after {
-        content: '+'; /* Más minimalista que la flecha */
-        font-size: 1.2rem;
-        font-weight: 300;
-        float: right;
+        content: '▼';
+        font-size: 0.7em;
+        opacity: 0.7;
     }
 
     /* Submenús Móvil */
     .submenu {
-        position: static; /* Ya no flota, empuja el contenido */
-        visibility: visible;
-        opacity: 1;
-        transform: none;
-        display: none; /* Controlado por JS o hover */
-        background-color: rgba(0,0,0,0.15); /* Ligeramente más oscuro que el fondo */
+        position: relative; /* Ya no flota */
+        display: none; /* Oculto hasta clic */
+        background-color: #456b549f; /* Verde más oscuro */
         box-shadow: none;
         width: 100%;
-        border-radius: 0;
-        border-top: none;
-        padding: 0;
+        top: 0;
     }
     
-    .submenu::before { display: none; } /* Quitar triangulo en móvil */
-
-    /* Mostrar submenú en móvil */
-    nav.nav-header ul.menu > li:hover .submenu,
-    nav.nav-header ul.menu > li.active .submenu {
+    /* Mostrar submenú al hacer hover o clic (en móvil el hover funciona al tocar) */
+    nav.nav-header ul.menu > li:hover .submenu {
         display: block;
-        animation: fadeIn 0.3s;
     }
 
     .submenu a {
         color: #d1e7dd;
-        padding: 12px 25px 12px 40px; /* Más sangría */
+        padding-left: 30px;
         font-size: 0.95rem;
-        border-left: 2px solid rgba(255,255,255,0.1);
-    }
-    
-    .submenu a:hover {
-        background: transparent;
-        color: white;
-        border-color: white;
     }
 
-    /* 6. LOGO SENA MÓVIL (ABAJO) */
+ /* 6. LOGO SENA MÓVIL (CONTENEDOR) */
     .sena-mobile-container {
-        /* Se activa en móvil */
+        /* IMPORTANTE: display flex para que aparezca */
         display: flex !important; 
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         
-        /* Estilo tarjeta footer */
-        background: #f8f9fa;
+        background: white;
         margin: 20px;
-        padding: 15px 20px;
-        border-radius: 12px;
-        box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
-
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        
+        /* Evita que el contenedor se aplaste si la pantalla es pequeña */
+        flex-shrink: 0; 
+        min-height: 60px;
     }
     
-    .sena-text {
-        text-align: center;
-        color: #264e36;
-        font-weight: bold;
-        font-size: 0.9rem;
-        text-transform: uppercase;
-    }
-
     .sena-mobile-container img {
-        width: 15px;
+        width: 50px;
         height: auto;
     }
 }
 
-/* Animación simple de opacidad */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 footer {
         background-color: #1f3f2d;
         color: white;
@@ -387,4 +321,3 @@ footer {
         margin: 5px;
 
     }
-
