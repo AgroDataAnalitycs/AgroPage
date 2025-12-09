@@ -129,6 +129,7 @@
   padding: 3em 5%;
   background-color: white; /* unificado con paleta verde */
   text-align: center;
+  width:100%
 }
 
 #map {
@@ -395,3 +396,4 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
     border: 2px solid #2d5a3d; /* borde verde cuando se presiona */
 }
+
