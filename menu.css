@@ -1,4 +1,4 @@
-//* ======= GENERAL ======= */
+/* ======= GENERAL ======= */
     * {
       margin: 0;
       padding: 0;
@@ -11,22 +11,8 @@
       color: #333;
       padding-top: 80px; /* ajusta según la altura de tu header */
 }
-body {
-  background: linear-gradient(#f4faf4, #eef7ee);
-}
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("imagenes/hoja-pattern.svg");
-  background-size: 280px;
-  background-repeat: repeat;
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: -1;
-}
-
+    
 
  /* =========================================
    1. ESTILOS GENERALES (ESCRITORIO)
@@ -321,3 +307,4 @@ footer {
         margin: 5px;
 
     }
+
