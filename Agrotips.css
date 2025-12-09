@@ -58,7 +58,7 @@
 .agrotips-hero-text h2::after {
   content: "";
   display: block;
-  width: 160px;
+  width: 70%;
   height: 3px;
   border-radius: 999px;
   background-color: #2d5a3d;
@@ -798,5 +798,6 @@
     list-style-position: inside;
   }
 }
+
 
 
