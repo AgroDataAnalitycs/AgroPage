@@ -62,21 +62,21 @@
         </li>
 
         <li>
-          <a href="Agrotips.html">AgroTips</a>
+          <a href="Agrotips.html">Agrotips</a>
           <ul class="submenu">
-            <li><a href="Agrotips.html#tips">Tips</a></li>
-            <li><a href="Agrotips.html#cultivos">Cultivos</a></li>
-            <li><a href="Agrotips.html#videos">Videos recomendados</a></li>
+            <li><a href="Agrotips.html#tips">tips</a></li>
+            <li><a href="Agrotips.html#cultivos">cultivos</a></li>
+            <li><a href="Agrotips.html#videos">videos recomendados</a></li>
 
           </ul>
         </li>
 
         <li>
-          <a href="Nosotros.html">Nosotros</a>
+          <a href="nosotros.html">Nosotros</a>
           <ul class="submenu">
-            <li><a href="Nosotros.html#nosotros">Quienes somos</a></li>
-            <li><a href="Nosotros.html#nuestro-equipo">Nuestro equipo</a></li>
-            <li><a href="Nosotros.html#valores">Valores</a></li>
+            <li><a href="nosotros.html#nosotros">quienes somos</a></li>
+            <li><a href="nosotros.html#nuestro-equipo">nuestro equipo</a></li>
+            <li><a href="nosotros.html#valores">valores</a></li>
           </ul>
         </li>
       </ul>
@@ -93,153 +93,151 @@
   </div>
 </header>
 
+<!-- SECCIÓN 1: INTRODUCCIÓN SIMPLE -->
+<section id="introduccion">
+  <h2>Alcance del Análisis</h2>
+  <div class="intro-simple-box">
+    <p>
+      Bienvenido a la sección de analítica avanzada de AgroDataAnalytics. Aquí integramos fuentes de información satelital, datos gubernamentales y estudios de laboratorio para ofrecer una visión clara del estado actual del agro. Nuestro objetivo es transformar datos complejos en decisiones sencillas para el productor y el inversor.
+    </p>
+  </div>
+</section>
 
-  <section id="power-bi">
-    <h2>Dashboard interactivo</h2>
-    <iframe title="Proyecto Final (beta)"" width="1140" height="541.25"  style="display: block; margin: 0 auto;" 
-     src="https://app.powerbi.com/view?r=eyJrIjoiNDFkNDVlYWEtZWI2ZC00MGFkLTlkNTUtMmY2NzIwNmM1MTI2IiwidCI6IjZjYTM0YWUxLTQ2NmYtNDRiYy1hN2FhLTBhYzVhNzhjNjFiMSIsImMiOjR9&pageName=5710a62800cc3b478839"
-     frameborder="0" allowFullScreen="true">
+
+<!-- SECCIÓN 2: DASHBOARD INTERACTIVO -->
+<section id="power-bi">
+  <h2>Dashboard Interactivo</h2>
+  <p class="section-description">
+    Explora los datos dinámicos a continuación. Puedes filtrar por tipo de cultivo, año y región para obtener estadísticas precisas en tiempo real.
+  </p>
+  
+  <div class="dashboard-container">
+    <iframe title="Proyecto Final" 
+      src="https://app.powerbi.com/view?r=eyJrIjoiNDFkNDVlYWEtZWI2ZC00MGFkLTlkNTUtMmY2NzIwNmM1MTI2IiwidCI6IjZjYTM0YWUxLTQ2NmYtNDRiYy1hN2FhLTBhYzVhNzhjNjFiMSIsImMiOjR9&pageName=5710a62800cc3b478839" 
+      frameborder="0" allowFullScreen="true">
     </iframe> 
-  </section>
+  </div>
+</section>
 
-<!-- Sección 1: Análisis a Nivel Nacional -->
+
+<!-- SECCIÓN 3: ANÁLISIS NACIONAL -->
 <section id="nacional">
-    <h2> Análisis a Nivel Nacional</h2>
-    <p>El análisis del sector agrícola colombiano revela un panorama dinámico caracterizado por la diversidad de cultivos y regiones productivas. Colombia se posiciona como uno de los principales productores agrícolas de América Latina.</p>
-
-    <h3>Principales Cultivos</h3>
-    <div class="content-grid">
-        <div class="stat-box">
-            <h3>35%</h3>
-            <p>Café y productos asociados</p>
-        </div>
-        <div class="stat-box">
-            <h3>28%</h3>
-            <p>Frutas y hortalizas</p>
-        </div>
-        <div class="stat-box">
-            <h3>22%</h3>
-            <p>Cereales y tubérculos</p>
-        </div>
+  <h2>Análisis General (Nacional)</h2>
+  
+  <!-- 1. Tarjetas Numéricas (3 items) -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <h3>35%</h3>
+      <p>Café y Asociados</p>
     </div>
-
-
-    <!-- 📍 Imagen de gráficos de rendimiento o superficie cultivada -->
-<iframe src="mapa/mapa_municipios.html" width="400px" height="600px" style="margin-right: 30px;"></iframe>
-<iframe src="mapa/Mapa.html" width="400px" height="600px"></iframe>
-
-
-    <div class="highlight">
-        <h3>Factores Clave del Análisis</h3>
-        <ul>
-            <li>Variabilidad climática y su impacto en los ciclos de cultivo</li>
-            <li>Implementación de tecnologías de agricultura de precisión</li>
-            <li>Acceso a mercados nacionales e internacionales</li>
-            <li>Políticas gubernamentales de apoyo al sector agrícola</li>
-            <li>Capacitación y asistencia técnica a agricultores</li>
-        </ul>
-
+    <div class="stat-card">
+      <h3>28%</h3>
+      <p>Frutas y Hortalizas</p>
     </div>
+    <div class="stat-card">
+      <h3>54%</h3>
+      <p>Uso de Agua Agrícola</p>
+    </div>
+  </div>
+
+  <!-- 2. Caja Mapa + Explicación -->
+  <div class="content-split">
+    <div class="visual-col">
+      <!-- TU MAPA AQUI -->
+      <iframe src="/HTML/Mapa.html" class="map-frame" title="Mapa Nacional"></iframe>
+    </div>
+    <div class="text-col">
+      <h3>Distribución Geográfica</h3>
+      <p>
+        En este mapa interactivo se observa la concentración de cultivos por departamento. Las zonas marcadas en verde oscuro representan áreas con mayor densidad de producción cafetera, mientras que las zonas amarillas indican predominancia de cereales.
+        <br><br>
+        Es fundamental notar cómo la topografía andina influye directamente en los tipos de suelo disponibles.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3. Caja Gráfico Imagen + Explicación -->
+  <div class="content-split">
+    <div class="visual-col">
+      <!-- TU IMAGEN DE GRÁFICO AQUI (Asegúrate de tener la imagen en la carpeta) -->
+      <img src="imagenes/grafico_ejemplo_nacional.png" alt="Gráfico de barras nacional" class="chart-img">
+    </div>
+    <div class="text-col">
+      <h3>Tendencias de Rendimiento</h3>
+      <p>
+        Este gráfico estático ilustra el histórico de producción en las últimas dos décadas. Podemos apreciar un crecimiento sostenido en la exportación de aguacate hass y limón tahití.
+        <br><br>
+        La barra más alta corresponde al pico de producción de 2023, impulsado por nuevas tecnologías de riego.
+      </p>
+    </div>
+  </div>
 </section>
 
 
-<!-- Sección 2: Análisis en el Departamento del Atlántico -->
+<!-- SECCIÓN 4: ANÁLISIS ATLÁNTICO -->
 <section id="atlantico">
-    <h2>🌾 Análisis en el Departamento del Atlántico</h2>
-    <p>El Atlántico se caracteriza por su clima tropical y suelos fértiles que favorecen diversos tipos de cultivo.</p>
+  <h2>Análisis en el Atlántico</h2>
 
-    <h3>Características Regionales</h3>
-    <div class="content-grid">
-        <div class="card">
-            <h4>Clima y Suelo</h4>
-            <p>Temperatura promedio de 28°C con suelos franco-arcillosos, ideales para cultivos diversos.</p>
-        </div>
-        <div class="card">
-            <h4>Cultivos Predominantes</h4>
-            <p>Yuca, maíz, plátano, ñame y frutales como mango y guayaba.</p>
-        </div>
-        <div class="card">
-            <h4>Infraestructura</h4>
-            <p>Acceso a sistemas de riego y vías para exportación agrícola.</p>
-        </div>
+  <!-- 1. Tarjetas Numéricas (3 items) -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <h3>45K</h3>
+      <p>Hectáreas Cultivadas</p>
     </div>
-
-
-    <h3>Desafíos y Oportunidades</h3>
-    <div class="highlight">
-        <h4>Desafíos Principales:</h4>
-        <ul>
-            <li>Sequías prolongadas</li>
-            <li>Sistemas de riego limitados</li>
-            <li>Acceso a crédito reducido</li>
-        </ul>
-        <h4>Oportunidades de Desarrollo:</h4>
-        <ul>
-            <li>Ubicación estratégica</li>
-            <li>Potencial para agroindustria</li>
-            <li>Programas de apoyo</li>
-        </ul>
+    <div class="stat-card">
+      <h3>28°C</h3>
+      <p>Temperatura Promedio</p>
     </div>
-
-
-    <div class="content-grid">
-        <div class="stat-box">
-            <h3>45,000</h3>
-            <p>Hectáreas cultivadas</p>
-        </div>
-        <div class="stat-box">
-            <h3>12,000</h3>
-            <p>Productores agrícolas</p>
-        </div>
+    <div class="stat-card">
+      <h3>12K</h3>
+      <p>Pequeños Productores</p>
     </div>
+  </div>
 
+  <!-- 2. Caja Mapa + Explicación -->
+  <div class="content-split">
+    <div class="visual-col">
+      <!-- TU MAPA DEL ATLANTICO AQUI -->
+      <iframe src="/mapa/mapa_municipios.html" class="map-frame" title="Mapa Atlántico"></iframe>
+    </div>
+    <div class="text-col">
+      <h3>Zonificación del Departamento</h3>
+      <p>
+        El mapa detalla los municipios con mayor vocación agrícola en el Atlántico. Repelón y Sabanalarga destacan por sus suelos aptos para cultivos transitorios.
+        <br><br>
+        La cercanía al Canal del Dique proporciona oportunidades de riego que están siendo subutilizadas actualmente.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3. Caja Gráfico Imagen + Explicación -->
+  <div class="content-split">
+    <div class="visual-col">
+      <!-- TU IMAGEN DE GRÁFICO ATLANTICO AQUI -->
+      <img src="imagenes/grafico_ejemplo_atlantico.png" alt="Gráfico circular Atlántico" class="chart-img">
+    </div>
+    <div class="text-col">
+      <h3>Participación por Cultivo</h3>
+      <p>
+        Como muestra la imagen, la yuca y el maíz dominan la producción local. Sin embargo, hay un segmento creciente (en naranja) que corresponde a frutales como el mango de exportación.
+        <br><br>
+        Este cambio en la matriz productiva responde a la demanda de mercados internacionales.
+      </p>
+    </div>
+  </div>
 </section>
 
 
-<!-- Sección 3: Análisis del Agua a Nivel Nacional -->
-<section id="agua">
-    <h2>💧 Análisis del Agua a Nivel Nacional</h2>
-    <p>Los recursos hídricos son fundamentales para la agricultura colombiana.</p>
-
-    <h3>Disponibilidad y Distribución</h3>
-    <div class="content-grid">
-        <div class="card">
-            <h4>Cuencas Hidrográficas</h4>
-            <p>Colombia cuenta con cinco vertientes principales: Caribe, Pacífico, Orinoco, Amazonas y Catatumbo.</p>
-        </div>
-        <div class="card">
-            <h4>Uso Agrícola del Agua</h4>
-            <p>El sector agrícola usa el 54% del agua disponible.</p>
-        </div>
-        <div class="card">
-            <h4>Calidad del Agua</h4>
-            <p>Monitoreo de parámetros fisicoquímicos y biológicos.</p>
-        </div>
-    </div>
-
-
-    <h3>Sistemas de Riego</h3>
-    <div class="highlight">
-        <ul>
-            <li>Riego por gravedad (60%)</li>
-            <li>Aspersión</li>
-            <li>Goteo</li>
-            <li>Sistemas mixtos</li>
-        </ul>
-    </div>
-</section>
+<!-- SECCIÓN 5: DESCARGABLE -->
 <section id="descargable">
-    <div>
-        <h2>Material descargable</h2>
-        <a href="/imagenes/Resultados_de_Análisis_de_Laboratorio_Suelos_en_Colombia_20251110(Estandarizada).xlsx" download="base analisis de suelos" class="boton-descarga">
-            <i class="fa fa-download"></i> Descargar Archivo
-        </a>
-      </div>
+  <div class="download-container">
+    <h2><i class="fas fa-cloud-download-alt"></i> Material Descargable</h2>
+    <p>Obtén el informe completo detallado con las tablas de datos crudos y el análisis de suelos extendido.</p>
+    <a href="/imagenes/Resultados_de_Análisis_de_Laboratorio_Suelos_en_Colombia_20251110(Estandarizada).xlsx" download="Informe_Suelos_2025.xlsx" class="boton-descarga">
+      Descargar Informe Excel
+    </a>
+  </div>
 </section>
-
-  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
-  <div class="elfsight-app-dc91f712-fccd-4179-b6cf-dbdd85d83d71" data-elfsight-app-lazy></div>
 
       <footer>
     <div class="redes">
@@ -284,10 +282,6 @@
 </script>
 </body>
 </html>
-
-
-
-
 
 
 
