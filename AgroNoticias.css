@@ -1,14 +1,6 @@
 
    /* Main Content */
 
-/* Contenedor principal */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-}
-
 /* Títulos de sección (AgroNoticias, Filtros, etc.) */
 h3 {
   text-align: left;
@@ -425,4 +417,5 @@ h3 {
   }
 }
         
+
 
