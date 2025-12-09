@@ -143,7 +143,7 @@
 .referencias {
   width: 90%;
   margin: auto;
-  background-color: #e8f5e8;
+  background-color: white;
   padding: 2em 5%;
 }
 
@@ -172,7 +172,7 @@ h2 {
 /* ======= INFO EXTRA ======= */
 .info-extra {
   width: 70%;
-  background-color: #e8f5e89f;
+  background-color: white;
   padding: 2em;
   border-radius: 10px;
   margin: 4em auto;
@@ -292,7 +292,7 @@ h2 {
 /* ======= REFERENCIAS ======= */
 .referencias {
   width: 60%;
-  background-color: #e8f5e89f;
+  background-color: white;
   padding: 2em;
   border-radius: 10px;
   margin: 2em auto;
@@ -396,4 +396,5 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
     border: 2px solid #2d5a3d; /* borde verde cuando se presiona */
 }
+
 
