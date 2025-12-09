@@ -352,6 +352,28 @@
     </div>
 
     <script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navHeader = document.querySelector('.nav-header');
+
+  menuToggle.addEventListener('click', () => {
+    // Abre/Cierra el menú lateral
+    navHeader.classList.toggle('active');
+    // Anima el botón a una "X"
+    menuToggle.classList.toggle('is-active');
+  });
+
+  // (Opcional) Cerrar menú al tocar fuera (en la parte oscura)
+  document.addEventListener('click', (e) => {
+    if (navHeader.classList.contains('active') && 
+        !navHeader.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        navHeader.classList.remove('active');
+        menuToggle.classList.remove('is-active');
+    }
+  });
+</script>
+
+    <script>
         // Base de datos de fotos del equipo
         const teamPhotos = {
             'Miguel Olivares': 'imagenes/team/miguel_olivares.jpg',
@@ -529,6 +551,7 @@
   </footer>   
 </body>
 </html>
+
 
 
 
