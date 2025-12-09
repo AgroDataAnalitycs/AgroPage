@@ -8,9 +8,6 @@
   --bg: #FAFAFA;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-body { background: var(--bg); color: var(--dark); line-height: 1.6; }
-
 
 
 /* ============ ESTRUCTURA SECCIONES ============ */
@@ -164,4 +161,5 @@ section h2 {
 footer { background: #222; color: white; text-align: center; padding: 40px 20px; }
 .redes img { width: 30px; margin: 0 10px; filter: invert(1); transition: 0.3s; }
 .redes img:hover { transform: scale(1.2); }
+
 
