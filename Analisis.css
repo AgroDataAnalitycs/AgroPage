@@ -2,7 +2,7 @@
 :root {
   --primary: #2d5a3d;      /* Verde Institucional */
   --secondary: #81C784;    /* Verde Claro */
-  --accent: #F9A825;       /* Amarillo/Dorado */
+  --accent: ##2d5a3d;       /* Amarillo/Dorado */
   --dark: #333;
   --light: #f4f4f4;
   --bg: #FAFAFA;
@@ -168,6 +168,7 @@ section h2 {
 footer { background: #222; color: white; text-align: center; padding: 40px 20px; }
 .redes img { width: 30px; margin: 0 10px; filter: invert(1); transition: 0.3s; }
 .redes img:hover { transform: scale(1.2); }
+
 
 
 
