@@ -131,7 +131,9 @@
   text-align: center;
   width:100%
 }
-
+.mapa-container {
+  background: white;
+}
 #map {
   height: 500px;
   width: 100%;
@@ -396,5 +398,6 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
     border: 2px solid #2d5a3d; /* borde verde cuando se presiona */
 }
+
 
 
