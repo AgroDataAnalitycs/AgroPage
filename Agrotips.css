@@ -6,7 +6,6 @@
 .agrotips-main {
   position: relative;
   width: 95%;
-  max-width: 1200px;
   margin: 2.5em auto 3em;
   padding-bottom: 3em;
   background: transparent;
@@ -799,3 +798,4 @@
     list-style-position: inside;
   }
 }
+
