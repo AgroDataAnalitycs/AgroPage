@@ -170,10 +170,8 @@ section h2 {
 }
 .boton-descarga:hover { transform: scale(1.05); background: #fff; }
 
-/* ============ FOOTER ============ */
-footer { background: #222; color: white; text-align: center; padding: 40px 20px; }
-.redes img { width: 30px; margin: 0 10px; filter: invert(1); transition: 0.3s; }
-.redes img:hover { transform: scale(1.2); }
+
+
 
 
 
