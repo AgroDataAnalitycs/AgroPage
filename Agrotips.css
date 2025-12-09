@@ -13,18 +13,7 @@
   border: none;
 }
 
-/* Línea decorativa vertical a la izquierda */
-.agrotips-main::before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #2d5a3d, #7bbf72);
-  opacity: 0.45;
-}
+
 
 /* =========================================================
    HERO AGROTIPS (TEXTO + IMAGEN)
@@ -73,7 +62,7 @@
 .agrotips-hero-text h2::after {
   content: "";
   display: block;
-  width: 160px;
+  width: 50%;
   height: 3px;
   border-radius: 999px;
   background-color: #2d5a3d;
@@ -898,4 +887,5 @@ main, .agrotips-main {
   box-shadow: 0 4px 10px rgba(17, 80, 49, 0.18);
   display: block;
 }
+
 
