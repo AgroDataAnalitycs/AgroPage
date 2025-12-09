@@ -135,6 +135,7 @@ section h2 {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.4;
+  border-bottom: 3px solid #2d5a3d;
 }
 
 /* ============ SECCIÓN 5: DESCARGABLE ============ */
@@ -166,6 +167,7 @@ section h2 {
 footer { background: #222; color: white; text-align: center; padding: 40px 20px; }
 .redes img { width: 30px; margin: 0 10px; filter: invert(1); transition: 0.3s; }
 .redes img:hover { transform: scale(1.2); }
+
 
 
 
