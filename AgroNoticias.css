@@ -1,455 +1,428 @@
 
    /* Main Content */
 
-.filter-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.filter-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.filter-btn {
-    background: #e8f5e8;
-    border: 2px solid #1f3f2d;
-    color: #1f3f2d;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-    background: #1f3f2d;
-    color: white;
-    transform: translateY(-2px);
-}
-
-.filter-btn.active {
-    background: #1f3f2d;
-    color: white;
-}
-
-.filter-section h3 {
-    text-align: left;
-    margin-bottom: 1rem;
-    color: #2d5a3d;
-}
-
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 4rem;
-    margin-top: 2rem;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.news-card h3 {
-    text-align: center;
-    color: #2d5a3d;
-
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid #2d5a3d;
-    width: 90%;
-    font-size: 1.2.5rem;
-    margin: 0.5em auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.news-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.news-card p {
-    color: #2d5a3d;
-}
-
-.news-card img {
-    height: 100%;
-    width: 100%;
-}
-
-.news-card a {
-    height: 100%;
-    width: 100%;
-}
-
-.news-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.news-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background: linear-gradient(135deg, #1f3f2d 0%, #4a7c59 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3rem;
-}
-
-.news-content {
-    padding: 1.5rem;
-}
-
-.news-category {
-    display: inline-block;
-    background: #1f3f2d;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-}
-
-.news-date {
-    color: #777;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-}
-
-.news-title {
-    color: #1f3f2d;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-}
-
-.news-description {
-    color: #555;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.news-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.tag {
-    background: #e8f5e8;
-    color: #1f3f2d;
-    padding: 0.3rem 0.8rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-}
-
-.featured-news {
-    background: linear-gradient(135deg, #1f3f2d 0%, #2d5a3d 100%);
-    color: white;
-    padding: 3rem;
-    border-radius: 15px;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.featured-news h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.featured-news p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    opacity: 0.95;
-}
-
-.stats-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.stat-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    border-left: 4px solid #1f3f2d;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    color: #1f3f2d;
-    font-weight: 700;
-}
-
-.stat-label {
-    color: #555;
-    margin-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .filter-buttons {
-        flex-direction: column;
-    }
-}
-
-/* ==========================
-   Contenedor General
-========================== */
+/* Contenedor principal */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
 }
 
+/* Títulos de sección (AgroNoticias, Filtros, etc.) */
 h3 {
-    text-align: left;
-    color: #2d5a3d;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid #2d5a3d;
-    width: 70%;
-    margin: 2em auto 1em auto;
+  text-align: left;
+  color: #2d5a3d;
+  font-size: 2rem;
+  margin: 2em auto 1em auto;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #2d5a3d;
+  width: 70%;
 }
 
-
-/* ==========================
-   Featured News (Carrusel)
-========================== */
-.featured-news {
-    background: #e8f5e89f;
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    border: 3px solid transparent;
-    cursor: pointer;
-    min-height: 580px;
-}
-
-.featured-news:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(7, 107, 46, 0.35);
-    border-color: #2d5a3d;
-}
-
-.featured-news h2 {
-    color: #2d5a3d;
-    margin-bottom: 1rem;
-    font-size: 1.9rem;
-}
-
-
-
-.featured-news img {
-    width: 70%;
-    display: block;
-    margin: 0 auto 1rem auto;
-    border-radius: 10px;
-
-}
-
-/* Botón Leer Más */
-.btn-read-more {
-    display: inline-block;
-    background: #e8f5e8;
-    border: 2px solid #1f3f2d;
-    color: #1f3f2d;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-read-more:hover {
-    background: #1f3f2d;
-    color: white;
-    transform: translateY(-2px);
-}
-
-
-
-
-/* ==== CARRUSEL ENCAPSULADO - evita conflictos ==== */
-/* --------- Carrusel --------- */
+/* =========================================
+   CARRUSEL (SLIDER PRINCIPAL)
+   ========================================= */
 .carousel {
-    position: relative;
-    max-width: 900px;
-    margin: 1.5rem auto;
-    overflow: hidden;
+  position: relative;
+  max-width: 1000px; /* Ancho máximo del carrusel */
+  margin: 1.5rem auto;
+  overflow: hidden;
+  padding: 10px; /* Espacio para que la sombra no se corte */
 }
 
 .carousel-inner {
-    display: flex;
-    transition: transform 0.45s ease-in-out;
-    will-change: transform;
+  display: flex;
+  transition: transform 0.45s ease-in-out;
+  will-change: transform;
 }
 
-.carousel-inner .featured-news {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 1.8rem;
-}
-
-/* Fix: quitar margin-bottom extra dentro del carrusel */
-.carousel-inner .featured-news {
-    margin-bottom: 0 !important;
-}
-
-/* --------- Botones --------- */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(47, 79, 47, 0.85);
-    color: white;
-    border: none;
-    padding: 0.7rem 1rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 50%;
-    z-index: 20;
-}
-
-.carousel-btn:hover {
-    background: rgba(47, 79, 47, 1);
-}
-
-.carousel-btn.left {
-    left: 12px;
-}
-
-.carousel-btn.right {
-    right: 12px;
-}
-
-
-/* ==========================
-   Reparación estilos carrusel
-========================== */
-
-/* Clase exclusiva para los slides */
-.carousel {
-    /* o 100%, o 1200px, como quieras */
-    max-width: 2600px;
-    /* límite opcional */
-    margin: 0 auto;
-    /* centrar */
-}
-
+/* Estilo de cada diapositiva */
 .carousel-slide {
-    background: #e8f5e89f !important;
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    border: 16px solid transparent;
-    cursor: pointer;
-    min-height: 580px;
-    max-width: 650px;
-    box-sizing: border-box;
-    margin-bottom: 0 !important;
+  min-width: 100%; /* Ocupa todo el ancho del contenedor */
+  box-sizing: border-box;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 3px solid transparent; /* Borde invisible inicial */
+  margin-bottom: 0;
+  text-align: center; /* Centrar contenido */
 }
 
 .carousel-slide:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 35px rgba(7, 107, 46, 0.35);
-    border-color: #2d5a3d;
+  transform: scale(1.01); /* Efecto sutil */
+  box-shadow: 0 15px 35px rgba(7, 107, 46, 0.25);
+  border-color: #2d5a3d;
+}
+
+/* Elementos dentro del Slide */
+.carousel-slide h2 {
+  text-align: center;
+  color: #2d5a3d;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #2d5a3d;
+  width: 80%;
+  font-size: 1.8rem;
+  margin: 0.5em auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .carousel-slide .news-image {
-    width: 70%;
-    height: auto;
-    max-width: 650px;
-    object-fit: cover;
-    border-radius: 14px;
-    margin: 0 auto;
-    display: block;
+  width: 70%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 1rem auto;
+  display: block;
 }
 
 .carousel-slide p {
-    color: #2d5a3d;
-    margin-bottom: 1.1rem;
-    line-height: 1.7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem !important;
-    ;
+  color: #2d5a3d;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-family: Verdana, sans-serif;
+  font-size: 1.1rem;
+  text-align: justify; /* Texto justificado para mejor lectura */
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-/* Ajuste interno */
-.carousel-inner .carousel-slide {
-    min-width: 100%;
-
-
+/* Etiqueta Destacado */
+.news-category {
+  display: inline-block;
+  background: #1f3f2d;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-
-.carousel-btn.left {
-    left: 12px;
-}
-
-.carousel-btn.right {
-    right: 12px;
-}
-
+/* Fuente de la noticia */
 .news-source {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #1f3f2d;
-    margin-top: 1rem;
-    background: #e8f5e8;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    display: inline-block;
+  font-weight: 700;
+  font-size: 1rem !important;
+  color: #1f3f2d;
+  margin-top: 1.5rem;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid #1f3f2d;
 }
 
-.carousel h2 {
+/* Botones del Carrusel (Flechas) */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(31, 63, 45, 0.7);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  z-index: 20;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.carousel-btn:hover {
+  background: rgba(31, 63, 45, 1);
+}
+
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
+
+/* Botón Leer Más */
+.btn-read-more {
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #1f3f2d;
+  color: #1f3f2d;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-read-more:hover {
+  background: #1f3f2d;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   FILTROS
+   ========================================= */
+.filter-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-section h3 {
+  text-align: center; /* Centrado para que se vea bien */
+  border-bottom: none;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: #e8f5e8;
+  border: 2px solid #1f3f2d;
+  color: #1f3f2d;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #1f3f2d;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   GRID DE NOTICIAS (Tarjetas Pequeñas)
+   ========================================= */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem; /* Ajustado el gap para que no sea tan enorme */
+  margin-top: 2rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.news-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Asegura que el footer de la card vaya al fondo */
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de la tarjeta */
+.news-card .news-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.news-card .news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.05);
+}
+
+/* Contenido de la tarjeta */
+.news-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.news-card h3.news-title {
+  text-align: left;
+  color: #1f3f2d;
+  margin: 0.5rem 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-size: 1.25rem; /* Corregido el error de sintaxis 1.2.5rem */
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.news-date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Empuja la fuente hacia abajo */
+}
+
+.news-tags {
+  margin-top: auto; /* Pega la fuente al fondo */
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.news-tags .news-source {
+  font-size: 0.85rem !important;
+  padding: 0.2rem 0;
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVO)
+   ========================================= */
+
+/* --- TABLETS (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  h3 {
+    width: 90%; /* Títulos ocupan más ancho */
+  }
+
+  .carousel-slide h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .news-grid {
+    width: 95%; /* Grid ocupa más pantalla */
+    gap: 2rem;
+  }
+}
+
+/* --- MÓVILES (max-width: 768px) --- */
+@media (max-width: 768px) {
+  
+  /* Ajustes generales */
+  .container {
+    padding: 1rem;
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 1.8rem;
     text-align: center;
-    color: #2d5a3d;
+  }
 
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid #2d5a3d;
-    width: 70%;
-    font-size: 1.2.5rem;
-    margin: 0.5em auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* Carrusel en móvil */
+  .carousel {
+    margin: 1rem auto;
+  }
 
+  .carousel-slide {
+    padding: 1.5rem; /* Menos relleno interno */
+    border-radius: 8px;
+  }
 
+  .carousel-slide .news-image {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    margin: 1rem 0;
+  }
 
+  .carousel-slide h2 {
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 2rem; /* Espacio para que no choque con la etiqueta */
+  }
+
+  .carousel-slide p {
+    font-size: 1rem;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  /* Botones del carrusel más visibles en móvil */
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(31, 63, 45, 0.9);
+  }
+
+  /* Filtros apilados o envueltos */
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    flex: 1 1 auto; /* Botones flexibles */
+    text-align: center;
+  }
+
+  /* Grid de noticias a 1 columna */
+  .news-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .news-card {
+    margin: 0 0.5rem; /* Pequeño margen lateral */
+  }
+
+  .news-card .news-image {
+    height: 180px;
+  }
 }
 
-            .filter-buttons {
-                flex-direction: column;
-            }
+/* --- MÓVILES PEQUEÑOS (max-width: 480px) --- */
+@media (max-width: 480px) {
+  .carousel-slide h2 {
+    font-size: 1.2rem;
+  }
+  
+  /* Ocultar botones de flecha si molestan mucho, 
+     o hacerlos más transparentes */
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+  }
 
-        }
+  .btn-read-more {
+    width: 100%; /* Botón ancho fácil de tocar */
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+        
+
