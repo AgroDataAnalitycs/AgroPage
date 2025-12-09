@@ -125,11 +125,16 @@ section h2 {
 }
 
 .text-col h3 {
-  color: var(--dark);
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;
+  text-align: left;
+  color: #1f3f2d;
+  margin: 0.5rem 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-size: 1.25rem; /* Corregido el error de sintaxis 1.2.5rem */
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 /* ============ SECCIÓN 5: DESCARGABLE ============ */
@@ -161,5 +166,6 @@ section h2 {
 footer { background: #222; color: white; text-align: center; padding: 40px 20px; }
 .redes img { width: 30px; margin: 0 10px; filter: invert(1); transition: 0.3s; }
 .redes img:hover { transform: scale(1.2); }
+
 
 
