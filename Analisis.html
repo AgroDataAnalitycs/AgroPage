@@ -176,6 +176,20 @@
         <canvas id="myPieChart"></canvas>
     </div>
   </div>
+
+    <div class="content-split">
+    <div class="chart-container">
+        <canvas id="agricultureChart"></canvas>
+    </div>
+    <div class="text-col">
+      <h3>Participación por Cultivo</h3>
+      <p>
+        Como muestra la imagen, la yuca y el maíz dominan la producción local. Sin embargo, hay un segmento creciente (en naranja) que corresponde a frutales como el mango de exportación.
+        <br><br>
+        Este cambio en la matriz productiva responde a la demanda de mercados internacionales.
+      </p>
+    </div>
+  </div>
 </section>
 
 
@@ -364,8 +378,104 @@
             }
         });
     </script>
+
+  //mapa de lineas
+  <script>
+        const ctx = document.getElementById('agricultureChart').getContext('2d');
+
+        const years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
+        
+        const productionData = [
+            50219653, // 2015 (Dato correcto)
+            52529464, // 2016 (Dato correcto)
+            55568109, // 2017 (Dato correcto)
+            54699120, // 2018 (Dato correcto)
+            71291954, // 2019 (Dato correcto)
+            72906420, // 2020 (Dato correcto)
+            74195395,     // 2021 <--- ¡FALTA ESTE DATO! Reemplaza 'null' por el número
+            75567829,     // 2022 <--- ¡FALTA ESTE DATO! Reemplaza 'null' por el número
+            77122841,     // 2023 <--- ¡FALTA ESTE DATO! Reemplaza 'null' por el número
+            79252189  // 2024 <--- ¡FALTA ESTE DATO! Reemplaza 'null' por el número
+        ];
+
+        new Chart(ctx, {
+            type: 'line', // Tipo de gráfico: LÍNEA
+            data: {
+                labels: years,
+                datasets: [{
+                    label: 'Producción Total (toneladas)',
+                    data: productionData,
+                    borderColor: '#2E8B57', // Color de la línea (Verde SeaGreen)
+                    backgroundColor: 'rgba(46, 139, 87, 0.2)', // Relleno suave debajo de la línea
+                    pointBackgroundColor: '#2E8B57',
+                    pointBorderColor: '#fff',
+                    pointRadius: 6, // Puntos un poco más grandes
+                    pointHoverRadius: 8,
+                    fill: true, // Rellenar el área bajo la línea (opcional, pon false si no quieres relleno)
+                    tension: 0.3, // Curvatura de la línea (0 es recta, 0.4 es muy curva)
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Balance Anual de Producción Agrícola (2015–2024)',
+                        font: { size: 20 },
+                        padding: { bottom: 20 }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    // Formato de número con comas
+                                    label += new Intl.NumberFormat('en-US').format(context.parsed.y);
+                                }
+                                return label;
+                            }
+                        }
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false, // Empieza cerca del dato más bajo para ver mejor la variación
+                        title: {
+                            display: true,
+                            text: 'Producción (t)',
+                            font: { weight: 'bold' }
+                        },
+                        ticks: {
+                            // Formato de los números en el eje Y (ej: 50,000,000)
+                            callback: function(value) {
+                                return new Intl.NumberFormat('en-US', { notation: "compact" }).format(value);
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Año',
+                            font: { weight: 'bold' }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
+
 
 
 
