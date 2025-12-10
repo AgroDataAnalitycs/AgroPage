@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="Analisis.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
- 
+  
 
 </head>
 
@@ -167,27 +166,38 @@
     <div class="text-col">
       <h3>Áreas cosechadas</h3>
       <p>
-        Este gráfico estático ilustra el histórico de producción en las últimas dos décadas. Podemos apreciar un crecimiento sostenido en la exportación de aguacate hass y limón tahití.
-        <br><br>
-        La barra más alta corresponde al pico de producción de 2023, impulsado por nuevas tecnologías de riego.
+El gráfico muestra que la mayor parte del área sembrada en el país es efectivamente cosechada, alcanzando aproximadamente un 89.3%. Esto refleja un nivel alto de eficiencia agrícola, indicando que la mayoría de los cultivos logran completarse con éxito. Por otro lado, solo una pequeña fracción, cercana al 10%, corresponde a área no cosechada, lo cual puede deberse a factores como pérdidas por clima, plagas, enfermedades o limitaciones técnicas. En general, los datos evidencian un buen aprovechamiento del territorio agrícola, con un rendimiento favorable en términos de cosecha.
       </p>
     </div>
-    <div class="chart-container">
-        <canvas id="myPieChart"></canvas>
+    <div class="visual-col">
+      <!-- TU IMAGEN DE GRÁFICO  AQUI -->
+      <img src="imagenes/grafico_ejemplo_atlantico.png" alt="Gráfico circular Atlántico" class="chart-img">
     </div>
   </div>
 
-    <div class="content-split">
-    <div class="chart-container">
-        <canvas id="agricultureChart"></canvas>
+  <div class="content-split">
+    <div class="visual-col">
+      <!-- TU IMAGEN DE GRÁFICO  AQUI -->
+      <img src="imagenes/grafico_ejemplo_atlantico.png" alt="Gráfico circular Atlántico" class="chart-img">
     </div>
     <div class="text-col">
-      <h3>Participación por Cultivo</h3>
+      <h3>Producción agricola(2015-2024)</h3>
       <p>
-        Como muestra la imagen, la yuca y el maíz dominan la producción local. Sin embargo, hay un segmento creciente (en naranja) que corresponde a frutales como el mango de exportación.
-        <br><br>
-        Este cambio en la matriz productiva responde a la demanda de mercados internacionales.
+      El gráfico muestra una tendencia creciente en la producción agrícola entre 2015 y 2024. Tras un aumento moderado en los primeros años y una leve caída en 2018, se registra un incremento notable en 2019, que marca un punto de cambio en el comportamiento productivo. Desde entonces, la producción continúa creciendo de forma estable hasta alcanzar cerca de 80 millones de toneladas en 2024. En general, los datos reflejan un fortalecimiento progresivo del sector agrícola durante la última década.
       </p>
+    </div>
+  </div>
+
+   <div class="content-split">
+    <div class="text-col">
+      <h3>Análisis de los 10 Mayores Productores Agrícolas</h3>
+      <p>
+       El gráfico muestra una marcada concentración de la producción agrícola en Colombia. Valle del Cauca destaca ampliamente como el principal productor, superando por un margen considerable al resto de departamentos. En un segundo nivel se encuentran Cauca, Antioquia, Meta y Cundinamarca, que mantienen aportes significativos pero mucho menores en comparación con el líder. Finalmente, departamentos como Santander, Boyacá, Tolima, Nariño y Huila presentan valores más moderados, aunque continúan siendo actores importantes dentro del sector.
+      </p>
+    </div>
+    <div class="visual-col">
+      <!-- TU IMAGEN DE GRÁFICO  AQUI -->
+      <img src="imagenes/grafico_ejemplo_atlantico.png" alt="Gráfico circular Atlántico" class="chart-img">
     </div>
   </div>
 </section>
@@ -316,165 +326,9 @@
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
-//mapa-circular
- <script>
-        const ctx = document.getElementById('myPieChart').getContext('2d');
-
-        // Datos reales extraídos de tus imágenes
-        const dataValues = [47643575, 5692943]; 
-        const backgroundColors = ['#2E8B57', '#C62828']; // Verde y Rojo
-
-        new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Área Cosechada', 'No Cosechada'],
-                datasets: [{
-                    data: dataValues,
-                    backgroundColor: backgroundColors,
-                    borderColor: '#ffffff',
-                    borderWidth: 2,
-                    hoverOffset: 15 
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Eficiencia Agrícola: Aprovechamiento del Area Sembrada',
-                        font: { size: 18 },
-                        color: '#555',
-                        padding: { bottom: 20 }
-                    },
-                    legend: {
-                        position: 'bottom',
-                        labels: { usePointStyle: true, padding: 20 }
-                    },
-                    tooltip: {
-                        enabled: true,
-                        displayColors: false, // Ocultamos el cuadrito de color estándar
-                        
-                        // Hacemos que el fondo del tooltip sea del color de la sección (Verde o Rojo)
-                        backgroundColor: function(context) {
-                            return context.tooltip.chart.data.datasets[0].backgroundColor[context.tooltip.dataPoints[0].dataIndex];
-                        },
-                        titleFont: { size: 16, weight: 'bold' },
-                        bodyFont: { size: 15 },
-                        padding: 12,
-                        cornerRadius: 4, // Bordes un poco redondeados como en la imagen
-                        
-                        callbacks: {
-                            // Título del tooltip (ej: Área Cosechada)
-                            title: function(context) {
-                                return context[0].label;
-                            },
-                            // Texto principal (Hectáreas)
-                            label: function(context) {
-                                let value = context.raw;
-                                // Formateamos el número con comas (en-US usa comas para miles)
-                                let formattedValue = new Intl.NumberFormat('en-US').format(value);
-                                return `Hectáreas: ${formattedValue}`;
-                            },
-                            // Texto al pie (Porcentaje calculado)
-                            footer: function(context) {
-                                let value = context[0].raw;
-                                let total = context.chart._metasets[context[0].datasetIndex].total;
-                                let percentage = ((value / total) * 100).toFixed(1) + "%";
-                                return `(${percentage})`;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    </script>
-  //mapa de lineas
-  <script>
-        const ctx = document.getElementById('agricultureChart').getContext('2d');
-
-        const years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
-        
-        const productionData = [
-            50219653, 52529464, 55568109, 54699120, 71291954, 72906420, 74195395, 75567829, 77122841, 79252189 ];
-
-        new Chart(ctx, {
-            type: 'line', // Tipo de gráfico: LÍNEA
-            data: {
-                labels: years,
-                datasets: [{
-                    label: 'Producción Total (toneladas)',
-                    data: productionData,
-                    borderColor: '#2E8B57', // Color de la línea (Verde SeaGreen)
-                    backgroundColor: 'rgba(46, 139, 87, 0.2)', // Relleno suave debajo de la línea
-                    pointBackgroundColor: '#2E8B57',
-                    pointBorderColor: '#fff',
-                    pointRadius: 6, // Puntos un poco más grandes
-                    pointHoverRadius: 8,
-                    fill: true, // Rellenar el área bajo la línea (opcional, pon false si no quieres relleno)
-                    tension: 0.3, // Curvatura de la línea (0 es recta, 0.4 es muy curva)
-                    borderWidth: 3
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Balance Anual de Producción Agrícola (2015–2024)',
-                        font: { size: 20 },
-                        padding: { bottom: 20 }
-                    },
-                    tooltip: {
-                        mode: 'index',
-                        intersect: false,
-                        callbacks: {
-                            label: function(context) {
-                                let label = context.dataset.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                if (context.parsed.y !== null) {
-                                    // Formato de número con comas
-                                    label += new Intl.NumberFormat('en-US').format(context.parsed.y);
-                                }
-                                return label;
-                            }
-                        }
-                    },
-                    legend: {
-                        position: 'bottom'
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: false, // Empieza cerca del dato más bajo para ver mejor la variación
-                        title: {
-                            display: true,
-                            text: 'Producción (t)',
-                            font: { weight: 'bold' }
-                        },
-                        ticks: {
-                            // Formato de los números en el eje Y (ej: 50,000,000)
-                            callback: function(value) {
-                                return new Intl.NumberFormat('en-US', { notation: "compact" }).format(value);
-                            }
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Año',
-                            font: { weight: 'bold' }
-                        }
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
+
 
 
 
