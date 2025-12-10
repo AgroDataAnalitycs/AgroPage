@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -162,9 +164,8 @@
 
   <!-- 3. Caja Gráfico Imagen + Explicación -->
   <div class="content-split">
-    <div class="visual-col">
-      <!-- TU IMAGEN DE GRÁFICO AQUI (Asegúrate de tener la imagen en la carpeta) -->
-      <img src="imagenes/grafico_circular.png" alt="Gráfico circular cosechas" class="chart-img">
+    <div class="chart-container">
+        <canvas id="myPieChart"></canvas>
     </div>
     <div class="text-col">
       <h3>Áreas cosechadas</h3>
@@ -300,8 +301,72 @@
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
+//mapa-circular
+  <script>
+        const ctx = document.getElementById('myPieChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Área Cosechada', 'No Cosechada'],
+                datasets: [{
+                    data: [89.3, 10.7],
+                    backgroundColor: [
+                        '#2E8B57', // Verde
+                        '#C62828'  // Rojo
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    hoverOffset: 10 // Efecto extra: separa un poco la rebanada al pasar el mouse
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Eficiencia Agrícola: Aprovechamiento del Area Sembrada',
+                        font: { size: 18 },
+                        color: '#555',
+                        padding: { bottom: 20 }
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            usePointStyle: true,
+                            padding: 20
+                        }
+                    },
+                    // CONFIGURACIÓN DEL TOOLTIP (Lo que aparece al pasar el mouse)
+                    tooltip: {
+                        enabled: true, // Activado
+                        callbacks: {
+                            // Personalizamos el texto para agregar el símbolo %
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
+                        },
+                        backgroundColor: 'rgba(150, 150, 150, 0.2)', // Fondo oscuro para el tooltip
+                        titleFont: { size: 14 },
+                        bodyFont: { size: 14, weight: 'bold' },
+                        padding: 10,
+                        displayColors: true // Muestra el cuadrito de color en el tooltip
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
+
 
 
 
