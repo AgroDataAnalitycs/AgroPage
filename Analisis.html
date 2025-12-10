@@ -316,22 +316,23 @@
   })(document, 'script');
 </script>
 //mapa-circular
-  <script>
+ <script>
         const ctx = document.getElementById('myPieChart').getContext('2d');
+
+        // Datos reales extraídos de tus imágenes
+        const dataValues = [47643575, 5692943]; 
+        const backgroundColors = ['#2E8B57', '#C62828']; // Verde y Rojo
 
         new Chart(ctx, {
             type: 'pie',
             data: {
                 labels: ['Área Cosechada', 'No Cosechada'],
                 datasets: [{
-                    data: [89.3, 10.7],
-                    backgroundColor: [
-                        '#2E8B57', // Verde
-                        '#C62828'  // Rojo
-                    ],
+                    data: dataValues,
+                    backgroundColor: backgroundColors,
                     borderColor: '#ffffff',
                     borderWidth: 2,
-                    hoverOffset: 10 // Efecto extra: separa un poco la rebanada al pasar el mouse
+                    hoverOffset: 15 
                 }]
             },
             options: {
@@ -347,38 +348,46 @@
                     },
                     legend: {
                         position: 'bottom',
-                        labels: {
-                            usePointStyle: true,
-                            padding: 20
-                        }
+                        labels: { usePointStyle: true, padding: 20 }
                     },
-                    // CONFIGURACIÓN DEL TOOLTIP (Lo que aparece al pasar el mouse)
                     tooltip: {
-                        enabled: true, // Activado
-                        callbacks: {
-                            // Personalizamos el texto para agregar el símbolo %
-                            label: function(context) {
-                                let label = context.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                if (context.parsed !== null) {
-                                    label += context.parsed + '%';
-                                }
-                                return label;
-                            }
+                        enabled: true,
+                        displayColors: false, // Ocultamos el cuadrito de color estándar
+                        
+                        // Hacemos que el fondo del tooltip sea del color de la sección (Verde o Rojo)
+                        backgroundColor: function(context) {
+                            return context.tooltip.chart.data.datasets[0].backgroundColor[context.tooltip.dataPoints[0].dataIndex];
                         },
-                        backgroundColor: 'rgba(150, 150, 150, 0.2)', // Fondo oscuro para el tooltip
-                        titleFont: { size: 14 },
-                        bodyFont: { size: 14, weight: 'bold' },
-                        padding: 10,
-                        displayColors: true // Muestra el cuadrito de color en el tooltip
+                        titleFont: { size: 16, weight: 'bold' },
+                        bodyFont: { size: 15 },
+                        padding: 12,
+                        cornerRadius: 4, // Bordes un poco redondeados como en la imagen
+                        
+                        callbacks: {
+                            // Título del tooltip (ej: Área Cosechada)
+                            title: function(context) {
+                                return context[0].label;
+                            },
+                            // Texto principal (Hectáreas)
+                            label: function(context) {
+                                let value = context.raw;
+                                // Formateamos el número con comas (en-US usa comas para miles)
+                                let formattedValue = new Intl.NumberFormat('en-US').format(value);
+                                return `Hectáreas: ${formattedValue}`;
+                            },
+                            // Texto al pie (Porcentaje calculado)
+                            footer: function(context) {
+                                let value = context[0].raw;
+                                let total = context.chart._metasets[context[0].datasetIndex].total;
+                                let percentage = ((value / total) * 100).toFixed(1) + "%";
+                                return `(${percentage})`;
+                            }
+                        }
                     }
                 }
             }
         });
     </script>
-
   //mapa de lineas
   <script>
         const ctx = document.getElementById('agricultureChart').getContext('2d');
@@ -475,6 +484,7 @@
     </script>
 </body>
 </html>
+
 
 
 
